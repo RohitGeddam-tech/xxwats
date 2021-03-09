@@ -2,6 +2,7 @@ import './App.css';
 import Nav from './components/Nav'
 import Intro from './home/Intro'
 import About from './home/About'
+import Slider from './components/Sliding'
 
 const View = () => {
   return(
@@ -12,6 +13,9 @@ const View = () => {
       </section>
       <section>
         <About />
+      </section>
+      <section>
+        <Slider />
       </section>
     </>
   )
