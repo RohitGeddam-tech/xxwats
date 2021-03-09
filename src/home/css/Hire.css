@@ -39,7 +39,7 @@
 }
 
 .first-quote{
-    font-family: Work Sans;
+    font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -146,3 +146,34 @@
     margin-top: 13.5px !important;
 }
 
+/**/
+
+.hire-mobcontainer{
+    width: 95%;
+    display: flex;
+    justify-content: start;
+    margin: auto;
+}
+
+.first-mobbox{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.mobicons{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons-mobmsg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/**/

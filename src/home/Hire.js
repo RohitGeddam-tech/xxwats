@@ -22,7 +22,7 @@ const Desktop = () => {
                         <div className='icons'>
                             <div className='icons-msg'>
                                 <img alt='call' src={map} />
-                                <a className='location-title'>37/B, Perry Cross Rd, 
+                                <a href='https://goo.gl/maps/G9r5WEvrA2cfQ9Z18' className='location-title'>37/B, Perry Cross Rd, 
                                     Bandra West, Mumbai, 
                                     Maharashtra, India,
                                     400050
@@ -30,13 +30,13 @@ const Desktop = () => {
                             </div>
                             <div className='icons-msg'>
                                 <img alt='call' src={call} />
-                                <a className='call-title'>
+                                <a href='tel:+919820353013' className='call-title'>
                                     +919820353013
                                 </a>
                             </div>
                             <div className='icons-msg'>
                                 <img alt='call' src={mail} />
-                                <a className='mail-title'>
+                                <a href='mailto:wattsup@xxwatts.com' className='mail-title'>
                                     wattsup@xxwatts.com
                                 </a>
                             </div>
@@ -63,6 +63,57 @@ const Desktop = () => {
     )
 }
 
+const Mobile = ()=> {
+    return(
+        <>
+            <div className='hire-mobcontainer'>
+                <div className='first-mobbox'>
+                    <div className='first-box-container'>
+                        <h4 style={{paddingTop:'30px'}} className='first-quote'>Drop by for a cup of kadak chai</h4>
+                        <div className='mobicons'>
+                            <div className='icons-mobmsg'>
+                                <a href='https://goo.gl/maps/G9r5WEvrA2cfQ9Z18' style={{width:'50%'}} className='location-title'>37/B, Perry Cross Rd, 
+                                    Bandra West, Mumbai, 
+                                    Maharashtra, India,
+                                    400050
+                                </a>
+                                <img alt='call' src={map} />
+                            </div>
+                            <div className='icons-mobmsg'>
+                                <a href='tel:+919820353013' className='call-title'>
+                                    +919820353013
+                                </a>
+                                <img alt='call' src={call} />
+                            </div>
+                            <div style={{marginTop:'30px'}} className='icons-mobmsg'>
+                                <a href='mailto:wattsup@xxwatts.com' className='mail-title'>
+                                    wattsup@xxwatts.com
+                                </a>
+                                <img alt='call' src={mail} />
+                            </div>
+                        </div>
+                        <div className='follow'>
+                            <h4 className='first-title'>follow us</h4>
+                            <div className='social'>
+                                <img style={{marginLeft:'10px'}} src={insta} alt='insta' />
+                                <img style={{marginLeft:'10%'}} src={youtube} alt='insta' />
+                                <img style={{marginLeft:'10%'}} src={twitter} alt='insta' />
+                                <img style={{marginLeft:'10%'}} src={facebook} alt='insta' />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* <div className='second-box'>
+                    <div className='second-box-container'>
+                        <h4 className='second-title'></h4>
+                        <h4 className='second-quote'>A project with 20 Watts?</h4>
+                    </div>
+                </div> */}
+            </div>
+        </>
+    )
+}
+
 const Hire = () => {
     const[isMobile, setMobile] = useState(
         window.matchMedia('(max-width:760px)').matches
@@ -75,7 +126,7 @@ const Hire = () => {
 
     return (
         <div className='hire'>
-            <Desktop />
+            {isMobile ? <Mobile /> : <Desktop /> }
         </div>
     )
 }
