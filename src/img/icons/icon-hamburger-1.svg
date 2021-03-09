@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Keyshape -->
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+    <style>
+@keyframes a0_t { 0% { transform: translate(14.25px,9px) rotate(0deg) translate(-14.75px,-9px); } 50% { transform: translate(14.25px,15px) rotate(0deg) translate(-14.75px,-9px); } 100% { transform: translate(14.25px,15px) rotate(45deg) translate(-14.75px,-9px); } }
+@keyframes a0_s { 0% { stroke: #202020; } 50% { stroke: #ffffff; } 100% { stroke: #ffffff; } }
+@keyframes a1_o { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 0; } }
+@keyframes a2_t { 0% { transform: translate(18px,21px) rotate(0deg) scale(1,1) translate(-12px,-21px); } 50% { transform: translate(15.0005px,15px) rotate(0deg) scale(1.353,1) translate(-12px,-21px); } 100% { transform: translate(15.0005px,15px) rotate(-45deg) scale(1.353,1) translate(-12px,-21px); } }
+@keyframes a2_s { 0% { stroke: #202020; } 50% { stroke: #ffffff; } 100% { stroke: #ffffff; } }
+    </style>
+    <path d="M4,9L27,9" stroke="#202020" stroke-width="1.5" stroke-linecap="square" transform="translate(14.25,9) translate(-14.75,-9)" style="animation: 2s linear both a0_t, 2s linear both a0_s;"/>
+    <path d="M7.5,15L27.5,15" stroke="#202020" stroke-width="1.5" stroke-linecap="square" opacity="1" transform="translate(15.5,15) translate(-16.5,-15)" style="animation: 2s linear both a1_o;"/>
+    <path d="M3.5,21L20.5,21" stroke="#202020" stroke-width="1.5" stroke-linecap="square" stroke-opacity="1" fill-rule="nonzero" transform="translate(18,21) translate(-12,-21)" style="animation: 2s linear both a2_t, 2s linear both a2_s;"/>
+</svg>

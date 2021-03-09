@@ -1,0 +1,107 @@
+.Intro{
+  width: 100%;
+  height: fit-content !important;
+  padding-top: 56px !important;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+.image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+    height: 350px !important;
+}
+
+.content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 20px;
+    flex-flow: column nowrap;
+}
+
+.para{
+    color: rgb(135, 135, 135);
+    font-size: 30px;
+    text-align: start;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    width: 80%;
+}
+
+.btn{
+    background-color: white !important;
+    border: 1px solid rgb(247, 0, 140) !important;
+    padding-left: 25.6px;
+    padding-right: 25.6px;
+    padding-top: 12.8px;
+    padding-bottom: 12.8px;
+    border-radius: 19px;
+    width: 45%;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7008C;
+}
+
+/*Mobile starts*/
+
+.mobhome{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+
+.mobcontent{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}                                   
+
+.mobpara{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(247, 0, 140);
+}
+
+.mobbtn{
+    background-color: white !important;
+    border: 1px solid rgb(135, 135, 135) !important;
+    padding-left: 25.6px;
+    padding-right: 25.6px;
+    padding-top: 12.8px;
+    padding-bottom: 12.8px;
+    border-radius: 19px;
+    width: 55%;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(135, 135, 135);
+}
+
+/*Mobile ends*/
