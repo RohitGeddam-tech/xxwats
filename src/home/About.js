@@ -59,10 +59,9 @@ const Mobile = () => {
                     height='550px' 
                     src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=1" 
                     title='vid'
-                    className='vid'
                 />
                 <Slider />
-                <button className='mobbtn'>Check Out Our Portfolio</button>
+                <button className='mobaboutbtn'>Check Out Our Portfolio</button>
             </div>            
         </div>
     )

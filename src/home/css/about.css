@@ -11,7 +11,7 @@
 }
 
 .yellowtab{
-    width: 435px;
+    width: 30%;
     height: fit-content !important;
     margin-right: -18%;
     margin-bottom: -20px;
@@ -84,6 +84,7 @@ width: 90%;
     text-align: center;
     text-transform: uppercase;
     color: #F7008C;
+    margin: auto;
 }
 
 .aboutvideo{
@@ -168,7 +169,7 @@ margin-top: 10px;
 }
 
 .slick-slider{
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 
@@ -177,9 +178,14 @@ margin-top: 10px;
 } */
 
 .sliderimg{
-    height: 40px;
+    height: 100%;
 }
 
+.slick-slide img{
+    width: 120px;
+    margin: auto;
+    height: 50px;
+}
 /*mobile starts*/
 
 .mobcontainer{
@@ -231,6 +237,11 @@ margin-top: 10px;
     text-align: center;
     text-transform: uppercase;
     color: #202020;
+    margin: auto;
+}
+
+.mob-container{
+    width: 95%;
     margin: auto;
 }
 

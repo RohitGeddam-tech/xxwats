@@ -2,7 +2,7 @@ import './App.css';
 import Nav from './components/Nav'
 import Intro from './home/Intro'
 import About from './home/About'
-import Slider from './components/Sliding'
+import Services from './home/Services'
 
 const View = () => {
   return(
@@ -15,7 +15,7 @@ const View = () => {
         <About />
       </section>
       <section>
-        <Slider />
+        <Services />
       </section>
     </>
   )
