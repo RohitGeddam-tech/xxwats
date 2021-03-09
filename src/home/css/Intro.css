@@ -8,8 +8,8 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 8%;
-    margin-bottom: 10%;
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
 .image{

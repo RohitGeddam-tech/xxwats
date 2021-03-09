@@ -23,7 +23,7 @@ const Desktop = () => {
                     allowFullScreen
                     frameBorder='0' 
                     width="65%" 
-                    src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=1" 
+                    src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=1&mute=1" 
                     title='vid'
                     className='vid'
                 />
@@ -57,10 +57,12 @@ const Mobile = () => {
                     frameBorder='0' 
                     width="100%"
                     height='550px' 
-                    src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=1" 
+                    src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=1&mute=1" 
                     title='vid'
                 />
-                <Slider />
+                <div className='mob-container'>
+                    <Slider />
+                </div>
                 <button className='mobaboutbtn'>Check Out Our Portfolio</button>
             </div>            
         </div>

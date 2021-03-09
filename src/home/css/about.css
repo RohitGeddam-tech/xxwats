@@ -5,9 +5,10 @@
 }
 
 .aboutfirst{
-    width: 100%;
+    width: 95%;
     display: flex;
-    padding-top: 30px;
+    padding-top: 50px;
+    margin: auto;
 }
 
 .yellowtab{
@@ -15,7 +16,6 @@
     height: fit-content !important;
     margin-right: -18%;
     margin-bottom: -20px;
-    margin-left: 20px;
 }
 
 .tabcontainer{
@@ -98,7 +98,7 @@ width: 90%;
 
 
 .sliderbox{
-    width: 100%;
+    width: 99.9%;
     display: flex;
 }
 

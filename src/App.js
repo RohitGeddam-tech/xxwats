@@ -3,6 +3,7 @@ import Nav from './components/Nav'
 import Intro from './home/Intro'
 import About from './home/About'
 import Services from './home/Services'
+import Hire from './home/Hire'
 
 const View = () => {
   return(
@@ -16,6 +17,9 @@ const View = () => {
       </section>
       <section>
         <Services />
+      </section>
+      <section>
+        <Hire />
       </section>
     </>
   )

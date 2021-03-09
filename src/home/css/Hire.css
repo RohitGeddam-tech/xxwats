@@ -1,0 +1,148 @@
+.hire{
+    width: 100%;
+    background-color: #EEEA64;
+    display: flex;
+    align-items: center;
+}
+
+.hire-container{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    margin: auto;
+}
+
+.first-box{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid red;
+}
+
+.first-box-container{
+    width: 95%;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid red;
+}
+
+.first-title{
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #202020;
+    padding-top: 20px;
+}
+
+.first-quote{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #202020;
+    margin-top: 0 !important;
+}
+
+.icons{
+    width: fit-content;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons-msg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.location-title{
+    width: 200px;
+    margin-top: 0 !important;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #202020;
+}
+
+.call-title{
+    margin-top: 0 !important;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #202020;
+}
+
+.mail-title{
+    margin-top: 0 !important;
+    word-break: break-all;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #202020;
+}
+
+.follow{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 40px;
+}
+
+.social{
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+
+.second-box{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid red;
+}
+
+.second-box-container{
+    width: 95%;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid red;
+}
+
+.second-title{
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #202020;
+    padding-top: 20px;
+}
+
+.second-quote{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #202020;
+    margin-top: 13.5px !important;
+}
+

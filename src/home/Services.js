@@ -103,7 +103,7 @@ const Mobile = () => {
                             </p>
                         </div>
                         <div className='mob-pic'>
-                            <img style={{width:'100% !important'}} src={creative} alt='creative.png' />
+                            <img src={creative} alt='creative.png' />
                         </div>
                     </div>
                     <div className='mobtabs'>
