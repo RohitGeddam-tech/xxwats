@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import './css/Intro.css'
+import {NavHashLink} from 'react-router-hash-link'
 import home from '../img/logo/logo-tall.svg'
 
 const DeskIntro = () => {
@@ -13,7 +14,7 @@ const DeskIntro = () => {
                         <p className='para'>
                             WE GIVE CREATIVE SOLUTIONS FOR YOUR PROBLEMS
                         </p>
-                        <button className='btn'>Check Out Our Portfolio</button>
+                        <NavHashLink to='/xxwats/about' className='btn'>Check Out Our Portfolio</NavHashLink>
                     </div>
                 </div>
             </div>
@@ -31,7 +32,7 @@ const MobIntro = () => {
                         <p className='mobpara'>
                             WE GIVE CREATIVE SOLUTIONS FOR YOUR PROBLEMS
                         </p>
-                        <button className='mobbtn'>Check Out Our Portfolio</button>
+                        <NavHashLink to='/xxwats/about' className='mobbtn'>Check Out Our Portfolio</NavHashLink>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import HireDesk from '../components/HireDesk'
 import HireMob from '../components/HireMob'
-import './css/Hire.css'
-
+import '../home/css/Hire.css'
 
 const Hire = () => {
     const[isMobile, setMobile] = useState(
@@ -15,7 +14,7 @@ const Hire = () => {
     })
 
     return (
-        <div className='hire'>
+        <div className='hireabout'>
             {isMobile ? <HireMob /> : <HireDesk /> }
         </div>
     )

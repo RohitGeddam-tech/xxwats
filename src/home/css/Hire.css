@@ -2,14 +2,29 @@
     width: 100%;
     background-color: #EEEA64;
     display: flex;
+    flex-flow: column;
     align-items: center;
 }
 
+.hireabout{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.title-container{
+    width: 93%;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+}
+
 .hire-container{
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid red;
     margin: auto;
 }
 
@@ -17,17 +32,16 @@
     width: 50%;
     display: flex;
     flex-flow: column;
-    border: 1px solid red;
 }
 
 .first-box-container{
     width: 95%;
     display: flex;
     flex-flow: column;
-    border: 1px solid red;
 }
 
 .first-title{
+    text-align: start;
     font-family: 'Cabin', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -45,7 +59,7 @@
     font-size: 24px;
     line-height: 28px;
     color: #202020;
-    margin-top: 0 !important;
+    margin-top: 15px !important;
 }
 
 .icons{
@@ -60,7 +74,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 20px;
 }
 
@@ -105,60 +119,228 @@
 
 .social{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 10px;
     padding-bottom: 30px;
+    align-items: center;
 }
-
 
 .second-box{
     width: 50%;
     display: flex;
     flex-flow: column;
-    border: 1px solid red;
+    align-items: flex-end;
 }
 
 .second-box-container{
     width: 95%;
     display: flex;
     flex-flow: column;
-    border: 1px solid red;
 }
 
 .second-title{
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: none;
     color: #202020;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .second-quote{
     font-family: 'Work Sans',sans-serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 33px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
     color: #202020;
-    margin-top: 13.5px !important;
+    text-transform: capitalize;
+    margin-top: 0 !important;
 }
 
-/**/
+.service-title{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #202020;
+    text-transform: capitalize;
+    padding-top: 10px;
+    margin-bottom: 0 !important;
+}
+
+.slick-slider{
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.serviceslider-btn{
+    background-color: transparent !important;
+    padding-left: 20.6px;
+    padding-right: 20.6px;
+    padding-top: 11.8px;
+    padding-bottom: 11.8px;
+    border-radius: 50px;
+    width: fit-content;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202020;
+    margin-bottom: 0;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.slick-track{
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+
+.slick-list{
+    width: 100%;
+}
+
+button.slick-next:before{
+    color: black;
+    padding-right: 0;
+}
+
+button.slick-prev:before{
+    color: black;
+}
+
+.slideservice{
+    padding-top: 10px;
+    width: 98%;
+    display: flex;
+    margin: auto;
+}
+
+.serviceslide{
+    display: inline-flex !important;
+    justify-content: center;
+}
+
+.slick-list{
+    margin: auto;
+}
+
+.slick-arrow{
+    color: black;
+}
+
+/*Form starts*/
+
+.service-form{
+    width: 95%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.MuiInput-underline:before{
+    border-bottom: 1px solid black !important;
+}
+
+.textfield{
+    width: 75% !important;
+    margin-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.formbtn{
+    background-color: black !important;
+    border: 1px solid black !important;
+    padding-left: 25.6px;
+    padding-right: 25.6px;
+    padding-top: 12.8px;
+    padding-bottom: 12.8px;
+    border-radius: 19px;
+    width: fit-content;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+input{
+    font-family: 'Cabin',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+text-transform: none;
+color: #000;
+}
+
+h1{
+    font-family: 'Cabin',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+text-transform: none !important;
+color: red;
+}
+
+label + .MuiInput-formControl{
+    font-family: 'Cabin',sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+text-transform: uppercase;
+color: black;
+}
+/*Form ends*/
+
+/*MObile starts*/
 
 .hire-mobcontainer{
     width: 95%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin: auto;
+    flex-flow: column nowrap;
 }
 
 .first-mobbox{
     width: 100%;
     display: flex;
     flex-flow: column;
+}
+
+.first-box-mobcontainer{
+    width: 95%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
 }
 
 .mobicons{
@@ -176,4 +358,13 @@
     justify-content: space-between;
     margin-top: 20px;
 }
-/**/
+
+
+.second-mobbox{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+
+/*MObile ends*/

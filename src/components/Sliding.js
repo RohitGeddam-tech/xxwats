@@ -32,7 +32,7 @@ export default class Responsive extends Component {
     const settings = {
       dots: false,
       arrows: false,
-      infinite: false,
+      infinite: true,
       slidesToShow: 5,
       slidesToScroll: 1,
       autoplay:true,
@@ -41,7 +41,7 @@ export default class Responsive extends Component {
       cssEase: 'linear',
       responsive: [
         {
-          breakpoint: 950,
+          breakpoint: 1050,
           settings: {
             dots: false,
             arrows: false,

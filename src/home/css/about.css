@@ -168,23 +168,15 @@ margin-top: 10px;
     margin-top: 40px;
 }
 
-.slick-slider{
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
-/* .sliderin{
-    width: 120px !important;
-} */
-
 .sliderimg{
     height: 100%;
 }
 
 .slick-slide img{
+    padding-top: 40px;
     width: 120px;
     margin: auto;
-    height: 50px;
+    height: 100px;
 }
 /*mobile starts*/
 
@@ -238,6 +230,7 @@ margin-top: 10px;
     text-transform: uppercase;
     color: #202020;
     margin: auto;
+    margin-top: 15px;
 }
 
 .mob-container{
