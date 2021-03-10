@@ -1,20 +1,20 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import logowide from '../img/logo/logo-wide.svg'
 import './css/Nav.css'
-import Hamburger from 'hamburger-react';
-import { Collapse } from '@material-ui/core';
+import {Squash as Hamburger} from 'hamburger-react';
+import { Collapse, duration } from '@material-ui/core';
+import { NavHashLink } from 'react-router-hash-link';
+import {Fade} from 'react-animation-components'
+
+const Color = 'color'
 
 const Nav = () => {
     const [isActive, setActive] = useState(false);
+
+    let colored = isActive ? 'collapse-nav' : 'nav'
     return (
         <>
-        <Collapse style={{backgroundColor:'red'}} in={isActive}>
-            <div>heelo</div>
-            <div>heelo</div>
-            <div>heelo</div>
-            <div>heelo</div>
-        </Collapse>
-            <div className='nav'>
+            <div className={colored}>
                 <header>
                     <nav className='container-nav'>
                         <div className='nav-image'>
@@ -25,6 +25,19 @@ const Nav = () => {
                         </div>
                     </nav>
                 </header>
+                <Collapse duration='10000' style={{backgroundColor:'#F7008C'}} in={isActive}>
+                <div className='fade' >
+                    <Fade in={isActive} enterOpacity={0.25} delay='500' duration='2000'>
+                        <NavHashLink to='/xxwats' className='navfade'>Home</NavHashLink>
+                    </Fade>
+                    <Fade in={isActive} enterOpacity={0.25} delay='1500' duration='2000'>
+                        <NavHashLink to='/xxwats/about' className='navfade'>About us</NavHashLink>
+                    </Fade>
+                    <Fade in={isActive} enterOpacity={0.25} delay='2500' duration='2000'>
+                        <NavHashLink to='/xxwats' className='navfade'>Contact us</NavHashLink>
+                    </Fade>
+                </div>
+        </Collapse>
             </div>
         </>
     )

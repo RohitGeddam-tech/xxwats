@@ -5,6 +5,14 @@
     z-index: 999;
 }
 
+.collapse-nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #F7008C;
+    z-index: 999;
+}
+
 .container-nav {
     width: 98%;
     display: flex;
@@ -17,7 +25,39 @@
     width: 250px;
 }
 
+.fade{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+}
 
+.navfade{
+    font-family: 'Work Sans',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 51px;
+line-height: 60px;
+color: #202020;
+padding-top: 0;
+padding-bottom: 0;
+text-transform: capitalize;
+}
+
+.MuiCollapse-container.MuiCollapse-entered{
+    height: 100% !important;
+}
+
+.MuiCollapse-wrapper{
+    height: 100%;
+}
+
+.MuiCollapse-wrapperInner{
+    height: 100%;
+}
 
 
 
