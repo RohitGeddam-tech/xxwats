@@ -1,4 +1,8 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
+import './Middle.css'
+import Middesk from './MidDesktop'
+import MidMob from './MidMob';
+
 
 const Middle = () => {
 
@@ -12,8 +16,8 @@ const Middle = () => {
     })
 
     return (
-        <div>
-            hello
+        <div className='middle animate__animated animate__fadeInDown animate__delay-2s'>
+            {isMobile ? <MidMob /> : <Middesk /> }
         </div>
     )
 }

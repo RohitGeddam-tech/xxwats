@@ -2,6 +2,7 @@ import React from 'react'
 import Hireabout from './HireAbout'
 import Nav from '../components/Nav'
 import FirstAbout from './FirstAbout'
+import Middle from './Middle'
 import '../App.css'
 
 const View = () => {
@@ -10,6 +11,9 @@ const View = () => {
         <Nav />
         <section>
            <FirstAbout />
+        </section>
+        <section>
+           <Middle />
         </section>
         <section>
           <Hireabout />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import logowide from '../img/logo/logo-wide.svg'
-import './css/Nav.css'
+import logowide from './img/logo/logo-wide.svg'
+import './components/css/Nav.css'
 import { Squash as Hamburger } from 'hamburger-react';
 import { Collapse } from '@material-ui/core';
 import { NavHashLink } from 'react-router-hash-link';
@@ -9,7 +9,7 @@ import { Fade } from 'react-animation-components'
 const Nav = () => {
     const [isActive, setActive] = useState(false);
 
-    let colored = isActive ? 'collapse-nav' : 'nav'
+    let colored = isActive ? 'collapse-navbar' : 'navbar'
     return (
         <>
             <div className={colored}>
@@ -23,7 +23,7 @@ const Nav = () => {
                         </div>
                     </nav>
                 </header>
-                <Collapse duration='10000' style={{ backgroundColor: '#F7008C' }} in={isActive}>
+                <Collapse duration='10000' in={isActive}>
                     <div className='fade' >
                         <Fade in={isActive} enterOpacity={0.25} delay='500' duration='2000'>
                             <NavHashLink to='/xxwats' className='navfade'>Home</NavHashLink>

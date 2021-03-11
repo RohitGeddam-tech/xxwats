@@ -1,0 +1,219 @@
+.middle{
+    width: 100%;
+    background-color: #EEEA64;
+}
+
+.Mid-container{
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.mid-title{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.first-flexbox{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.first-flex{
+    display: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inflex1{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.inflex2{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.innerdiv{
+    width: 325px;
+}
+
+.inflex1 img{
+    height: 323px;
+}
+
+.inflex2 img{
+    height: 323px;
+}
+
+.flex-title{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #F7008C;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.flexbox-title{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #F7008C;
+    text-transform: capitalize;
+    text-align: end;
+}
+
+.flexbox-title img{
+    width: 30px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.cls{
+    display: none;
+}
+
+.fadebox{
+    width: 323px;
+    display: flex;
+    flex-flow: column;
+    background-color: #F7008C;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-right: 0 !important;
+}
+
+.fadebox p{
+    width: 300px;
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #202020;
+    text-transform: capitalize;
+    text-align: start;
+    margin-bottom: 0 !important;
+}
+
+.rightbox{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.box{
+    width: 325px;
+    padding-top: 30px;
+}
+
+.midend-title{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding-top: 50px;
+}
+
+.flexend-title{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #F7008C;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.flexpara{
+    width: 100%;
+    font-family: 'Work Sans',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #202020;
+
+}
+
+/*Mobile starts*/
+
+.mobbox{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.mobmid-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.mobfirst{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.mobfirst h4{
+    width: 9%;
+    font-family: 'Work Sans',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+color: #F7008C;
+margin: auto;
+margin-top: 20px;
+}
+
+.mobfirst p{
+    width: 93%;
+    margin: auto;
+    margin-top: 15px;
+    font-family: 'Work Sans',sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #202020;
+}
+
+.mobmid-container h4{
+    width: 93%;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Work Sans',sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 32px;
+color: #F7008C;
+}
+
+/*Mobile Ends*/
