@@ -1,12 +1,19 @@
 import React,{useEffect, useState} from 'react'
 import './css/about.css'
 import Slider from '../components/Sliding'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Desktop = () => {
+
+    useEffect(() => {
+        Aos.init({duration:2500});
+    })
+
     return (
         <>
             <div className='aboutfirst'>
-            <div className='yellowtab'>
+            <div className='yellowtab' data-aos="flip-down" data-aos-duration="2700">
                 <div className='tabcontainer'>
                     <h4 className='heading'>About us</h4>
                     <div>
@@ -18,7 +25,7 @@ const Desktop = () => {
                     </div>
                 </div>
             </div>
-            <div className='aboutvideo'>
+            <div className='aboutvideo' data-aos="zoom-in-down" data-aos-duration="3100">
                 <iframe  
                     allowFullScreen
                     frameBorder='0' 
@@ -30,10 +37,10 @@ const Desktop = () => {
             </div>
             </div>
             <div className='sliderbox'>
-                <div className='slider'>
+                <div className='slider' data-aos="zoom-in" data-aos-duration="4000">
                     <Slider />
                 </div>
-                <div className='slidercover'>
+                <div className='slidercover' data-aos="fade-down-left" data-aos-duration="3300">
                     <div className='slidecontainer'>
                         <h4 className='sliderheading'>work</h4>
                         <h4 className='sliderh1'>We do stuff.</h4>
@@ -47,9 +54,15 @@ const Desktop = () => {
 }
 
 const Mobile = () => {
+
+    useEffect(() => {
+        Aos.init({duration:2500});
+    })
+
+
     return(
         <div className='aboutmobile'>
-            <div className='mobcontainer'>
+            <div className='mobcontainer' data-aos="flip-down" data-aos-duration="2700">
                 <h4 className='mobheading'>work</h4>
                 <h4 className='mobh1'>We do stuff.</h4>
                 <iframe  
@@ -60,7 +73,7 @@ const Mobile = () => {
                     src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=1&mute=1" 
                     title='vid'
                 />
-                <div className='mob-container'>
+                <div className='mob-container' data-aos="zoom-in" data-aos-duration="2700">
                     <Slider />
                 </div>
                 <button className='mobaboutbtn'>Check Out Our Portfolio</button>

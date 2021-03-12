@@ -16,7 +16,7 @@ const Middle = () => {
     })
 
     return (
-        <div className='middle animate__animated animate__fadeInDown animate__delay-2s'>
+        <div className='middle'>
             {isMobile ? <MidMob /> : <Middesk /> }
         </div>
     )

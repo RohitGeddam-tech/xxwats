@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import call from '../img/icons/icon-call.svg'
 import map from '../img/icons/icon-maps.svg'
 import mail from '../img/icons/icon-mail.svg'
@@ -10,15 +10,22 @@ import home from '../img/logo/logo-tall.svg'
 
 import Service from '../components/ServiceSlider'
 import Form from '../components/Form'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const HireDesk = () => {
+
+    useEffect(() => {
+        Aos.init({duration:2500});
+    })
+
     return (
         <>
          <div className='title-container'>
                 <h4 className='first-title'>hire us</h4>
             </div>
             <div className='hire-container'>
-                <div className='first-box'>
+                <div className='first-box' data-aos="fade-left" data-aos-duration="3500">
                     <div className='first-box-container'>
                         <h4 className='first-quote'>Drop by for a cup of kadak chai</h4>
                         <div className='icons'>
@@ -54,7 +61,7 @@ const HireDesk = () => {
                         </div>
                     </div>
                 </div>
-                <div className='second-box'>
+                <div className='second-box' data-aos="fade-right" data-aos-duration="3500">
                     <div className='second-box-container'>
                         <h4 className='second-title'>A project with 20 Watts?</h4>
                         <h4 className='second-quote'>We'd love to hear about it! </h4>
@@ -68,7 +75,7 @@ const HireDesk = () => {
                     </div>
                 </div>
             </div>
-                <div className='deskfoot'>
+                <div className='deskfoot' data-aos="fade-down" data-aos-duration="5000">
                     <div className='footimg'>
                         <img src={home} alt='logo' />
                     </div>

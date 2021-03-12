@@ -2,15 +2,22 @@ import React,{useState, useEffect} from 'react'
 import '../home/css/Intro.css'
 // import {NavHashLink} from 'react-router-hash-link'
 import home from '../img/bunnies.png'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const DeskIntro = () => {
+
+    useEffect(() => {
+        Aos.init({duration:2500});
+    })
+
     return(
             <div className='container'>
                 <div className='home'>
-                    <div className='image'>
+                    <div className='image' data-aos="fade-right" data-aos-duration="2900">
                         <img src={home} alt='logo' />
                     </div>
-                    <div className='facontent'>
+                    <div className='facontent' data-aos="fade-left" data-aos-duration="2900">
                         <h4 className='fafirst-title'>Who are we? </h4>
                         <p className='faquote'>
                             And how do we help you?
@@ -25,13 +32,18 @@ const DeskIntro = () => {
 }
 
 const MobIntro = () => {
+
+    useEffect(() => {
+        Aos.init({duration:2500});
+    })
+
     return (
         <div className='container'>
                 <div className='mobhome'>
-                    <div className='mobimage'>
+                    <div className='mobimage' data-aos="flip-right" data-aos-duration="1000">
                         <img src={home} alt='logo' />
                     </div>
-                    <div className='famobcontent'>
+                    <div className='famobcontent' data-aos="flip-left" data-aos-duration="3000">
                         <h4 className='fafirst-mobtitle'>Who are we? </h4>
                         <p className='famobquote'>
                             And how do we help you?

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import call from '../img/icons/icon-call.svg'
 import map from '../img/icons/icon-maps.svg'
 import mail from '../img/icons/icon-mail.svg'
@@ -10,15 +10,22 @@ import home from '../img/logo/logo-tall.svg'
 
 import Service from '../components/ServiceSlider'
 import Form from '../components/Form'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const HireMob = () => {
+
+    useEffect(() => {
+        Aos.init({duration:2500});
+    })
+
     return (
         <>
             <div className='title-container'>
                 <h4 className='first-title'>hire us</h4>
             </div>
             <div className='hire-mobcontainer'>
-                <div className='second-mobbox'>
+                <div className='second-mobbox' data-aos="fade-up" data-aos-duration="3500">
                     <div className='second-box-container'>
                         <h4 className='second-title'>A project with 20 Watts?</h4>
                         <h4 className='second-quote'>We'd love to hear about it! </h4>
@@ -31,7 +38,7 @@ const HireMob = () => {
                         </div>
                     </div>
                 </div>
-                <div className='first-mobbox'>
+                <div className='first-mobbox' data-aos="zoom-in-up" data-aos-duration="3500">
                     <div className='first-box-mobcontainer'>
                         <h4 style={{paddingTop:'30px'}} className='first-quote'>Drop by for a cup of kadak chai</h4>
                         <div className='mobicons'>
@@ -67,7 +74,7 @@ const HireMob = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mobhome'>
+                <div className='mobhome' data-aos="fade-down" data-aos-duration="5000">
                     <div className='mobimage'>
                         <img src={home} alt='logo' />
                     </div>

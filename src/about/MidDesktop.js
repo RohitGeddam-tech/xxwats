@@ -1,6 +1,8 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { Fade } from 'react-animation-components'
 import './Middle.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import icon from '../img/icons/icon-expand--before.svg'
 import icona from '../img/icons/icon-expand--after.svg'
@@ -12,6 +14,10 @@ import anushree from '../img/team/anushree.png'
 import saloni from '../img/team/saloni.png'
 
 const MidDesktop = () => {
+
+    useEffect(() => {
+        Aos.init({duration:1000});
+    })
 
     const [active, setActive] = useState(false)
     const [Saloni, setSaloni] = useState(false)
@@ -46,17 +52,17 @@ const MidDesktop = () => {
                 <div className='mid-title'>
                     <h4 className='first-title'>Meet the team</h4>
                 </div>
-                <div className='first-flexbox animate__animated animate__slideInDown animate__delay-2s'>
+                <div className='first-flexbox'>
                     <div className='mid-title'>
                         <h4 className='flex-title'>Founders</h4>
                     </div>
                     <div className='first-flex' >
-                        <div className='inflex1 animate__animated animate__fadeInRight animate__delay-3s'>
+                        <div className='inflex1' data-aos="fade-left" data-aos-duration="3000">
                             <div className={innercyril}>
                                 <img src={cyril} alt='logo' />
                                 <h4 className='flexbox-title'>cyril <img onClick={()=>{setCyril(true)}} src={icon} alt='logo' /></h4>
                             </div>
-                            <Fade className={cyrilbox} in={Cyril} delay='500' duration='2000'>
+                            <Fade className={cyrilbox} in={Cyril} delay='100' duration='1000'>
                                 <div className='fadebox'>
                                     <p>
                                     Cyril's spent the past 21 years establishing his credentials in Management, Creative & Production. He has created branded content for Radio, Television & Digital while working with the likes of the TOI’s Entertainment unit, Red FM, Channel V and more. His last stint with O4 Digital - Group M, led to him breaking barriers on the digital platform. He has now blended his content and production expertise with technology, allowing him to be the creative firepower of 20 watts.
@@ -65,7 +71,7 @@ const MidDesktop = () => {
                                 </div>
                             </Fade>
                         </div>
-                        <div className='inflex2 animate__animated animate__fadeInLeft animate__delay-3s'>
+                        <div className='inflex2' data-aos="fade-right" data-aos-duration="3000">
                             <div className={innersavio}>
                             <img src={savio} alt='logo' />
                                 <h4 className='flexbox-title'>savio <img onClick={()=>{setSavio(true)}} src={icon} alt='logo' /></h4>
@@ -81,12 +87,12 @@ const MidDesktop = () => {
                         </div>
                     </div>
                 </div>
-                <div className='first-flexbox animate__animated animate__slideInDown animate__delay-2s'>
+                <div className='first-flexbox'>
                     <div className='mid-title'>
                         <h4 className='flex-title'>Creative team</h4>
                     </div>
                     <div className='first-flex' >
-                        <div className='inflex1 animate__animated animate__fadeInRight animate__delay-4s'>
+                        <div className='inflex1' data-aos="fade-left" data-aos-duration="3000">
                             <div className={innerara}>
                             <img src={arathi} alt='logo' />
                                 <h4 className='flexbox-title'>arathi <img onClick={()=>{setArathi(true)}} src={icon} alt='logo' /></h4>
@@ -100,7 +106,7 @@ const MidDesktop = () => {
                                     </div>
                             </Fade>
                         </div>
-                        <div className='inflex2 animate__animated animate__fadeInLeft animate__delay-4s'>
+                        <div className='inflex2' data-aos="fade-right" data-aos-duration="3000">
                             <div className={inneransh}>
                             <img src={ansh} alt='logo' />
                                 <h4 className='flexbox-title'>Ansh <img onClick={()=>{setAnsh(true)}} src={icon} alt='logo' /></h4>
@@ -116,12 +122,12 @@ const MidDesktop = () => {
                         </div>
                     </div>
                 </div>
-                <div className='first-flexbox animate__animated animate__slideInDown animate__delay-2s'>
+                <div className='first-flexbox'>
                     <div className='mid-title'>
                         <h4 className='flex-title'>Business team</h4>
                     </div>
                     <div className='first-flex' >
-                        <div className='inflex1 animate__animated animate__fadeInRight animate__delay-5s'>
+                        <div className='inflex1' data-aos="fade-left" data-aos-duration="3000">
                             <div className={cls}>
                                 <img src={anushree} alt='logo' />
                                 <h4 className='flexbox-title'>Anushree <img onClick={()=>{setActive(true)}} src={icon} alt='logo' /></h4>
@@ -135,7 +141,7 @@ const MidDesktop = () => {
                                     </div>
                             </Fade>
                         </div>
-                        <div className='inflex2 animate__animated animate__fadeInLeft animate__delay-5s'>
+                        <div className='inflex2' data-aos="fade-right" data-aos-duration="3000">
                             <div className={innersal}>
                             <img src={saloni} alt='logo' />
                             <h4 className='flexbox-title'>saloni <img onClick={()=>{setSaloni(true)}} src={icon} alt='logo' /></h4>
@@ -151,9 +157,9 @@ const MidDesktop = () => {
                         </div>
                     </div>
                 </div>
-                <div className='midend-title'>
-                    <h4 className='flexend-title'>Meet the team</h4>
-                    <p className='flexpara'>
+                <div className='midend-title' data-aos="fade-down" data-aos-duration="3000">
+                    <h4 className='flexend-title'>Production team</h4>
+                    <p className='flexpara' data-aos="flip-up" data-aos-duration="3000">
                     This is the real deal. The team that makes the dream a reality. A passionate group of highly skilled and driven people who constantly talk about giving their 110 percent but we remind them that their 100 percent would suffice. We have a team of 20+ in the production department and an equally large team in the post production studio. All brilliant and all good at making what’s on paper, a reality.
                     </p>
                 </div>
