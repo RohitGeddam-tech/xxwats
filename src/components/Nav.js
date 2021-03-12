@@ -25,13 +25,13 @@ const Nav = () => {
                 </header>
                 <Collapse duration='10000' style={{ backgroundColor: '#F7008C' }} in={isActive}>
                     <div className='fade' >
-                        <Fade in={isActive} enterOpacity={0.25} delay='500' duration='2000'>
+                        <Fade in={isActive}  className='fadein' enterOpacity={0.25} delay='500' duration='2000'>
                             <NavHashLink to='/xxwats' className='navfade'>Home</NavHashLink>
                         </Fade>
-                        <Fade in={isActive} enterOpacity={0.25} delay='1500' duration='2000'>
+                        <Fade in={isActive} className='fadein' enterOpacity={0.25} delay='1500' duration='2000'>
                             <NavHashLink to='/xxwats/about' className='navfade'>About us</NavHashLink>
                         </Fade>
-                        <Fade in={isActive} enterOpacity={0.25} delay='2500' duration='2000'>
+                        <Fade in={isActive} className='fadein' enterOpacity={0.25} delay='2500' duration='2000'>
                             <NavHashLink to='/xxwats/contact' className='navfade'>Contact us</NavHashLink>
                         </Fade>
                     </div>
