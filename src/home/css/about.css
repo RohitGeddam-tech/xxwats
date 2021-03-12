@@ -170,13 +170,33 @@ margin-top: 10px;
 
 .sliderimg{
     height: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderin{
+    height: 100%;
+}
+
+.slick-slide{
+    height: 100%;
 }
 
 .slick-slide img{
-    padding-top: 40px;
+    padding-top: 10px;
     width: 120px;
-    margin: auto;
-    height: 100px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-track{
+    /* width: 100% !important; */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0 !important;
 }
 /*mobile starts*/
 
