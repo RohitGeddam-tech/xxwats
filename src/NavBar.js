@@ -16,22 +16,22 @@ const Nav = () => {
                 <header>
                     <nav className='container-nav'>
                         <div className='nav-image'>
-                            <img src={logowide} alt='logo'></img>
+                            <NavHashLink to='/xxwats' ><img src={logowide} alt='logo' /></NavHashLink>
                         </div>
                         <div className='nav-links'>
                             <Hamburger direction='left' className='ham' duration={0.4} color='black' toggled={isActive} toggle={setActive} />
                         </div>
                     </nav>
                 </header>
-                <Collapse duration='10000' in={isActive}>
+                <Collapse in={isActive}>
                     <div className='fade' >
-                        <Fade in={isActive} enterOpacity={0.25} delay='500' duration='2000'>
+                        <Fade in={isActive} enterOpacity={0.25} delay='500'>
                             <NavHashLink to='/xxwats' className='navfade'>Home</NavHashLink>
                         </Fade>
-                        <Fade in={isActive} enterOpacity={0.25} delay='1500' duration='2000'>
+                        <Fade in={isActive} enterOpacity={0.25} delay='1500'>
                             <NavHashLink to='/xxwats/about' className='navfade'>About us</NavHashLink>
                         </Fade>
-                        <Fade in={isActive} enterOpacity={0.25} delay='2500' duration='2000'>
+                        <Fade in={isActive} enterOpacity={0.25} delay='2500'>
                             <NavHashLink to='/xxwats/contact' className='navfade'>Contact us</NavHashLink>
                         </Fade>
                     </div>
