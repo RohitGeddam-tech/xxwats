@@ -1,5 +1,5 @@
 .about{
-    background-color: black;
+    background-color: #202020;
     width: 100%;
     padding-bottom: 30px;
 }
@@ -9,6 +9,7 @@
     display: flex;
     padding-top: 50px;
     margin: auto;
+    margin-right: 0 !important;
 }
 
 .yellowtab{
@@ -73,7 +74,7 @@ width: 90%;
     padding-right: 25.6px;
     padding-top: 12.8px;
     padding-bottom: 12.8px;
-    border-radius: 19px;
+    border-radius: 50px;
     width: fit-content;
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
@@ -151,7 +152,7 @@ margin-top: 10px;
     padding-right: 25.6px;
     padding-top: 12.8px;
     padding-bottom: 12.8px;
-    border-radius: 19px;
+    border-radius: 50px;
     width: fit-content;
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
@@ -198,6 +199,52 @@ margin-top: 10px;
     justify-content: center;
     margin-right: 0 !important;
 }
+
+.imag{
+    width: 65% !important;
+    margin-left: -25%;
+}
+
+.imag{
+    margin-right: -36%;
+}
+
+.ifade{
+    width: 65%;
+}
+
+.iconplay{
+    width: 100px;
+    height: 100px;
+    margin-top: 160px;
+}
+
+.mobplay{
+    width: 150px;
+    height: 150px;
+}
+
+.frame{
+    display: none;
+}
+
+.fade{
+    width: 100%;
+}
+
+.pict{
+    width: 100%;
+}
+
+.pict{
+    margin-bottom: -63%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
 /*mobile starts*/
 
 .mobcontainer{
@@ -238,7 +285,7 @@ margin-top: 10px;
     padding-right: 25.6px;
     padding-top: 12.8px;
     padding-bottom: 12.8px;
-    border-radius: 19px;
+    border-radius: 50px;
     width: fit-content;
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
@@ -254,6 +301,12 @@ margin-top: 10px;
 }
 
 .mob-container{
+    width: 95%;
+    margin: auto;
+    margin-top: 40%;
+}
+
+.mob-frame{
     width: 95%;
     margin: auto;
 }

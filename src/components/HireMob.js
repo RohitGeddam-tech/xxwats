@@ -29,10 +29,10 @@ const HireMob = () => {
                     <div className='second-box-container'>
                         <h4 className='second-title'>A project with 20 Watts?</h4>
                         <h4 className='second-quote'>We'd love to hear about it! </h4>
-                        <div className='service-slider'>
+                        {/* <div className='service-slider'>
                             <h4 className='service-title'>Services</h4>
                             <Service />
-                        </div>
+                        </div> */}
                         <div className='service-form'>
                             <Form />
                         </div>

@@ -16,7 +16,7 @@ const Nav = () => {
                 <header>
                     <nav className='container-nav'>
                         <div className='nav-image'>
-                            <NavHashLink to='/xxwats' ><img src={logowide} alt='logo' /></NavHashLink>
+                            <NavHashLink to='/xxwats' ><img src={logowide} className='black' alt='logo' /></NavHashLink>
                         </div>
                         <div className='nav-links'>
                             <Hamburger direction='left' className='ham' duration={0.4} color='black' toggled={isActive} toggle={setActive} />
