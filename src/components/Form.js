@@ -5,7 +5,7 @@ const Form = () => {
 
     const [values, setValues] = useState({
         name:'',
-        mob:'',
+        mob:'+91',
         email:''
     })
 
@@ -20,14 +20,14 @@ const Form = () => {
     
         if(!values.email.trim()){
             errors.email = 'This field is required'
-        } else if(!/^([a-z][A-Z][0-9]_.-)+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+/.test(values.email)){
+        } else if(!/\S+@\S+\.\S+/.test(values.email)){
             errors.email = 'The Email entered is Invalid'
         }
     
         if(!values.mob.trim()){
             errors.mob = 'This field is required'
-        }else if(!/[0-9]{10}/.test(values.mobile)){
-            errors.mobile = 'The Mobile no. entered is Invalid'
+        }else if(!/[0-9+]{3}[0-9]{10}/.test(values.mob)){
+            errors.mob = 'The Mobile no. entered is Invalid'
         }
 
         return errors;

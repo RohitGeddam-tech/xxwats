@@ -6,6 +6,7 @@
     align-items: center;
 }
 
+
 .hireabout{
     width: 100%;
     background-color: #fff;
@@ -345,6 +346,7 @@ color: black;
     display: flex;
     flex-flow: column;
     margin: auto;
+    margin-left: 0 !important;
 }
 
 .mobicons{
@@ -369,6 +371,12 @@ color: black;
     display: flex;
     flex-flow: column;
     align-items: flex-end;
+}
+
+.second-mobbox-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
 /*MObile ends*/

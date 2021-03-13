@@ -12,19 +12,19 @@ const DeskIntro = () => {
     })
 
     return(
-            <div className='container'>
-                <div className='home'>
-                    <div className='image' data-aos="fade-right" data-aos-duration="2900">
-                        <img src={home} alt='logo' />
-                    </div>
-                    <div className='content' data-aos="fade-left" data-aos-duration="2900">
-                        <p className='para'>
-                            WE GIVE CREATIVE SOLUTIONS FOR YOUR PROBLEMS
-                        </p>
-                        <NavHashLink to='/xxwats/about' className='btn'>Check Out Our Portfolio</NavHashLink>
-                    </div>
+        <div className='container'>
+            <div className='home'>
+                <div className='image' data-aos="fade-right" data-aos-duration="2900">
+                    <img src={home} alt='logo' />
+                </div>
+                <div className='content' data-aos="fade-left" data-aos-duration="2900">
+                    <p className='para'>
+                        WE GIVE CREATIVE SOLUTIONS FOR YOUR PROBLEMS
+                    </p>
+                    <NavHashLink to='/xxwats/about' className='btn'>Check Out Our Portfolio</NavHashLink>
                 </div>
             </div>
+        </div>
     )
 }
 
@@ -36,18 +36,18 @@ const MobIntro = () => {
 
     return (
         <div className='container'>
-                <div className='mobhome'>
-                    <div className='mobimage' data-aos="fade-down" data-aos-duration="2900">
-                        <img src={home} alt='logo' />
-                    </div>
-                    <div className='mobcontent' data-aos="fade-up" data-aos-duration="2900">
-                        <p className='mobpara'>
-                            WE GIVE CREATIVE SOLUTIONS FOR YOUR PROBLEMS
-                        </p>
-                        <NavHashLink to='/xxwats/about' className='mobbtn'>Check Out Our Portfolio</NavHashLink>
-                    </div>
+            <div className='mobhome'>
+                <div className='mobimage' data-aos="fade-down" data-aos-duration="2900">
+                    <img src={home} alt='logo' />
+                </div>
+                <div className='mobcontent' data-aos="fade-up" data-aos-duration="2900">
+                    <p className='mobpara'>
+                        WE GIVE CREATIVE SOLUTIONS FOR YOUR PROBLEMS
+                    </p>
+                    <NavHashLink to='/xxwats/about' className='mobbtn'>Check Out Our Portfolio</NavHashLink>
                 </div>
             </div>
+        </div>
     )
 }
 

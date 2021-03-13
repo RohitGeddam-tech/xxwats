@@ -42,7 +42,7 @@
 }
 
 .fade{
-    width: 90%;
+    width: 95% !important;
     height: 90%;
     display: flex;
     flex-flow: column;
@@ -60,6 +60,7 @@ line-height: 60px;
 color: #202020;
 padding-top: 0;
 padding-bottom: 0;
+padding-left: 10px;
 text-transform: capitalize;
 }
 

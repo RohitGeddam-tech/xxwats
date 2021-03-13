@@ -79,6 +79,7 @@
     color: #F7008C;
     text-transform: capitalize;
     text-align: end;
+    cursor: pointer;
 }
 
 .flexbox-title img{
@@ -165,6 +166,7 @@ color: #202020;
     color: #fff;
     text-transform: capitalize;
     text-align: end;
+    cursor: pointer;
 }
 
 .flexinbox-title img{

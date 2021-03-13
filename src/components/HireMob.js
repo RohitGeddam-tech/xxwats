@@ -19,6 +19,7 @@ const HireMob = () => {
         Aos.init({duration:2500});
     })
 
+
     return (
         <>
             <div className='title-container'>
@@ -26,7 +27,7 @@ const HireMob = () => {
             </div>
             <div className='hire-mobcontainer'>
                 <div className='second-mobbox' data-aos="fade-up" data-aos-duration="3500">
-                    <div className='second-box-container'>
+                    <div className='second-mobbox-container'>
                         <h4 className='second-title'>A project with 20 Watts?</h4>
                         <h4 className='second-quote'>We'd love to hear about it! </h4>
                         {/* <div className='service-slider'>
