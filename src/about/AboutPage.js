@@ -37,9 +37,9 @@ const View = () => {
 
 const AboutPage = () => {
     return (
-        <div className='App'>
+        <>
             <View />
-        </div>
+        </>
     )
 }
 

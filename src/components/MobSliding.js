@@ -74,7 +74,7 @@ export default class Responsive extends Component {
       ]
     };
     return (
-      <div className='slide'>
+      <div className='mobslide'>
         <Slider {...settings}>
           <div className='sliderin'>
             <img style={{paddingLeft:'20px'}} className='sliderimg' alt='slider' src={dbs} />

@@ -9,6 +9,7 @@ import twitter from '../img/icons/icon-twitter.svg'
 import home from '../img/logo/logo-tall.svg'
 
 import Service from '../components/ServiceSlider'
+import SvgTall from '../components/SvgTall'
 import Form from '../components/Form'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -18,7 +19,6 @@ const HireMob = () => {
     useEffect(() => {
         Aos.init({duration:2500});
     })
-
 
     return (
         <>
@@ -77,7 +77,7 @@ const HireMob = () => {
                 </div>
                 <div className='mobhome' data-aos="fade-down" data-aos-duration="5000">
                     <div className='mobimage'>
-                        <img src={home} alt='logo' />
+                        <SvgTall classname={'black'} gradient1={'black-gradient-1'} gradient0={'black-gradient-0'}/>
                     </div>
                 </div>
             </div>

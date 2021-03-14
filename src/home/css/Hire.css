@@ -18,8 +18,32 @@
 .title-container{
     width: 95%;
     display: flex;
-    margin: auto;
+    margin-right: 0 !important;
     justify-content: flex-start;
+}
+
+.desktitle-container{
+    width: 95%;
+    display: flex;
+    margin-right: 0 !important;
+    justify-content: flex-start;
+}
+
+.MuiFormLabel-root{
+    font-family: 'Cabin',sans-serif !important;
+}
+
+.firstdesk-title{
+    text-align: start;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #202020;
+    padding-top: 20px;
+    width: 100%;
 }
 
 .hire-container{

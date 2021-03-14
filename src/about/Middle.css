@@ -1,6 +1,7 @@
 .middle{
     width: 100%;
     background-color: #EEEA64;
+    overflow-x: hidden;
 }
 
 .Mid-container{
@@ -184,6 +185,7 @@ color: #202020;
 }
 
 .mobmid-container{
+    margin-right: 0 !important;
     width: 100%;
     display: flex;
     flex-flow: column;

@@ -7,6 +7,7 @@ import desk from '../img/reel-desktop.jpg'
 import mob from '../img/reel-mobile.jpg'
 import play from '../img/icons/icon-play.svg'
 import { Fade } from 'react-animation-components'
+import MobSlider from '../components/MobSliding'
 
 
 const Desktop = () => {
@@ -114,22 +115,13 @@ const Mobile = () => {
                     />
                 </Fade>
                 <div className={container} data-aos="zoom-in" data-aos-duration="2700">
-                    <Slider />
+                    <MobSlider />
                 </div>
-                <button className='mobaboutbtn'>Check Out Our Portfolio</button>
+                <button data-aos="zoom-in" data-aos-duration="2700" className='mobaboutbtn'>Check Out Our Portfolio</button>
             </div>            
         </div>
     )
-}
-
-// <iframe  
-//                     allowFullScreen
-//                     frameBorder='0' 
-//                     width="100%"
-//                     height="300px"
-//                     src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=1&mute=1" 
-//                     title='vid'
-//                 />
+}   
 
 const About = () => {
 

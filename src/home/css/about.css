@@ -234,6 +234,7 @@ margin-top: 10px;
 
 .pict{
     width: 100%;
+    height: 100%;
 }
 
 .pict{
@@ -303,12 +304,16 @@ margin-top: 10px;
 .mob-container{
     width: 95%;
     margin: auto;
-    margin-top: 40%;
+    margin-top: 35%;
 }
 
 .mob-frame{
     width: 95%;
     margin: auto;
+}
+
+.mobslide{
+    margin-top: 0;
 }
 
 /*mobile ends*/

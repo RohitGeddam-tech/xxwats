@@ -6,10 +6,10 @@ import insta from '../img/icons/icon-instagram.svg'
 import youtube from '../img/icons/icon-youtube.svg'
 import facebook from '../img/icons/icon-facebook.svg'
 import twitter from '../img/icons/icon-twitter.svg'
-import home from '../img/logo/logo-tall.svg'
 
 import Service from '../components/ServiceSlider'
 import Form from '../components/Form'
+import SvgTall from '../components/SvgTall'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -21,8 +21,8 @@ const HireDesk = () => {
 
     return (
         <>
-         <div className='title-container'>
-                <h4 className='first-title'>hire us</h4>
+         <div className='desktitle-container'>
+                <h4 className='firstdesk-title'>hire us</h4>
             </div>
             <div className='hire-container'>
                 <div className='first-box' data-aos="fade-left" data-aos-duration="3500">
@@ -77,7 +77,7 @@ const HireDesk = () => {
             </div>
                 <div className='deskfoot' data-aos="fade-down" data-aos-duration="5000">
                     <div className='footimg'>
-                        <img src={home} alt='logo' />
+                        <SvgTall classname={'black'} gradient1={'black-gradient-1'} gradient0={'black-gradient-0'}/>
                     </div>
                 </div>   
         </>
