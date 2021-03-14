@@ -76,7 +76,7 @@ const HireMob = () => {
                     </div>
                 </div>
                 <div className='mobhome' data-aos="fade-down" data-aos-duration="5000">
-                    <div className='mobimage'>
+                    <div className='mobimage' style={{width:'100%'}}>
                         <SvgTall classname={'black'} gradient1={'black-gradient-1'} gradient0={'black-gradient-0'}/>
                     </div>
                 </div>

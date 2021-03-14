@@ -4,8 +4,23 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
+.largehire{
+    width: 1400px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.largehireabout{
+    width: 1400px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: auto;
+}
 
 .hireabout{
     width: 100%;

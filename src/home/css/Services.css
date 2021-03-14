@@ -3,6 +3,12 @@
     padding-bottom: 50px;
 }
 
+.largeservice{
+    width: 1400px;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
 .desktop{
     width: 100%;
     display: flex;

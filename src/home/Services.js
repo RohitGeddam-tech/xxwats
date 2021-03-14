@@ -169,9 +169,21 @@ const Services = () => {
             setMobile(window.matchMedia('(max-width:760px)').matches)
         })
     })
+
+    const[isDesktop, setDesktop] = useState(
+        window.matchMedia('(max-width:1400px)').matches
+    );
+    useEffect(()=>{
+        window.addEventListener('resize', ()=>{
+            setDesktop(window.matchMedia('(max-width:1400px)').matches)
+        })
+    })
+
+
     return (
         <div className='services'>
-            {isMobile ? <Mobile /> : <Desktop />}
+            {isDesktop ? <>{isMobile ? <Mobile /> : <Desktop />}</>
+            : <div className='largeservice'>{isMobile ? <Mobile /> : <Desktop />}</div>}
         </div>
     )
 }

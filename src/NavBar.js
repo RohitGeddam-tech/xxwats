@@ -5,6 +5,7 @@ import { Squash as Hamburger } from 'hamburger-react';
 import { Collapse } from '@material-ui/core';
 import { NavHashLink } from 'react-router-hash-link';
 import { Fade } from 'react-animation-components'
+import Svg from './components/Svg'
 
 const Nav = () => {
     const [isActive, setActive] = useState(false);
@@ -16,7 +17,8 @@ const Nav = () => {
                 <header>
                     <nav className='container-nav'>
                         <div className='nav-image'>
-                            <NavHashLink to='/xxwats' ><img src={logowide} alt='logo' /></NavHashLink>
+                        {isActive ? <NavHashLink to='/xxwats#top'><Svg className={'black'} /></NavHashLink>
+                             : <NavHashLink to='/xxwats#top'><Svg className={'pink'} /></NavHashLink>}
                         </div>
                         <div className='nav-links'>
                             <Hamburger direction='left' className='ham' duration={0.4} color='black' toggled={isActive} toggle={setActive} />

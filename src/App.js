@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import './App.css';
 import Nav from './components/Nav'
 import Intro from './home/Intro'
@@ -40,10 +40,11 @@ const View = () => {
 }
 
 const App = () => {
+
   return (
     <div className="App">
-      <View />
-    </div>
+    <View />
+  </div>
   );
 }
 

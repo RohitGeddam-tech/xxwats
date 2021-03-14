@@ -2,3 +2,8 @@
   width: 100%;
   overflow-x: hidden;
 }
+
+.largeapp{
+  width: 1400px;
+  overflow-x: hidden;
+}

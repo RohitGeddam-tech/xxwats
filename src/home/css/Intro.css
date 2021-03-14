@@ -4,6 +4,14 @@
   padding-top: 56px !important;
 }
 
+
+.largeIntro{
+    width: 1400px;
+    height: fit-content !important;
+    margin: auto;
+    padding-top: 56px !important;
+}
+
 .home {
     width: 100%;
     display: flex;
@@ -19,7 +27,7 @@
 }
 
 .image img{
-    height: 350px !important;
+    height: auto !important;
     width: 100%;
 }
 

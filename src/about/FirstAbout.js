@@ -36,6 +36,7 @@ const MobIntro = () => {
     useEffect(() => {
         Aos.init({duration:2500});
     })
+    
 
     return (
         <div className='container'>
@@ -68,9 +69,19 @@ const Intro = () => {
         })
     })
 
+    const[isDesktop, setDesktop] = useState(
+        window.matchMedia('(max-width:1400px)').matches
+    );
+    useEffect(()=>{
+        window.addEventListener('resize', ()=>{
+            setDesktop(window.matchMedia('(max-width:1400px)').matches)
+        })
+    })
+
     return (
         <div className='Intro'>
-            {isMobile ? <MobIntro /> : <DeskIntro />}
+            {isDesktop ? <>{isMobile ? <MobIntro /> : <DeskIntro />}</>
+            : <div className='largeIntro'>{isMobile ? <MobIntro /> : <DeskIntro />}</div>}
         </div>
     )
 }

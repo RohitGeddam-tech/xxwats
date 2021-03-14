@@ -4,6 +4,12 @@
     padding-bottom: 30px;
 }
 
+.largeabout{
+    width: 1400px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
 .aboutfirst{
     width: 95%;
     display: flex;

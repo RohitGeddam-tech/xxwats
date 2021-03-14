@@ -15,9 +15,19 @@ const Middle = () => {
         })
     })
 
+    const[isDesktop, setDesktop] = useState(
+        window.matchMedia('(max-width:1400px)').matches
+    );
+    useEffect(()=>{
+        window.addEventListener('resize', ()=>{
+            setDesktop(window.matchMedia('(max-width:1400px)').matches)
+        })
+    })
+
     return (
         <div className='middle'>
-            {isMobile ? <MidMob /> : <Middesk /> }
+            {isDesktop ? <>{isMobile ? <MidMob /> : <Middesk /> }</>
+            : <div className='largemiddle'>{isMobile ? <MidMob /> : <Middesk /> }</div>}
         </div>
     )
 }

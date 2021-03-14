@@ -14,9 +14,19 @@ const Hire = () => {
         })
     })
 
+    const[isDesktop, setDesktop] = useState(
+        window.matchMedia('(max-width:1400px)').matches
+    );
+    useEffect(()=>{
+        window.addEventListener('resize', ()=>{
+            setDesktop(window.matchMedia('(max-width:1400px)').matches)
+        })
+    })
+
     return (
         <div className='hire'>
-            {isMobile ? <HireMob /> : <HireDesk /> }
+            {isDesktop ? <>{isMobile ? <HireMob /> : <HireDesk /> }</>
+            : <div className='largehire'>{isMobile ? <HireMob /> : <HireDesk /> }</div>}
         </div>
     )
 }

@@ -4,6 +4,12 @@
     overflow-x: hidden;
 }
 
+.largemiddle{
+    width: 1400px;
+    overflow-x: hidden;
+    margin: auto;
+}
+
 .Mid-container{
     width: 80%;
     display: flex;
