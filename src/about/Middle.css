@@ -4,6 +4,7 @@
     overflow-x: hidden;
 }
 
+
 .largemiddle{
     width: 1400px;
     overflow-x: hidden;
@@ -11,7 +12,7 @@
 }
 
 .Mid-container{
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-flow: column;
     margin: auto;
@@ -40,6 +41,7 @@
 
 .inflex1{
     width: 50%;
+    height: 442px;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
@@ -48,6 +50,7 @@
 
 .inflex2{
     width: 50%;
+    height: 442px;
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
@@ -55,7 +58,15 @@
 }
 
 .innerdiv{
-    width: 325px;
+    width: auto !important;
+    height: 442px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.innerdiv img{
+    height: auto !important;
 }
 
 .inflex1 img{
@@ -100,22 +111,24 @@
 }
 
 .fadebox{
-    width: 323px;
+    width: 67%;
+    height: 100%;
     display: flex;
     flex-flow: column;
+    justify-content: space-between;
     background-color: #F7008C;
     padding-top: 10px;
     padding-left: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0;
     margin-right: 0 !important;
 }
 
 .fadebox p{
-    width: 300px;
+    width: 80%;
     font-family: 'Work Sans',sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 18px;
     color: #fff;
     text-transform: capitalize;
@@ -125,6 +138,7 @@
 
 .rightbox{
     width: 100%;
+    height: 442px;
     padding-top: 30px;
     display: flex;
     justify-content: flex-end;
@@ -132,8 +146,9 @@
 }
 
 .box{
-    width: 325px;
+    width: auto;
     padding-top: 30px;
+    height: 442px;
 }
 
 .midend-title{
@@ -179,7 +194,7 @@ color: #202020;
 .flexinbox-title img{
     width: 30px;
     cursor: pointer;
-    height: 20px;
+    height: 30px;
 }
 
 /*Mobile starts*/
@@ -203,6 +218,11 @@ color: #202020;
     width: 100%;
     display: flex;
     flex-flow: column;
+}
+
+.mobfirst img{
+    height: auto;
+    width: auto;
 }
 
 .mobfirst h4{

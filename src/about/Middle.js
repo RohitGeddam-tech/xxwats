@@ -7,11 +7,11 @@ import MidMob from './MidMob';
 const Middle = () => {
 
     const[isMobile, setMobile] = useState(
-        window.matchMedia('(max-width:800px)').matches
+        window.matchMedia('(max-width:850px)').matches
     );
     useEffect(()=>{
         window.addEventListener('resize', ()=>{
-            setMobile(window.matchMedia('(max-width:800px)').matches)
+            setMobile(window.matchMedia('(max-width:850px)').matches)
         })
     })
 
