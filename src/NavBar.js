@@ -17,8 +17,16 @@ const Nav = () => {
                 <header>
                     <nav className='container-nav'>
                         <div className='nav-image'>
-                        {isActive ? <NavHashLink to='/xxwats#top'><Svg className={'black'} /></NavHashLink>
-                             : <NavHashLink to='/xxwats#top'><Svg className={'pink'} /></NavHashLink>}
+                        {isActive ? <NavHashLink to='/xxwats#top'>
+                            <Svg 
+                            className={'black'} 
+                            imagegradient0={'yellow-gradient-0'} 
+                            imagegradient1={'yellow-gradient-1'}
+                            imagename={'yellow'}
+                            /></NavHashLink>
+                             : <NavHashLink to='/xxwats#top'><Svg className={'pink'} imagegradient0={'black-gradient-0'} 
+                             imagegradient1={'black-gradient-1'}
+                             imagename={'black'}/></NavHashLink>}
                         </div>
                         <div className='nav-links'>
                             <Hamburger direction='left' className='ham' duration={0.4} color='black' toggled={isActive} toggle={setActive} />
@@ -53,8 +61,12 @@ const NavDesk = () => {
                 <header>
                     <nav className='container-nav'>
                         <div className='nav-image'>
-                        {isActive ? <NavHashLink to='/xxwats#top'><Svg className={'black'} /></NavHashLink>
-                             : <NavHashLink to='/xxwats#top'><Svg className={'pink'} /></NavHashLink>}
+                        {isActive ? <NavHashLink to='/xxwats#top'><Svg className={'black'} imagegradient0={'yellow-gradient-0'} 
+                            imagegradient1={'yellow-gradient-1'}
+                            imagename={'yellow'}/></NavHashLink>
+                             : <NavHashLink to='/xxwats#top'><Svg className={'pink'} imagegradient0={'black-gradient-0'} 
+                             imagegradient1={'black-gradient-1'}
+                             imagename={'black'}/></NavHashLink>}
                         </div>
                         <div className='nav-links'>
                             <Hamburger direction='left' className='ham' duration={0.4} color='black' toggled={isActive} toggle={setActive} />
