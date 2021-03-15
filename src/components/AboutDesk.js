@@ -7,12 +7,11 @@ import youtube from '../img/icons/icon-youtube.svg'
 import facebook from '../img/icons/icon-facebook.svg'
 import twitter from '../img/icons/icon-twitter.svg'
 
-import Slideservice from '../components/SliderService'
+import Service from '../components/ServiceSlider'
 import Form from '../components/Form'
 import SvgTall from '../components/SvgTall'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-
 
 const HireDesk = () => {
 
@@ -66,22 +65,21 @@ const HireDesk = () => {
                     <div className='second-box-container'>
                         <h4 className='second-title'>A project with 20 Watts?</h4>
                         <h4 className='second-quote'>We'd love to hear about it! </h4>
-                        <div className='service-slider'>
+                        {/* <div className='service-slider'>
                             <h4 className='service-title'>Services</h4>
-                            {/* <Service /> */}
-                            <Slideservice />
-                        </div>
+                            <Service />
+                        </div> */}
                         <div className='service-form'>
                             <Form />
                         </div>
                     </div>
                 </div>
             </div>
-                <div className='deskfoot' data-aos="fade-down" data-aos-duration="5000">
-                    <div className='footimg'>
-                        <SvgTall classname={'black'} gradient1={'black-gradient-1'} gradient0={'black-gradient-0'}/>
-                    </div>
-                </div>   
+            <div className='deskfoot' data-aos="fade-down" data-aos-duration="5000">
+                <div className='footimg'>
+                    <SvgTall classname={'yellow'} gradient1={'yellow'} gradient0={'yellow'}/>
+                </div>
+            </div>
         </>
     )
 }

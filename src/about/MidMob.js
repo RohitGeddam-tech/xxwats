@@ -21,7 +21,7 @@ const MidMob = () => {
     return (
         <>
             <div className='mobbox'>
-                <div className='title-container'>
+                <div className='titlemid-container'>
                     <h4 className='first-title'>Meet the team</h4>
                 </div>
                 <div className='mobmid-container'>

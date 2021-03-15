@@ -19,6 +19,13 @@
     padding-bottom: 50px;
 }
 
+.titlemid-container{
+    width: 93%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .mid-title{
     width: 100%;
     display: flex;
@@ -111,7 +118,7 @@
 }
 
 .fadebox{
-    width: 67%;
+    width: 375px;
     height: 100%;
     display: flex;
     flex-flow: column;

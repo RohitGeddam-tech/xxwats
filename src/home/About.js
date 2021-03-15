@@ -29,7 +29,7 @@ const Desktop = () => {
     return (
         <>
             <div className='aboutfirst'>
-            <div className='yellowtab' data-aos="flip-down" data-aos-duration="2700">
+            <div className='yellowtab' data-aos="fade-down" data-aos-duration="2700">
                 <div className='tabcontainer'>
                     <h4 className='heading'>About us</h4>
                     <div>
@@ -41,7 +41,7 @@ const Desktop = () => {
                     </div>
                 </div>
             </div>
-            <div className='aboutvideo' data-aos="zoom-in-down" data-aos-duration="3100">
+            <div className='aboutvideo' data-aos="zoom-in-up" data-aos-duration="3100">
                 <img src={desk} alt='reel' className={imag} onClick={()=>{setActive(true)}}/>
                 <div className={center}>
                     <img src={play} alt='play' className={iconplay} onClick={()=>{setActive(true)}}/>
@@ -52,7 +52,7 @@ const Desktop = () => {
                         frameBorder='0' 
                         width="100%"
                         height='100%' 
-                        src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=1&mute=1" 
+                        src="https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1" 
                         title='vid'
                         className='vid'
                     />
@@ -109,7 +109,7 @@ const Mobile = () => {
                         frameBorder='0' 
                         width="100%"
                         height='300px' 
-                        src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=1&mute=1" 
+                        src="https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1" 
                         title='vid'
                         className='vid'
                     />

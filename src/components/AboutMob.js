@@ -13,7 +13,6 @@ import SvgTall from '../components/SvgTall'
 import Form from '../components/Form'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import SliderService from './SliderService'
 
 const HireMob = () => {
 
@@ -31,10 +30,10 @@ const HireMob = () => {
                     <div className='second-mobbox-container'>
                         <h4 className='second-title'>A project with 20 Watts?</h4>
                         <h4 className='second-quote'>We'd love to hear about it! </h4>
-                        <div className='service-slider'>
+                        {/* <div className='service-slider'>
                             <h4 className='service-title'>Services</h4>
-                            <SliderService />
-                        </div>
+                            <Service />
+                        </div> */}
                         <div className='service-form'>
                             <Form />
                         </div>
@@ -78,7 +77,7 @@ const HireMob = () => {
                 </div>
                 <div className='mobhome' data-aos="fade-down" data-aos-duration="5000">
                     <div className='mobimage' style={{width:'100%'}}>
-                        <SvgTall classname={'black'} gradient1={'black-gradient-1'} gradient0={'black-gradient-0'}/>
+                        <SvgTall classname={'yellow'} gradient1={'yellow'} gradient0={'yellow'}/>
                     </div>
                 </div>
             </div>

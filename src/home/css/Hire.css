@@ -30,6 +30,7 @@
     align-items: center;
 }
 
+
 .title-container{
     width: 95%;
     display: flex;
@@ -210,10 +211,11 @@
     text-transform: capitalize;
     padding-top: 10px;
     margin-bottom: 0 !important;
+    padding-bottom: 10px;
 }
 
 .slick-slider{
-    width: 90%;
+    width: 99%;
     display: flex;
     margin: auto;
 }
@@ -225,7 +227,8 @@
     padding-top: 1.8px;
     padding-bottom: 1.8px;
     border-radius: 50px;
-    width: fit-content;
+    margin-left: 10px;
+    width: 300px;
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
     font-style: normal;
@@ -351,6 +354,7 @@ font-size: 16px;
 line-height: 19px;
 text-transform: none !important;
 color: red;
+margin-top: 0 !important;
 }
 
 label + .MuiInput-formControl{
@@ -419,3 +423,28 @@ color: black;
 }
 
 /*MObile ends*/
+
+/**/
+
+.inputslider{
+    display: flex;
+    width: 100%;
+}
+
+.inputslide{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.inputslide::-webkit-scrollbar{
+    display: none;
+}
+
+.insideslide{
+    width: 100%;
+}
+
+/**/

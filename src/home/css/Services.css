@@ -50,6 +50,10 @@
     align-items: center;
 }
 
+.picture img{
+    height: auto;
+}
+
 .title{
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -153,6 +157,7 @@
 
 .mob-pic img{
     width: 100%;
+    height: auto;
 }
 
 /*mobile ends*/

@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
-import HireDesk from '../components/HireDesk'
-import HireMob from '../components/HireMob'
+import AboutDesk from '../components/AboutDesk'
+import AboutMob from '../components/AboutMob'
 import '../home/css/Hire.css'
 
 const Hire = () => {
@@ -24,8 +24,8 @@ const Hire = () => {
 
     return (
         <div className='hireabout'>
-            {isDesktop ? <>{isMobile ? <HireMob /> : <HireDesk /> }</>
-            : <div className='largehireabout'>{isMobile ? <HireMob /> : <HireDesk /> }</div>}
+            {isDesktop ? <>{isMobile ? <AboutMob /> : <AboutDesk /> }</>
+            : <div className='largehireabout'>{isMobile ? <AboutMob /> : <AboutDesk /> }</div>}
         </div>
     )
 }

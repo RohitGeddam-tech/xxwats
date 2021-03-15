@@ -14,7 +14,7 @@ const DeskIntro = () => {
     return(
             <div className='container'>
                 <div className='home'>
-                    <div className='image' data-aos="fade-right" data-aos-duration="2900">
+                    <div className='firstimage' data-aos="fade-right" data-aos-duration="2900">
                         <img src={home} alt='logo' />
                     </div>
                     <div className='facontent' data-aos="fade-left" data-aos-duration="2900">
