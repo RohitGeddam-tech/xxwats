@@ -71,7 +71,7 @@ const Form = () => {
                         startAdornment: <InputAdornment position="start">+91</InputAdornment>,
                       }}
                 />
-                {errors.mob && <h1>{errors.mob}</h1> || 'Email Address'}
+                {errors.mob && <h1>{errors.mob}</h1>}
                 <TextField
                     className='textfield'
                     id="standard-basic"
