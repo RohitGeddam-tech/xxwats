@@ -76,6 +76,54 @@ const Desktop = () => {
     )
 }
 
+const Tab = () => {
+    const [active, setActive] = useState(false)
+
+    useEffect(() => {
+        Aos.init({duration:2500});
+    })
+
+    const imag = active ? 'frame' : 'pict' 
+
+    const ifade = active ? 'fade' : 'frame' 
+
+    const iconplay = active ? 'frame' : 'mobplay'
+
+    const center =  active ? 'frame' : 'center'
+
+    const container =  active ? 'mob-frame' : 'tab-container'
+
+    return(
+        <div className='aboutmobile'>
+            <div className='mob-container' data-aos="fade-up" data-aos-duration="2700">
+                <h4 className='mobheading'>work</h4>
+                <h4 className='mobh1'>We do stuff.</h4>
+                <img src={mob} className={imag} alt='reel' onClick={()=>{setActive(true)}}/>
+                <div className={center}>
+                    <img src={play} alt='play' className={iconplay} onClick={()=>{setActive(true)}}/>
+                </div>
+                <Fade className={ifade} in={active} delay='500'>
+                    <iframe  
+                        allowFullScreen
+                        frameBorder='0' 
+                        width="100%"
+                        height='300px' 
+                        src="https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1" 
+                        title='vid'
+                        className='vid'
+                    />
+                </Fade>
+                <div className={container} data-aos="zoom-in" data-aos-duration="2700">
+                    <MobSlider />
+                </div>
+                <div className='btncenter'>
+                <button data-aos="zoom-in" data-aos-duration="2700" className='mobaboutbtn'>Check Out Our Portfolio</button>
+                </div>
+            </div>            
+        </div>
+    )
+}
+
 const Mobile = () => {
 
     const [active, setActive] = useState(false)
@@ -125,12 +173,21 @@ const Mobile = () => {
 
 const About = () => {
 
-    const[isMobile, setMobile] = useState(
+    const[isTab, setTab] = useState(
         window.matchMedia('(max-width:800px)').matches
     );
     useEffect(()=>{
         window.addEventListener('resize', ()=>{
-            setMobile(window.matchMedia('(max-width:800px)').matches)
+            setTab(window.matchMedia('(max-width:800px)').matches)
+        })
+    })
+
+    const[isMobile, setMobile] = useState(
+        window.matchMedia('(max-width:600px)').matches
+    );
+    useEffect(()=>{
+        window.addEventListener('resize', ()=>{
+            setMobile(window.matchMedia('(max-width:600px)').matches)
         })
     })
 
@@ -145,8 +202,10 @@ const About = () => {
 
     return (
         <div className='about'>
-            {isDesktop ? <>{isMobile ? <Mobile /> : <Desktop />}</>
-            : <div className='largeabout'>{isMobile ? <Mobile /> : <Desktop />}</div>}
+            {isDesktop ? <>{isTab ? <>{isMobile ? <Mobile /> : <Tab />}</> :  <>{isMobile ? <Tab /> : <Desktop />}</>}</>
+            : <div className='largeabout'>
+                <>{isTab ? <>{isMobile ? <Mobile /> : <Tab />}</> :  <>{isMobile ? <Tab /> : <Desktop />}</>}</>    
+            </div>}
         </div>
     )
 }
