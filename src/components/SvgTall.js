@@ -12,16 +12,16 @@ const SvgTall = ({classname, gradient1, gradient0}) => {
  <path
   d="M202.213 79.3233H211.828L220.508 66.1375L229.134 79.3233H239.023L225.618 59.6545L238.474 40.8647H228.859L220.728 53.3363L212.652 40.8647H202.762L215.619 59.7644L202.213 79.3233Z"
   class="pink" />
- <path fill-rule="evenodd" clip-rule="evenodd" class={classname}
+ <path fill-rule="evenodd" clip-rule="evenodd" className={gradient0}
   d="M246.107 208.101L202.304 207.719L183.531 179.423L164.759 207.719L120.956 208.101L183.188 115.966L246.107 208.101Z" />
  <path fill-rule="evenodd" clip-rule="evenodd"
-  d="M183.167 116.106V179.958L164.78 207.687L120.977 208.069L183.167 116.106Z" class={gradient0} />
+  d="M183.167 116.106V179.958L164.78 207.687L120.977 208.069L183.167 116.106Z" className={gradient1} />
  <path fill-rule="evenodd" clip-rule="evenodd"
-  d="M183.182 115.916V179.957L202.412 207.67L246.215 208.052L183.182 115.916Z" class={gradient1} />
+  d="M183.182 115.916V179.957L202.412 207.67L246.215 208.052L183.182 115.916Z" className={gradient1} />
  <path fill-rule="evenodd" clip-rule="evenodd" d="M202.302 207.719L251.905 208.101L279.758 123.395L202.302 207.719Z"
-  class={classname} />
+  className={classname} />
  <path fill-rule="evenodd" clip-rule="evenodd" d="M164.773 207.719L115.171 208.101L87.3171 123.395L164.773 207.719Z"
-  class={classname} />
+  className={classname} />
  <defs>
   <linearGradient id="paint0_linear" x1="172.221" y1="178.498" x2="142.454" y2="207.89" gradientUnits="userSpaceOnUse">
    <stop stop-color="#EAEB6D" />

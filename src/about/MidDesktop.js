@@ -114,7 +114,7 @@ const MidDesktop = () => {
                             <Fade className={anshBox} in={Ansh} delay='500' duration='2000'>
                                     <div className='fadebox'>
                                         <p>
-                                        Savio, an expert at his craft but a tech geek at heart with over 20 years of experience in the media industry on the technical as well as editorial front, starting with IN Mumbai News Channel in 2001. He has worked with reputed organisations like Sahara Networks and Network 18. With his ventures Beanstalk Productions and Mad Hatter Media Pvt. Ltd., he has consistently delivered quality services to all major television networks and digital platforms. 
+                                        We give him work. He does it. Great chap.
                                         </p>
                                         <h4 className='flexinbox-title' onClick={()=>{setAnsh(false)}}>Ansh <img src={icona} alt='logo' /></h4>
                                     </div>

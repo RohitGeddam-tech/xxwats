@@ -15,7 +15,9 @@ const DeskIntro = () => {
             <div className='container'>
                 <div className='home'>
                     <div className='firstimage' data-aos="fade-right" data-aos-duration="2900">
+                        <div className='bunny'>
                         <img src={home} alt='logo' />
+                        </div>
                     </div>
                     <div className='facontent' data-aos="fade-left" data-aos-duration="2900">
                         <h4 className='fafirst-title'>Who are we? </h4>

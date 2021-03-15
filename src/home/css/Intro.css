@@ -35,6 +35,11 @@
     justify-content: center;
 }
 
+.bunny{
+    width: auto;
+    margin: auto;
+}
+
 .firstimage img{
     height: auto !important;
     width: auto;

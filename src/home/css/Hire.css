@@ -47,6 +47,7 @@
 
 .MuiFormLabel-root{
     font-family: 'Cabin',sans-serif !important;
+    text-transform: uppercase;
 }
 
 .firstdesk-title{
@@ -381,7 +382,7 @@ font-style: normal;
 font-weight: bold;
 font-size: 16px;
 line-height: 19px;
-text-transform: none !important;
+text-transform: uppercase !important;
 color: red;
 margin-top: 0 !important;
 margin-bottom: 0 !important;

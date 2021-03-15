@@ -12,7 +12,7 @@
 }
 
 .Mid-container{
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-flow: column;
     margin: auto;
@@ -43,11 +43,11 @@
 .first-flex{
     display: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .inflex1{
-    width: 50%;
+    width: 45%;
     height: 442px;
     display: flex;
     flex-flow: column;
@@ -56,12 +56,12 @@
 }
 
 .inflex2{
-    width: 50%;
+    width: 45%;
     height: 442px;
     display: flex;
     flex-flow: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .innerdiv{
@@ -148,8 +148,8 @@
     height: 442px;
     padding-top: 30px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .box{
