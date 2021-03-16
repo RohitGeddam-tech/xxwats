@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/xxwats/static/css/main.d08b078b.chunk.css",
-    "main.js": "/xxwats/static/js/main.2e94dfca.chunk.js",
-    "main.js.map": "/xxwats/static/js/main.2e94dfca.chunk.js.map",
+    "main.css": "/xxwats/static/css/main.b22400f5.chunk.css",
+    "main.js": "/xxwats/static/js/main.7c3c294d.chunk.js",
+    "main.js.map": "/xxwats/static/js/main.7c3c294d.chunk.js.map",
     "runtime-main.js": "/xxwats/static/js/runtime-main.572ea415.js",
     "runtime-main.js.map": "/xxwats/static/js/runtime-main.572ea415.js.map",
     "static/css/2.0224379c.chunk.css": "/xxwats/static/css/2.0224379c.chunk.css",
-    "static/js/2.758127f4.chunk.js": "/xxwats/static/js/2.758127f4.chunk.js",
-    "static/js/2.758127f4.chunk.js.map": "/xxwats/static/js/2.758127f4.chunk.js.map",
+    "static/js/2.27100a4c.chunk.js": "/xxwats/static/js/2.27100a4c.chunk.js",
+    "static/js/2.27100a4c.chunk.js.map": "/xxwats/static/js/2.27100a4c.chunk.js.map",
     "index.html": "/xxwats/index.html",
     "static/css/2.0224379c.chunk.css.map": "/xxwats/static/css/2.0224379c.chunk.css.map",
-    "static/css/main.d08b078b.chunk.css.map": "/xxwats/static/css/main.d08b078b.chunk.css.map",
-    "static/js/2.758127f4.chunk.js.LICENSE.txt": "/xxwats/static/js/2.758127f4.chunk.js.LICENSE.txt",
+    "static/css/main.b22400f5.chunk.css.map": "/xxwats/static/css/main.b22400f5.chunk.css.map",
+    "static/js/2.27100a4c.chunk.js.LICENSE.txt": "/xxwats/static/js/2.27100a4c.chunk.js.LICENSE.txt",
     "static/media/Creative1.ecdc0c1b.svg": "/xxwats/static/media/Creative1.ecdc0c1b.svg",
     "static/media/ansh.c956b55f.png": "/xxwats/static/media/ansh.c956b55f.png",
     "static/media/anushree.18534f1b.png": "/xxwats/static/media/anushree.18534f1b.png",
@@ -32,7 +32,6 @@
     "static/media/icon-twitter.f929ec65.svg": "/xxwats/static/media/icon-twitter.f929ec65.svg",
     "static/media/icon-youtube.4c277f29.svg": "/xxwats/static/media/icon-youtube.4c277f29.svg",
     "static/media/logo-tall.51bac65c.svg": "/xxwats/static/media/logo-tall.51bac65c.svg",
-    "static/media/logo-wide.b7d61ae8.svg": "/xxwats/static/media/logo-wide.b7d61ae8.svg",
     "static/media/post-production.9c7422bb.png": "/xxwats/static/media/post-production.9c7422bb.png",
     "static/media/production.5bd115e7.png": "/xxwats/static/media/production.5bd115e7.png",
     "static/media/reel-desktop.5b0f59ca.jpg": "/xxwats/static/media/reel-desktop.5b0f59ca.jpg",
@@ -47,8 +46,8 @@
   "entrypoints": [
     "static/js/runtime-main.572ea415.js",
     "static/css/2.0224379c.chunk.css",
-    "static/js/2.758127f4.chunk.js",
-    "static/css/main.d08b078b.chunk.css",
-    "static/js/main.2e94dfca.chunk.js"
+    "static/js/2.27100a4c.chunk.js",
+    "static/css/main.b22400f5.chunk.css",
+    "static/js/main.7c3c294d.chunk.js"
   ]
 }
