@@ -9,6 +9,19 @@ header{
     width: 100%;
 }
 
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerfull{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .navbar{
     width: 100%;
     position: fixed;
@@ -42,6 +55,15 @@ header{
     justify-content: space-between;
 }
 
+.container-fullnav{
+    width: 98%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    padding-top: 5px;
+    justify-content: space-between;
+}
+
 .nav-image {
     width: 250px;
 }
@@ -50,7 +72,7 @@ header{
     width: 95% !important;
     height: 90%;
     display: flex;
-    flex-flow: column;
+    flex-flow: column !important;
     justify-content: center;
     align-items: flex-start;
     margin: auto;
@@ -67,7 +89,7 @@ header{
     font-size: 51px;
     line-height: 60px;
     color: #202020 !important;
-    padding-top: 0;
+    padding-top: 40px;
     padding-bottom: 0;
     padding-left: 10px;
     text-transform: capitalize;
@@ -80,9 +102,10 @@ header{
     font-size: 51px;
     line-height: 60px;
     color: #202020;
-    padding-top: 0;
+    padding-top: 40px;
+    opacity: 0.55;
     padding-bottom: 0;
-    padding-left: 12.5%;
+    padding-left: 12.5% !important;
     text-transform: capitalize;
 }
 

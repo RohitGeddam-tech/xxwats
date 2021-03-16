@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import logowide from '../img/logo/logo-wide.svg'
 import './css/Nav.css'
 import { Squash as Hamburger } from 'hamburger-react';
 import { Collapse } from '@material-ui/core';
@@ -31,13 +30,13 @@ const Nav = () => {
                 </header>
                 <Collapse in={isActive}>
                     <div className='fade'>
-                        <Fade in={isActive}  className='fadein' enterOpacity={0.35} delay='500'>
+                        <Fade in={isActive}  className='fadein' enterOpacity={0.35} delay='0'>
                             <NavHashLink to='/xxwats#top' className='navfade'>Home</NavHashLink>
                         </Fade>
-                        <Fade in={isActive} className='fadein' enterOpacity={0.35} delay='1500'>
+                        <Fade in={isActive} className='fadein' enterOpacity={0.35} delay='0'>
                             <NavHashLink to='/xxwats/about#top' className='navfade'>About us</NavHashLink>
                         </Fade>
-                        <Fade in={isActive} className='fadein' enterOpacity={0.35} delay='2500'>
+                        <Fade in={isActive} className='fadein' enterOpacity={0.35} delay='0'>
                             <NavHashLink to='/xxwats/contact#top' className='navfade'>Contact us</NavHashLink>
                         </Fade>
                     </div>
@@ -70,11 +69,11 @@ const NavDesk = () => {
                     </nav>
                 </header>
                 <Collapse in={isActive}>
-                    <div className='fade'>
+                    <div className='fade'> 
                         <Fade in={isActive}  className='fadein' enterOpacity={0.35} delay='500'>
-                            <NavHashLink to='/xxwats#top' className='navdeskfade'>Home</NavHashLink>
-                        </Fade>
-                        <Fade in={isActive} className='fadein' enterOpacity={0.35} delay='1500'>
+                        <NavHashLink to='/xxwats#top' className='navdeskfade'>Home</NavHashLink>
+                        </Fade> 
+                         <Fade in={isActive} className='fadein' enterOpacity={0.35} delay='1500'>
                             <NavHashLink to='/xxwats/about#top' className='navdeskfade'>About us</NavHashLink>
                         </Fade>
                         <Fade in={isActive} className='fadein' enterOpacity={0.35} delay='2500'>

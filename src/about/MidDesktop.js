@@ -28,6 +28,60 @@ const MidDesktop = () => {
 
     // const [afterActive, setAfterActive] = useState(true)
 
+    const onCyrilClick = () =>{
+        setCyril(true)
+        setSaloni(false)
+        setSavio(false)
+        setActive(false)
+        setAnsh(false)
+        setArathi(false)
+    }
+
+    const onSavioClick = () =>{
+        setCyril(false)
+        setSaloni(false)
+        setSavio(true)
+        setActive(false)
+        setAnsh(false)
+        setArathi(false)
+    }
+
+    const onSaloniClick = () =>{
+        setCyril(false)
+        setSaloni(true)
+        setSavio(false)
+        setActive(false)
+        setAnsh(false)
+        setArathi(false)
+    }
+
+    const onActiveClick = () =>{
+        setCyril(false)
+        setSaloni(false)
+        setSavio(false)
+        setActive(true)
+        setAnsh(false)
+        setArathi(false)
+    }
+
+    const onAnshClick = () =>{
+        setCyril(false)
+        setSaloni(false)
+        setSavio(false)
+        setActive(false)
+        setAnsh(true)
+        setArathi(false)
+    }
+
+    const onArathiClick = () =>{
+        setCyril(false)
+        setSaloni(false)
+        setSavio(false)
+        setActive(false)
+        setAnsh(false)
+        setArathi(true)
+    }
+
     const cls = active ? 'cls' : 'innerdiv'
     const box = active ? 'box' : 'cls'
 
@@ -60,7 +114,7 @@ const MidDesktop = () => {
                         <div className='inflex1' data-aos="fade-left" data-aos-duration="3000">
                             <div className={innercyril}>
                                 <img src={cyril} alt='logo' />
-                                <h4 className='flexbox-title' onClick={()=>{setCyril(true)}}>cyril <img src={icon} alt='logo' /></h4>
+                                <h4 className='flexbox-title' onClick={onCyrilClick}>cyril <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={cyrilbox} in={Cyril} delay='100' duration='1000'>
                                 <div className='fadebox'>
@@ -74,7 +128,7 @@ const MidDesktop = () => {
                         <div className='inflex2' data-aos="fade-right" data-aos-duration="3000">
                             <div className={innersavio}>
                             <img src={savio} alt='logo' />
-                                <h4 className='flexbox-title' onClick={()=>{setSavio(true)}}>savio <img src={icon} alt='logo' /></h4>
+                                <h4 className='flexbox-title' onClick={onSavioClick}>savio <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={saviobox} in={Savio} delay='500' duration='2000'>
                                     <div className='fadebox'>
@@ -95,7 +149,7 @@ const MidDesktop = () => {
                         <div className='inflex1' data-aos="fade-left" data-aos-duration="3000">
                             <div className={innerara}>
                             <img src={arathi} alt='logo' />
-                                <h4 className='flexbox-title' onClick={()=>{setArathi(true)}}>arathi <img src={icon} alt='logo' /></h4>
+                                <h4 className='flexbox-title' onClick={onArathiClick}>arathi <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={araBox} in={Arathi} delay='500' duration='2000'>
                                     <div className='fadebox'>
@@ -109,7 +163,7 @@ const MidDesktop = () => {
                         <div className='inflex2' data-aos="fade-right" data-aos-duration="3000">
                             <div className={inneransh}>
                             <img src={ansh} alt='logo' />
-                                <h4 className='flexbox-title' onClick={()=>{setAnsh(true)}}>Ansh <img src={icon} alt='logo' /></h4>
+                                <h4 className='flexbox-title' onClick={onAnshClick}>Ansh <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={anshBox} in={Ansh} delay='500' duration='2000'>
                                     <div className='fadebox'>
@@ -130,7 +184,7 @@ const MidDesktop = () => {
                         <div className='inflex1' data-aos="fade-left" data-aos-duration="3000">
                             <div className={cls}>
                                 <img src={anushree} alt='logo' />
-                                <h4 className='flexbox-title' onClick={()=>{setActive(true)}}>Anushree <img src={icon} alt='logo' /></h4>
+                                <h4 className='flexbox-title' onClick={onActiveClick}>Anushree <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={box} in={active} delay='500' duration='2000'>
                                     <div className='fadebox'>
@@ -144,7 +198,7 @@ const MidDesktop = () => {
                         <div className='inflex2' data-aos="fade-right" data-aos-duration="3000">
                             <div className={innersal}>
                             <img src={saloni} alt='logo' />
-                            <h4 className='flexbox-title' onClick={()=>{setSaloni(true)}}>saloni <img src={icon} alt='logo' /></h4>
+                            <h4 className='flexbox-title' onClick={onSaloniClick}>saloni <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={salonibox} in={Saloni} delay='500' duration='2000'>
                                     <div className='fadebox'>
