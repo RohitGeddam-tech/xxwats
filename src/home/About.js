@@ -9,7 +9,6 @@ import play from '../img/icons/icon-play.svg'
 import { Fade } from 'react-animation-components'
 import MobSlider from '../components/MobSliding'
 
-
 const Desktop = () => {
 
     const [active, setActive] = useState(false)
@@ -25,6 +24,8 @@ const Desktop = () => {
     const iconplay = active ? 'frame' : 'iconplay'
 
     const center =  active ? 'frame' : 'center'
+    
+    const url = active ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1" : "https://www.youtube.com/embed/dJIJTZoTj6Q"
 
     return (
         <>
@@ -52,7 +53,7 @@ const Desktop = () => {
                         frameBorder='0' 
                         width="100%"
                         height='100%' 
-                        src="https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1" 
+                        src={url} 
                         title='vid'
                         className='vid'
                     />
@@ -93,6 +94,8 @@ const Tab = () => {
 
     const container =  active ? 'mob-frame' : 'tab-container'
 
+    const url = active ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1" : "https://www.youtube.com/embed/dJIJTZoTj6Q"
+
     return(
         <div className='aboutmobile'>
             <div className='mob-container' data-aos="fade-up" data-aos-duration="2700">
@@ -108,7 +111,7 @@ const Tab = () => {
                         frameBorder='0' 
                         width="100%"
                         height='300px' 
-                        src="https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1" 
+                        src={url} 
                         title='vid'
                         className='vid'
                     />
@@ -142,6 +145,8 @@ const Mobile = () => {
 
     const container =  active ? 'mob-frame' : 'mob-container'
 
+    const url = active ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1" : "https://www.youtube.com/embed/dJIJTZoTj6Q"
+
     return(
         <div className='aboutmobile'>
             <div className='mobcontainer' data-aos="fade-up" data-aos-duration="2700">
@@ -157,7 +162,7 @@ const Mobile = () => {
                         frameBorder='0' 
                         width="100%"
                         height='300px' 
-                        src="https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1" 
+                        src={url} 
                         title='vid'
                         className='vid'
                     />
