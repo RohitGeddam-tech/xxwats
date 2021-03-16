@@ -7,7 +7,7 @@ const View = () => {
     return(
       <>
         <Nav />
-        <section style={{paddingTop:'50px'}}>
+        <section style={{paddingTop:'46px'}}>
            <Hire />
         </section>
       </>
