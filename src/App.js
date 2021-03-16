@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react'
 import './App.css';
-import Nav from './components/Nav'
+import Nav from './components/TestNav'
 import Intro from './home/Intro'
 import About from './home/About'
 import Services from './home/Services'

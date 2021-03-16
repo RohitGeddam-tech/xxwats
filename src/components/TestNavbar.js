@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React,{useEffect, useState} from 'react'
 import './css/Nav.css'
 import { Squash as Hamburger } from 'hamburger-react';
 import { NavHashLink } from 'react-router-hash-link';
@@ -7,7 +7,7 @@ import Svg from '../components/Svg'
 const TestDesk = () => {
     const [isActive, setActive] = useState(false);
 
-    let colored = isActive ? 'collapse-nav' : 'nav'
+    let colored = isActive ? 'collapse-navbar' : 'navbar'
     let header =  isActive ? 'headerfull' : 'header'
     let fade = isActive ? 'fade' : 'dnone'
     return (
@@ -49,7 +49,7 @@ const TestDesk = () => {
 const TestMob = ()=> {
     const [isActive, setActive] = useState(false);
 
-    let colored = isActive ? 'collapse-nav' : 'nav'
+    let colored = isActive ? 'collapse-navbar' : 'navbar'
     let header =  isActive ? 'headerfull' : 'header'
     let fade = isActive ? 'fade' : 'dnone'
     return(
@@ -87,8 +87,7 @@ const TestMob = ()=> {
         </>
     )
 }
-
-const TestNav = () => {
+const TestNavbar = () => {
     const[isMobile, setMobile] = useState(
         window.matchMedia('(max-width:850px)').matches
     );
@@ -97,11 +96,11 @@ const TestNav = () => {
             setMobile(window.matchMedia('(max-width:850px)').matches)
         })
     })
-    return(
+    return (
         <>
-            {isMobile ? <TestMob /> : <TestDesk />}
+          {isMobile ? <TestMob /> : <TestDesk />}  
         </>
     )
 }
 
-export default TestNav
+export default TestNavbar

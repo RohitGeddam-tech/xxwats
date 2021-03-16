@@ -9,6 +9,10 @@ header{
     width: 100%;
 }
 
+.dnone{
+    display: none;
+}
+
 .header{
     width: 100%;
     display: flex;
@@ -16,7 +20,6 @@ header{
 }
 
 .headerfull{
-    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -57,7 +60,6 @@ header{
 
 .container-fullnav{
     width: 98%;
-    height: 100%;
     display: flex;
     margin: auto;
     padding-top: 5px;
@@ -91,6 +93,7 @@ header{
     color: #202020 !important;
     padding-top: 40px;
     padding-bottom: 0;
+    opacity: 0.55;
     padding-left: 10px;
     text-transform: capitalize;
 }

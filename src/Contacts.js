@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import Hire from './home/Hire'
-import Nav from './NavBar'
+import Nav from './components/TestNavbar'
 
 const View = () => {
     return(
