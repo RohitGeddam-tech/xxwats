@@ -72,6 +72,10 @@ const HireMob = () => {
                                 <a style={{marginLeft:'10%'}}><img src={twitter} alt='insta' /></a>
                             </div>
                         </div>
+                        <div className='careers'>
+                            <h1>For Careers :</h1>
+                            <a href='mailto:hr@xxwatts.com'>hr@xxwatts.com</a>
+                        </div>
                     </div>
                 </div>
                 <div className='mobhome' data-aos="fade-down" data-aos-duration="5000">

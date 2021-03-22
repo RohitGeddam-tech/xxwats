@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import Hireabout from './HireAbout'
-import Nav from '../components/Nav'
+import Nav from '../components/TestNav'
 import FirstAbout from './FirstAbout'
 import Middle from './Middle'
 import '../App.css'

@@ -59,6 +59,10 @@ const HireDesk = () => {
                                 <a style={{marginLeft:'10%'}}><img src={twitter} alt='insta' /></a>
                             </div>
                         </div>
+                        <div className='careers'>
+                            <h1>For Careers :</h1>
+                            <a href='mailto:hr@xxwatts.com'>hr@xxwatts.com</a>
+                        </div>
                     </div>
                 </div>
                 <div className='second-box' data-aos="fade-right" data-aos-duration="3500">

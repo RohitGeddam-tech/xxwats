@@ -181,7 +181,7 @@ const Services = () => {
 
 
     return (
-        <div className='services'>
+        <div className='services' id='services'>
             {isDesktop ? <>{isMobile ? <Mobile /> : <Desktop />}</>
             : <div className='largeservice'>{isMobile ? <Mobile /> : <Desktop />}</div>}
         </div>

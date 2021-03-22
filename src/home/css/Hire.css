@@ -156,14 +156,14 @@
     width: 100%;
     display: flex;
     flex-flow: column;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .social{
     display: flex;
     justify-content: flex-start;
     margin-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     align-items: center;
 }
 
@@ -171,11 +171,11 @@
     width: 50%;
     display: flex;
     flex-flow: column;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .second-box-container{
-    width: 95%;
+    width: 80%;
     display: flex;
     flex-flow: column;
 }
@@ -223,13 +223,10 @@
 
 .serviceslider-btn{
     background-color: transparent !important;
-    padding-left: 20.6px;
-    padding-right: 20.6px;
-    padding-top: 1.8px;
-    padding-bottom: 1.8px;
+    padding: 2px 10px;
     border-radius: 50px;
     margin-left: 10px;
-    width: 300px;
+    width: 250px;
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
     font-style: normal;
@@ -246,13 +243,12 @@
 
 .serviceslider-afterbtn{
     background-color: transparent !important;
-    padding-left: 20.6px;
-    padding-right: 20.6px;
-    padding-top: 1.8px;
-    padding-bottom: 1.8px;
+    padding: 2px 10px;
     border-radius: 50px;
     margin-left: 10px;
-    width: 300px;
+    width: 250px;
+    border-radius: 50px;
+    margin-left: 10px;
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
     font-style: normal;
@@ -260,11 +256,11 @@
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+    color: #202020;
     text-transform: uppercase;
-    color: #fff;
     margin-bottom: 5px !important;
     margin-top: 0;
-    border: 1px solid #fff !important;
+    border: 1px solid #202020 !important;
 }
 
 /* .slick-track{
@@ -291,6 +287,38 @@ button.slick-prev:before{
     width: 98%;
     display: flex;
     margin: auto;
+}
+
+.careers{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.careers h1{
+    text-align: start;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #202020;
+}
+
+.careers a{
+    text-align: start;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #202020;
+    padding-left: 10px;
+    word-break: break-all;
 }
 
 /* .slick-slide{
@@ -397,6 +425,11 @@ line-height: 19px;
 text-transform: uppercase;
 color: black;
 }
+
+.footimg img{
+    width: 70%;
+}
+
 /*Form ends*/
 
 /*MObile starts*/
@@ -477,6 +510,16 @@ color: black;
 
 .insideslide{
     width: 100%;
+}
+
+.mobimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobimage img{
+    width: 70%;
 }
 
 /**/

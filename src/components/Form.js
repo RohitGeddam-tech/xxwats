@@ -41,7 +41,6 @@ const FormDesk = () => {
             ...values,
             [e.target.name]: e.target.value
         })
-        console.log('form entries', values)
     }
 
     const handleClick = () => {
@@ -52,6 +51,7 @@ const FormDesk = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setErrors(validate(values))
+        console.log('form submitted', values)
     }
 
     return (
@@ -135,7 +135,6 @@ const FormMob = () => {
             ...values,
             [e.target.name]: e.target.value
         })
-        console.log('form entries', values)
     }
 
     const handleClick = () => {
@@ -146,6 +145,7 @@ const FormMob = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setErrors(validate(values))
+        console.log('form submitted', values)
     }
 
     return (

@@ -112,30 +112,30 @@ const MidDesktop = () => {
                     </div>
                     <div className='first-flex' >
                         <div className='inflex1' data-aos="fade-left" data-aos-duration="3000">
-                            <div className={innercyril}>
+                            <div className={innercyril} onMouseEnter={onCyrilClick}>
                                 <img src={cyril} alt='logo' />
-                                <h4 className='flexbox-title' onClick={onCyrilClick}>cyril <img src={icon} alt='logo' /></h4>
+                                <h4 className='flexbox-title'>cyril <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={cyrilbox} in={Cyril} delay='100' duration='1000'>
-                                <div className='fadebox'>
+                                <div className='fadebox' onMouseLeave={()=>{setCyril(false)}}>
                                     <p>
                                     Cyril's spent the past 21 years establishing his credentials in Management, Creative & Production. He has created branded content for Radio, Television & Digital while working with the likes of the TOI’s Entertainment unit, Red FM, Channel V and more. His last stint with O4 Digital - Group M, led to him breaking barriers on the digital platform. He has now blended his content and production expertise with technology, allowing him to be the creative firepower of 20 watts.
                                     </p>
-                                    <h4 className='flexinbox-title' onClick={()=>{setCyril(false)}}>Cyril <img src={icona} alt='logo' /></h4>
+                                    <h4 className='flexinbox-title'>Cyril <img src={icona} alt='logo' /></h4>
                                 </div>
                             </Fade>
                         </div>
                         <div className='inflex2' data-aos="fade-right" data-aos-duration="3000">
-                            <div className={innersavio}>
+                            <div className={innersavio} onMouseEnter={onSavioClick}>
                             <img src={savio} alt='logo' />
-                                <h4 className='flexbox-title' onClick={onSavioClick}>savio <img src={icon} alt='logo' /></h4>
+                                <h4 className='flexbox-title' onMouseEnter={onSavioClick}>savio <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={saviobox} in={Savio} delay='500' duration='2000'>
-                                    <div className='fadebox'>
+                                    <div className='fadebox' onMouseLeave={()=>{setSavio(false)}}>
                                         <p>
                                         Savio, an expert at his craft but a tech geek at heart with over 20 years of experience in the media industry on the technical as well as editorial front, starting with IN Mumbai News Channel in 2001. He has worked with reputed organisations like Sahara Networks and Network 18. With his ventures Beanstalk Productions and Mad Hatter Media Pvt. Ltd., he has consistently delivered quality services to all major television networks and digital platforms. 
                                         </p>
-                                        <h4 className='flexinbox-title' onClick={()=>{setSavio(false)}}>Savio <img src={icona} alt='logo' /></h4>
+                                        <h4 className='flexinbox-title'>Savio <img src={icona} alt='logo' /></h4>
                                     </div>
                             </Fade>
                         </div>
@@ -147,30 +147,30 @@ const MidDesktop = () => {
                     </div>
                     <div className='first-flex' >
                         <div className='inflex1' data-aos="fade-left" data-aos-duration="3000">
-                            <div className={innerara}>
+                            <div className={innerara} onMouseEnter={onArathiClick}>
                             <img src={arathi} alt='logo' />
-                                <h4 className='flexbox-title' onClick={onArathiClick}>arathi <img src={icon} alt='logo' /></h4>
+                                <h4 className='flexbox-title'>arathi <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={araBox} in={Arathi} delay='500' duration='2000'>
-                                    <div className='fadebox'>
+                                    <div className='fadebox' onMouseLeave={()=>{setArathi(false)}}>
                                         <p>
                                         She Started with Channel [v], attended New York Film Academy to study Producing for Film & TV and then pulled a ‘Swades’ on everybody. She returned to her motherland to create cool content for digital mediums. If there was an award for ‘Shining Personalities’, Arathi would surely be the runner up. But if we are really being honest about her, she is a creative powerhouse and nothing short of a goofy rockstar!
                                         </p>
-                                        <h4 className='flexinbox-title' onClick={()=>{setArathi(false)}}>Arathi <img src={icona} alt='logo' /></h4>
+                                        <h4 className='flexinbox-title'>Arathi <img src={icona} alt='logo' /></h4>
                                     </div>
                             </Fade>
                         </div>
                         <div className='inflex2' data-aos="fade-right" data-aos-duration="3000">
-                            <div className={inneransh}>
+                            <div className={inneransh} onMouseEnter={onAnshClick}>
                             <img src={ansh} alt='logo' />
-                                <h4 className='flexbox-title' onClick={onAnshClick}>Ansh <img src={icon} alt='logo' /></h4>
+                                <h4 className='flexbox-title'>Ansh <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={anshBox} in={Ansh} delay='500' duration='2000'>
-                                    <div className='fadebox'>
+                                    <div className='fadebox' onMouseLeave={()=>{setAnsh(false)}}>
                                         <p>
                                         We give him work. He does it. Great chap.
                                         </p>
-                                        <h4 className='flexinbox-title' onClick={()=>{setAnsh(false)}}>Ansh <img src={icona} alt='logo' /></h4>
+                                        <h4 className='flexinbox-title'>Ansh <img src={icona} alt='logo' /></h4>
                                     </div>
                             </Fade>
                         </div>
@@ -182,30 +182,30 @@ const MidDesktop = () => {
                     </div>
                     <div className='first-flex' >
                         <div className='inflex1' data-aos="fade-left" data-aos-duration="3000">
-                            <div className={cls}>
+                            <div className={cls} onMouseEnter={onActiveClick}>
                                 <img src={anushree} alt='logo' />
-                                <h4 className='flexbox-title' onClick={onActiveClick}>Anushree <img src={icon} alt='logo' /></h4>
+                                <h4 className='flexbox-title'>Anushree <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={box} in={active} delay='500' duration='2000'>
-                                    <div className='fadebox'>
+                                    <div className='fadebox' onMouseLeave={()=>{setActive(false)}}>
                                         <p>
                                         Latest addition to the 20 watts family, she handles recruitments and business management and expansions. She comes with 12+ years of experience in advertising and production since she started working when she was 17 and claims she hasn’t taken a sick day ever since. She has worked with agencies like Ogilvy, Contract, Alok Nanda and Company, Havas Creative, TBWA and more.  She also experiments with curly hair products, has the loudest laugh in the room and loves to travel every chance she gets.
                                         </p>
-                                        <h4 className='flexinbox-title' onClick={()=>{setSaloni(false)}}>Anushree <img onClick={()=>{setActive(false)}} src={icona} alt='logo' /></h4>
+                                        <h4 className='flexinbox-title'>Anushree <img src={icona} alt='logo' /></h4>
                                     </div>
                             </Fade>
                         </div>
                         <div className='inflex2' data-aos="fade-right" data-aos-duration="3000">
-                            <div className={innersal}>
+                            <div className={innersal} onMouseEnter={onSaloniClick}>
                             <img src={saloni} alt='logo' />
-                            <h4 className='flexbox-title' onClick={onSaloniClick}>saloni <img src={icon} alt='logo' /></h4>
+                            <h4 className='flexbox-title'>saloni <img src={icon} alt='logo' /></h4>
                             </div>
                             <Fade className={salonibox} in={Saloni} delay='500' duration='2000'>
-                                    <div className='fadebox'>
+                                    <div className='fadebox' onMouseLeave={()=>{setSaloni(false)}}>
                                         <p>
                                         A veteran at 20 watts, Saloni Shah is a client's dream. Every request is a yes and every 2am call answered, that's how she paves her way into a client's heart. Her sweetness is her strength and her weakness, and we don't say this because she's a Gujrati. She can be found in the nearest Starbucks conquering the world in her 6inch heels. Also, if you know her, you've definitely asked her for the bomb thepla recipe.
                                         </p>
-                                        <h4 className='flexinbox-title' onClick={()=>{setSaloni(false)}}>Saloni <img src={icona} alt='logo' /></h4>
+                                        <h4 className='flexinbox-title'>Saloni <img src={icona} alt='logo' /></h4>
                                     </div>
                             </Fade>
                         </div>

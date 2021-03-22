@@ -25,7 +25,7 @@ const Desktop = () => {
 
     const center =  active ? 'frame' : 'center'
     
-    const url = active ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1" : "https://www.youtube.com/embed/dJIJTZoTj6Q"
+    const url = active ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1" : "https://www.youtube.com/embed/dJIJTZoTj6Q"
 
     return (
         <>
@@ -38,7 +38,7 @@ const Desktop = () => {
                         <p className='aboutpara'>
                         But when we are not doing that, we are striving for excellence in our work process. We are specialists, not generalists, that work toward building experiences that elevate and empower organisations. Working with you every step of the way to build comprehensive, creative and purpose-driven brands and experiences.
                         </p>
-                        <button className='aboutbtn'>Check Out Our Portfolio</button>
+                        <button className='aboutbtn'>Meet Our Team</button>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,6 @@ const Desktop = () => {
                 </div>
             </div>
         </>
-        
     )
 }
 
@@ -170,7 +169,7 @@ const Mobile = () => {
                 <div className={container} data-aos="zoom-in" data-aos-duration="2700">
                     <MobSlider />
                 </div>
-                <button data-aos="zoom-in" data-aos-duration="2700" className='mobaboutbtn'>Check Out Our Portfolio</button>
+                <button data-aos="zoom-in" data-aos-duration="2700" id='services' className='mobaboutbtn'>Check Out Our Portfolio</button>
             </div>            
         </div>
     )

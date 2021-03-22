@@ -45,8 +45,8 @@ const HireDesk = () => {
                                 </a>
                             </div>
                             <div className='icons-msg'>
-                                <a href='mailto:wattsup@xxwatts.com'><img alt='call' src={mail} /></a>
-                                <a href='mailto:wattsup@xxwatts.com' className='mail-title'>
+                                <a href='mailto:shoutout@xxwatts.com'><img alt='call' src={mail} /></a>
+                                <a href='mailto:shoutout@xxwatts.com' className='mail-title'>
                                     wattsup@xxwatts.com
                                 </a>
                             </div>
@@ -59,6 +59,10 @@ const HireDesk = () => {
                                 <a style={{marginLeft:'10%'}}><img src={facebook} alt='insta' /></a>
                                 <a style={{marginLeft:'10%'}}><img src={twitter} alt='insta' /></a>
                             </div>
+                        </div>
+                        <div className='careers'>
+                            <h1>For Careers :</h1>
+                            <a href='mailto:hr@xxwatts.com'>hr@xxwatts.com</a>
                         </div>
                     </div>
                 </div>

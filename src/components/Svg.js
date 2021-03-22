@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Svg = ({className, imagegradient1, imagegradient0,imagename}) => {
+const Svg = ({className, imagegradient1, imagegradient0, imagename}) => {
     return (
         <svg width="240" height="44" viewBox="0 0 240 44" fill="none" xmlns="http://www.w3.org/2000/svg">
  <path

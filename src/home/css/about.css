@@ -270,7 +270,8 @@ line-height: 19px;
 text-transform: uppercase;
 color: #ffffff;
 padding-top: 55px;
-padding-left: 20px;
+padding-left: 10px;
+margin-bottom: 0 !important;
 }
 
 .mobh1{
@@ -278,8 +279,7 @@ padding-left: 20px;
 font-style: normal;
 font-weight: bold;
 font-size: 28px;
-padding-left: 20px;
-padding-bottom: 10px;
+padding-left: 10px;
 line-height: 33px;
 color: #fff;
 margin-top: 10px;

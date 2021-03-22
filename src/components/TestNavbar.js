@@ -24,9 +24,9 @@ const TestDesk = () => {
                         </nav> :
                         <nav className='container-nav'>
                         <div className='nav-image'>
-                            <NavHashLink to='/xxwats#top'><Svg className={'pink'} imagegradient0={'yellow-gradient-0'} 
-                             imagegradient1={'yellow-gradient-1'}
-                             imagename={'yellow'}/></NavHashLink>
+                            <NavHashLink to='/xxwats#top'><Svg className={'pink'} imagegradient0={'black-gradient-0'} 
+                            imagegradient1={'black-gradient-1'}
+                            imagename={'black'}/></NavHashLink>
                         </div>
                         </nav>
                     }
@@ -66,9 +66,9 @@ const TestMob = ()=> {
                         </nav> :
                         <nav className='container-nav'>
                         <div className='nav-image'>
-                            <NavHashLink to='/xxwats#top'><Svg className={'pink'} imagegradient0={'yellow-gradient-0'} 
-                            imagegradient1={'yellow-gradient-1'}
-                            imagename={'yellow'}/></NavHashLink>
+                            <NavHashLink to='/xxwats#top'><Svg className={'pink'} imagegradient0={'black-gradient-0'} 
+                            imagegradient1={'black-gradient-1'}
+                            imagename={'black'}/></NavHashLink>
                         </div>
                         </nav>
                     }

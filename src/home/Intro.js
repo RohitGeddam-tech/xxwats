@@ -21,7 +21,7 @@ const DeskIntro = () => {
                     <p className='para'>
                         WE GIVE CREATIVE SOLUTIONS FOR YOUR PROBLEMS
                     </p>
-                    <NavHashLink to='/xxwats/about' className='btn'>Check Out Our Portfolio</NavHashLink>
+                    <NavHashLink to='/xxwats/contact#top' className='btn'>Check Out Our Portfolio</NavHashLink>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@ const MobIntro = () => {
                     <p className='mobpara'>
                         WE GIVE CREATIVE SOLUTIONS FOR YOUR PROBLEMS
                     </p>
-                    <NavHashLink to='/xxwats/about' className='mobbtn'>Check Out Our Portfolio</NavHashLink>
+                    <NavHashLink to='/xxwats/contact#top' className='mobbtn'>Check Out Our Portfolio</NavHashLink>
                 </div>
             </div>
         </div>

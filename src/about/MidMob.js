@@ -25,7 +25,7 @@ const MidMob = () => {
                     <h4 className='first-title'>Meet the team</h4>
                 </div>
                 <div className='mobmid-container'>
-                    <h4>Founder</h4>
+                    <h4>Founders</h4>
                     <div className='mobfirst'>
                         <img src={cyril} alt='cyril' data-aos="zoom-in" data-aos-duration="2000" />
                         <div data-aos="flip-down" data-aos-duration="3000">
