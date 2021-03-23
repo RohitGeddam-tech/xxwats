@@ -98,6 +98,18 @@ const Tab = () => {
     return(
         <div className='aboutmobile'>
             <div className='mob-container' data-aos="fade-up" data-aos-duration="2700">
+                <div className='yellowtabmob'>
+                    <div className='tabmobcontainer'>
+                        <h4 className='heading'>About us</h4>
+                        <h4 className='abouth1'>We are champions at ordering food.</h4>
+                        <p className='aboutpara'>
+                        But when we are not doing that, we are striving for excellence in our work process. We are specialists, not generalists, that work toward building experiences that elevate and empower organisations. Working with you every step of the way to build comprehensive, creative and purpose-driven brands and experiences.
+                        </p>
+                        <div className='alignbtn'>
+                            <button className='aboutbtn'>Meet Our Team</button>
+                        </div>
+                    </div>
+                </div>
                 <h4 className='mobheading'>work</h4>
                 <h4 className='mobh1'>We do stuff.</h4>
                 <img src={mob} className={imag} alt='reel' onClick={()=>{setActive(true)}}/>
@@ -149,6 +161,18 @@ const Mobile = () => {
     return(
         <div className='aboutmobile'>
             <div className='mobcontainer' data-aos="fade-up" data-aos-duration="2700">
+                <div className='yellowtabmob'>
+                    <div className='tabmobcontainer'>
+                        <h4 className='heading'>About us</h4>
+                            <h4 className='abouth1'>We are champions at ordering food.</h4>
+                            <p className='aboutpara'>
+                            But when we are not doing that, we are striving for excellence in our work process. We are specialists, not generalists, that work toward building experiences that elevate and empower organisations. Working with you every step of the way to build comprehensive, creative and purpose-driven brands and experiences.
+                            </p>
+                            <div className='alignbtn'>
+                                <button className='aboutbtn'>Meet Our Team</button>
+                            </div>
+                    </div>
+                </div>
                 <h4 className='mobheading'>work</h4>
                 <h4 className='mobh1'>We do stuff.</h4>
                 <img src={mob} className={imag} alt='reel' onClick={()=>{setActive(true)}}/>

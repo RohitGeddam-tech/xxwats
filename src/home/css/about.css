@@ -269,7 +269,7 @@ font-size: 16px;
 line-height: 19px;
 text-transform: uppercase;
 color: #ffffff;
-padding-top: 55px;
+padding-top: 10px;
 padding-left: 10px;
 margin-bottom: 0 !important;
 }
@@ -331,6 +331,19 @@ margin-top: 10px;
 
 .mobslide{
     margin-top: 0;
+}
+
+.yellowtabmob{
+    width: 100%;
+    background-color: #EEEA64;
+    padding: 25px 10px 45px;
+    display: flex;
+}
+
+.alignbtn{
+    width: 100%;
+    display: flex;
+    margin: auto;
 }
 
 /*mobile ends*/
