@@ -1,25 +1,25 @@
-import React from 'react'
-import './App.css'
-import Hire from './home/Hire'
-import Nav from './components/TestNavbar'
+import React from "react";
+import "./App.css";
+import Hire from "./home/Hire";
+import Nav from "./components/TestNavbar";
 
 const View = () => {
-    return(
-      <>
-        <Nav />
-        <section style={{paddingTop:'46px'}}>
-           <Hire />
-        </section>
-      </>
-    )
-  }
+  return (
+    <>
+      <Nav />
+      <section style={{ paddingTop: "46px" }}>
+        <Hire />
+      </section>
+    </>
+  );
+};
 
 const AboutPage = () => {
-    return (
-        <div className='App'>
-            <View />
-        </div>
-    )
-}
+  return (
+    <div className="App">
+      <View />
+    </div>
+  );
+};
 
-export default AboutPage
+export default AboutPage;

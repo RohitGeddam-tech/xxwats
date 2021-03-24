@@ -10,6 +10,7 @@
     margin: auto;
 }
 
+
 .aboutfirst{
     width: 95%;
     display: flex;
@@ -19,9 +20,9 @@
 }
 
 .yellowtab{
-    width: 30%;
+    width: 33%;
     height: fit-content !important;
-    margin-right: -18%;
+    margin-right: -23%;
     margin-bottom: -20px;
 }
 
@@ -110,12 +111,12 @@ width: 90%;
 }
 
 .slider{
-    margin-left: 40px;
-    width: 68%;
+    margin-left: 50px;
+    width: 60%;
 }
 
 .slidercover{
-    width: 322px;
+    width: 280px;
     background-color: white;
     display: flex;
     flex-flow: column nowrap;
@@ -184,6 +185,9 @@ margin-top: 10px;
 
 .sliderin{
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slick-slide{
@@ -191,7 +195,6 @@ margin-top: 10px;
 }
 
 .slick-slide img{
-    padding-top: 10px;
     width: 120px;
     display: flex !important;
     align-items: center;

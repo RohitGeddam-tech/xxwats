@@ -221,48 +221,6 @@
     margin: auto;
 }
 
-.serviceslider-btn{
-    background-color: transparent !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 250px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #202020;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-}
-
-.serviceslider-afterbtn{
-    background-color: transparent !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 250px;
-    border-radius: 50px;
-    margin-left: 10px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #202020;
-    text-transform: uppercase;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-}
-
 /* .slick-track{
     display: block;
     width: 100% !important;
@@ -523,3 +481,260 @@ color: black;
 }
 
 /**/
+
+
+/* slider btns*/
+
+.serviceslider-checkbtn{
+    background-color: transparent !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 190px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202020;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-aftercheckbtn{
+    background-color: black !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 190px;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-brandbtn{
+    background-color: transparent !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 190px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202020;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-afterbrandbtn{
+    background-color: black !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 190px;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-socbtn{
+    background-color: transparent !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 250px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202020;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-aftersocbtn{
+    background-color: black !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 250px;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-vidbtn{
+    background-color: transparent !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 190px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202020;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-aftervidbtn{
+    background-color: black !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 190px;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-grbtn{
+    background-color: transparent !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 250px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202020;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-aftergrbtn{
+    background-color: black !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 250px;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-postbtn{
+    background-color: transparent !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 190px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202020;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-afterpostbtn{
+    background-color: black !important;
+    padding: 2px 10px;
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 190px;
+    border-radius: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+/*slider btn ends*/
