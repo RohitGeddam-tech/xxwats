@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/xxwats/static/css/main.689a8f34.chunk.css",
-    "main.js": "/xxwats/static/js/main.fad4929c.chunk.js",
-    "main.js.map": "/xxwats/static/js/main.fad4929c.chunk.js.map",
+    "main.css": "/xxwats/static/css/main.11541778.chunk.css",
+    "main.js": "/xxwats/static/js/main.9697b2d9.chunk.js",
+    "main.js.map": "/xxwats/static/js/main.9697b2d9.chunk.js.map",
     "runtime-main.js": "/xxwats/static/js/runtime-main.572ea415.js",
     "runtime-main.js.map": "/xxwats/static/js/runtime-main.572ea415.js.map",
     "static/css/2.0224379c.chunk.css": "/xxwats/static/css/2.0224379c.chunk.css",
-    "static/js/2.e62c28db.chunk.js": "/xxwats/static/js/2.e62c28db.chunk.js",
-    "static/js/2.e62c28db.chunk.js.map": "/xxwats/static/js/2.e62c28db.chunk.js.map",
+    "static/js/2.17e4c86e.chunk.js": "/xxwats/static/js/2.17e4c86e.chunk.js",
+    "static/js/2.17e4c86e.chunk.js.map": "/xxwats/static/js/2.17e4c86e.chunk.js.map",
     "index.html": "/xxwats/index.html",
     "static/css/2.0224379c.chunk.css.map": "/xxwats/static/css/2.0224379c.chunk.css.map",
-    "static/css/main.689a8f34.chunk.css.map": "/xxwats/static/css/main.689a8f34.chunk.css.map",
-    "static/js/2.e62c28db.chunk.js.LICENSE.txt": "/xxwats/static/js/2.e62c28db.chunk.js.LICENSE.txt",
+    "static/css/main.11541778.chunk.css.map": "/xxwats/static/css/main.11541778.chunk.css.map",
+    "static/js/2.17e4c86e.chunk.js.LICENSE.txt": "/xxwats/static/js/2.17e4c86e.chunk.js.LICENSE.txt",
     "static/media/Creative1.ecdc0c1b.svg": "/xxwats/static/media/Creative1.ecdc0c1b.svg",
     "static/media/Frame2.6756bbc8.png": "/xxwats/static/media/Frame2.6756bbc8.png",
     "static/media/Framemob.5351d972.jpg": "/xxwats/static/media/Framemob.5351d972.jpg",
@@ -30,7 +30,6 @@
     "static/media/icon-instagram.adb84386.svg": "/xxwats/static/media/icon-instagram.adb84386.svg",
     "static/media/icon-mail.63a4d15b.svg": "/xxwats/static/media/icon-mail.63a4d15b.svg",
     "static/media/icon-maps.7688078c.svg": "/xxwats/static/media/icon-maps.7688078c.svg",
-    "static/media/icon-play.a084c5e6.svg": "/xxwats/static/media/icon-play.a084c5e6.svg",
     "static/media/icon-twitter.f929ec65.svg": "/xxwats/static/media/icon-twitter.f929ec65.svg",
     "static/media/icon-youtube.4c277f29.svg": "/xxwats/static/media/icon-youtube.4c277f29.svg",
     "static/media/logo-tall.51bac65c.svg": "/xxwats/static/media/logo-tall.51bac65c.svg",
@@ -46,8 +45,8 @@
   "entrypoints": [
     "static/js/runtime-main.572ea415.js",
     "static/css/2.0224379c.chunk.css",
-    "static/js/2.e62c28db.chunk.js",
-    "static/css/main.689a8f34.chunk.css",
-    "static/js/main.fad4929c.chunk.js"
+    "static/js/2.17e4c86e.chunk.js",
+    "static/css/main.11541778.chunk.css",
+    "static/js/main.9697b2d9.chunk.js"
   ]
 }
