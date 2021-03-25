@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import { refresh } from "aos";
+import React, { useState, useRef } from "react";
 import { NavHashLink } from "react-router-hash-link";
+import left from '../img/left.png'
+import right from '../img/right.png'
 
 const SliderService = () => {
   const [check, setCheck] = useState(false);
@@ -9,17 +12,20 @@ const SliderService = () => {
   const [ground, setGround] = useState(false);
   const [post, setPost] = useState(false);
 
+  const ref = useRef(null)
+
   console.log(check);
 
   return (
     <>
       <div className="inputslider">
+          <img src={left} alt='arrow'/>
         <div className="inputslide">
           <div className="insideslide">
             <NavHashLink to="/xxwats#services">
               {check ? (
                 <label
-                  className="serviceslider-aftercheckbtn"
+                  className="serviceslider-afterbtn"
                   onClick={() => {
                     setCheck(false);
                     console.log("creative strategy", check);
@@ -29,7 +35,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-checkbtn"
+                  className="serviceslider-btn"
                   onClick={() => {
                     setCheck(true);
                     console.log("creative strategy", check);
@@ -49,7 +55,7 @@ const SliderService = () => {
             <NavHashLink to="/xxwats#services">
               {brand ? (
                 <label
-                  className="serviceslider-afterbrandbtn"
+                  className="serviceslider-afterbtn"
                   onClick={() => {
                     setBrand(false);
                     console.log("brand", brand);
@@ -59,7 +65,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-brandbtn"
+                  className="serviceslider-btn"
                   onClick={() => {
                     setBrand(true);
                     console.log("brand", brand);
@@ -79,7 +85,7 @@ const SliderService = () => {
             <NavHashLink to="/xxwats#services">
               {social ? (
                 <label
-                  className="serviceslider-aftersocbtn"
+                  className="serviceslider-afterbtn"
                   onClick={() => {
                     setSocial(false);
                     console.log("social", social);
@@ -89,7 +95,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-socbtn"
+                  className="serviceslider-btn"
                   onClick={() => {
                     setSocial(true);
                     console.log("social", social);
@@ -109,7 +115,7 @@ const SliderService = () => {
             <NavHashLink to="/xxwats#services">
               {video ? (
                 <label
-                  className="serviceslider-aftervidbtn"
+                  className="serviceslider-afterbtn"
                   onClick={() => {
                     setVideo(false);
                     console.log("video", video);
@@ -119,7 +125,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-vidbtn"
+                  className="serviceslider-btn"
                   onClick={() => {
                     setVideo(true);
                     console.log("video", video);
@@ -139,7 +145,7 @@ const SliderService = () => {
             <NavHashLink to="/xxwats#services">
               {ground ? (
                 <label
-                  className="serviceslider-aftergrbtn"
+                  className="serviceslider-afterbtn"
                   onClick={() => {
                     setGround(false);
                     console.log("ground", ground);
@@ -149,7 +155,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-grbtn"
+                  className="serviceslider-btn"
                   onClick={() => {
                     setGround(true);
                     console.log("ground", ground);
@@ -169,7 +175,7 @@ const SliderService = () => {
             <NavHashLink to="/xxwats#services">
               {post ? (
                 <label
-                  className="serviceslider-afterpostbtn"
+                  className="serviceslider-afterbtn"
                   onClick={() => {
                     setPost(false);
                     console.log("post", post);
@@ -179,7 +185,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-postbtn"
+                  className="serviceslider-btn"
                   onClick={() => {
                     setPost(true);
                     console.log("post", post);
@@ -196,6 +202,7 @@ const SliderService = () => {
             </NavHashLink>
           </div>
         </div>
+          <img src={right} alt='arrow'/>
       </div>
     </>
   );

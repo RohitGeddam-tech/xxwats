@@ -5,10 +5,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import desk from "../img/Frame2.png";
 import mob from "../img/Framemob.jpg";
-import play from "../img/icons/icon-play.svg";
 import { Fade } from "react-animation-components";
 import MobSlider from "../components/MobSliding";
-import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 
 const Desktop = () => {
@@ -21,10 +19,6 @@ const Desktop = () => {
   const imag = active ? "frame" : "imag";
 
   const ifade = active ? "ifade" : "frame";
-
-  const iconplay = active ? "frame" : "iconplay";
-
-  const center = active ? "frame" : "center";
 
   const url = active
     ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1"
@@ -113,10 +107,6 @@ const Tab = () => {
 
   const ifade = active ? "fade" : "frame";
 
-  const iconplay = active ? "frame" : "mobplay";
-
-  const center = active ? "frame" : "center";
-
   const container = active ? "mob-frame" : "tab-container";
 
   const url = active
@@ -196,10 +186,6 @@ const Mobile = () => {
   const imag = active ? "frame" : "pict";
 
   const ifade = active ? "fade" : "frame";
-
-  const iconplay = active ? "frame" : "mobplay";
-
-  const center = active ? "frame" : "center";
 
   const container = active ? "mob-frame" : "mob-container";
 

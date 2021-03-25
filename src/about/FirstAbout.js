@@ -12,7 +12,7 @@ const DeskIntro = () => {
 
   return (
     <div className="container">
-      <div className="home">
+      <div className="fahome">
         <div
           className="firstimage"
           data-aos="fade-right"

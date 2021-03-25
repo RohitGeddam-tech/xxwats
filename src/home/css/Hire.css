@@ -452,12 +452,14 @@ color: black;
 .inputslider{
     display: flex;
     width: 100%;
+    align-items: end;
 }
 
 .inputslide{
     width: 100%;
     overflow-x: scroll;
     display: flex;
+    white-space: nowrap;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -485,12 +487,13 @@ color: black;
 
 /* slider btns*/
 
-.serviceslider-checkbtn{
+.serviceslider-btn{
     background-color: transparent !important;
     padding: 2px 10px;
     border-radius: 50px;
+    white-space: nowrap;
     margin-left: 10px;
-    width: 190px;
+    margin-right: 10px;
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
     font-style: normal;
@@ -505,12 +508,11 @@ color: black;
     border: 1px solid #202020 !important;
 }
 
-.serviceslider-aftercheckbtn{
+.serviceslider-afterbtn{
     background-color: black !important;
     padding: 2px 10px;
     border-radius: 50px;
-    margin-left: 10px;
-    width: 190px;
+    white-space: nowrap;
     border-radius: 50px;
     margin-left: 10px;
     cursor: pointer;
@@ -527,214 +529,12 @@ color: black;
     border: 1px solid #202020 !important;
 }
 
-.serviceslider-brandbtn{
-    background-color: transparent !important;
-    padding: 2px 10px;
-    border-radius: 50px;
+.inputslider img:last-child{
     margin-left: 10px;
-    width: 190px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #202020;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
 }
 
-.serviceslider-afterbrandbtn{
-    background-color: black !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 190px;
-    border-radius: 50px;
-    margin-left: 10px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-}
-
-.serviceslider-socbtn{
-    background-color: transparent !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 250px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #202020;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-}
-
-.serviceslider-aftersocbtn{
-    background-color: black !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 250px;
-    border-radius: 50px;
-    margin-left: 10px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-}
-
-.serviceslider-vidbtn{
-    background-color: transparent !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 190px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #202020;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-}
-
-.serviceslider-aftervidbtn{
-    background-color: black !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 190px;
-    border-radius: 50px;
-    margin-left: 10px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-}
-
-.serviceslider-grbtn{
-    background-color: transparent !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 250px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #202020;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-}
-
-.serviceslider-aftergrbtn{
-    background-color: black !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 250px;
-    border-radius: 50px;
-    margin-left: 10px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-}
-
-.serviceslider-postbtn{
-    background-color: transparent !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 190px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #202020;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-}
-
-.serviceslider-afterpostbtn{
-    background-color: black !important;
-    padding: 2px 10px;
-    border-radius: 50px;
-    margin-left: 10px;
-    width: 190px;
-    border-radius: 50px;
-    margin-left: 10px;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 5px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
+.inputslider{
+    overflow-x: hidden;
 }
 
 /*slider btn ends*/
