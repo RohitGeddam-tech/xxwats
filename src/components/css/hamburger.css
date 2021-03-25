@@ -1,0 +1,72 @@
+.nav-links{
+    height: 100%;
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 50px;
+    height: 80%;
+    margin-top: 20%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+
+  .menu-btnx{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 50px;
+    height: 70%;
+    margin-top: 30%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+
+  .line1{
+      position: absolute;
+      width: 32px;
+      height: 1.5px;
+      margin-top: 14px;
+      margin-left: 8px;
+      background-color: #202020;
+  }
+
+  .line2{
+    position: absolute;
+    width: 28px;
+    height: 1.5px;
+    margin-top: 22px;
+    margin-left: 12px;
+    background-color: #202020;
+}
+
+.line3{
+    position: absolute;
+    width: 24px;
+    height: 1.5px;
+    margin-top: 30px;
+    margin-left: 16px;
+    background-color: #202020;
+}
+
+.xline1{
+    position: absolute;
+      width: 22px;
+      height: 1.5px;
+      margin-top: 14px;
+      margin-left: 14px;
+      background-color: #fff;   
+      transform: rotate(45deg);
+}
+
+.xline2{
+    position: absolute;
+      width: 22px;
+      height: 1.5px;
+      margin-top: 14px;
+      margin-left: 14px;
+      background-color: #fff;
+      transform: rotate(-45deg);
+}

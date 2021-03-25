@@ -3,6 +3,8 @@ import "./css/Nav.css";
 import { Squash as Hamburger } from "hamburger-react";
 import { NavHashLink } from "react-router-hash-link";
 import Svg from "../components/Svg";
+import Ham from "./Hamburger";
+import XHam from "./Xham";
 
 const TestDesk = () => {
   const [isActive, setActive] = useState(false);
@@ -45,14 +47,21 @@ const TestDesk = () => {
             </nav>
           )}
           <div className="nav-links">
-            <Hamburger
-              direction="left"
-              className="ham"
-              duration={0.4}
-              color={hamcolor}
-              toggled={isActive}
-              toggle={setActive}
-            />
+            {isActive ? (
+              <>
+                <XHam
+                  ClickHandle={() => {
+                    setActive(!isActive);
+                  }}
+                />
+              </>
+            ) : (
+              <Ham
+                ClickHandle={() => {
+                  setActive(!isActive);
+                }}
+              />
+            )}
           </div>
         </div>
         <div className={fade}>
@@ -114,14 +123,21 @@ const TestMob = () => {
             </nav>
           )}
           <div className="nav-links">
-            <Hamburger
-              direction="left"
-              className="ham"
-              duration={0.4}
-              color={hamcolor}
-              toggled={isActive}
-              toggle={setActive}
-            />
+            {isActive ? (
+              <>
+                <XHam
+                  ClickHandle={() => {
+                    setActive(!isActive);
+                  }}
+                />
+              </>
+            ) : (
+              <Ham
+                ClickHandle={() => {
+                  setActive(!isActive);
+                }}
+              />
+            )}
           </div>
         </div>
         <div className={fade}>

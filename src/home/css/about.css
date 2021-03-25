@@ -10,7 +10,6 @@
     margin: auto;
 }
 
-
 .aboutfirst{
     width: 95%;
     display: flex;
@@ -310,7 +309,7 @@ margin-top: 10px;
 .mob-container{
     width: 100%;
     margin: auto;
-    margin-top: -3%;
+    margin-top: -2%;
     margin-bottom: -3%;
 }
 
