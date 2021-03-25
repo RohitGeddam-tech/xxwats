@@ -53,14 +53,14 @@ const MobIntro = () => {
       <div className="mobhome">
         <div
           className="mobileimage"
-          data-aos="flip-right"
+          data-aos="fade-up"
           data-aos-duration="1000"
         >
           <img src={home} alt="logo" />
         </div>
         <div
           className="famobcontent"
-          data-aos="flip-left"
+          data-aos="fade-up"
           data-aos-duration="3000"
         >
           <h4 className="fafirst-mobtitle">Who are we? </h4>

@@ -12,6 +12,7 @@ import arathi from "../img/team/arathi.png";
 import ansh from "../img/team/ansh.png";
 import anushree from "../img/team/anushree.png";
 import saloni from "../img/team/saloni.png";
+import post from "../img/services/production.png";
 
 const MidDesktop = () => {
   useEffect(() => {
@@ -333,14 +334,38 @@ const MidDesktop = () => {
           data-aos-duration="3000"
         >
           <h4 className="flexend-title">Production team</h4>
-          <p className="flexpara" data-aos="flip-up" data-aos-duration="3000">
+          <div className="tabs">
+            <div
+              className="sentence"
+              data-aos="fade-right"
+              data-aos-duration="2900"
+            >
+              <p className="paragraph">
+                This is the real deal. The team that makes the dream a reality.
+                A passionate group of highly skilled and driven people who
+                constantly talk about giving their 110 percent but we remind
+                them that their 100 percent would suffice. We have a team of 20+
+                in the production department and an equally large team in the
+                post production studio. All brilliant and all good at making
+                what’s on paper, a reality.
+              </p>
+            </div>
+            <div
+              className="picture"
+              data-aos="fade-left"
+              data-aos-duration="2900"
+            >
+              <img src={post} alt="post" />
+            </div>
+          </div>
+          {/* <p className="flexpara" data-aos="flip-up" data-aos-duration="3000">
             This is the real deal. The team that makes the dream a reality. A
             passionate group of highly skilled and driven people who constantly
             talk about giving their 110 percent but we remind them that their
             100 percent would suffice. We have a team of 20+ in the production
             department and an equally large team in the post production studio.
             All brilliant and all good at making what’s on paper, a reality.
-          </p>
+          </p> */}
         </div>
       </div>
     </>
