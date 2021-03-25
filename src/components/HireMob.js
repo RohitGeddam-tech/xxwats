@@ -80,7 +80,7 @@ const HireMob = () => {
               </div>
               <div style={{ marginTop: "30px" }} className="icons-mobmsg">
                 <a href="mailto:shoutout@xxwatts.com" className="mail-title">
-                  wattsup@xxwatts.com
+                  shoutout@xxwatts.com
                 </a>
                 <a href="mailto:shoutout@xxwatts.com">
                   <img alt="call" src={mail} />
