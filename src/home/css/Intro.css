@@ -131,8 +131,8 @@
     color: rgb(135, 135, 135);
 }
 
-.mobimage img{
-    width: 100%;
+.mobileimage img{
+    width: 100% !important;
 }
 
 /*Mobile ends*/

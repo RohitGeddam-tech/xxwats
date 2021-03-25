@@ -35,7 +35,7 @@ const MobIntro = () => {
   return (
     <div className="container">
       <div className="mobhome">
-        <div className="mobimage" data-aos="fade-down" data-aos-duration="2900">
+        <div className="mobileimage" data-aos="fade-down" data-aos-duration="2900">
           <img src={home} alt="logo" />
         </div>
         <div className="mobcontent" data-aos="fade-up" data-aos-duration="2900">

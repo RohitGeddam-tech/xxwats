@@ -52,7 +52,7 @@ const MobIntro = () => {
     <div className="container">
       <div className="mobhome">
         <div
-          className="mobimage"
+          className="mobileimage"
           data-aos="flip-right"
           data-aos-duration="1000"
         >
