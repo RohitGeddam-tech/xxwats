@@ -6,9 +6,7 @@ import insta from "../img/icons/icon-instagram.svg";
 import youtube from "../img/icons/icon-youtube.svg";
 import facebook from "../img/icons/icon-facebook.svg";
 import twitter from "../img/icons/icon-twitter.svg";
-import home from "../img/logo/logo-tall.svg";
 
-import Service from "../components/ServiceSlider";
 import SvgTall from "../components/SvgTall";
 import Form from "../components/Form";
 import Aos from "aos";

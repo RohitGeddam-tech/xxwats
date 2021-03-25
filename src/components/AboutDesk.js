@@ -53,7 +53,7 @@ const HireDesk = () => {
                 </a>
               </div>
               <div className="icons-msg">
-                <a href="mailto:wattsup@xxwatts.com">
+                <a href="mailto:shoutout@xxwatts.com">
                   <img alt="call" src={mail} />
                 </a>
                 <a href="mailto:shoutout@xxwatts.com" className="mail-title">
