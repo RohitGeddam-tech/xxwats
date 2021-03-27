@@ -8,6 +8,7 @@ import mob from "../img/Framemob.jpg";
 import { Fade } from "react-animation-components";
 import MobSlider from "../components/MobSliding";
 import { NavHashLink } from "react-router-hash-link";
+import { AnimatedBg, Transition } from "scroll-background";
 
 const Desktop = () => {
   const [active, setActive] = useState(false);
@@ -44,7 +45,9 @@ const Desktop = () => {
                 comprehensive, creative and purpose-driven brands and
                 experiences.
               </p>
-              <NavHashLink to='/xxwats/about#top'><button className="aboutbtn">More About Us</button></NavHashLink>
+              <NavHashLink to="/xxwats/about#top">
+                <button className="aboutbtn">More About Us</button>
+              </NavHashLink>
             </div>
           </div>
         </div>
@@ -132,7 +135,9 @@ const Tab = () => {
               comprehensive, creative and purpose-driven brands and experiences.
             </p>
             <div className="alignbtn">
-              <NavHashLink to='/xxwats/about#top'><button className="aboutbtn">More About Us</button></NavHashLink>
+              <NavHashLink to="/xxwats/about#top">
+                <button className="aboutbtn">More About Us</button>
+              </NavHashLink>
             </div>
           </div>
         </div>
@@ -208,7 +213,9 @@ const Mobile = () => {
               comprehensive, creative and purpose-driven brands and experiences.
             </p>
             <div className="alignbtn">
-            <NavHashLink to='/xxwats/about#top'><button className="aboutbtn">More About Us</button></NavHashLink>
+              <NavHashLink to="/xxwats/about#top">
+                <button className="aboutbtn">More About Us</button>
+              </NavHashLink>
             </div>
           </div>
         </div>

@@ -7,6 +7,8 @@ import post from "../img/services/post-production.png";
 import production from "../img/services/production.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import AnimatedBg from "scroll-background/dist/AnimatedBg";
+import { Transition } from "scroll-background";
 
 const Desktop = () => {
   useEffect(() => {

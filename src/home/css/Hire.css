@@ -1,6 +1,6 @@
 .hire{
     width: 100%;
-    background-color: #EEEA64;
+    /* background-color: #EEEA64; */
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -29,7 +29,6 @@
     flex-flow: column;
     align-items: center;
 }
-
 
 .title-container{
     width: 95%;
@@ -242,14 +241,15 @@ button.slick-prev:before{
 
 .slideservice{
     padding-top: 10px;
-    width: 90%;
+    width: 93%;
     display: flex;
     margin: auto;
 }
 
 .careers{
     display: flex;
-    align-items: center;
+    flex-flow: column;
+    align-items: flex-start;
     justify-content: flex-start;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -266,17 +266,18 @@ button.slick-prev:before{
     line-height: 19px;
     text-transform: uppercase;
     color: #202020;
+    margin-bottom: 15px !important;
 }
 
 .careers a{
     white-space: wrap;
     text-align: start;
     word-break: break-all;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 19px;
+    font-size: 24px;
+    line-height: 28px;
     text-transform: uppercase;
     color: #202020;
     padding-left: 10px;

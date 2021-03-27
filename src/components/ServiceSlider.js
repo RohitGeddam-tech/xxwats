@@ -21,7 +21,7 @@ export class ServiceSlider extends Component {
       speed: 500,
       responsive: [
         {
-          breakpoint: 1050,
+          breakpoint: 1270,
           settings: {
             dots: false,
             arrows: true,

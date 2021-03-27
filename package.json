@@ -19,6 +19,7 @@
     "react-router-hash-link": "^2.4.0",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
+    "scroll-background": "^1.0.5",
     "simple-git": "^2.36.1",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^1.1.0"
