@@ -1,4 +1,3 @@
-import { refresh } from "aos";
 import React, { useState, useRef } from "react";
 import { NavHashLink } from "react-router-hash-link";
 import left from '../img/left.png'
@@ -22,7 +21,6 @@ const SliderService = () => {
           <img src={left} alt='arrow'/>
         <div className="inputslide">
           <div className="insideslide">
-            <NavHashLink to="/xxwats#services">
               {check ? (
                 <label
                   className="serviceslider-afterbtn"
@@ -49,10 +47,8 @@ const SliderService = () => {
                 defaultChecked={check}
                 style={{ display: "none" }}
               />
-            </NavHashLink>
           </div>
           <div className="insideslide">
-            <NavHashLink to="/xxwats#services">
               {brand ? (
                 <label
                   className="serviceslider-afterbtn"
@@ -79,10 +75,8 @@ const SliderService = () => {
                 defaultChecked={brand}
                 style={{ display: "none" }}
               />
-            </NavHashLink>
           </div>
           <div className="insideslide">
-            <NavHashLink to="/xxwats#services">
               {social ? (
                 <label
                   className="serviceslider-afterbtn"
@@ -109,10 +103,8 @@ const SliderService = () => {
                 defaultChecked={social}
                 style={{ display: "none" }}
               />
-            </NavHashLink>
           </div>
           <div className="insideslide">
-            <NavHashLink to="/xxwats#services">
               {video ? (
                 <label
                   className="serviceslider-afterbtn"
@@ -139,10 +131,8 @@ const SliderService = () => {
                 defaultChecked={video}
                 style={{ display: "none" }}
               />
-            </NavHashLink>
           </div>
           <div className="insideslide">
-            <NavHashLink to="/xxwats#services">
               {ground ? (
                 <label
                   className="serviceslider-afterbtn"
@@ -169,10 +159,8 @@ const SliderService = () => {
                 defaultChecked={ground}
                 style={{ display: "none" }}
               />
-            </NavHashLink>
           </div>
           <div className="insideslide">
-            <NavHashLink to="/xxwats#services">
               {post ? (
                 <label
                   className="serviceslider-afterbtn"
@@ -199,7 +187,6 @@ const SliderService = () => {
                 defaultChecked={post}
                 style={{ display: "none" }}
               />
-            </NavHashLink>
           </div>
         </div>
           <img src={right} alt='arrow'/>

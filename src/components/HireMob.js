@@ -12,6 +12,7 @@ import Form from "../components/Form";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import SliderService from "./SliderService";
+import ServiceSlider from "./ServiceSlider";
 
 const HireMob = () => {
   useEffect(() => {
@@ -34,7 +35,7 @@ const HireMob = () => {
             <h4 className="second-quote">We'd love to hear about it! </h4>
             <div className="service-slider">
               <h4 className="service-title">Services</h4>
-              <SliderService />
+              <ServiceSlider />
             </div>
             <div className="service-form">
               <Form />

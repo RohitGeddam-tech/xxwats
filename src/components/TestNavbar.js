@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./css/Nav.css";
-import { Squash as Hamburger } from "hamburger-react";
+import {Fade} from 'react-animation-components'
 import { NavHashLink } from "react-router-hash-link";
 import Svg from "../components/Svg";
+import Ham from "./Hamburger";
+import XHam from "./Xham";
 
 const TestDesk = () => {
   const [isActive, setActive] = useState(false);
@@ -45,26 +47,33 @@ const TestDesk = () => {
             </nav>
           )}
           <div className="nav-links">
-            <Hamburger
-              direction="left"
-              className="ham"
-              duration={0.4}
-              color={hamcolor}
-              toggled={isActive}
-              toggle={setActive}
-            />
+          {isActive ? (
+              <>
+                <XHam
+                  ClickHandle={() => {
+                    setActive(!isActive);
+                  }}
+                />
+              </>
+            ) : (
+              <Ham
+                ClickHandle={() => {
+                  setActive(!isActive);
+                }}
+              />
+            )}
           </div>
         </div>
         <div className={fade}>
           {/* <div className='fadein'> */}
           <NavHashLink to="/xxwats#top" className="navdeskfade">
-            Home
+            <Fade in={isActive} delay='500'>Home</Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/about#top" className="navdeskfade">
-            About us
+            <Fade in={isActive} delay='1500'>About us</Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/contact#top" className="navdeskfade">
-            Contact us
+          <Fade in={isActive} delay='2500'>Contact Us</Fade>
           </NavHashLink>
           {/* </div> */}
         </div>
@@ -114,26 +123,33 @@ const TestMob = () => {
             </nav>
           )}
           <div className="nav-links">
-            <Hamburger
-              direction="left"
-              className="ham"
-              duration={0.4}
-              color={hamcolor}
-              toggled={isActive}
-              toggle={setActive}
-            />
+          {isActive ? (
+              <>
+                <XHam
+                  ClickHandle={() => {
+                    setActive(!isActive);
+                  }}
+                />
+              </>
+            ) : (
+              <Ham
+                ClickHandle={() => {
+                  setActive(!isActive);
+                }}
+              />
+            )}
           </div>
         </div>
         <div className={fade}>
           {/* <div className='fadein'> */}
           <NavHashLink to="/xxwats#top" className="navfade">
-            Home
+            <Fade in={isActive} delay='500'>Home</Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/about#top" className="navfade">
-            About us
+            <Fade in={isActive} delay='1500'>About us</Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/contact#top" className="navfade">
-            Contact us
+          <Fade in={isActive} delay='2500'>Contact Us</Fade>
           </NavHashLink>
           {/* </div> */}
         </div>

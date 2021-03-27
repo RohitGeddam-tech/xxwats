@@ -1,5 +1,5 @@
 .nav-links{
-    height: 100%;
+    height: 65px;
 }
 
 .menu-btn {
@@ -53,20 +53,20 @@
 
 .xline1{
     position: absolute;
-      width: 22px;
+      width: 32px;
       height: 1.5px;
       margin-top: 14px;
-      margin-left: 14px;
+      margin-left: 8px;
       background-color: #fff;   
       transform: rotate(45deg);
 }
 
 .xline2{
     position: absolute;
-      width: 22px;
+      width: 32px;
       height: 1.5px;
       margin-top: 14px;
-      margin-left: 14px;
+      margin-left: 8px;
       background-color: #fff;
       transform: rotate(-45deg);
 }

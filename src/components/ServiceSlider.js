@@ -2,6 +2,15 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 
 export class ServiceSlider extends Component {
+  state = {
+    check: false,
+    brand: false,
+    social: false,
+    video: false,
+    ground: false,
+    post: false,
+  };
+
   render() {
     const settings = {
       dots: false,
@@ -12,14 +21,14 @@ export class ServiceSlider extends Component {
       speed: 500,
       responsive: [
         {
-          breakpoint: 800,
+          breakpoint: 1050,
           settings: {
             dots: false,
             arrows: true,
+            infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
-            speed: 100,
+            speed: 500,
           },
         },
         {
@@ -27,32 +36,21 @@ export class ServiceSlider extends Component {
           settings: {
             dots: false,
             arrows: true,
+            infinite: false,
             slidesToShow: 2,
-            slidesToScroll: 1,
-            autoplay: false,
-            speed: 100,
+            slidesToScroll: 2,
+            speed: 500,
           },
         },
         {
-          breakpoint: 660,
+          breakpoint: 550,
           settings: {
             dots: false,
-            arrows: false,
+            arrows: true,
+            infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: false,
-            speed: 100,
-          },
-        },
-        {
-          breakpoint: 300,
-          settings: {
-            dots: false,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: false,
-            speed: 100,
+            speed: 500,
           },
         },
       ],
@@ -60,25 +58,173 @@ export class ServiceSlider extends Component {
     return (
       <div className="slideservice">
         <Slider {...settings}>
-          <div className="serviceslide">
-            <button className="serviceslider-btn">Creative Strategy</button>
+          <div className="insideslide">
+            {this.state.check ? (
+              <label
+                className="serviceslider-afterbtn"
+                onClick={() => {
+                  this.setState({ check: false });
+                  console.log("creative strategy", this.state.check);
+                }}
+              >
+                creative strategy
+              </label>
+            ) : (
+              <label
+                className="serviceslider-btn"
+                onClick={() => {
+                  this.setState({ check: true });
+                  console.log("creative strategy", this.state.check);
+                }}
+              >
+                creative strategy
+              </label>
+            )}
+            <input
+              type="checkbox"
+              defaultChecked={this.state.check}
+              style={{ display: "none" }}
+            />
           </div>
-          <div className="serviceslide">
-            <button className="serviceslider-btn">Brand Campaigns</button>
+          <div className="insideslide">
+            {this.state.brand ? (
+              <label
+                className="serviceslider-afterbtn"
+                onClick={() => {
+                  this.setState({ brand: false });
+                  console.log("brand", this.state.brand);
+                }}
+              >
+                Brand Campaigns
+              </label>
+            ) : (
+              <label
+                className="serviceslider-btn"
+                onClick={() => {
+                  this.setState({ brand: true });
+                  console.log("brand", this.state.brand);
+                }}
+              >
+                Brand Campaigns
+              </label>
+            )}
+            <input
+              type="checkbox"
+              defaultChecked={this.state.brand}
+              style={{ display: "none" }}
+            />
           </div>
-          <div className="serviceslide">
-            <button className="serviceslider-btn">
-              Social media Campaigns
-            </button>
+          <div className="insideslide">
+            {this.state.social ? (
+              <label
+                className="serviceslider-afterbtn"
+                onClick={() => {
+                  this.setState({ social: false });
+                  console.log("social", this.state.social);
+                }}
+              >
+                Social media Campaigns
+              </label>
+            ) : (
+              <label
+                className="serviceslider-btn"
+                onClick={() => {
+                  this.setState({ social: true });
+                  console.log("social", this.state.social);
+                }}
+              >
+                Social media Campaigns
+              </label>
+            )}
+            <input
+              type="checkbox"
+              defaultChecked={this.state.social}
+              style={{ display: "none" }}
+            />
           </div>
-          <div className="serviceslide">
-            <button className="serviceslider-btn">video campaigns</button>
+          <div className="insideslide">
+            {this.state.video ? (
+              <label
+                className="serviceslider-afterbtn"
+                onClick={() => {
+                  this.setState({ video: false });
+                  console.log("video", this.state.video);
+                }}
+              >
+                video campaigns
+              </label>
+            ) : (
+              <label
+                className="serviceslider-btn"
+                onClick={() => {
+                  this.setState({ video: true });
+                  console.log("video", this.state.video);
+                }}
+              >
+                video campaigns
+              </label>
+            )}
+            <input
+              type="checkbox"
+              defaultChecked={this.state.video}
+              style={{ display: "none" }}
+            />
           </div>
-          <div className="serviceslide">
-            <button className="serviceslider-btn">on-ground engagements</button>
+          <div className="insideslide">
+            {this.state.ground ? (
+              <label
+                className="serviceslider-afterbtn"
+                onClick={() => {
+                  this.setState({ ground: false });
+                  console.log("ground", this.state.ground);
+                }}
+              >
+                on-ground engagements
+              </label>
+            ) : (
+              <label
+                className="serviceslider-btn"
+                onClick={() => {
+                  this.setState({ ground: true });
+                  console.log("ground", this.state.ground);
+                }}
+              >
+                on-ground engagements
+              </label>
+            )}
+            <input
+              type="checkbox"
+              defaultChecked={this.state.ground}
+              style={{ display: "none" }}
+            />
           </div>
-          <div className="serviceslide">
-            <button className="serviceslider-btn">Post-production</button>
+          <div className="insideslide">
+            {this.state.post ? (
+              <label
+                className="serviceslider-afterbtn"
+                onClick={() => {
+                  this.setState({ post: false });
+                  console.log("post", this.state.post);
+                }}
+              >
+                Post-production
+              </label>
+            ) : (
+              <label
+                className="serviceslider-btn"
+                onClick={() => {
+                  this.setState({ post: true });
+                  console.log("post", this.state.post);
+                }}
+              >
+                Post-production
+              </label>
+            )}
+            <input
+              type="checkbox"
+              defaultChecked={this.state.post}
+              style={{ display: "none" }}
+            />
           </div>
         </Slider>
       </div>

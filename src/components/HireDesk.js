@@ -8,6 +8,7 @@ import facebook from "../img/icons/icon-facebook.svg";
 import twitter from "../img/icons/icon-twitter.svg";
 
 import Slideservice from "../components/SliderService";
+import Serv from './ServiceSlider'
 import Form from "../components/Form";
 import SvgTall from "../components/SvgTall";
 import Aos from "aos";
@@ -95,7 +96,8 @@ const HireDesk = () => {
             <div className="service-slider">
               <h4 className="service-title">Services</h4>
               {/* <Service /> */}
-              <Slideservice />
+              {/* <Slideservice /> */}
+              <Serv />
             </div>
             <div className="service-form">
               <Form />

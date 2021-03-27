@@ -200,6 +200,10 @@ margin-top: 10px;
     justify-content: center;
 }
 
+.slick-slide img:focus{
+    outline: 0 !important;
+}
+
 .slick-track{
     /* width: 100% !important; */
     display: flex !important;

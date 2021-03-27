@@ -42,6 +42,7 @@ header{
     position: fixed;
     background-color: #F7008C;
     z-index: 999;
+    transition: all 0.5s ease-in-out;
     padding-bottom: 40px;
 }
 
@@ -50,6 +51,7 @@ header{
     height: 100%;
     position: fixed;
     background-color: #F7008C;
+    transition: all 0.5s ease-in-out;
     z-index: 999;
 }
 
