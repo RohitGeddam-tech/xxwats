@@ -8,14 +8,10 @@ import { Transition } from "scroll-background";
 const View = () => {
   return (
     <>
-      <AnimatedBg>
       <Nav />
-      <Transition from='#EEEA64' to='#EEEA64'>
-      <section style={{ paddingTop: "65px" }}>
+      <section style={{ paddingTop: "65px", background:'#EEEA64' }}>
         <Hire />
       </section>
-      </Transition>
-      </AnimatedBg>
     </>
   );
 };
