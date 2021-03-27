@@ -2,8 +2,6 @@ import React from "react";
 import "./App.css";
 import Hire from "./home/Hire";
 import Nav from "./components/TestNavbar";
-import AnimatedBg from "scroll-background/dist/AnimatedBg";
-import { Transition } from "scroll-background";
 
 const View = () => {
   return (
