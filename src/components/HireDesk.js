@@ -106,7 +106,7 @@ const HireDesk = () => {
         </div>
       </div>
       <div className="deskfoot" data-aos="fade-down" data-aos-duration="5000">
-        <div className="footimg">
+        <div className="footimg"style={{display:'flex', justifyContent:'center'}}>
           <SvgTall
             classname={"black"}
             gradient1={"black-gradient-1"}
