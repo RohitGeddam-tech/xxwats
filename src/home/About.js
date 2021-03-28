@@ -8,7 +8,6 @@ import mob from "../img/Framemob.jpg";
 import { Fade } from "react-animation-components";
 import MobSlider from "../components/MobSliding";
 import { NavHashLink } from "react-router-hash-link";
-import { AnimatedBg, Transition } from "scroll-background";
 
 const Desktop = () => {
   const [active, setActive] = useState(false);
