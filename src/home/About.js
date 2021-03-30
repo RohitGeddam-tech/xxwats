@@ -44,7 +44,7 @@ const Desktop = () => {
                 comprehensive, creative and purpose-driven brands and
                 experiences.
               </p>
-              <NavHashLink to="/xxwatts/about#top">
+              <NavHashLink to="/xxwats/about#top">
                 <button className="aboutbtn">More About Us</button>
               </NavHashLink>
             </div>
@@ -88,7 +88,7 @@ const Desktop = () => {
           <div className="slidecontainer">
             <h4 className="sliderheading">work</h4>
             <h4 className="sliderh1">We do stuff.</h4>
-            <NavHashLink to="/xxwatts/about#mid">
+            <NavHashLink to="/xxwats/about#mid">
               <button className="sliderbtn">Meet our team</button>
             </NavHashLink>
           </div>
@@ -134,7 +134,7 @@ const Tab = () => {
               comprehensive, creative and purpose-driven brands and experiences.
             </p>
             <div className="alignbtn">
-              <NavHashLink to="/xxwatts/about#top">
+              <NavHashLink to="/xxwats/about#top">
                 <button className="aboutbtn">More About Us</button>
               </NavHashLink>
             </div>
@@ -165,7 +165,7 @@ const Tab = () => {
           <MobSlider />
         </div>
         <div className="btncenter">
-          <NavHashLink to="/xxwatts/about#mid">
+          <NavHashLink to="/xxwats/about#mid">
             <button
               data-aos="zoom-in"
               data-aos-duration="2700"
@@ -212,7 +212,7 @@ const Mobile = () => {
               comprehensive, creative and purpose-driven brands and experiences.
             </p>
             <div className="alignbtn">
-              <NavHashLink to="/xxwatts/about#top">
+              <NavHashLink to="/xxwats/about#top">
                 <button className="aboutbtn">More About Us</button>
               </NavHashLink>
             </div>
@@ -242,7 +242,7 @@ const Mobile = () => {
         <div className={container} data-aos="zoom-in" data-aos-duration="2700">
           <MobSlider />
         </div>
-        <NavHashLink to="/xxwatts/about#mid">
+        <NavHashLink to="/xxwats/about#mid">
           <button
             data-aos="zoom-in"
             data-aos-duration="2700"
