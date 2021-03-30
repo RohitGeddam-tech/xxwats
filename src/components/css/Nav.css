@@ -2,6 +2,7 @@
     width: 100%;
     position: fixed;
     background-color: white;
+    transition: all 0.8s ease-in-out;
     z-index: 999;
     height: 60px;
 }
@@ -16,6 +17,7 @@ header{
 
 .header{
     width: 100%;
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +26,7 @@ header{
 .headerfull{
     width: 100%;
     display: flex;
+    position: absolute;
     justify-content: space-between;
 }
 
@@ -42,7 +45,7 @@ header{
     position: fixed;
     background-color: #F7008C;
     z-index: 999;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
     padding-bottom: 40px;
 }
 
@@ -51,7 +54,7 @@ header{
     height: 100%;
     position: fixed;
     background-color: #F7008C;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
     z-index: 999;
 }
 

@@ -11,7 +11,6 @@ import logotall from "../img/logo/logo-tall.svg";
 import Form from "../components/Form";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import SliderService from "./SliderService";
 import ServiceSlider from "./ServiceSlider";
 
 const HireDesk = () => {

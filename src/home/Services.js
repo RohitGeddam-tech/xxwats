@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./css/Services.css";
 import strategy from "../img/services/strategy.png";
 import creative from "../img/services/Creative1.svg";
@@ -283,8 +283,43 @@ const Services = () => {
     });
   });
 
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = refColor.getBoundingClientRect();
+    return (
+      (rect.top <= 100 || rect.top <= 300 || rect.top <= 500) &&
+      (rect.bottom <= 0 ||
+        rect.bottom >= window.innerHeight ||
+        rect.bottom >= window.innerHeight - 100 ||
+        rect.bottom >= window.innerHeight - 300 ||
+        rect.bottom >= window.innerHeight - 500)
+    );
+  };
+
+  console.log(window.innerHeight);
+
+  const [serView, setserView] = useState(false);
+
+  useEffect(() => {
+    setserView(isInView())
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    setserView(isInView());
+  };
+
+  const servColor = serView ? 'services' : 'services-none'
+
+  const bottom50 = serView ? 'bottom50' : 'bottom50-none'
+
   return (
-    <div className="services" id="services">
+    <div ref={colorRef} id="services" className={servColor}>
       {isDesktop ? (
         <>{isMobile ? <Mobile /> : <Desktop />}</>
       ) : (
@@ -292,6 +327,7 @@ const Services = () => {
           {isMobile ? <Mobile /> : <Desktop />}
         </div>
       )}
+      <div className={bottom50}></div>
     </div>
   );
 };

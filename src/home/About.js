@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./css/about.css";
 import Slider from "../components/Sliding";
 import Aos from "aos";
@@ -44,7 +44,7 @@ const Desktop = () => {
                 comprehensive, creative and purpose-driven brands and
                 experiences.
               </p>
-              <NavHashLink to="/xxwats/about#top">
+              <NavHashLink to="/xxwatts/about#top">
                 <button className="aboutbtn">More About Us</button>
               </NavHashLink>
             </div>
@@ -88,7 +88,7 @@ const Desktop = () => {
           <div className="slidecontainer">
             <h4 className="sliderheading">work</h4>
             <h4 className="sliderh1">We do stuff.</h4>
-            <NavHashLink to="/xxwats/about#mid">
+            <NavHashLink to="/xxwatts/about#mid">
               <button className="sliderbtn">Meet our team</button>
             </NavHashLink>
           </div>
@@ -134,7 +134,7 @@ const Tab = () => {
               comprehensive, creative and purpose-driven brands and experiences.
             </p>
             <div className="alignbtn">
-              <NavHashLink to="/xxwats/about#top">
+              <NavHashLink to="/xxwatts/about#top">
                 <button className="aboutbtn">More About Us</button>
               </NavHashLink>
             </div>
@@ -165,7 +165,7 @@ const Tab = () => {
           <MobSlider />
         </div>
         <div className="btncenter">
-          <NavHashLink to="/xxwats/about#mid">
+          <NavHashLink to="/xxwatts/about#mid">
             <button
               data-aos="zoom-in"
               data-aos-duration="2700"
@@ -212,7 +212,7 @@ const Mobile = () => {
               comprehensive, creative and purpose-driven brands and experiences.
             </p>
             <div className="alignbtn">
-              <NavHashLink to="/xxwats/about#top">
+              <NavHashLink to="/xxwatts/about#top">
                 <button className="aboutbtn">More About Us</button>
               </NavHashLink>
             </div>
@@ -242,7 +242,7 @@ const Mobile = () => {
         <div className={container} data-aos="zoom-in" data-aos-duration="2700">
           <MobSlider />
         </div>
-        <NavHashLink to="/xxwats/about#mid">
+        <NavHashLink to="/xxwatts/about#mid">
           <button
             data-aos="zoom-in"
             data-aos-duration="2700"
@@ -285,8 +285,40 @@ const About = () => {
     });
   });
 
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = refColor.getBoundingClientRect();
+    return (
+      (rect.top <= 100 || rect.top <= 300 || rect.top <= 500) &&
+      (rect.bottom >= window.innerHeight - 100 ||
+        rect.bottom >= window.innerHeight - 300 ||
+        rect.bottom >= window.innerHeight - 500)
+    );
+  };
+
+  console.log(window.innerHeight);
+
+  const [inView, setInView] = useState(false);
+
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
+
+  const aboutColor = inView ? 'aboutColor' : 'aboutColor-none'
+
   return (
-    <div className="about">
+    <div ref={colorRef} className={aboutColor}>
       {isDesktop ? (
         <>
           {isTab ? (
