@@ -39,11 +39,11 @@ const FormDesk = () => {
       ...values,
       [e.target.name]: e.target.value,
     });
-    setErrors(validate(values));
   };
 
   const handleClick = () => {
     setClicked(true);
+    setErrors(validate(values));
     console.log("clicked", clicked);
   };
 
@@ -62,6 +62,7 @@ const FormDesk = () => {
           label="Name"
           name="name"
           value={values.name}
+          onClick={handleClick}
           onChange={handleChange}
         />
         {errors.name && <h1>{errors.name}</h1>}
@@ -87,6 +88,7 @@ const FormDesk = () => {
         <TextField
           className="textfield"
           id="standard-basic"
+          onClick={handleClick}
           label="Email-Address"
           name="email"
           value={values.email}
@@ -142,6 +144,7 @@ const FormMob = () => {
 
   const handleClick = () => {
     setClicked(true);
+    setErrors(validate(values));
     console.log("clicked", clicked);
   };
 
@@ -160,6 +163,7 @@ const FormMob = () => {
           label="Name"
           name="name"
           value={values.name}
+          onClick={handleClick}
           onChange={handleChange}
         />
         {errors.name && <h1>{errors.name}</h1>}
@@ -187,6 +191,7 @@ const FormMob = () => {
           id="standard-basic"
           label="Email-Address"
           name="email"
+          onClick={handleClick}
           value={values.email}
           onChange={handleChange}
         />

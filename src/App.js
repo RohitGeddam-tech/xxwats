@@ -67,29 +67,30 @@ const View = () => {
 const App = () => {
   const newRef = useRef(null);
 
-  const isInView = () => {
-    const refColor = newRef.current;
-    const rect = refColor.getBoundingClientRect();
-    return (
-      rect.top <= -100
-    );
-  };
+  // const isInView = () => {
+  //   const refColor = newRef.current;
+  //   const rect = refColor.getBoundingClientRect();
+  //   return (
+  //     rect.top <= -100
+  //   );
+  // };
 
-  console.log(window.innerHeight);
+  // console.log(window.innerHeight);
 
   const [inView, setInView] = useState(false);
 
-  useEffect(() => {
-    setInView(isInView());
-    window.addEventListener("scroll", scrollHandler);
-    return () => {
-      window.removeEventListener("scroll", scrollHandler);
-    };
-  }, []);
+  // useEffect(() => {
+  //   setInView(isInView());
+  //   window.addEventListener("scroll", scrollHandler);
+  //   return () => {
+  //     window.removeEventListener("scroll", scrollHandler);
+  //   };
+  // }, []);
 
-  const scrollHandler = () => {
-    setInView(isInView());
-  };
+  // const scrollHandler = () => {
+  //   setInView(isInView());
+  // };
+
 
   const backColor = inView ? "Appcolor" : "App";
 
