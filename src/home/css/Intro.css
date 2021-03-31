@@ -178,8 +178,8 @@ button{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 7%;
-    padding-bottom: 8%;
+    padding-top: 6.5% !important;
+    padding-bottom: 8.5%;
 }
 
 .facontent{
