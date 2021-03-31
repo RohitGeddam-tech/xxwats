@@ -22,14 +22,14 @@ const HireMob = () => {
 
   return (
     <>
-      <div className="title-container">
+      <div className="title-container" style={{width:'95% !important'}}>
         <h4 className="first-title">hire us</h4>
       </div>
       <div className="hire-mobcontainer">
         <div
           className="second-mobbox"
           data-aos="fade-up"
-          data-aos-duration="3500"
+          data-aos-duration="1000"
         >
           <div className="second-mobbox-container">
             <h4 className="second-title">A project with 20 Watts?</h4>
@@ -46,7 +46,7 @@ const HireMob = () => {
         <div
           className="first-mobbox"
           data-aos="fade-up"
-          data-aos-duration="3500"
+          data-aos-duration="3000"
         >
           <div className="first-box-mobcontainer">
             <h4 style={{ paddingTop: "30px" }} className="first-quote">

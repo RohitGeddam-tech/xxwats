@@ -22,7 +22,7 @@ const HireMob = () => {
 
   return (
     <>
-      <div className="title-container">
+      <div className="title-container" style={{width:'95% !important'}}>
         <h4 className="first-title">hire us</h4>
       </div>
       <div className="hire-mobcontainer">
