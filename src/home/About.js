@@ -30,7 +30,7 @@ const Desktop = () => {
         <div
           className="yellowtab"
           data-aos="fade-up"
-          data-aos-duration="2700"
+          data-aos-duration="2000"
         >
           <div className="tabcontainer">
             <h4 className="heading">About us</h4>
@@ -53,7 +53,7 @@ const Desktop = () => {
         <div
           className="aboutvideo"
           data-aos="fade-up"
-          data-aos-duration="3100"
+          data-aos-duration="2500"
         >
           <img
             src={desk}
@@ -77,13 +77,13 @@ const Desktop = () => {
         </div>
       </div>
       <div className="sliderbox">
-        <div className="slider" data-aos="fade-up" data-aos-duration="4000">
+        <div className="slider" data-aos="fade-up" data-aos-duration="3000">
           <Slider />
         </div>
         <div
           className="slidercover"
           data-aos="fade-up"
-          data-aos-duration="3300"
+          data-aos-duration="2300"
         >
           <div className="slidecontainer">
             <h4 className="sliderheading">work</h4>
@@ -120,7 +120,7 @@ const Tab = () => {
       <div
         className="mob-container"
         data-aos="fade-up"
-        data-aos-duration="2700"
+        data-aos-duration="2000"
       >
         <div className="yellowtabmob">
           <div className="tabmobcontainer">
@@ -161,14 +161,14 @@ const Tab = () => {
             className="vid"
           />
         </Fade>
-        <div className={container} data-aos="fade-up" data-aos-duration="2700">
+        <div className={container} data-aos="fade-up" data-aos-duration="2500">
           <MobSlider />
         </div>
         <div className="btncenter">
           <NavHashLink to="/xxwats/about#mid">
             <button
               data-aos="fade-up"
-              data-aos-duration="2700"
+              data-aos-duration="2500"
               className="mobaboutbtn"
             >
               Meet our team
@@ -199,7 +199,7 @@ const Mobile = () => {
 
   return (
     <div className="aboutmobile">
-      <div className="mobcontainer" data-aos="fade-up" data-aos-duration="2700">
+      <div className="mobcontainer" data-aos="fade-up" data-aos-duration="2000">
         <div className="yellowtabmob">
           <div className="tabmobcontainer">
             <h4 className="heading">About us</h4>
@@ -239,13 +239,13 @@ const Mobile = () => {
             className="vid"
           />
         </Fade>
-        <div className={container} data-aos="fade-up" data-aos-duration="2700">
+        <div className={container} data-aos="fade-up" data-aos-duration="2500">
           <MobSlider />
         </div>
         <NavHashLink to="/xxwats/about#mid">
           <button
             data-aos="fade-up"
-            data-aos-duration="2700"
+            data-aos-duration="2500"
             id="services"
             className="mobaboutbtn"
           >

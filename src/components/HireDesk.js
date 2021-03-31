@@ -90,7 +90,7 @@ const HireDesk = () => {
         <div
           className="second-box"
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
           <div className="second-box-container">
             <h4 className="second-title">A project with 20 Watts?</h4>
@@ -107,7 +107,7 @@ const HireDesk = () => {
           </div>
         </div>
       </div>
-      <div className="deskfoot" data-aos="fade-up" data-aos-duration="5000">
+      <div className="deskfoot" data-aos="fade-up" data-aos-duration="3000">
         <div className="footimg">
           <SvgTall
             classname={"black"}

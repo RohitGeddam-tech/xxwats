@@ -149,7 +149,7 @@ const MidDesktop = () => {
             <div
               className="inflex2"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="2000"
             >
               <div className={innersavio} onMouseEnter={onSavioClick}>
                 <img src={savio} alt="logo" />
@@ -223,7 +223,7 @@ const MidDesktop = () => {
             <div
               className="inflex2"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="2000"
             >
               <div className={inneransh} onMouseEnter={onAnshClick}>
                 <img src={ansh} alt="logo" />
@@ -290,7 +290,7 @@ const MidDesktop = () => {
             <div
               className="inflex2"
               data-aos="fade-up"
-              data-aos-duration="3000"
+              data-aos-duration="2000"
             >
               <div className={innersal} onMouseEnter={onSaloniClick}>
                 <img src={saloni} alt="logo" />
@@ -331,7 +331,7 @@ const MidDesktop = () => {
         <div
           className="midend-title"
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
           <h4 className="flexend-title">Production team</h4>
           <div className="tabs">
@@ -353,7 +353,7 @@ const MidDesktop = () => {
             <div
               className="picture"
               data-aos="fade-up"
-              data-aos-duration="2900"
+              data-aos-duration="2000"
             >
               <img src={post} alt="post" />
             </div>

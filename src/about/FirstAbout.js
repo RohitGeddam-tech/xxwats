@@ -25,7 +25,7 @@ const DeskIntro = () => {
         <div
           className="facontent"
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
           <h4 className="fafirst-title">Who are we? </h4>
           <p className="faquote">And how do we help you?</p>
@@ -61,7 +61,7 @@ const MobIntro = () => {
         <div
           className="famobcontent"
           data-aos="fade-up"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
         >
           <h4 className="fafirst-mobtitle">Who are we? </h4>
           <p className="famobquote">And how do we help you?</p>
