@@ -91,6 +91,16 @@ const App = () => {
   //   setInView(isInView());
   // };
 
+  // useEffect(()=>{
+  //   const aboutDiv = document.getElementsByClassName('about')
+  //   aboutDiv.addEventListener('scroll', e => {
+  //     if(e.scrolltop(300)){
+  //       <div className='App'>
+  //         <View />
+  //       </div>
+  //     }
+  //   })
+  // })
 
   const backColor = inView ? "Appcolor" : "App";
 

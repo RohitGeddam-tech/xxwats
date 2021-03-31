@@ -43,7 +43,6 @@ const FormDesk = () => {
 
   const handleClick = () => {
     setClicked(true);
-    setErrors(validate(values));
     console.log("clicked", clicked);
   };
 
@@ -62,7 +61,7 @@ const FormDesk = () => {
           label="Name"
           name="name"
           value={values.name}
-          onClick={handleClick}
+          onClick={()=>{setErrors(validate(values))}}
           onChange={handleChange}
         />
         {errors.name && <h1>{errors.name}</h1>}
@@ -91,6 +90,7 @@ const FormDesk = () => {
           onClick={handleClick}
           label="Email-Address"
           name="email"
+          onClick={()=>{setErrors(validate(values))}}
           value={values.email}
           onChange={handleChange}
         />
