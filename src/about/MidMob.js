@@ -28,6 +28,7 @@ const MidMob = () => {
           <div className="mobfirst">
             <img
               src={cyril}
+              loading='lazy'
               alt="cyril"
               data-aos="fade-up"
               data-aos-duration="1500"
@@ -51,6 +52,7 @@ const MidMob = () => {
           <div className="mobfirst">
             <img
               src={savio}
+              loading='lazy'
               alt="cyril"
               data-aos="fade-up"
               data-aos-duration="1500"
@@ -76,6 +78,7 @@ const MidMob = () => {
             <img
               src={arathi}
               alt="cyril"
+              loading='lazy'
               data-aos="fade-up"
               data-aos-duration="1500"
             />
@@ -99,6 +102,7 @@ const MidMob = () => {
               src={ansh}
               alt="cyril"
               data-aos="fade-up"
+              loading='lazy'
               data-aos-duration="1500"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
@@ -112,6 +116,7 @@ const MidMob = () => {
           <div className="mobfirst">
             <img
               src={anushree}
+              loading='lazy'
               alt="cyril"
               data-aos="fade-up"
               data-aos-duration="1500"
@@ -137,6 +142,7 @@ const MidMob = () => {
               src={saloni}
               alt="cyril"
               data-aos="fade-up"
+              loading='lazy'
               data-aos-duration="1500"
             />
             <div data-aos="fade-up" data-aos-duration="2000">

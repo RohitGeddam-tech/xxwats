@@ -117,9 +117,9 @@ const MidDesktop = () => {
               data-aos-duration="1500"
             >
               <div className={innercyril} onMouseEnter={onCyrilClick}>
-                <img src={cyril} alt="logo" />
+                <img loading='lazy' src={cyril} alt="logo" />
                 <h4 className="flexbox-title">
-                  cyril <img src={icon} alt="logo" />
+                  cyril <img loading='lazy' src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={cyrilbox} in={Cyril} delay="100" duration="1000">
@@ -141,7 +141,7 @@ const MidDesktop = () => {
                     watts.
                   </p>
                   <h4 className="flexinbox-title">
-                    Cyril <img src={icona} alt="logo" />
+                    Cyril <img loading='lazy' src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -152,9 +152,9 @@ const MidDesktop = () => {
               data-aos-duration="2000"
             >
               <div className={innersavio} onMouseEnter={onSavioClick}>
-                <img src={savio} alt="logo" />
+                <img loading='lazy' src={savio} alt="logo" />
                 <h4 className="flexbox-title" onMouseEnter={onSavioClick}>
-                  savio <img src={icon} alt="logo" />
+                  savio <img loading='lazy' src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={saviobox} in={Savio} delay="500" duration="2000">
@@ -175,7 +175,7 @@ const MidDesktop = () => {
                     major television networks and digital platforms.
                   </p>
                   <h4 className="flexinbox-title">
-                    Savio <img src={icona} alt="logo" />
+                    Savio <img loading='lazy' src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -193,9 +193,9 @@ const MidDesktop = () => {
               data-aos-duration="1500"
             >
               <div className={innerara} onMouseEnter={onArathiClick}>
-                <img src={arathi} alt="logo" />
+                <img loading='lazy' src={arathi} alt="logo" />
                 <h4 className="flexbox-title">
-                  arathi <img src={icon} alt="logo" />
+                  arathi <img loading='lazy' src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={araBox} in={Arathi} delay="500" duration="2000">
@@ -215,7 +215,7 @@ const MidDesktop = () => {
                     creative powerhouse and nothing short of a goofy rockstar!
                   </p>
                   <h4 className="flexinbox-title">
-                    Arathi <img src={icona} alt="logo" />
+                    Arathi <img loading='lazy' src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -226,9 +226,9 @@ const MidDesktop = () => {
               data-aos-duration="2000"
             >
               <div className={inneransh} onMouseEnter={onAnshClick}>
-                <img src={ansh} alt="logo" />
+                <img loading='lazy' src={ansh} alt="logo" />
                 <h4 className="flexbox-title">
-                  Ansh <img src={icon} alt="logo" />
+                  Ansh <img loading='lazy' src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={anshBox} in={Ansh} delay="500" duration="2000">
@@ -240,7 +240,7 @@ const MidDesktop = () => {
                 >
                   <p>We give him work. He does it. Great chap.</p>
                   <h4 className="flexinbox-title">
-                    Ansh <img src={icona} alt="logo" />
+                    Ansh <img loading='lazy' src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -258,9 +258,9 @@ const MidDesktop = () => {
               data-aos-duration="1500"
             >
               <div className={cls} onMouseEnter={onActiveClick}>
-                <img src={anushree} alt="logo" />
+                <img loading='lazy' src={anushree} alt="logo" />
                 <h4 className="flexbox-title">
-                  Anushree <img src={icon} alt="logo" />
+                  Anushree <img loading='lazy' src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={box} in={active} delay="500" duration="2000">
@@ -282,7 +282,7 @@ const MidDesktop = () => {
                     and loves to travel every chance she gets.
                   </p>
                   <h4 className="flexinbox-title">
-                    Anushree <img src={icona} alt="logo" />
+                    Anushree <img loading='lazy' src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -293,9 +293,9 @@ const MidDesktop = () => {
               data-aos-duration="2000"
             >
               <div className={innersal} onMouseEnter={onSaloniClick}>
-                <img src={saloni} alt="logo" />
+                <img loading='lazy' src={saloni} alt="logo" />
                 <h4 className="flexbox-title">
-                  saloni <img src={icon} alt="logo" />
+                  saloni <img loading='lazy' src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade
@@ -321,7 +321,7 @@ const MidDesktop = () => {
                     thepla recipe.
                   </p>
                   <h4 className="flexinbox-title">
-                    Saloni <img src={icona} alt="logo" />
+                    Saloni <img loading='lazy' src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -355,7 +355,7 @@ const MidDesktop = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <img src={post} alt="post" />
+              <img loading='lazy' src={post} alt="post" />
             </div>
           </div>
           {/* <p className="flexpara" data-aos="flip-up" data-aos-duration="3000">

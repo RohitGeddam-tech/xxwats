@@ -19,7 +19,7 @@ const DeskIntro = () => {
           data-aos-duration="1500"
         >
           <div className="bunny">
-            <img src={home} alt="logo" />
+            <img loading='lazy' src={home} alt="logo" />
           </div>
         </div>
         <div
@@ -56,7 +56,7 @@ const MobIntro = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <img src={home} alt="logo" />
+          <img loading='lazy' src={home} alt="logo" />
         </div>
         <div
           className="famobcontent"

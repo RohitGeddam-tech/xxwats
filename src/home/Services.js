@@ -37,7 +37,7 @@ const Desktop = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <img src={strategy} alt="strategy.png" />
+              <img loading='lazy' src={strategy} alt="strategy.png" />
             </div>
           </div>
           <div className="tabs">
@@ -46,7 +46,7 @@ const Desktop = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <img src={creative} alt="creative.png" />
+              <img loading='lazy' src={creative} alt="creative.png" />
             </div>
             <div
               className="sentence"
@@ -82,7 +82,7 @@ const Desktop = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <img src={media} alt="social-media.png" />
+              <img loading='lazy' src={media} alt="social-media.png" />
             </div>
           </div>
           <div className="tabs">
@@ -91,7 +91,7 @@ const Desktop = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <img src={production} alt="production.png" />
+              <img loading='lazy' src={production} alt="production.png" />
             </div>
             <div
               className="sentence"
@@ -127,7 +127,7 @@ const Desktop = () => {
               data-aos="fade-up"
               data-aos-duration="2000"
             >
-              <img src={post} alt="post.png" />
+              <img loading='lazy' src={post} alt="post.png" />
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ const Mobile = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <img src={strategy} alt="strategy.png" />
+              <img loading='lazy' src={strategy} alt="strategy.png" />
             </div>
             <div
               className="mob-sentence"
@@ -174,7 +174,7 @@ const Mobile = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <img src={creative} alt="creative.png" />
+              <img loading='lazy' src={creative} alt="creative.png" />
             </div>
             <div
               className="mob-sentence"
@@ -196,7 +196,7 @@ const Mobile = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <img src={media} alt="media.png" />
+              <img loading='lazy' src={media} alt="media.png" />
             </div>
             <div
               className="mob-sentence"
@@ -219,7 +219,7 @@ const Mobile = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <img src={production} alt="production.png" />
+              <img loading='lazy' src={production} alt="production.png" />
             </div>
             <div
               className="mob-sentence"
@@ -241,7 +241,7 @@ const Mobile = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <img src={post} alt="post.png" />
+              <img loading='lazy' src={post} alt="post.png" />
             </div>
             <div
               className="mob-sentence"

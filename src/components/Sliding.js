@@ -82,6 +82,7 @@ export default class Responsive extends Component {
             <img
               style={{ paddingLeft: "20px" }}
               className="sliderimg"
+              loading='lazy'
               alt="slider"
               src={dbs}
             />
@@ -90,6 +91,7 @@ export default class Responsive extends Component {
             <img
               style={{ paddingLeft: "20px" }}
               className="sliderimg"
+              loading='lazy'
               alt="slider"
               src={donuts}
             />
@@ -98,42 +100,43 @@ export default class Responsive extends Component {
             <img
               style={{ paddingLeft: "10px" }}
               className="sliderimg"
+              loading='lazy'
               alt="slider"
               src={ebay}
             />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={edel} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={edel} />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={excel} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={excel} />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={fan} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={fan} />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={history} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={history} />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={mic} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={mic} />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={nush} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={nush} />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={prime} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={prime} />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={raymond} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={raymond} />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={star} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={star} />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={viu} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={viu} />
           </div>
           <div className="sliderin">
-            <img className="sliderimg" alt="slider" src={vivo} />
+            <img className="sliderimg" loading='lazy' alt="slider" src={vivo} />
           </div>
         </Slider>
       </div>

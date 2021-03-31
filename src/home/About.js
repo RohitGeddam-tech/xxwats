@@ -58,6 +58,7 @@ const Desktop = () => {
           <img
             src={desk}
             alt="reel"
+            loading='lazy'
             className={imag}
             onClick={() => {
               setActive(true);
@@ -144,6 +145,7 @@ const Tab = () => {
         <h4 className="mobh1">We do stuff.</h4>
         <img
           src={mob}
+          loading='lazy'
           className={imag}
           alt="reel"
           onClick={() => {
@@ -224,6 +226,7 @@ const Mobile = () => {
           src={mob}
           className={imag}
           alt="reel"
+          loading='lazy'
           onClick={() => {
             setActive(true);
           }}

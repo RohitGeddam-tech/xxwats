@@ -35,7 +35,7 @@ const HireDesk = () => {
             <div className="icons">
               <div className="icons-msg">
                 <a href="https://goo.gl/maps/G9r5WEvrA2cfQ9Z18">
-                  <img alt="call" src={map} />
+                  <img loading='lazy' alt="call" src={map} />
                 </a>
                 <a
                   href="https://goo.gl/maps/G9r5WEvrA2cfQ9Z18"
@@ -47,7 +47,7 @@ const HireDesk = () => {
               </div>
               <div className="icons-msg">
                 <a href="tel:+919820353013">
-                  <img alt="call" src={call} />
+                  <img loading='lazy' alt="call" src={call} />
                 </a>
                 <a href="tel:+919820353013" className="call-title">
                   +919820353013
@@ -55,7 +55,7 @@ const HireDesk = () => {
               </div>
               <div className="icons-msg">
                 <a href="mailto:shoutout@xxwatts.com">
-                  <img alt="call" src={mail} />
+                  <img loading='lazy' alt="call" src={mail} />
                 </a>
                 <a href="mailto:shoutout@xxwatts.com" className="mail-title">
                   shoutout@xxwatts.com
@@ -66,23 +66,23 @@ const HireDesk = () => {
               <h4 className="first-title">follow us</h4>
               <div className="social">
                 <a style={{ marginLeft: "10px" }}>
-                  <img src={insta} alt="insta" />
+                  <img loading='lazy' src={insta} alt="insta" />
                 </a>
                 <a style={{ marginLeft: "10%" }}>
-                  <img src={youtube} alt="insta" />
+                  <img loading='lazy' src={youtube} alt="insta" />
                 </a>
                 <a style={{ marginLeft: "10%" }}>
-                  <img src={facebook} alt="insta" />
+                  <img loading='lazy' src={facebook} alt="insta" />
                 </a>
                 <a style={{ marginLeft: "10%" }}>
-                  <img src={twitter} alt="insta" />
+                  <img loading='lazy' src={twitter} alt="insta" />
                 </a>
               </div>
             </div>
             <div className="careers">
               <h1>For Careers :</h1>
               <a href="mailto:hr@xxwatts.com">
-                <img src={join} alt='join' />  hr@xxwatts.com</a>
+                <img loading='lazy' src={join} alt='join' />  hr@xxwatts.com</a>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@ const HireDesk = () => {
       </div>
       <div className="deskfoot" data-aos="fade-up" data-aos-duration="3000">
         <div className="footimg">
-          <img src={logotall} alt="bottom-logo" />
+          <img loading='lazy' src={logotall} alt="bottom-logo" />
           {/* <SvgTall classname={'yellow'} gradient1={'yellow-gradient-1'} gradient0={'yellow-gradient-0'}/> */}
         </div>
       </div>
