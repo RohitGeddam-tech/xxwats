@@ -71,7 +71,7 @@ header{
     width: 98%;
     display: flex;
     margin: auto;
-    padding-top: 5px;
+    margin-top: 0 !important;
     justify-content: space-between;
 }
 
@@ -137,7 +137,6 @@ header{
 .MuiCollapse-wrapperInner{
     height: 100%;
 }
-
 
 /**/
 
