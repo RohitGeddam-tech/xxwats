@@ -285,40 +285,40 @@ const About = () => {
     });
   });
 
-  // const colorRef = useRef(null);
+  const colorRef = useRef(null);
 
-  // const isInView = () => {
-  //   const refColor = colorRef.current;
-  //   const rect = refColor.getBoundingClientRect();
-  //   return (
-  //     (rect.top <= 100 || rect.top <= 300 || rect.top <= 500) &&
-  //     (rect.bottom >= window.innerHeight - 100 ||
-  //       rect.bottom >= window.innerHeight - 300 ||
-  //       rect.bottom >= window.innerHeight - 500)
-  //   );
-  // };
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = refColor.getBoundingClientRect();
+    return (
+      (rect.top <= 100 || rect.top <= 300 || rect.top <= 500) &&
+      (rect.bottom >= window.innerHeight - 100 ||
+        rect.bottom >= window.innerHeight - 300 ||
+        rect.bottom >= window.innerHeight - 500)
+    );
+  };
 
-  // console.log(window.innerHeight);
+  console.log(window.innerHeight);
 
-  // const [inView, setInView] = useState(false);
+  const [inView, setInView] = useState(false);
 
 
-  // useEffect(() => {
-  //   setInView(isInView());
-  //   window.addEventListener("scroll", scrollHandler);
-  //   return () => {
-  //     window.removeEventListener("scroll", scrollHandler);
-  //   };
-  // }, []);
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
-  // const scrollHandler = () => {
-  //   setInView(isInView());
-  // };
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
 
-  // const aboutColor = inView ? 'aboutColor' : 'aboutColor-none'
+  const aboutColor = inView ? 'aboutColor' : 'aboutColor-none'
 
   return (
-    <>
+    <div ref={colorRef} className={aboutColor}>
       {isDesktop ? (
         <>
           {isTab ? (
@@ -338,7 +338,7 @@ const About = () => {
           </>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

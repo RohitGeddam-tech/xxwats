@@ -16,37 +16,37 @@ const View = () => {
     Aos.init({ duration: 2000 });
   });
 
-  // const colorRef = useRef(null);
+  const colorRef = useRef(null);
 
-  // const isInView = () => {
-  //   const refColor = colorRef.current;
-  //   const rect = refColor.getBoundingClientRect();
-  //   return (
-  //     (rect.top <= 100 || rect.top <= 300 || rect.top <= 500) &&
-  //     (rect.bottom >= window.innerHeight - 100 ||
-  //       rect.bottom >= window.innerHeight - 300 ||
-  //       rect.bottom >= window.innerHeight - 500)
-  //   );
-  // };
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = refColor.getBoundingClientRect();
+    return (
+      (rect.top <= 100 || rect.top <= 300 || rect.top <= 500) &&
+      (rect.bottom >= window.innerHeight - 100 ||
+        rect.bottom >= window.innerHeight - 300 ||
+        rect.bottom >= window.innerHeight - 500)
+    );
+  };
 
-  // console.log(window.innerHeight);
+  console.log(window.innerHeight);
 
-  // const [inView, setInView] = useState(false);
+  const [inView, setInView] = useState(false);
 
 
-  // useEffect(() => {
-  //   setInView(isInView());
-  //   window.addEventListener("scroll", scrollHandler);
-  //   return () => {
-  //     window.removeEventListener("scroll", scrollHandler);
-  //   };
-  // }, []);
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
-  // const scrollHandler = () => {
-  //   setInView(isInView());
-  // };
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
 
-  // const classColor = inView ? "about" : "about-none";
+  const classColor = inView ? "about" : "about-none";
 
   return (
     <>
@@ -54,7 +54,7 @@ const View = () => {
         <Nav />
           <Intro />
         <Suspense>
-            <div className='about'>
+            <div ref={colorRef} className={classColor}>
               <About />
             </div>
         </Suspense>
@@ -70,33 +70,33 @@ const View = () => {
 };
 
 const App = () => {
-  // const newRef = useRef(null);
+  const newRef = useRef(null);
 
-  // const isInView = () => {
-  //   const refColor = newRef.current;
-  //   const rect = refColor.getBoundingClientRect();
-  //   return (
-  //     rect.top <= -200
-  //   );
-  // };
+  const isInView = () => {
+    const refColor = newRef.current;
+    const rect = refColor.getBoundingClientRect();
+    return (
+      rect.top <= -100
+    );
+  };
 
-  // console.log(window.innerHeight);
+  console.log(window.innerHeight);
 
-  // const [inView, setInView] = useState(false);
+  const [inView, setInView] = useState(false);
 
-  // useEffect(() => {
-  //   setInView(isInView());
-  //   window.addEventListener("scroll", scrollHandler);
-  //   return () => {
-  //     window.removeEventListener("scroll", scrollHandler);
-  //   };
-  // }, []);
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
 
-  // const scrollHandler = () => {
-  //   setInView(isInView());
-  // };
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
 
-  // const backColor = inView ? "Appcolor" : "App";
+  const backColor = inView ? "Appcolor" : "App";
 
   return (
     <Suspense
@@ -111,7 +111,7 @@ const App = () => {
           </div>
         }
       >
-    <div className='App'>
+    <div ref={newRef} className={backColor}>
       <View />
     </div>
     </Suspense>

@@ -2,15 +2,10 @@
 .services{
     width: 100%;
     padding-bottom: 50px;
-    animation-name: example;
-    animation-duration: 10.5s;
-    animation-delay: 0s;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
 }
 
-@keyframes example {
-    from {opacity: 0; background-color: #202020;}
-    to {opacity: 1; background-color: #fff;}
-}
 
 .largeservice{
     width: 1400px;
