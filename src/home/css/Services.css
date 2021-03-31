@@ -14,7 +14,8 @@
 }
 
 .desktop{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-flow: column nowrap;
 }

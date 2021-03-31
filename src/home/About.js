@@ -195,7 +195,7 @@ const Mobile = () => {
 
   const url = active
     ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&controls=1"
-    : "https://www.youtube.com/embed/dJIJTZoTj6Q";
+    : "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&controls=1";
 
   return (
     <div className="aboutmobile">
