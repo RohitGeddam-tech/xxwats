@@ -69,10 +69,10 @@ const TestDesk = () => {
             <Fade in={isActive} delay='500'>Home</Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/about#top" className="navdeskfade">
-            <Fade in={isActive} delay='1500'>About us</Fade>
+            <Fade in={isActive} delay='700'>About us</Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/contact#top" className="navdeskfade">
-          <Fade in={isActive} delay='2500'>Contact Us</Fade>
+          <Fade in={isActive} delay='900'>Contact Us</Fade>
           </NavHashLink>
           {/* </div> */}
         </div>
@@ -145,10 +145,10 @@ const TestMob = () => {
             <Fade in={isActive} delay='500'>Home</Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/about#top" className="navfade">
-            <Fade in={isActive} delay='1500'>About us</Fade>
+            <Fade in={isActive} delay='700'>About us</Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/contact#top" className="navfade">
-          <Fade in={isActive} delay='2500'>Contact Us</Fade>
+          <Fade in={isActive} delay='900'>Contact Us</Fade>
           </NavHashLink>
           {/* </div> */}
         </div>
