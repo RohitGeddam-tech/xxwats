@@ -46,6 +46,8 @@ const FormDesk = () => {
     console.log("clicked", clicked);
   };
 
+  const [submit, setSubmit] = useState(false)
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(values));
@@ -61,9 +63,11 @@ const FormDesk = () => {
           label="Name"
           name="name"
           value={values.name}
+          onClick={handleClick}
           onChange={handleChange}
         />
-        {errors.name && <h1>{errors.name}</h1>}
+        {submit ? <>{errors.name && <h1>{errors.name}</h1>}</> : 
+        <>{clicked ?  <>{!values.name ? <h1>This Field is required</h1> : null}</> : null}</>}
         <TextField
           className="textfield"
           id="standard-basic"
@@ -82,18 +86,24 @@ const FormDesk = () => {
               : null
           }
         />
-        {errors.mob && <h1>{errors.mob}</h1>}
+        {submit ? <>{errors.mob && <h1>{errors.mob}</h1>}</> : 
+        <>{clicked ? <>{values.mob ? <>{!values.mob ? <h1>This Field is required</h1> : null}
+          {(!/[0-9]{10}/.test(values.mob)) ? <h1>The Mobile no. entered is Invalid</h1> : null}
+        </> : null}</>: null}</> }
         <TextField
           className="textfield"
           id="standard-basic"
-          onClick={handleClick}
           label="Email-Address"
           name="email"
           value={values.email}
+          onClick={handleClick}
           onChange={handleChange}
         />
-        {errors.email && <h1>{errors.email}</h1>}
-        <button type="submit" className="formbtn">
+        {submit ? <>{errors.email && <h1>{errors.email}</h1>}</> : 
+        <>{clicked ? <>{values.email ? <>{!values.email ? <h1>This Field is required</h1> : null}
+          {(!/\S+@\S+\.\S+/.test(values.email)) ? <h1>The Email entered is Invalid</h1> : null}
+        </> : null}</>: null}</>}
+        <button type="submit" className="formbtn" onClick={()=>{setSubmit(true)}}>
           get a call back
         </button>
       </form>
@@ -151,6 +161,8 @@ const FormMob = () => {
     console.log("form submitted", values);
   };
 
+  const [submit, setSubmit] = useState(false)
+
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -160,9 +172,11 @@ const FormMob = () => {
           label="Name"
           name="name"
           value={values.name}
+          onClick={handleClick}
           onChange={handleChange}
         />
-        {errors.name && <h1>{errors.name}</h1>}
+        {submit ? <>{errors.name && <h1>{errors.name}</h1>}</> : 
+        <>{clicked ?  <>{!values.name ? <h1>This Field is required</h1> : null}</> : null}</>}
         <TextField
           className="textfieldmob"
           id="standard-basic"
@@ -181,7 +195,10 @@ const FormMob = () => {
               : null
           }
         />
-        {errors.mob && <h1>{errors.mob}</h1>}
+        {submit ? <>{errors.mob && <h1>{errors.mob}</h1>}</> : 
+        <>{clicked ? <>{values.mob ? <>{!values.mob ? <h1>This Field is required</h1> : null}
+          {(!/[0-9]{10}/.test(values.mob)) ? <h1>The Mobile no. entered is Invalid</h1> : null}
+        </> : null}</>: null}</> }
         <TextField
           className="textfieldmob"
           id="standard-basic"
@@ -190,8 +207,11 @@ const FormMob = () => {
           value={values.email}
           onChange={handleChange}
         />
-        {errors.email && <h1>{errors.email}</h1>}
-        <button type="submit" className="formbtn">
+        {submit ? <>{errors.email && <h1>{errors.email}</h1>}</> : 
+        <>{clicked ? <>{values.email ? <>{!values.email ? <h1>This Field is required</h1> : null}
+          {(!/\S+@\S+\.\S+/.test(values.email)) ? <h1>The Email entered is Invalid</h1> : null}
+        </> : null}</>: null}</>}
+        <button type="submit" className="formbtn" onClick={()=>{setSubmit(true)}}>
           get a call back
         </button>
       </form>

@@ -39,7 +39,7 @@
 .desktitle-container{
     width: 80%;
     display: flex;
-    margin-right: 0 !important;
+    margin: auto;
     justify-content: flex-start;
 }
 
@@ -266,6 +266,10 @@ button.slick-prev:before{
     text-transform: uppercase;
     color: #202020;
     margin-bottom: 15px !important;
+}
+
+.careers a:hover{
+    color:#4183c4;
 }
 
 .careers a{
