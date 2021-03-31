@@ -16,17 +16,17 @@ header{
 }
 
 .header{
-    width: 100%;
-    position: absolute;
+    width: 98%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .headerfull{
-    width: 100%;
+    width: 98%;
+    margin: auto;
     display: flex;
-    position: absolute;
     justify-content: space-between;
 }
 

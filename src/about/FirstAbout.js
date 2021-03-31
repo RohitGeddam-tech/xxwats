@@ -15,8 +15,8 @@ const DeskIntro = () => {
       <div className="fahome">
         <div
           className="firstimage"
-          data-aos="fade-right"
-          data-aos-duration="2900"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <div className="bunny">
             <img src={home} alt="logo" />
@@ -24,8 +24,8 @@ const DeskIntro = () => {
         </div>
         <div
           className="facontent"
-          data-aos="fade-left"
-          data-aos-duration="2900"
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <h4 className="fafirst-title">Who are we? </h4>
           <p className="faquote">And how do we help you?</p>
@@ -53,14 +53,14 @@ const MobIntro = () => {
       <div className="mobhome">
         <div
           className="mobileimage"
-          data-aos="flip-right"
+          data-aos="fade-up"
           data-aos-duration="1000"
         >
           <img src={home} alt="logo" />
         </div>
         <div
           className="famobcontent"
-          data-aos="flip-left"
+          data-aos="fade-up"
           data-aos-duration="3000"
         >
           <h4 className="fafirst-mobtitle">Who are we? </h4>

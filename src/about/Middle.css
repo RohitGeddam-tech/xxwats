@@ -1,13 +1,11 @@
 .middle{
     width: 100%;
     background-color: #EEEA64;
-    overflow-x: hidden;
 }
 
 
 .largemiddle{
     width: 1400px;
-    overflow-x: hidden;
     margin: auto;
 }
 

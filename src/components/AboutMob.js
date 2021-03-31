@@ -29,7 +29,7 @@ const HireMob = () => {
         <div
           className="second-mobbox"
           data-aos="fade-up"
-          data-aos-duration="3500"
+          data-aos-duration="1000"
         >
           <div className="second-mobbox-container">
             <h4 className="second-title">A project with 20 Watts?</h4>
@@ -45,8 +45,8 @@ const HireMob = () => {
         </div>
         <div
           className="first-mobbox"
-          data-aos="zoom-in-up"
-          data-aos-duration="3500"
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <div className="first-box-mobcontainer">
             <h4 style={{ paddingTop: "30px" }} className="first-quote">
@@ -111,7 +111,7 @@ const HireMob = () => {
             </div>
           </div>
         </div>
-        <div className="mobhome" data-aos="fade-down" data-aos-duration="5000">
+        <div className="mobhome" data-aos="fade-up" data-aos-duration="5000">
           <div className="mobimage" style={{ width: "100%" }}>
             <img src={logotall} alt="bottom-logo" />
           </div>

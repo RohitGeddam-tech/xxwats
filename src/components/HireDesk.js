@@ -29,7 +29,7 @@ const HireDesk = () => {
         <div
           className="first-box"
           data-aos="fade-up"
-          data-aos-duration="3500"
+          data-aos-duration="1500"
         >
           <div className="first-box-container">
             <h4 className="first-quote">Drop by for a cup of kadak chai</h4>
@@ -90,7 +90,7 @@ const HireDesk = () => {
         <div
           className="second-box"
           data-aos="fade-up"
-          data-aos-duration="3500"
+          data-aos-duration="3000"
         >
           <div className="second-box-container">
             <h4 className="second-title">A project with 20 Watts?</h4>

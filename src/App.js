@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState, Suspense } from "react";
 import "./App.css";
 import Nav from "./components/TestNav";
 import Intro from "./home/Intro";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const About = React.lazy(() => import("./home/About"));
 
@@ -12,9 +10,6 @@ const Services = React.lazy(() => import("./home/Services"));
 const Hire = React.lazy(() => import("./home/Hire"));
 
 const View = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  });
 
   const colorRef = useRef(null);
 

@@ -45,7 +45,7 @@ const HireMob = () => {
         </div>
         <div
           className="first-mobbox"
-          data-aos="zoom-in-up"
+          data-aos="fade-up"
           data-aos-duration="3500"
         >
           <div className="first-box-mobcontainer">
@@ -111,7 +111,7 @@ const HireMob = () => {
             </div>
           </div>
         </div>
-        <div className="mobhome" data-aos="fade-down" data-aos-duration="5000">
+        <div className="mobhome" data-aos="fade-up" data-aos-duration="5000">
           <div className="mobimage" style={{ width: "100%" }}>
             <SvgTall
               classname={"black"}

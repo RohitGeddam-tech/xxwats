@@ -29,10 +29,10 @@ const MidMob = () => {
             <img
               src={cyril}
               alt="cyril"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             />
-            <div data-aos="flip-down" data-aos-duration="3000">
+            <div data-aos="fade-up" data-aos-duration="3000">
               <h4>Cyril</h4>
               <p>
                 Cyril's spent the past 21 years establishing his credentials in
@@ -52,10 +52,10 @@ const MidMob = () => {
             <img
               src={savio}
               alt="cyril"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             />
-            <div data-aos="flip-down" data-aos-duration="3000">
+            <div data-aos="fade-up" data-aos-duration="3000">
               <h4>Savio</h4>
               <p>
                 Savio, an expert at his craft but a tech geek at heart with over
@@ -76,10 +76,10 @@ const MidMob = () => {
             <img
               src={arathi}
               alt="cyril"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             />
-            <div data-aos="flip-down" data-aos-duration="3000">
+            <div data-aos="fade-up" data-aos-duration="3000">
               <h4>Arathi</h4>
               <p>
                 She Started with Channel [v], attended New York Film Academy to
@@ -98,10 +98,10 @@ const MidMob = () => {
             <img
               src={ansh}
               alt="cyril"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             />
-            <div data-aos="flip-down" data-aos-duration="3000">
+            <div data-aos="fade-up" data-aos-duration="3000">
               <h4>Ansh</h4>
               <p>We give him work. He does it. Great chap.</p>
             </div>
@@ -113,10 +113,10 @@ const MidMob = () => {
             <img
               src={anushree}
               alt="cyril"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             />
-            <div data-aos="flip-down" data-aos-duration="3000">
+            <div data-aos="fade-up" data-aos-duration="3000">
               <h4>Anushree</h4>
               <p>
                 Latest addition to the 20 watts family, she handles recruitments
@@ -136,10 +136,10 @@ const MidMob = () => {
             <img
               src={saloni}
               alt="cyril"
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             />
-            <div data-aos="flip-down" data-aos-duration="3000">
+            <div data-aos="fade-up" data-aos-duration="3000">
               <h4>Saloni</h4>
               <p>
                 A veteran at 20 watts, Saloni Shah is a client's dream. Every
@@ -155,13 +155,13 @@ const MidMob = () => {
         </div>
         <div
           className="mobmid-container"
-          data-aos="zoom-in"
-          data-aos-duration="2000"
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <h4>Production team</h4>
           <div
             className="mobfirst"
-            data-aos="flip-down"
+            data-aos="fade-up"
             data-aos-duration="3000"
           >
             <p>

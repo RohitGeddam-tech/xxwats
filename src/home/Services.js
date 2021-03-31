@@ -21,8 +21,8 @@ const Desktop = () => {
           <div className="tabs">
             <div
               className="sentence"
-              data-aos="fade-right"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <h4 className="title">Strategy</h4>
               <p className="paragraph">
@@ -34,7 +34,7 @@ const Desktop = () => {
             </div>
             <div
               className="picture"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <img src={strategy} alt="strategy.png" />
@@ -43,14 +43,14 @@ const Desktop = () => {
           <div className="tabs">
             <div
               className="picture"
-              data-aos="fade-right"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <img src={creative} alt="creative.png" />
             </div>
             <div
               className="sentence"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <h4 className="title-left">Creative</h4>
@@ -65,8 +65,8 @@ const Desktop = () => {
           <div className="tabs">
             <div
               className="sentence"
-              data-aos="fade-right"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <h4 className="title">Social media</h4>
               <p className="paragraph">
@@ -79,7 +79,7 @@ const Desktop = () => {
             </div>
             <div
               className="picture"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <img src={media} alt="social-media.png" />
@@ -88,14 +88,14 @@ const Desktop = () => {
           <div className="tabs">
             <div
               className="picture"
-              data-aos="fade-right"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <img src={production} alt="production.png" />
             </div>
             <div
               className="sentence"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <h4 className="title-left">production</h4>
@@ -110,8 +110,8 @@ const Desktop = () => {
           <div className="tabs">
             <div
               className="sentence"
-              data-aos="fade-right"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <h4 className="title">Post Production</h4>
               <p className="paragraph">
@@ -124,7 +124,7 @@ const Desktop = () => {
             </div>
             <div
               className="picture"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <img src={post} alt="post.png" />
@@ -149,14 +149,14 @@ const Mobile = () => {
           <div className="mobtabs">
             <div
               className="mob-pic"
-              data-aos="fade-left"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <img src={strategy} alt="strategy.png" />
             </div>
             <div
               className="mob-sentence"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <h4 className="mob-title">Strategy</h4>
@@ -171,14 +171,14 @@ const Mobile = () => {
           <div className="mobtabs">
             <div
               className="mob-pic"
-              data-aos="fade-left"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <img src={creative} alt="creative.png" />
             </div>
             <div
               className="mob-sentence"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <h4 className="mob-title">creative</h4>
@@ -193,14 +193,14 @@ const Mobile = () => {
           <div className="mobtabs">
             <div
               className="mob-pic"
-              data-aos="fade-left"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <img src={media} alt="media.png" />
             </div>
             <div
               className="mob-sentence"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <h4 className="mob-title">Social media</h4>
@@ -216,14 +216,14 @@ const Mobile = () => {
           <div className="mobtabs">
             <div
               className="mob-pic"
-              data-aos="fade-left"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <img src={production} alt="production.png" />
             </div>
             <div
               className="mob-sentence"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <h4 className="mob-title">Production</h4>
@@ -238,14 +238,14 @@ const Mobile = () => {
           <div className="mobtabs">
             <div
               className="mob-pic"
-              data-aos="fade-left"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="2000"
             >
               <img src={post} alt="post.png" />
             </div>
             <div
               className="mob-sentence"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <h4 className="mob-title">post production</h4>

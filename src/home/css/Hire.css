@@ -30,14 +30,14 @@
 }
 
 .title-container{
-    width: 95%;
+    width: 80%;
     display: flex;
     margin-right: 0 !important;
     justify-content: flex-start;
 }
 
 .desktitle-container{
-    width: 95%;
+    width: 80%;
     display: flex;
     margin-right: 0 !important;
     justify-content: flex-start;
@@ -62,7 +62,7 @@
 }
 
 .hire-container{
-    width: 95%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     margin: auto;
@@ -173,7 +173,7 @@
 }
 
 .second-box-container{
-    width: 80%;
+    width: 98%;
     display: flex;
     flex-flow: column;
 }
@@ -598,6 +598,22 @@ a{
 .slick-prev, .slick-next{
     height: 30px !important;
     width: 30px !important;
+}
+
+.deskfoot{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.footimg{
+    display: flex;
+    justify-content: center;
+}
+
+.footimg img{
+    width: 60%;
 }
 
 

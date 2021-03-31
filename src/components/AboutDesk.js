@@ -27,8 +27,8 @@ const HireDesk = () => {
       <div className="hire-container">
         <div
           className="first-box"
-          data-aos="fade-left"
-          data-aos-duration="3500"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
           <div className="first-box-container">
             <h4 className="first-quote">Drop by for a cup of kadak chai</h4>
@@ -88,8 +88,8 @@ const HireDesk = () => {
         </div>
         <div
           className="second-box"
-          data-aos="fade-right"
-          data-aos-duration="3500"
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           <div className="second-box-container">
             <h4 className="second-title">A project with 20 Watts?</h4>
@@ -104,7 +104,7 @@ const HireDesk = () => {
           </div>
         </div>
       </div>
-      <div className="deskfoot" data-aos="fade-down" data-aos-duration="5000">
+      <div className="deskfoot" data-aos="fade-up" data-aos-duration="5000">
         <div className="footimg">
           <img src={logotall} alt="bottom-logo" />
           {/* <SvgTall classname={'yellow'} gradient1={'yellow-gradient-1'} gradient0={'yellow-gradient-0'}/> */}

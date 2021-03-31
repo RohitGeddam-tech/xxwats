@@ -113,8 +113,8 @@ const MidDesktop = () => {
           <div className="first-flex">
             <div
               className="inflex1"
-              data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             >
               <div className={innercyril} onMouseEnter={onCyrilClick}>
                 <img src={cyril} alt="logo" />
@@ -148,7 +148,7 @@ const MidDesktop = () => {
             </div>
             <div
               className="inflex2"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="3000"
             >
               <div className={innersavio} onMouseEnter={onSavioClick}>
@@ -189,8 +189,8 @@ const MidDesktop = () => {
           <div className="first-flex">
             <div
               className="inflex1"
-              data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             >
               <div className={innerara} onMouseEnter={onArathiClick}>
                 <img src={arathi} alt="logo" />
@@ -222,7 +222,7 @@ const MidDesktop = () => {
             </div>
             <div
               className="inflex2"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="3000"
             >
               <div className={inneransh} onMouseEnter={onAnshClick}>
@@ -254,8 +254,8 @@ const MidDesktop = () => {
           <div className="first-flex">
             <div
               className="inflex1"
-              data-aos="fade-left"
-              data-aos-duration="3000"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             >
               <div className={cls} onMouseEnter={onActiveClick}>
                 <img src={anushree} alt="logo" />
@@ -289,7 +289,7 @@ const MidDesktop = () => {
             </div>
             <div
               className="inflex2"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="3000"
             >
               <div className={innersal} onMouseEnter={onSaloniClick}>
@@ -330,15 +330,15 @@ const MidDesktop = () => {
         </div>
         <div
           className="midend-title"
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="3000"
         >
           <h4 className="flexend-title">Production team</h4>
           <div className="tabs">
             <div
               className="sentence"
-              data-aos="fade-right"
-              data-aos-duration="2900"
+              data-aos="fade-up"
+              data-aos-duration="1500"
             >
               <p className="paragraph">
                 This is the real deal. The team that makes the dream a reality.
@@ -352,7 +352,7 @@ const MidDesktop = () => {
             </div>
             <div
               className="picture"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="2900"
             >
               <img src={post} alt="post" />

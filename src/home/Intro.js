@@ -13,10 +13,10 @@ const DeskIntro = () => {
   return (
     <div className="container">
       <div className="home">
-        <div className="image" data-aos="fade-right" data-aos-duration="2900">
+        <div className="image" data-aos="fade-up" data-aos-duration="2000">
           <img src={home} alt="logo" />
         </div>
-        <div className="content" data-aos="fade-left" data-aos-duration="2900">
+        <div className="content" data-aos="fade-up" data-aos-duration="2900">
           <p className="para">WE GIVE CREATIVE SOLUTIONS FOR YOUR PROBLEMS</p>
           <NavHashLink to="/xxwats/contact#top" className="btn">
             Check Out Our Portfolio
@@ -35,7 +35,7 @@ const MobIntro = () => {
   return (
     <div className="container">
       <div className="mobhome">
-        <div className="mobileimage" data-aos="fade-down" data-aos-duration="2900">
+        <div className="mobileimage" data-aos="fade-up" data-aos-duration="1000">
           <img src={home} alt="logo" />
         </div>
         <div className="mobcontent" data-aos="fade-up" data-aos-duration="2900">

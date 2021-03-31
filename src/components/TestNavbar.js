@@ -12,7 +12,6 @@ const TestDesk = () => {
   let colored = isActive ? "collapse-navbar" : "navbar";
   let header = isActive ? "headerfull" : "header";
   let fade = isActive ? "fade" : "dnone";
-  let hamcolor = isActive ? "#fff" : "#202020";
   return (
     <>
       <div className={colored}>

@@ -29,7 +29,7 @@ const Desktop = () => {
       <div className="aboutfirst">
         <div
           className="yellowtab"
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="2700"
         >
           <div className="tabcontainer">
@@ -52,7 +52,7 @@ const Desktop = () => {
         </div>
         <div
           className="aboutvideo"
-          data-aos="zoom-in-up"
+          data-aos="fade-up"
           data-aos-duration="3100"
         >
           <img
@@ -77,12 +77,12 @@ const Desktop = () => {
         </div>
       </div>
       <div className="sliderbox">
-        <div className="slider" data-aos="zoom-in" data-aos-duration="4000">
+        <div className="slider" data-aos="fade-up" data-aos-duration="4000">
           <Slider />
         </div>
         <div
           className="slidercover"
-          data-aos="fade-down-left"
+          data-aos="fade-up"
           data-aos-duration="3300"
         >
           <div className="slidecontainer">
@@ -112,7 +112,7 @@ const Tab = () => {
   const container = active ? "mob-frame" : "tab-container";
 
   const url = active
-    ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1"
+    ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1"
     : "https://www.youtube.com/embed/dJIJTZoTj6Q";
 
   return (
@@ -161,13 +161,13 @@ const Tab = () => {
             className="vid"
           />
         </Fade>
-        <div className={container} data-aos="zoom-in" data-aos-duration="2700">
+        <div className={container} data-aos="fade-up" data-aos-duration="2700">
           <MobSlider />
         </div>
         <div className="btncenter">
           <NavHashLink to="/xxwats/about#mid">
             <button
-              data-aos="zoom-in"
+              data-aos="fade-up"
               data-aos-duration="2700"
               className="mobaboutbtn"
             >
@@ -194,7 +194,7 @@ const Mobile = () => {
   const container = active ? "mob-frame" : "mob-container";
 
   const url = active
-    ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&mute=1"
+    ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&controls=1"
     : "https://www.youtube.com/embed/dJIJTZoTj6Q";
 
   return (
@@ -239,12 +239,12 @@ const Mobile = () => {
             className="vid"
           />
         </Fade>
-        <div className={container} data-aos="zoom-in" data-aos-duration="2700">
+        <div className={container} data-aos="fade-up" data-aos-duration="2700">
           <MobSlider />
         </div>
         <NavHashLink to="/xxwats/about#mid">
           <button
-            data-aos="zoom-in"
+            data-aos="fade-up"
             data-aos-duration="2700"
             id="services"
             className="mobaboutbtn"
