@@ -6,6 +6,7 @@ import insta from "../img/icons/icon-instagram.svg";
 import youtube from "../img/icons/icon-youtube.svg";
 import facebook from "../img/icons/icon-facebook.svg";
 import twitter from "../img/icons/icon-twitter.svg";
+import join from '../img/icons/icon-join.svg'
 
 import Slideservice from "../components/SliderService";
 import Serv from './ServiceSlider'
@@ -27,7 +28,7 @@ const HireDesk = () => {
       <div className="hire-container">
         <div
           className="first-box"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="3500"
         >
           <div className="first-box-container">
@@ -81,13 +82,14 @@ const HireDesk = () => {
             </div>
             <div className="careers">
               <h1>For Careers :</h1>
-              <a href="mailto:hr@xxwatts.com">hr@xxwatts.com</a>
+              <a href="mailto:hr@xxwatts.com">
+                <img src={join} alt='join' />  hr@xxwatts.com</a>
             </div>
           </div>
         </div>
         <div
           className="second-box"
-          data-aos="fade-right"
+          data-aos="fade-up"
           data-aos-duration="3500"
         >
           <div className="second-box-container">
@@ -105,7 +107,7 @@ const HireDesk = () => {
           </div>
         </div>
       </div>
-      <div className="deskfoot" data-aos="fade-down" data-aos-duration="5000">
+      <div className="deskfoot" data-aos="fade-up" data-aos-duration="5000">
         <div className="footimg">
           <SvgTall
             classname={"black"}

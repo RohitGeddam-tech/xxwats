@@ -278,10 +278,12 @@ button.slick-prev:before{
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    text-transform: uppercase;
+    text-transform: none;
     color: #202020;
     padding-left: 10px;
     word-break: break-all;
+    display: flex;
+    align-items: center;
 }
 
 /* .slick-slide{
@@ -478,6 +480,7 @@ color: black;
     display: flex !important;
     justify-content: center !important;
     width: 100%;
+    outline: none !important;
 }
 
 a{
@@ -501,8 +504,8 @@ a{
 
 .serviceslider-btn{
     background-color: transparent !important;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 95%;
     border-radius: 50px;
     white-space: nowrap;
@@ -520,10 +523,32 @@ a{
     border: 1px solid #202020 !important;
 }
 
+.serviceslider-btn:hover{
+    background-color: black !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 95%;
+    outline: none !important;
+    border-radius: 50px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 3px !important;
+    margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
 .serviceslider-afterbtn{
     background-color: black !important;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 95%;
     border-radius: 50px;
     white-space: nowrap;
@@ -538,6 +563,28 @@ a{
     text-transform: uppercase;
     margin-bottom: 5px !important;
     margin-top: 0;
+    border: 1px solid #202020 !important;
+}
+
+.serviceslider-afterbtn{
+    background-color: transparent !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 95%;
+    border-radius: 50px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #202020;
+    margin-bottom: 3px !important;
+    margin-top: 0;
+    outline: none !important;
     border: 1px solid #202020 !important;
 }
 

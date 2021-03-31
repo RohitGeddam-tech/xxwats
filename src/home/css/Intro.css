@@ -15,8 +15,8 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 6%;
-    padding-bottom: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .image{
@@ -184,7 +184,7 @@ button{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    padding-top: 8%;
+    padding-top: 6%;
     padding-bottom: 8%;
 }
 
@@ -195,7 +195,7 @@ button{
     align-items: flex-start;
     padding-bottom: 20px;
     flex-flow: column nowrap;
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
 .fafirst-title{
@@ -216,10 +216,10 @@ font-style: normal;
 font-weight: bold;
 font-size: 28px;
 line-height: 33px;
+width: 55% !important;
 color: #4D6CFA;
 text-align: start;
-text-transform: uppercase;
-width: 62%;
+text-transform: none;
 }
 
 .fapara{

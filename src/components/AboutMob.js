@@ -7,6 +7,7 @@ import youtube from "../img/icons/icon-youtube.svg";
 import facebook from "../img/icons/icon-facebook.svg";
 import twitter from "../img/icons/icon-twitter.svg";
 import logotall from "../img/logo/logo-tall.svg";
+import join from '../img/icons/icon-join.svg'
 
 import Form from "../components/Form";
 import Aos from "aos";
@@ -105,7 +106,8 @@ const HireMob = () => {
             </div>
             <div className="careers">
               <h1>For Careers :</h1>
-              <a href="mailto:hr@xxwatts.com">hr@xxwatts.com</a>
+              <a href="mailto:hr@xxwatts.com">
+                <img src={join} alt='join' />  hr@xxwatts.com</a>
             </div>
           </div>
         </div>

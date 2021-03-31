@@ -39,6 +39,7 @@ const FormDesk = () => {
       ...values,
       [e.target.name]: e.target.value,
     });
+    setErrors(validate(values));
   };
 
   const handleClick = () => {
