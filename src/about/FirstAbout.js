@@ -14,7 +14,7 @@ const DeskIntro = () => {
     <div className="container">
       <div className="fahome">
         <div
-          className="firstimage"
+          className="firstfaimage"
           data-aos="fade-up"
           data-aos-duration="1500"
         >
@@ -83,6 +83,7 @@ const Intro = () => {
   const [isMobile, setMobile] = useState(
     window.matchMedia("(max-width:800px)").matches
   );
+
   useEffect(() => {
     window.addEventListener("resize", () => {
       setMobile(window.matchMedia("(max-width:800px)").matches);

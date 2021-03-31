@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./css/Nav.css";
-import {Fade} from 'react-animation-components'
+import { Fade } from "react-animation-components";
 import { NavHashLink } from "react-router-hash-link";
 import Svg from "../components/Svg";
 import Ham from "./Hamburger";
@@ -64,17 +64,21 @@ const TestDesk = () => {
           </div>
         </div>
         <div className={fade}>
-          {/* <div className='fadein'> */}
           <NavHashLink to="/xxwats#top" className="navdeskfade">
-            <Fade in={isActive} delay='500'>Home</Fade>
+            <Fade in={isActive} delay="500">
+              Home
+            </Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/about#top" className="navdeskfade">
-            <Fade in={isActive} delay='700'>About us</Fade>
+            <Fade in={isActive} delay="700">
+              About us
+            </Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/contact#top" className="navdeskfade">
-          <Fade in={isActive} delay='900'>Contact Us</Fade>
+            <Fade in={isActive} delay="900">
+              Contact Us
+            </Fade>
           </NavHashLink>
-          {/* </div> */}
         </div>
       </div>
     </>
@@ -139,17 +143,21 @@ const TestMob = () => {
           </div>
         </div>
         <div className={fade}>
-          {/* <div className='fadein'> */}
           <NavHashLink to="/xxwats#top" className="navfade">
-            <Fade in={isActive} delay='500'>Home</Fade>
+            <Fade in={isActive} delay="500">
+              Home
+            </Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/about#top" className="navfade">
-            <Fade in={isActive} delay='1500'>About us</Fade>
+            <Fade in={isActive} delay="1500">
+              About us
+            </Fade>
           </NavHashLink>
           <NavHashLink to="/xxwats/contact#top" className="navfade">
-          <Fade in={isActive} delay='2500'>Contact Us</Fade>
+            <Fade in={isActive} delay="2500">
+              Contact Us
+            </Fade>
           </NavHashLink>
-          {/* </div> */}
         </div>
       </div>
     </>

@@ -16,12 +16,12 @@ const View = () => {
     <>
       <Nav />
       <section>
-        <div data-aos="fade-down" data-aos-duration="3000">
+        <div data-aos="fade-up" data-aos-duration="3000">
           <FirstAbout />
         </div>
       </section>
       <section>
-        <div data-aos="fade-down" data-aos-duration="3000">
+        <div data-aos="fade-up" data-aos-duration="3000">
           <Middle />
         </div>
       </section>

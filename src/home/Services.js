@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./css/Services.css";
-import strategy from "../img/services/strategy.png";
-import creative from "../img/services/Creative1.svg";
-import media from "../img/services/social-media.png";
-import post from "../img/services/post-production.png";
-import production from "../img/services/production.png";
+import strategy from "../img/strat.png";
+import creative from "../img/creat.png";
+import media from "../img/soc.png";
+import post from "../img/post.png";
+import production from "../img/prod.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

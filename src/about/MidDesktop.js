@@ -12,7 +12,7 @@ import arathi from "../img/team/arathi.png";
 import ansh from "../img/team/ansh.png";
 import anushree from "../img/team/anushree.png";
 import saloni from "../img/team/saloni.png";
-import post from "../img/services/production.png";
+import post from "../img/post.png";
 
 const MidDesktop = () => {
   useEffect(() => {
