@@ -49,9 +49,7 @@ const View = () => {
           <div ref={colorRef} className="about">
             <About />
           </div>
-          <div ref={colorRef}>
           <Services />
-          </div>
           <Hire />
       </Suspense>
     </div>
@@ -66,7 +64,7 @@ const ViewMob = () => {
     const refColor = colorRef.current;
     const rect = window.pageYOffset;
     return (
-      (rect >= 250 && rect <= 1300)
+      (rect >= 150 && rect <= 1300)
     );
   };
 
@@ -98,9 +96,7 @@ const ViewMob = () => {
           <div ref={colorRef} className="about">
             <About />
           </div>
-          <div ref={colorRef}>
           <Services />
-          </div>
           <Hire />
       </Suspense>
     </div>

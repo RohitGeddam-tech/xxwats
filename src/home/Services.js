@@ -171,7 +171,6 @@ const Mobile = () => {
   useEffect(() => {
     Aos.init({ duration: 2500 });
   });
-
    
   const colorRef = useRef(null);
 
@@ -343,8 +342,34 @@ const Services = () => {
     });
   });
 
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return (
+      (rect >= 2400)
+    );
+  };
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
+
+  const services = inView ? 'services-yell' : 'services'
+
   return (
-    <div id="services" className='services'>
+    <div ref={colorRef} id="services" className={services}>
       {isDesktop ? (
         <>{isMobile ? <Mobile /> : <Desktop />}</>
       ) : (
@@ -356,4 +381,95 @@ const Services = () => {
   );
 };
 
-export default Services;
+const ServicesMob = () => {
+  const [isMobile, setMobile] = useState(
+    window.matchMedia("(max-width:760px)").matches
+  );
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setMobile(window.matchMedia("(max-width:760px)").matches);
+    });
+  });
+
+  const [isDesktop, setDesktop] = useState(
+    window.matchMedia("(max-width:1400px)").matches
+  );
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setDesktop(window.matchMedia("(max-width:1400px)").matches);
+    });
+  });
+
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return (
+      (rect >= 3500)
+    );
+  };
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
+
+  const services = inView ? 'services-yell' : 'services'
+
+  return (
+    <div ref={colorRef} id="services" className={services}>
+      {isDesktop ? (
+        <>{isMobile ? <Mobile /> : <Desktop />}</>
+      ) : (
+        <div className="largeservice">
+          {isMobile ? <Mobile /> : <Desktop />}
+        </div>
+      )}
+    </div>
+  );
+};
+
+const ServicesAll = () => {
+  const [isMobile, setMobile] = useState(
+    window.matchMedia("(max-width:760px)").matches
+  );
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setMobile(window.matchMedia("(max-width:760px)").matches);
+    });
+  });
+
+  const [isDesktop, setDesktop] = useState(
+    window.matchMedia("(max-width:1400px)").matches
+  );
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setDesktop(window.matchMedia("(max-width:1400px)").matches);
+    });
+  });
+
+
+  return (
+    <>
+      {isDesktop ? (
+        <>{isMobile ? <ServicesMob /> : <Services />}</>
+      ) : (
+        <div className="largeservice">
+          {isMobile ? <ServicesMob /> : <Services />}
+        </div>
+      )}
+    </>
+  );
+};
+
+export default ServicesAll;

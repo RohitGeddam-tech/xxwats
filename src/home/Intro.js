@@ -15,11 +15,8 @@ const DeskIntro = ({ colorText }) => {
   const isInView = () => {
     const refColor = colorRef.current;
     const rect = window.pageYOffset;
-    return (
-      (rect >= 250)
-    );
+    return rect >= 250;
   };
-
 
   const [inView, setInView] = useState(false);
 
@@ -38,7 +35,12 @@ const DeskIntro = ({ colorText }) => {
   return (
     <div className="container">
       <div className="home">
-        <div ref={colorRef} className="image" data-aos="fade-up" data-aos-duration="1000">
+        <div
+          ref={colorRef}
+          className="image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           {inView ? (
             <Svg
               textname="white"
@@ -70,27 +72,60 @@ const DeskIntro = ({ colorText }) => {
   );
 };
 
-const MobIntro = ({ colorText }) => {
+const MobIntro = () => {
   useEffect(() => {
     Aos.init({ duration: 500 });
   });
 
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return rect >= 150;
+  };
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
+
   return (
-    <div className="container">
+    <div ref={colorRef} className="container">
       <div className="mobhome">
         <div
           className="mobileimage"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <Svg
-            textname="white"
-            gradient0="yellow"
-            heigth="100%"
-            width="100%"
-            gradient1="yellow-gradient-1"
-            classname="yellow"
-          />
+          {inView ? (
+            <Svg
+              textname="white"
+              gradient0="yellow"
+              heigth="100%"
+              width="90%"
+              gradient1="yellow"
+              classname="yellow"
+            />
+          ) : (
+            <Svg
+              textname="black"
+              gradient0="yellow"
+              heigth="100%"
+              width="90%"
+              gradient1="yellow"
+              classname="yellow"
+            />
+          )}
         </div>
         <div className="mobcontent" data-aos="fade-up" data-aos-duration="2000">
           <p className="mobpara">

@@ -5,6 +5,13 @@
     transition: all 0.5s ease-in-out;
 }
 
+.services-yell{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: #EEEA64;
+    transition: all 0.5s ease-in-out;
+}
+
 .largeservice{
     width: 1400px;
     padding-bottom: 50px;
