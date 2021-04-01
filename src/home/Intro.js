@@ -47,7 +47,7 @@ const DeskIntro = ({ colorText }) => {
               gradient0="yellow"
               heigth="100%"
               width="90%"
-              gradient1="yellow-gradient-1"
+              gradient1="yellow"
               classname="yellow"
             />
           ) : (
@@ -56,7 +56,7 @@ const DeskIntro = ({ colorText }) => {
               gradient0="yellow"
               heigth="100%"
               width="90%"
-              gradient1="yellow-gradient-1"
+              gradient1="yellow"
               classname="yellow"
             />
           )}
