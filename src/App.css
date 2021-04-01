@@ -1,11 +1,18 @@
 .App {
   width: 100%;
+  background-color: #fff;
   transition: all 0.5s ease-in-out;
 }
 
 .Appcolor{
   transition: all 0.5s ease-in-out;
   background-color: #202020;
+}
+
+.Appyellcolor{
+  width: 100%;
+  background-color: #EEEA64 !important;
+  transition: all 0.5s ease-in-out;
 }
 
 .largeapp{

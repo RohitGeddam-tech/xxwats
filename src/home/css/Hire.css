@@ -23,7 +23,6 @@
 
 .hireabout{
     width: 100%;
-    background-color: #fff;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -72,6 +71,7 @@
     width: 50%;
     display: flex;
     flex-flow: column;
+    padding-left: 40px;
 }
 
 .first-box-container{
@@ -170,6 +170,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    padding-left: 40px;
 }
 
 .second-box-container{

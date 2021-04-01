@@ -2,10 +2,8 @@
 .services{
     width: 100%;
     padding-bottom: 50px;
-    background-color: white;
     transition: all 0.5s ease-in-out;
 }
-
 
 .largeservice{
     width: 1400px;
@@ -30,6 +28,20 @@
     line-height: 44px;
     text-transform: uppercase;
     color: #202020;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.services-white{
+    width: 100%;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #fff;
     padding-top: 70px;
     padding-bottom: 10px;
 }
@@ -84,6 +96,18 @@
     padding-right: 10px;
 }
 
+.paragraphs{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: white;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
 .title-left{
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -109,6 +133,18 @@
     padding-left: 10px;
 }
 
+.paragraphs-left{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
 .tabs{
     width: 95%;
     display: flex;
@@ -130,6 +166,21 @@
     line-height: 19px;
     text-transform: uppercase;
     color: #202020;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.services-whitemob{
+    width: 100%;
+    text-align: start;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #fff;
     padding-top: 70px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -172,6 +223,18 @@
     line-height: 22px;
     text-align: left;
     color: #202020;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.mob-paras{
+    font-family: 'Work Sans',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    color: #fff;
     padding-top: 5px;
     padding-left: 10px;
 }

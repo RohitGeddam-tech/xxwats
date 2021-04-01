@@ -13,10 +13,41 @@ const Desktop = () => {
     Aos.init({ duration: 500 });
   });
 
+  
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return (
+      (rect >= 250 && rect <= 1000)
+    );
+  };
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
+
+  const services = inView ? 'services-white' : 'services-heading'
+
+  const para = inView ? 'paragraphs' : 'paragraph'
+
+  const paraleft = inView ? "paragraphs-left" : "paragraph-left"
+
   return (
     <>
-      <div className="desktop">
-        <h1 className="services-heading">Services</h1>
+      <div ref={colorRef} className="desktop">
+        <h1 className={services}>Services</h1>
         <div className="service-container">
           <div className="tabs">
             <div
@@ -25,7 +56,7 @@ const Desktop = () => {
               data-aos-duration="1000"
             >
               <h4 className="title">Strategy</h4>
-              <p className="paragraph">
+              <p className={para}>
                 Creating distinct brand identity in a saturated market. Our
                 solutions are catered to your small and long term needs. With a
                 clear cut, well-defined strategy , meet your set target goals
@@ -54,7 +85,7 @@ const Desktop = () => {
               data-aos-duration="1000"
             >
               <h4 className="title-left">Creative</h4>
-              <p className="paragraph-left">
+              <p className={paraleft}>
                 The trickier the problem, more creative the solution. We provide
                 creative services across the spectrum- brand campaigns, social
                 media campaigns, video campaigns, on-ground engagement and Web +
@@ -141,10 +172,39 @@ const Mobile = () => {
     Aos.init({ duration: 2500 });
   });
 
+   
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return (
+      (rect >= 250 && rect <= 1300)
+    );
+  };
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
+
+  const services = inView ? 'services-whitemob' : 'services-headingmob'
+
+  const para = inView ? 'mob-paras' : 'mob-para'
+
   return (
     <>
-      <div className="desktop">
-        <h1 className="services-headingmob">Services</h1>
+      <div ref={colorRef} className="desktop">
+        <h1 className={services}>Services</h1>
         <div className="service-container">
           <div className="mobtabs">
             <div
@@ -160,7 +220,7 @@ const Mobile = () => {
               data-aos-duration="1000"
             >
               <h4 className="mob-title">Strategy</h4>
-              <p className="mob-para">
+              <p className={para}>
                 Creating distinct brand identity in a saturated market. Our
                 solutions are catered to your small and long term needs. With a
                 clear cut, well-defined strategy , meet your set target goals
@@ -282,6 +342,7 @@ const Services = () => {
       setDesktop(window.matchMedia("(max-width:1400px)").matches);
     });
   });
+
   return (
     <div id="services" className='services'>
       {isDesktop ? (

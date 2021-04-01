@@ -1,20 +1,63 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./css/Intro.css";
 import { NavHashLink } from "react-router-hash-link";
-import home from "../img/logo/logo-tall.svg";
+import Svg from "../components/SvgTall";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const DeskIntro = () => {
+const DeskIntro = ({ colorText }) => {
   useEffect(() => {
     Aos.init({ duration: 500 });
   });
 
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return (
+      (rect >= 250)
+    );
+  };
+
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
+
   return (
     <div className="container">
       <div className="home">
-        <div className="image" data-aos="fade-up" data-aos-duration="1000">
-          <img loading='lazy' src={home} alt="logo" />
+        <div ref={colorRef} className="image" data-aos="fade-up" data-aos-duration="1000">
+          {inView ? (
+            <Svg
+              textname="white"
+              gradient0="yellow"
+              heigth="100%"
+              width="90%"
+              gradient1="yellow-gradient-1"
+              classname="yellow"
+            />
+          ) : (
+            <Svg
+              textname="black"
+              gradient0="yellow"
+              heigth="100%"
+              width="90%"
+              gradient1="yellow-gradient-1"
+              classname="yellow"
+            />
+          )}
         </div>
         <div className="content" data-aos="fade-up" data-aos-duration="2000">
           <p className="para">WE GIVE CREATIVE SOLUTIONS FOR YOUR PROBLEMS</p>
@@ -27,7 +70,7 @@ const DeskIntro = () => {
   );
 };
 
-const MobIntro = () => {
+const MobIntro = ({ colorText }) => {
   useEffect(() => {
     Aos.init({ duration: 500 });
   });
@@ -35,8 +78,19 @@ const MobIntro = () => {
   return (
     <div className="container">
       <div className="mobhome">
-        <div className="mobileimage" data-aos="fade-up" data-aos-duration="1000">
-          <img loading='lazy' src={home} alt="logo" />
+        <div
+          className="mobileimage"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <Svg
+            textname="white"
+            gradient0="yellow"
+            heigth="100%"
+            width="100%"
+            gradient1="yellow-gradient-1"
+            classname="yellow"
+          />
         </div>
         <div className="mobcontent" data-aos="fade-up" data-aos-duration="2000">
           <p className="mobpara">
@@ -51,7 +105,7 @@ const MobIntro = () => {
   );
 };
 
-const Intro = () => {
+const Intro = ({ textColor }) => {
   const [isMobile, setMobile] = useState(
     window.matchMedia("(max-width:800px)").matches
   );
@@ -76,7 +130,11 @@ const Intro = () => {
         <div className="Intro">{isMobile ? <MobIntro /> : <DeskIntro />}</div>
       ) : (
         <div className="largeIntro">
-          {isMobile ? <MobIntro /> : <DeskIntro />}
+          {isMobile ? (
+            <MobIntro colorText={textColor} />
+          ) : (
+            <DeskIntro colorText={textColor} />
+          )}
         </div>
       )}
     </>

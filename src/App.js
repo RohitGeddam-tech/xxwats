@@ -11,19 +11,96 @@ const Hire = React.lazy(() => import("./home/Hire"));
 
 const View = () => {
 
-  const [serView, setserView] = useState(false);
+  const colorRef = useRef(null);
 
-  const cssColor = serView ? 'Appcolor' : 'App'
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return (
+      (rect >= 250 && rect <= 1000)
+    );
+  };
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    console.log('ref height',colorRef.current.offsetHeight);
+    setInView(isInView());
+  };
+  
+  const cssColor = (inView ? 'Appcolor' : 'App') 
+
+  const textColor = inView ? 'white' : 'black'
+
 
   return (
     <div className={cssColor}>
       <Suspense>
         <Nav />
-        <Intro />
-          <div className="about">
+        <Intro textColor={textColor} />
+          <div ref={colorRef} className="about">
             <About />
           </div>
+          <div ref={colorRef}>
           <Services />
+          </div>
+          <Hire />
+      </Suspense>
+    </div>
+  );
+};
+
+const ViewMob = () => {
+
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return (
+      (rect >= 250 && rect <= 1300)
+    );
+  };
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    console.log('ref height',colorRef.current.offsetHeight);
+    setInView(isInView());
+  };
+  
+  const cssColor = (inView ? 'Appcolor' : 'App') 
+
+  const textColor = inView ? 'white' : 'black'
+
+
+  return (
+    <div className={cssColor}>
+      <Suspense>
+        <Nav />
+        <Intro textColor={textColor} />
+          <div ref={colorRef} className="about">
+            <About />
+          </div>
+          <div ref={colorRef}>
+          <Services />
+          </div>
           <Hire />
       </Suspense>
     </div>
@@ -31,6 +108,25 @@ const View = () => {
 };
 
 const App = () => {
+
+  const [isMobile, setMobile] = useState(
+    window.matchMedia("(max-width:800px)").matches
+  );
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setMobile(window.matchMedia("(max-width:800px)").matches);
+    });
+  });
+
+  const [isDesktop, setDesktop] = useState(
+    window.matchMedia("(max-width:1400px)").matches
+  );
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setDesktop(window.matchMedia("(max-width:1400px)").matches);
+    });
+  });
+
   return (
     <Suspense
       fallback={
@@ -44,9 +140,17 @@ const App = () => {
         </div>
       }
     >
-      <View>
-        <View />
-      </View>
+      {isDesktop ? (
+        <>{isMobile ? <ViewMob /> : <View />}</>
+      ) : (
+        <>
+          {isMobile ? (
+            <ViewMob />
+          ) : (
+            <View />
+          )}
+        </>
+      )}
     </Suspense>
   );
 };

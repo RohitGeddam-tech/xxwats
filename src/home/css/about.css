@@ -1,12 +1,10 @@
 .about{
-    background-color: #202020 !important;
     width: 100%;
     padding-bottom: 30px;
     transition: all 0.5s ease-in-out;
 }
 
 .about-none{
-    background-color: #fff !important;
     width: 100%;
     padding-bottom: 30px;
     transition: all 0.5s ease-in-out;
@@ -257,6 +255,7 @@ img.sliderimg{
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: none;
 }
 
 .slick-slide{

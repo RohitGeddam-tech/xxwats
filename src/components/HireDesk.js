@@ -113,6 +113,9 @@ const HireDesk = () => {
             classname={"black"}
             gradient1={"black-gradient-1"}
             gradient0={"black-gradient-0"}
+            height='100%'
+            width='70%'
+            textname='black'
           />
         </div>
       </div>

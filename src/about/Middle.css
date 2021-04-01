@@ -1,8 +1,16 @@
 .middle{
     width: 100%;
-    background-color: #EEEA64;
 }
 
+.AboutPage{
+    width: 100%;
+    background-color: #fff;
+}
+
+.Aboutcolor{
+    width: 100%;
+    background-color: #EEEA64;
+}
 
 .largemiddle{
     width: 1400px;
