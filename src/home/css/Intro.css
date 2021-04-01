@@ -113,7 +113,7 @@ button{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: 8%;
+    margin-top: 15%;
     margin-bottom: 10%;
 }
 
@@ -134,6 +134,8 @@ button{
     width: 95%;
     margin: auto;
     color: rgb(247, 0, 140);
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .mobbtn{
@@ -150,6 +152,7 @@ button{
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     color: rgb(135, 135, 135);
+    margin-bottom: 5px;
 }
 
 .mobbtn:hover{
@@ -166,6 +169,7 @@ button{
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
     color: white;
+    margin-bottom: 5px;
 }
 
 .mobileimage img{
@@ -173,6 +177,7 @@ button{
 }
 
 .mobileimage{
+    width: 100%;
     display: flex;
     justify-content: center;
 }

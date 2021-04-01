@@ -107,7 +107,7 @@ const MidDesktop = () => {
           <h4 className="first-title">Meet the team</h4>
         </div>
         <div className="first-flexbox">
-          <div className="mid-title">
+          <div className="mid-title" data-aos='fade-up' data-aos-duration="1000">
             <h4 className="flex-title">Founders</h4>
           </div>
           <div className="first-flex">
@@ -183,7 +183,7 @@ const MidDesktop = () => {
           </div>
         </div>
         <div className="first-flexbox">
-          <div className="mid-title">
+          <div className="mid-title" data-aos='fade-up' data-aos-duration="1000">
             <h4 className="flex-title">Creative team</h4>
           </div>
           <div className="first-flex">
@@ -248,7 +248,7 @@ const MidDesktop = () => {
           </div>
         </div>
         <div className="first-flexbox">
-          <div className="mid-title">
+          <div className="mid-title" data-aos='fade-up' data-aos-duration="1000">
             <h4 className="flex-title">Business team</h4>
           </div>
           <div className="first-flex">

@@ -202,7 +202,7 @@ const Mobile = () => {
 
   return (
     <>
-      <div ref={colorRef} className="desktop">
+      <div ref={colorRef} className="mobile">
         <h1 className={services}>Services</h1>
         <div className="service-container">
           <div className="mobtabs">

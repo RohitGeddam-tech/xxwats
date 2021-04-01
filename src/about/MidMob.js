@@ -24,7 +24,7 @@ const MidMob = () => {
           <h4 className="first-title">Meet the team</h4>
         </div>
         <div className="mobmid-container">
-          <h4>Founders</h4>
+          <h4 data-aos='fade-up' data-aos-duration="1000">Founders</h4>
           <div className="mobfirst">
             <img
               src={cyril}
@@ -73,7 +73,7 @@ const MidMob = () => {
           </div>
         </div>
         <div className="mobmid-container">
-          <h4>Creative Team</h4>
+          <h4 data-aos='fade-up' data-aos-duration="1000">Creative Team</h4>
           <div className="mobfirst">
             <img
               src={arathi}
@@ -112,7 +112,7 @@ const MidMob = () => {
           </div>
         </div>
         <div className="mobmid-container">
-          <h4>Business Team</h4>
+          <h4 data-aos='fade-up' data-aos-duration="1000">Business Team</h4>
           <div className="mobfirst">
             <img
               src={anushree}

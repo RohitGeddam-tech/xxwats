@@ -112,7 +112,7 @@ const MobIntro = () => {
               textname="white"
               gradient0="yellow"
               heigth="100%"
-              width="90%"
+              width="100%"
               gradient1="yellow"
               classname="yellow"
             />
@@ -121,7 +121,7 @@ const MobIntro = () => {
               textname="black"
               gradient0="yellow"
               heigth="100%"
-              width="90%"
+              width="100%"
               gradient1="yellow"
               classname="yellow"
             />
