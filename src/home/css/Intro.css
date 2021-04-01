@@ -170,6 +170,11 @@ button{
     width: 100% !important;
 }
 
+.mobileimage{
+    display: flex;
+    justify-content: center;
+}
+
 /*Mobile ends*/
 
 /*first-about page starts*/
