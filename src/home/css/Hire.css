@@ -50,7 +50,6 @@
     width: 80%;
     display: flex;
     margin: auto;
-    padding-left: 40px;
     justify-content: flex-start;
 }
 
@@ -83,7 +82,6 @@
     width: 50%;
     display: flex;
     flex-flow: column;
-    padding-left: 40px;
 }
 
 .first-box-container{

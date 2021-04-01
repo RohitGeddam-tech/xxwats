@@ -133,7 +133,7 @@ const Tab = () => {
   
   const cssColor = (inView ? 'mobaboutbtn' : 'mobaboutbtn-black') 
 
-  const imag = active ? "frame" : "tab-pict";
+  const imag = active ? "frame" : "pict";
 
   const ifade = active ? "fade" : "frame";
 
@@ -144,7 +144,7 @@ const Tab = () => {
     : "https://www.youtube.com/embed/dJIJTZoTj6Q";
 
   return (
-    <div className="aboutmobile">
+    <div ref={colorRef} className="aboutmobile">
       <div
         className="mob-container"
         data-aos="fade-up"
