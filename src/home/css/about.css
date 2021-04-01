@@ -369,6 +369,50 @@ margin-top: 10px;
     margin-top: 15px;
 }
 
+.mobaboutbtn-black{
+    background-color: black !important;
+    border: 1px solid black !important;
+    padding-left: 25.6px;
+    padding-right: 25.6px;
+    padding-top: 12.8px;
+    padding-bottom: 12.8px;
+    border-radius: 50px;
+    width: fit-content;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.mobaboutbtn-black:hover{
+    background-color: white !important;
+    border: 1px solid black !important;
+    padding-left: 25.6px;
+    padding-right: 25.6px;
+    padding-top: 12.8px;
+    padding-bottom: 12.8px;
+    border-radius: 50px;
+    width: fit-content;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    margin: auto;
+    margin-top: 15px;
+}
+
 .mobaboutbtn:hover{
     background-color: black !important;
     border: 1px solid black !important;

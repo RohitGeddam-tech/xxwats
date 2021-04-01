@@ -106,6 +106,33 @@ const Tab = () => {
     Aos.init({ duration: 500 });
   });
 
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return (
+      (rect >= 150 && rect <= 1300)
+    );
+  };
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    console.log('ref height',colorRef.current.offsetHeight);
+    setInView(isInView());
+  };
+  
+  const cssColor = (inView ? 'mobaboutbtn' : 'mobaboutbtn-black') 
+
   const imag = active ? "frame" : "tab-pict";
 
   const ifade = active ? "fade" : "frame";
@@ -171,7 +198,7 @@ const Tab = () => {
             <button
               data-aos="fade-up"
               data-aos-duration="1000"
-              className="mobaboutbtn"
+              className={cssColor}
             >
               Meet our team
             </button>
@@ -189,6 +216,33 @@ const Mobile = () => {
     Aos.init({ duration: 500 });
   });
 
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return (
+      (rect >= 150 && rect <= 1300)
+    );
+  };
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    console.log('ref height',colorRef.current.offsetHeight);
+    setInView(isInView());
+  };
+  
+  const cssColor = (inView ? 'mobaboutbtn' : 'mobaboutbtn-black') 
+
   const imag = active ? "frame" : "tab-pict";
 
   const ifade = active ? "fade" : "frame";
@@ -200,7 +254,7 @@ const Mobile = () => {
     : "https://www.youtube.com/embed/dJIJTZoTj6Q?";
 
   return (
-    <div className="aboutmobile">
+    <div ref={colorRef} className="aboutmobile">
       <div className="mobcontainer" data-aos="fade-up" data-aos-duration="1000">
         <div className="yellowtabmob">
           <div className="tabmobcontainer">
@@ -251,7 +305,7 @@ const Mobile = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
             id="services"
-            className="mobaboutbtn"
+            className={cssColor}
           >
             Meet our team
           </button>
