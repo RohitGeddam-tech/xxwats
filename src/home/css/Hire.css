@@ -17,14 +17,15 @@
 }
 
 .largehire{
-    width: 1400px;
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin: auto;
 }
 
 .largehireabout{
-    width: 1400px;
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;

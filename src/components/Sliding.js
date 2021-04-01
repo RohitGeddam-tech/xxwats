@@ -69,7 +69,7 @@ export default class Responsive extends Component {
             slidesToScroll: 1,
             autoplay: true,
             speed: 100,
-            autoplaySpeed: 3500,
+            autoplaySpeed: 100,
             cssEase: "linear",
           },
         },
