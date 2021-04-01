@@ -106,7 +106,7 @@ const Tab = () => {
     Aos.init({ duration: 500 });
   });
 
-  const imag = active ? "frame" : "pict";
+  const imag = active ? "frame" : "tab-pict";
 
   const ifade = active ? "fade" : "frame";
 
@@ -189,7 +189,7 @@ const Mobile = () => {
     Aos.init({ duration: 500 });
   });
 
-  const imag = active ? "frame" : "pict";
+  const imag = active ? "frame" : "tab-pict";
 
   const ifade = active ? "fade" : "frame";
 
