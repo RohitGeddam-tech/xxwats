@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/xxwats/static/css/main.2c10dfcd.chunk.css",
+    "main.css": "/xxwats/static/css/main.2f4e3830.chunk.css",
     "main.js": "/xxwats/static/js/main.f85b3dfe.chunk.js",
     "main.js.map": "/xxwats/static/js/main.f85b3dfe.chunk.js.map",
-    "runtime-main.js": "/xxwats/static/js/runtime-main.a318a854.js",
-    "runtime-main.js.map": "/xxwats/static/js/runtime-main.a318a854.js.map",
+    "runtime-main.js": "/xxwats/static/js/runtime-main.4f953ca3.js",
+    "runtime-main.js.map": "/xxwats/static/js/runtime-main.4f953ca3.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/xxwats/static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.fe23c85e.chunk.js": "/xxwats/static/js/2.fe23c85e.chunk.js",
     "static/js/2.fe23c85e.chunk.js.map": "/xxwats/static/js/2.fe23c85e.chunk.js.map",
-    "static/css/3.ff3d008d.chunk.css": "/xxwats/static/css/3.ff3d008d.chunk.css",
-    "static/js/3.dbf59b90.chunk.js": "/xxwats/static/js/3.dbf59b90.chunk.js",
-    "static/js/3.dbf59b90.chunk.js.map": "/xxwats/static/js/3.dbf59b90.chunk.js.map",
+    "static/css/3.b26e37e3.chunk.css": "/xxwats/static/css/3.b26e37e3.chunk.css",
+    "static/js/3.d876c1d3.chunk.js": "/xxwats/static/js/3.d876c1d3.chunk.js",
+    "static/js/3.d876c1d3.chunk.js.map": "/xxwats/static/js/3.d876c1d3.chunk.js.map",
     "index.html": "/xxwats/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/xxwats/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/3.ff3d008d.chunk.css.map": "/xxwats/static/css/3.ff3d008d.chunk.css.map",
-    "static/css/main.2c10dfcd.chunk.css.map": "/xxwats/static/css/main.2c10dfcd.chunk.css.map",
+    "static/css/3.b26e37e3.chunk.css.map": "/xxwats/static/css/3.b26e37e3.chunk.css.map",
+    "static/css/main.2f4e3830.chunk.css.map": "/xxwats/static/css/main.2f4e3830.chunk.css.map",
     "static/js/2.fe23c85e.chunk.js.LICENSE.txt": "/xxwats/static/js/2.fe23c85e.chunk.js.LICENSE.txt",
     "static/media/Frame2.6756bbc8.png": "/xxwats/static/media/Frame2.6756bbc8.png",
     "static/media/Framemob.5351d972.jpg": "/xxwats/static/media/Framemob.5351d972.jpg",
@@ -48,10 +48,10 @@
     "static/media/strat.4d2e4274.png": "/xxwats/static/media/strat.4d2e4274.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a318a854.js",
+    "static/js/runtime-main.4f953ca3.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.fe23c85e.chunk.js",
-    "static/css/main.2c10dfcd.chunk.css",
+    "static/css/main.2f4e3830.chunk.css",
     "static/js/main.f85b3dfe.chunk.js"
   ]
 }
