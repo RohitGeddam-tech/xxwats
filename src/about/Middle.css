@@ -5,11 +5,13 @@
 .AboutPage{
     width: 100%;
     background-color: #fff;
+    transition: all 0.5s ease-in-out;
 }
 
 .Aboutcolor{
     width: 100%;
     background-color: #EEEA64;
+    transition: all 0.5s ease-in-out;
 }
 
 .largemiddle{

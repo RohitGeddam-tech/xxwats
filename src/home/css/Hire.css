@@ -49,6 +49,7 @@
     width: 80%;
     display: flex;
     margin: auto;
+    padding-left: 40px;
     justify-content: flex-start;
 }
 
