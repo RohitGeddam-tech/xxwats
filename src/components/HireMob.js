@@ -17,7 +17,7 @@ import ServiceSlider from "./ServiceSlider";
 
 const HireMob = () => {
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   return (
@@ -46,7 +46,7 @@ const HireMob = () => {
         <div
           className="first-mobbox"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <div className="first-box-mobcontainer">
             <h4 style={{ paddingTop: "30px" }} className="first-quote">
@@ -63,7 +63,7 @@ const HireMob = () => {
                   400050
                 </a>
                 <a href="https://goo.gl/maps/G9r5WEvrA2cfQ9Z18">
-                  <img alt="call" src={map} />
+                  <img loading='lazy' alt="call" src={map} />
                 </a>
               </div>
               <div className="icons-mobmsg">
@@ -75,7 +75,7 @@ const HireMob = () => {
                   +919820353013
                 </a>
                 <a href="tel:+919820353013">
-                  <img alt="call" src={call} />
+                  <img loading='lazy' alt="call" src={call} />
                 </a>
               </div>
               <div style={{ marginTop: "30px" }} className="icons-mobmsg">
@@ -83,7 +83,7 @@ const HireMob = () => {
                   shoutout@xxwatts.com
                 </a>
                 <a href="mailto:shoutout@xxwatts.com">
-                  <img alt="call" src={mail} />
+                  <img loading='lazy' alt="call" src={mail} />
                 </a>
               </div>
             </div>
@@ -91,27 +91,27 @@ const HireMob = () => {
               <h4 className="first-title">follow us</h4>
               <div className="social">
                 <a style={{ marginLeft: "10px" }}>
-                  <img src={insta} alt="insta" />
+                  <img loading='lazy' src={insta} alt="insta" />
                 </a>
                 <a style={{ marginLeft: "10%" }}>
-                  <img src={youtube} alt="insta" />
+                  <img loading='lazy' src={youtube} alt="insta" />
                 </a>
                 <a style={{ marginLeft: "10%" }}>
-                  <img src={facebook} alt="insta" />
+                  <img loading='lazy' src={facebook} alt="insta" />
                 </a>
                 <a style={{ marginLeft: "10%" }}>
-                  <img src={twitter} alt="insta" />
+                  <img loading='lazy' src={twitter} alt="insta" />
                 </a>
               </div>
             </div>
             <div className="careers">
               <h1>For Careers :</h1>
               <a href="mailto:hr@xxwatts.com">
-                <img src={join} alt='join' />  hr@xxwatts.com</a>
+                <img loading='lazy' src={join} alt='join' />  hr@xxwatts.com</a>
             </div>
           </div>
         </div>
-        <div className="mobhome" data-aos="fade-up" data-aos-duration="3000">
+        <div className="mobhome">
           <div className="mobimage" style={{ width: "100%" }}>
             <SvgTall
               classname={"black"}

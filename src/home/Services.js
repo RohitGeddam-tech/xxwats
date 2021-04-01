@@ -10,7 +10,7 @@ import "aos/dist/aos.css";
 
 const Desktop = () => {
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   return (
@@ -22,7 +22,7 @@ const Desktop = () => {
             <div
               className="sentence"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <h4 className="title">Strategy</h4>
               <p className="paragraph">
@@ -35,7 +35,7 @@ const Desktop = () => {
             <div
               className="picture"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={strategy} alt="strategy.png" />
             </div>
@@ -44,14 +44,14 @@ const Desktop = () => {
             <div
               className="picture"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={creative} alt="creative.png" />
             </div>
             <div
               className="sentence"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <h4 className="title-left">Creative</h4>
               <p className="paragraph-left">
@@ -66,7 +66,7 @@ const Desktop = () => {
             <div
               className="sentence"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <h4 className="title">Social media</h4>
               <p className="paragraph">
@@ -80,7 +80,7 @@ const Desktop = () => {
             <div
               className="picture"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={media} alt="social-media.png" />
             </div>
@@ -89,14 +89,14 @@ const Desktop = () => {
             <div
               className="picture"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={production} alt="production.png" />
             </div>
             <div
               className="sentence"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <h4 className="title-left">production</h4>
               <p className="paragraph-left">
@@ -111,7 +111,7 @@ const Desktop = () => {
             <div
               className="sentence"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <h4 className="title">Post Production</h4>
               <p className="paragraph">
@@ -125,7 +125,7 @@ const Desktop = () => {
             <div
               className="picture"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={post} alt="post.png" />
             </div>
@@ -150,14 +150,14 @@ const Mobile = () => {
             <div
               className="mob-pic"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={strategy} alt="strategy.png" />
             </div>
             <div
               className="mob-sentence"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <h4 className="mob-title">Strategy</h4>
               <p className="mob-para">
@@ -172,14 +172,14 @@ const Mobile = () => {
             <div
               className="mob-pic"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={creative} alt="creative.png" />
             </div>
             <div
               className="mob-sentence"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <h4 className="mob-title">creative</h4>
               <p className="mob-para">
@@ -194,14 +194,14 @@ const Mobile = () => {
             <div
               className="mob-pic"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={media} alt="media.png" />
             </div>
             <div
               className="mob-sentence"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <h4 className="mob-title">Social media</h4>
               <p className="mob-para">
@@ -217,7 +217,7 @@ const Mobile = () => {
             <div
               className="mob-pic"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={production} alt="production.png" />
             </div>
@@ -239,14 +239,14 @@ const Mobile = () => {
             <div
               className="mob-pic"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={post} alt="post.png" />
             </div>
             <div
               className="mob-sentence"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <h4 className="mob-title">post production</h4>
               <p className="mob-para">
@@ -282,44 +282,8 @@ const Services = () => {
       setDesktop(window.matchMedia("(max-width:1400px)").matches);
     });
   });
-
-  const colorRef = useRef(null);
-
-  const isInView = () => {
-    const refColor = colorRef.current;
-    const rect = refColor.getBoundingClientRect();
-    return (
-      (rect.top <= 100 || rect.top <= 300 || rect.top <= 500) &&
-      (rect.bottom <= 0 ||
-        rect.bottom >= window.innerHeight ||
-        rect.bottom >= window.innerHeight - 100 ||
-        rect.bottom >= window.innerHeight - 300 ||
-        rect.bottom >= window.innerHeight - 500)
-    );
-  };
-
-  console.log(window.innerHeight);
-
-  const [serView, setserView] = useState(false);
-
-  useEffect(() => {
-    setserView(isInView())
-    window.addEventListener("scroll", scrollHandler);
-    return () => {
-      window.removeEventListener("scroll", scrollHandler);
-    };
-  }, []);
-
-  const scrollHandler = () => {
-    setserView(isInView());
-  };
-
-  const servColor = serView ? 'services' : 'services-none'
-
-  const bottom50 = serView ? 'bottom50' : 'bottom50-none'
-
   return (
-    <div ref={colorRef} id="services" className={servColor}>
+    <div id="services" className='services'>
       {isDesktop ? (
         <>{isMobile ? <Mobile /> : <Desktop />}</>
       ) : (
@@ -327,7 +291,6 @@ const Services = () => {
           {isMobile ? <Mobile /> : <Desktop />}
         </div>
       )}
-      <div className={bottom50}></div>
     </div>
   );
 };

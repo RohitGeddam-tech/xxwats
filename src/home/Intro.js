@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 const DeskIntro = () => {
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   return (
@@ -29,7 +29,7 @@ const DeskIntro = () => {
 
 const MobIntro = () => {
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   return (

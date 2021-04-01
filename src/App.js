@@ -11,104 +11,42 @@ const Hire = React.lazy(() => import("./home/Hire"));
 
 const View = () => {
 
-  const colorRef = useRef(null);
+  const [serView, setserView] = useState(false);
 
-  const isInView = () => {
-    const refColor = colorRef.current;
-    const rect = refColor.getBoundingClientRect();
-    return (
-      (rect.top <= 100 || rect.top <= 300 || rect.top <= 500) &&
-      (rect.bottom >= window.innerHeight - 100 ||
-        rect.bottom >= window.innerHeight - 300 ||
-        rect.bottom >= window.innerHeight - 500)
-    );
-  };
-
-  console.log(window.innerHeight);
-
-  const [inView, setInView] = useState(false);
-
-
-  useEffect(() => {
-    setInView(isInView());
-    window.addEventListener("scroll", scrollHandler);
-    return () => {
-      window.removeEventListener("scroll", scrollHandler);
-    };
-  }, []);
-
-  const scrollHandler = () => {
-    setInView(isInView());
-  };
-
-  const classColor = inView ? "about" : "about-none";
+  const cssColor = serView ? 'Appcolor' : 'App'
 
   return (
-    <>
+    <div className={cssColor}>
       <Suspense>
         <Nav />
-          <Intro />
-        <Suspense>
-            <div ref={colorRef} className={classColor}>
-              <About />
-            </div>
-        </Suspense>
-        <Suspense>
-              <Services />
-        </Suspense>
-        <Suspense>
-              <Hire />
-        </Suspense>
+        <Intro />
+          <div className="about">
+            <About />
+          </div>
+          <Services />
+          <Hire />
       </Suspense>
-    </>
+    </div>
   );
 };
 
 const App = () => {
-  const newRef = useRef(null);
-
-  const isInView = () => {
-    const refColor = newRef.current;
-    const rect = refColor.getBoundingClientRect();
-    return (
-      rect.top <= -100
-    );
-  };
-
-  console.log(window.innerHeight);
-
-  const [inView, setInView] = useState(false);
-
-  useEffect(() => {
-    setInView(isInView());
-    window.addEventListener("scroll", scrollHandler);
-    return () => {
-      window.removeEventListener("scroll", scrollHandler);
-    };
-  }, []);
-
-  const scrollHandler = () => {
-    setInView(isInView());
-  };
-
-  const backColor = inView ? "Appcolor" : "App";
-
   return (
     <Suspense
-        fallback={
-          <div className="load-center">
-            <div className="ui segment">
-              <div className="ui active inverted dimmer">
-                <div className="ui text loader">Loading</div>
-              </div>
-              <p></p>
+      fallback={
+        <div className="load-center">
+          <div className="ui segment">
+            <div className="ui active inverted dimmer">
+              <div className="ui text loader">Loading</div>
             </div>
+            <p></p>
           </div>
-        }
-      >
-    <div ref={newRef} className={backColor}>
-      <View />
-    </div>
+        </div>
+      }
+    >
+      <View>
+        <View />
+      </View>
     </Suspense>
   );
 };

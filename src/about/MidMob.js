@@ -31,7 +31,7 @@ const MidMob = () => {
               loading='lazy'
               alt="cyril"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
               <h4>Cyril</h4>
@@ -55,7 +55,7 @@ const MidMob = () => {
               loading='lazy'
               alt="cyril"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
               <h4>Savio</h4>
@@ -80,7 +80,7 @@ const MidMob = () => {
               alt="cyril"
               loading='lazy'
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
               <h4>Arathi</h4>
@@ -103,7 +103,7 @@ const MidMob = () => {
               alt="cyril"
               data-aos="fade-up"
               loading='lazy'
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
               <h4>Ansh</h4>
@@ -119,7 +119,7 @@ const MidMob = () => {
               loading='lazy'
               alt="cyril"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
               <h4>Anushree</h4>
@@ -143,7 +143,7 @@ const MidMob = () => {
               alt="cyril"
               data-aos="fade-up"
               loading='lazy'
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
               <h4>Saloni</h4>
@@ -162,7 +162,7 @@ const MidMob = () => {
         <div
           className="mobmid-container"
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
         >
           <h4>Production team</h4>
           <div

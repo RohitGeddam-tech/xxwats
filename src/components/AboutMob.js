@@ -17,7 +17,7 @@ import ServiceSlider from "./ServiceSlider";
 
 const HireMob = () => {
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   return (
@@ -46,7 +46,7 @@ const HireMob = () => {
         <div
           className="first-mobbox"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <div className="first-box-mobcontainer">
             <h4 style={{ paddingTop: "30px" }} className="first-quote">
@@ -111,7 +111,7 @@ const HireMob = () => {
             </div>
           </div>
         </div>
-        <div className="mobhome" data-aos="fade-up" data-aos-duration="3000">
+        <div className="mobhome">
           <div className="mobimage" style={{ width: "100%" }}>
             <img loading='lazy' src={logotall} alt="bottom-logo" />
           </div>

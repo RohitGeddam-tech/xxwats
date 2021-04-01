@@ -13,7 +13,7 @@ const Desktop = () => {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   const imag = active ? "frame" : "imag";
@@ -30,7 +30,7 @@ const Desktop = () => {
         <div
           className="yellowtab"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <div className="tabcontainer">
             <h4 className="heading">About us</h4>
@@ -53,7 +53,7 @@ const Desktop = () => {
         <div
           className="aboutvideo"
           data-aos="fade-up"
-          data-aos-duration="2500"
+          data-aos-duration="100"
         >
           <img
             src={desk}
@@ -78,13 +78,13 @@ const Desktop = () => {
         </div>
       </div>
       <div className="sliderbox">
-        <div className="slider" data-aos="fade-up" data-aos-duration="3000">
+        <div className="slider" data-aos="fade-up" data-aos-duration="1000">
           <Slider />
         </div>
         <div
           className="slidercover"
           data-aos="fade-up"
-          data-aos-duration="2300"
+          data-aos-duration="1000"
         >
           <div className="slidecontainer">
             <h4 className="sliderheading">work</h4>
@@ -103,7 +103,7 @@ const Tab = () => {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   const imag = active ? "frame" : "pict";
@@ -121,7 +121,7 @@ const Tab = () => {
       <div
         className="mob-container"
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
       >
         <div className="yellowtabmob">
           <div className="tabmobcontainer">
@@ -163,14 +163,14 @@ const Tab = () => {
             className="vid"
           />
         </Fade>
-        <div className={container} data-aos="fade-up" data-aos-duration="2500">
+        <div className={container} data-aos="fade-up" data-aos-duration="1000">
           <MobSlider />
         </div>
-        <div className="btncenter">
+        <div className="alignbtn">
           <NavHashLink to="/xxwats/about#mid">
             <button
               data-aos="fade-up"
-              data-aos-duration="2500"
+              data-aos-duration="1000"
               className="mobaboutbtn"
             >
               Meet our team
@@ -186,7 +186,7 @@ const Mobile = () => {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   const imag = active ? "frame" : "pict";
@@ -201,7 +201,7 @@ const Mobile = () => {
 
   return (
     <div className="aboutmobile">
-      <div className="mobcontainer" data-aos="fade-up" data-aos-duration="2000">
+      <div className="mobcontainer" data-aos="fade-up" data-aos-duration="1000">
         <div className="yellowtabmob">
           <div className="tabmobcontainer">
             <h4 className="heading">About us</h4>
@@ -242,19 +242,21 @@ const Mobile = () => {
             className="vid"
           />
         </Fade>
-        <div className={container} data-aos="fade-up" data-aos-duration="2500">
+        <div className={container} data-aos="fade-up" data-aos-duration="1000">
           <MobSlider />
         </div>
+        <div className='alignbtn'>
         <NavHashLink to="/xxwats/about#mid">
           <button
             data-aos="fade-up"
-            data-aos-duration="2500"
+            data-aos-duration="1000"
             id="services"
             className="mobaboutbtn"
           >
             Meet our team
           </button>
         </NavHashLink>
+        </div>
       </div>
     </div>
   );
@@ -288,40 +290,8 @@ const About = () => {
     });
   });
 
-  const colorRef = useRef(null);
-
-  const isInView = () => {
-    const refColor = colorRef.current;
-    const rect = refColor.getBoundingClientRect();
-    return (
-      (rect.top <= 100 || rect.top <= 300 || rect.top <= 500) &&
-      (rect.bottom >= window.innerHeight - 100 ||
-        rect.bottom >= window.innerHeight - 300 ||
-        rect.bottom >= window.innerHeight - 500)
-    );
-  };
-
-  console.log(window.innerHeight);
-
-  const [inView, setInView] = useState(false);
-
-
-  useEffect(() => {
-    setInView(isInView());
-    window.addEventListener("scroll", scrollHandler);
-    return () => {
-      window.removeEventListener("scroll", scrollHandler);
-    };
-  }, []);
-
-  const scrollHandler = () => {
-    setInView(isInView());
-  };
-
-  const aboutColor = inView ? 'aboutColor' : 'aboutColor-none'
-
   return (
-    <div ref={colorRef} className={aboutColor}>
+    <>
       {isDesktop ? (
         <>
           {isTab ? (
@@ -341,7 +311,7 @@ const About = () => {
           </>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

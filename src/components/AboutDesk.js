@@ -16,7 +16,7 @@ import ServiceSlider from "./ServiceSlider";
 
 const HireDesk = () => {
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   return (
@@ -89,7 +89,7 @@ const HireDesk = () => {
         <div
           className="second-box"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <div className="second-box-container">
             <h4 className="second-title">A project with 20 Watts?</h4>
@@ -104,7 +104,7 @@ const HireDesk = () => {
           </div>
         </div>
       </div>
-      <div className="deskfoot" data-aos="fade-up" data-aos-duration="3000">
+      <div className="deskfoot">
         <div className="footimg">
           <img loading='lazy' src={logotall} alt="bottom-logo" />
           {/* <SvgTall classname={'yellow'} gradient1={'yellow-gradient-1'} gradient0={'yellow-gradient-0'}/> */}

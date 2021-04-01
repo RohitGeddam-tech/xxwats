@@ -77,7 +77,6 @@ export default class Responsive extends Component {
         <Slider {...settings}>
           <div className="sliderin">
             <img
-              style={{ paddingLeft: "20px" }}
               className="sliderimg"
               loading='lazy'
               alt="slider"
@@ -86,7 +85,6 @@ export default class Responsive extends Component {
           </div>
           <div className="sliderin">
             <img
-              style={{ paddingLeft: "20px" }}
               className="sliderimg"
               loading='lazy'
               alt="slider"
@@ -95,7 +93,6 @@ export default class Responsive extends Component {
           </div>
           <div className="sliderin">
             <img
-              style={{ paddingLeft: "10px" }}
               loading='lazy'
               className="sliderimg"
               alt="slider"

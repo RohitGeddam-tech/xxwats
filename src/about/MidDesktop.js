@@ -114,7 +114,7 @@ const MidDesktop = () => {
             <div
               className="inflex1"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <div className={innercyril} onMouseEnter={onCyrilClick}>
                 <img loading='lazy' src={cyril} alt="logo" />
@@ -149,7 +149,7 @@ const MidDesktop = () => {
             <div
               className="inflex2"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <div className={innersavio} onMouseEnter={onSavioClick}>
                 <img loading='lazy' src={savio} alt="logo" />
@@ -157,7 +157,7 @@ const MidDesktop = () => {
                   savio <img loading='lazy' src={icon} alt="logo" />
                 </h4>
               </div>
-              <Fade className={saviobox} in={Savio} delay="500" duration="2000">
+              <Fade className={saviobox} in={Savio} delay="500" duration="1000">
                 <div
                   className="fadebox"
                   onMouseLeave={() => {
@@ -223,7 +223,7 @@ const MidDesktop = () => {
             <div
               className="inflex2"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <div className={inneransh} onMouseEnter={onAnshClick}>
                 <img loading='lazy' src={ansh} alt="logo" />
@@ -231,7 +231,7 @@ const MidDesktop = () => {
                   Ansh <img loading='lazy' src={icon} alt="logo" />
                 </h4>
               </div>
-              <Fade className={anshBox} in={Ansh} delay="500" duration="2000">
+              <Fade className={anshBox} in={Ansh} delay="500" duration="1000">
                 <div
                   className="fadebox"
                   onMouseLeave={() => {
@@ -255,7 +255,7 @@ const MidDesktop = () => {
             <div
               className="inflex1"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <div className={cls} onMouseEnter={onActiveClick}>
                 <img loading='lazy' src={anushree} alt="logo" />
@@ -263,7 +263,7 @@ const MidDesktop = () => {
                   Anushree <img loading='lazy' src={icon} alt="logo" />
                 </h4>
               </div>
-              <Fade className={box} in={active} delay="500" duration="2000">
+              <Fade className={box} in={active} delay="500" duration="1000">
                 <div
                   className="fadebox"
                   onMouseLeave={() => {
@@ -290,7 +290,7 @@ const MidDesktop = () => {
             <div
               className="inflex2"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <div className={innersal} onMouseEnter={onSaloniClick}>
                 <img loading='lazy' src={saloni} alt="logo" />
@@ -302,7 +302,7 @@ const MidDesktop = () => {
                 className={salonibox}
                 in={Saloni}
                 delay="500"
-                duration="2000"
+                duration="1000"
               >
                 <div
                   className="fadebox"
@@ -331,14 +331,14 @@ const MidDesktop = () => {
         <div
           className="midend-title"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <h4 className="flexend-title">Production team</h4>
           <div className="tabs">
             <div
               className="sentence"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="1000"
             >
               <p className="paragraph">
                 This is the real deal. The team that makes the dream a reality.
@@ -353,7 +353,7 @@ const MidDesktop = () => {
             <div
               className="picture"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
             >
               <img loading='lazy' src={post} alt="post" />
             </div>

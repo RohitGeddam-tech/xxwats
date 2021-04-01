@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 
 const DeskIntro = () => {
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   return (
@@ -16,7 +16,7 @@ const DeskIntro = () => {
         <div
           className="firstfaimage"
           data-aos="fade-up"
-          data-aos-duration="1500"
+          data-aos-duration="1000"
         >
           <div className="bunny">
             <img loading='lazy' src={home} alt="logo" />
@@ -25,7 +25,7 @@ const DeskIntro = () => {
         <div
           className="facontent"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <h4 className="fafirst-title">Who are we? </h4>
           <p className="faquote">And how do we help you?</p>
@@ -45,7 +45,7 @@ const DeskIntro = () => {
 
 const MobIntro = () => {
   useEffect(() => {
-    Aos.init({ duration: 2500 });
+    Aos.init({ duration: 500 });
   });
 
   return (
@@ -61,7 +61,7 @@ const MobIntro = () => {
         <div
           className="famobcontent"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
         >
           <h4 className="fafirst-mobtitle">Who are we? </h4>
           <p className="famobquote">And how do we help you?</p>
