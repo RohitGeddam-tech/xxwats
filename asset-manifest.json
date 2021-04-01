@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/xxwats/static/css/main.67e03279.chunk.css",
+    "main.css": "/xxwats/static/css/main.2c10dfcd.chunk.css",
     "main.js": "/xxwats/static/js/main.f85b3dfe.chunk.js",
     "main.js.map": "/xxwats/static/js/main.f85b3dfe.chunk.js.map",
     "runtime-main.js": "/xxwats/static/js/runtime-main.a318a854.js",
@@ -14,7 +14,7 @@
     "index.html": "/xxwats/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/xxwats/static/css/2.7fc9bc2b.chunk.css.map",
     "static/css/3.ff3d008d.chunk.css.map": "/xxwats/static/css/3.ff3d008d.chunk.css.map",
-    "static/css/main.67e03279.chunk.css.map": "/xxwats/static/css/main.67e03279.chunk.css.map",
+    "static/css/main.2c10dfcd.chunk.css.map": "/xxwats/static/css/main.2c10dfcd.chunk.css.map",
     "static/js/2.fe23c85e.chunk.js.LICENSE.txt": "/xxwats/static/js/2.fe23c85e.chunk.js.LICENSE.txt",
     "static/media/Frame2.6756bbc8.png": "/xxwats/static/media/Frame2.6756bbc8.png",
     "static/media/Framemob.5351d972.jpg": "/xxwats/static/media/Framemob.5351d972.jpg",
@@ -51,7 +51,7 @@
     "static/js/runtime-main.a318a854.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.fe23c85e.chunk.js",
-    "static/css/main.67e03279.chunk.css",
+    "static/css/main.2c10dfcd.chunk.css",
     "static/js/main.f85b3dfe.chunk.js"
   ]
 }
