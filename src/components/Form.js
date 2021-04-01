@@ -165,7 +165,7 @@ const FormMob = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='formAlign'>
         <TextField
           className="textfieldmob"
           id="standard-basic"
