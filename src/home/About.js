@@ -127,7 +127,6 @@ const Tab = () => {
   }, []);
 
   const scrollHandler = () => {
-    console.log('ref height',colorRef.current.offsetHeight);
     setInView(isInView());
   };
   
@@ -237,7 +236,6 @@ const Mobile = () => {
   }, []);
 
   const scrollHandler = () => {
-    console.log('ref height',colorRef.current.offsetHeight);
     setInView(isInView());
   };
   

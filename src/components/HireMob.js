@@ -106,8 +106,16 @@ const HireMob = () => {
             </div>
             <div className="careers">
               <h1>For Careers :</h1>
-              <a href="mailto:hr@xxwatts.com">
-                <img loading='lazy' src={join} alt='join' />  hr@xxwatts.com</a>
+              <div style={{ marginTop: "0 !important" }} className="icons-mobmsg">
+                <a href="mailto: hr@xxwatts.com" className="mail-title">
+                  hr@xxwatts.com
+                </a>
+                <a href="mailto: hr@xxwatts.com">
+                  <img loading='lazy' alt="join" src={join}/>
+                </a>
+              </div>
+              {/* <a href="mailto:hr@xxwatts.com">
+                <img loading='lazy' src={join} alt='join' />  hr@xxwatts.com</a> */}
             </div>
           </div>
         </div>

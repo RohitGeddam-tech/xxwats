@@ -79,7 +79,6 @@ const ViewMob = () => {
   }, []);
 
   const scrollHandler = () => {
-    console.log('ref height',colorRef.current.offsetHeight);
     setInView(isInView());
   };
   
