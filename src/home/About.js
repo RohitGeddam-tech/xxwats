@@ -170,7 +170,7 @@ const Tab = () => {
         <h4 className="mobheading">work</h4>
         <h4 className="mobh1">We do stuff.</h4>
         <img
-          src={mob}
+          src={desk}
           loading='lazy'
           className={imag}
           alt="reel"
