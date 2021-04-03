@@ -5,7 +5,7 @@ import Svg from "../components/SvgTall";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import light from '../img/light-tall.svg'
-import logo from '../img/logo/logo-tall.svg'
+import logo from '../img/logo.svg'
 
 const DeskIntro = ({ colorText }) => {
   useEffect(() => {
