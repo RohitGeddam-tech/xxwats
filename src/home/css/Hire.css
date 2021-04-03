@@ -18,10 +18,20 @@
 
 .largehire{
     width: 100%;
+    transition: all 0.5s ease-in-out;
     display: flex;
     flex-flow: column;
     align-items: center;
     margin: auto;
+}
+
+.large-hireColor{
+    width: 100%;
+    background-color:transparent;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 .largehireabout{

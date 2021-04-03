@@ -48,12 +48,14 @@ const View = () => {
 
   const hireColor = inView ? 'hire' : 'hireColor'
 
+  const largehire = inView ? 'largehire' : 'large-hireColor'
+
   return (
     <><div ref={colorRef} className={hireColor}>
     {isDesktop ? (
       <>{isMobile ? <HireMob /> : <HireDesk />}</>
     ) : (
-      <div className="largehire" ref={colorRef} className={hireColor}>
+      <div className={hireColor} ref={colorRef}>
         <div className='largeabout-container'>{isMobile ? <HireMob /> : <HireDesk />}</div></div>
     )}
   </div></>

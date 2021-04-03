@@ -374,7 +374,7 @@ const Services = () => {
       {isDesktop ? (
         <>{isMobile ? <Mobile /> : <Desktop />}</>
       ) : (
-        <div ref={colorRef} id="services" className={largeservices}>
+        <div ref={colorRef} id="services" className={services}>
         <div className='largeabout-container'>
           {isMobile ? <Mobile /> : <Desktop />}
           </div>
