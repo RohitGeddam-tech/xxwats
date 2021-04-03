@@ -23,11 +23,15 @@ const Middle = () => {
   });
 
   return (
-    <div className="middle" id='mid'>
+    <div className="middle" id="mid">
       {isDesktop ? (
         <>{isMobile ? <MidMob /> : <Middesk />}</>
       ) : (
-        <div className="largemiddle">{isMobile ? <MidMob /> : <Middesk />}</div>
+        <div className="largemiddle">
+          <div className="largeabout-container">
+            {isMobile ? <MidMob /> : <Middesk />}
+          </div>
+        </div>
       )}
     </div>
   );

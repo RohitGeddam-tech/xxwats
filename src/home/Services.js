@@ -367,14 +367,17 @@ const Services = () => {
   };
 
   const services = inView ? 'services-yell' : 'services'
+  const largeservices = inView ? 'largeservices-yell' : 'largeservice'
 
   return (
     <div ref={colorRef} id="services" className={services}>
       {isDesktop ? (
         <>{isMobile ? <Mobile /> : <Desktop />}</>
       ) : (
-        <div className="largeservice">
+        <div ref={colorRef} id="services" className={largeservices}>
+        <div className='largeabout-container'>
           {isMobile ? <Mobile /> : <Desktop />}
+          </div>
         </div>
       )}
     </div>
@@ -431,8 +434,10 @@ const ServicesMob = () => {
       {isDesktop ? (
         <>{isMobile ? <Mobile /> : <Desktop />}</>
       ) : (
-        <div className="largeservice">
+        <div ref={colorRef} id="services" className='largeservice'>
+          <div className='largeabout-container'>
           {isMobile ? <Mobile /> : <Desktop />}
+          </div>
         </div>
       )}
     </div>

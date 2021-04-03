@@ -108,6 +108,7 @@ const MobIntro = () => {
           data-aos-duration="1000"
         >
           {inView ? (
+            <div style={{minHeight:'120vh !important', width:'100%'}}>
             <Svg
               textname="white"
               gradient0="yellow"
@@ -116,8 +117,10 @@ const MobIntro = () => {
               gradient1="yellow"
               classname="yellow"
             />
+            </div>
           ) : (
-            <Svg
+            <div style={{minHeight:'100vh !important', width:'100%'}}>
+              <Svg
               textname="black"
               gradient0="yellow"
               heigth="100%"
@@ -125,6 +128,7 @@ const MobIntro = () => {
               gradient1="yellow"
               classname="yellow"
             />
+            </div>
           )}
         </div>
         <div className="mobcontent" data-aos="fade-up" data-aos-duration="2000">
@@ -165,11 +169,13 @@ const Intro = ({ textColor }) => {
         <div className="Intro">{isMobile ? <MobIntro /> : <DeskIntro />}</div>
       ) : (
         <div className="largeIntro">
+          <div className="large-container">
           {isMobile ? (
             <MobIntro colorText={textColor} />
           ) : (
             <DeskIntro colorText={textColor} />
           )}
+          </div>
         </div>
       )}
     </>

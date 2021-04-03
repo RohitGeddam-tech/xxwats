@@ -20,6 +20,14 @@
   overflow-x: hidden;
 }
 
+.large-container{
+  width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
 .load-center{
   width: 100%;
   height: 700px;

@@ -16,6 +16,11 @@
     margin: auto;
 }
 
+.largeabout-container{
+    width: 1400px;
+    margin: auto;
+}
+
 .aboutfirst{
     width: 95%;
     display: flex;

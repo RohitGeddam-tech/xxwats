@@ -53,7 +53,8 @@ const View = () => {
     {isDesktop ? (
       <>{isMobile ? <HireMob /> : <HireDesk />}</>
     ) : (
-      <div className="largehire">{isMobile ? <HireMob /> : <HireDesk />}</div>
+      <div className="largehire" ref={colorRef} className={hireColor}>
+        <div className='largeabout-container'>{isMobile ? <HireMob /> : <HireDesk />}</div></div>
     )}
   </div></>
   );

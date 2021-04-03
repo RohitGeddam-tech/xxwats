@@ -28,7 +28,9 @@ const Hire = () => {
         <>{isMobile ? <AboutMob /> : <AboutDesk />}</>
       ) : (
         <div className="largehireabout">
+        <div className='largeabout-container'>
           {isMobile ? <AboutMob /> : <AboutDesk />}
+          </div>
         </div>
       )}
     </div>

@@ -354,13 +354,15 @@ const About = () => {
         </>
       ) : (
         <div className="largeabout">
-          <>
-            {isTab ? (
-              <>{isMobile ? <Mobile /> : <Tab />}</>
-            ) : (
-              <>{isMobile ? <Tab /> : <Desktop />}</>
-            )}
-          </>
+         <div className='largeabout-container'>
+            <>
+              {isTab ? (
+                <>{isMobile ? <Mobile /> : <Tab />}</>
+              ) : (
+                <>{isMobile ? <Tab /> : <Desktop />}</>
+              )}
+            </>
+         </div>
         </div>
       )}
     </>

@@ -105,7 +105,9 @@ const Intro = () => {
         <>{isMobile ? <MobIntro /> : <DeskIntro />}</>
       ) : (
         <div className="largeIntro">
-          {isMobile ? <MobIntro /> : <DeskIntro />}
+          <div className='largeabout-container'>
+            {isMobile ? <MobIntro /> : <DeskIntro />}
+          </div>
         </div>
       )}
     </div>

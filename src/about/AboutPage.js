@@ -129,7 +129,7 @@ const AboutPage = () => {
       {isDesktop ? (
         <>{isMobile ? <ViewMob /> : <View />}</>
       ) : (
-        <>
+          <>
           {isMobile ? (
             <ViewMob />
           ) : (
