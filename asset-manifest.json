@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/xxwats/static/css/main.640a1b2d.chunk.css",
-    "main.js": "/xxwats/static/js/main.96e40140.chunk.js",
-    "main.js.map": "/xxwats/static/js/main.96e40140.chunk.js.map",
+    "main.js": "/xxwats/static/js/main.5c4b9a15.chunk.js",
+    "main.js.map": "/xxwats/static/js/main.5c4b9a15.chunk.js.map",
     "runtime-main.js": "/xxwats/static/js/runtime-main.954946d6.js",
     "runtime-main.js.map": "/xxwats/static/js/runtime-main.954946d6.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/xxwats/static/css/2.7fc9bc2b.chunk.css",
@@ -38,7 +38,8 @@
     "static/media/icon-twitter.svg": "/xxwats/static/media/icon-twitter.f929ec65.svg",
     "static/media/icon-youtube.svg": "/xxwats/static/media/icon-youtube.4c277f29.svg",
     "static/media/light-tall.cb029cd2.svg": "/xxwats/static/media/light-tall.cb029cd2.svg",
-    "static/media/logo-tall.51bac65c.svg": "/xxwats/static/media/logo-tall.51bac65c.svg",
+    "static/media/logo-tall.3ad8fe3a.svg": "/xxwats/static/media/logo-tall.3ad8fe3a.svg",
+    "static/media/logo.e078e985.svg": "/xxwats/static/media/logo.e078e985.svg",
     "static/media/post.png": "/xxwats/static/media/post.8f05f2d3.png",
     "static/media/prod.7aa84e91.png": "/xxwats/static/media/prod.7aa84e91.png",
     "static/media/saloni.83a48d2f.png": "/xxwats/static/media/saloni.83a48d2f.png",
@@ -53,6 +54,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.f7e8f265.chunk.js",
     "static/css/main.640a1b2d.chunk.css",
-    "static/js/main.96e40140.chunk.js"
+    "static/js/main.5c4b9a15.chunk.js"
   ]
 }
