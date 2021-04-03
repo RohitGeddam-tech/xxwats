@@ -18,12 +18,11 @@ const SliderService = () => {
   return (
     <>
       <div className="inputslider">
-          <img src={left} alt='arrow'/>
         <div className="inputslide">
           <div className="insideslide">
               {check ? (
                 <label
-                  className="serviceslider-afterbtn"
+                  className="serviceslide-afterbtn"
                   onClick={() => {
                     setCheck(false);
                     console.log("creative strategy", check);
@@ -33,7 +32,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-btn"
+                  className="serviceslide-btn"
                   onClick={() => {
                     setCheck(true);
                     console.log("creative strategy", check);
@@ -51,7 +50,7 @@ const SliderService = () => {
           <div className="insideslide">
               {brand ? (
                 <label
-                  className="serviceslider-afterbtn"
+                  className="serviceslide-afterbtn"
                   onClick={() => {
                     setBrand(false);
                     console.log("brand", brand);
@@ -61,7 +60,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-btn"
+                  className="serviceslide-btn"
                   onClick={() => {
                     setBrand(true);
                     console.log("brand", brand);
@@ -79,7 +78,7 @@ const SliderService = () => {
           <div className="insideslide">
               {social ? (
                 <label
-                  className="serviceslider-afterbtn"
+                  className="serviceslide-afterbtn"
                   onClick={() => {
                     setSocial(false);
                     console.log("social", social);
@@ -89,7 +88,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-btn"
+                  className="serviceslide-btn"
                   onClick={() => {
                     setSocial(true);
                     console.log("social", social);
@@ -107,7 +106,7 @@ const SliderService = () => {
           <div className="insideslide">
               {video ? (
                 <label
-                  className="serviceslider-afterbtn"
+                  className="serviceslide-afterbtn"
                   onClick={() => {
                     setVideo(false);
                     console.log("video", video);
@@ -117,7 +116,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-btn"
+                  className="serviceslide-btn"
                   onClick={() => {
                     setVideo(true);
                     console.log("video", video);
@@ -135,7 +134,7 @@ const SliderService = () => {
           <div className="insideslide">
               {ground ? (
                 <label
-                  className="serviceslider-afterbtn"
+                  className="serviceslide-afterbtn"
                   onClick={() => {
                     setGround(false);
                     console.log("ground", ground);
@@ -145,7 +144,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-btn"
+                  className="serviceslide-btn"
                   onClick={() => {
                     setGround(true);
                     console.log("ground", ground);
@@ -163,7 +162,7 @@ const SliderService = () => {
           <div className="insideslide">
               {post ? (
                 <label
-                  className="serviceslider-afterbtn"
+                  className="serviceslide-afterbtn"
                   onClick={() => {
                     setPost(false);
                     console.log("post", post);
@@ -173,7 +172,7 @@ const SliderService = () => {
                 </label>
               ) : (
                 <label
-                  className="serviceslider-btn"
+                  className="serviceslide-btn"
                   onClick={() => {
                     setPost(true);
                     console.log("post", post);
@@ -189,7 +188,6 @@ const SliderService = () => {
               />
           </div>
         </div>
-          <img src={right} alt='arrow'/>
       </div>
     </>
   );

@@ -157,6 +157,7 @@ width: 90%;
 .slider{
     margin-left: 50px;
     width: 67%;
+    transition: all 0.5s ease-in-out;
 }
 
 .slidercover{
@@ -263,6 +264,14 @@ img.sliderimg{
     outline: none;
 }
 
+
+.sliderfill{
+    margin-left: 50px;
+    width: 67%;
+    transition: all 0.5s ease-in-out;
+    filter: invert()brightness(3);
+}
+
 .slick-slide{
     height: 100%;
 }
@@ -295,7 +304,6 @@ img.sliderimg{
     width: 100%;
 }
 
-
 .frame{
     display: none;
 }
@@ -311,7 +319,7 @@ img.sliderimg{
 
 img.tab-pict{
     width: 100%;
-    height: 450px;
+    height: 400px;
 }
 
 .center{
@@ -447,6 +455,15 @@ margin-top: 10px;
     margin-bottom: -3%;
 }
 
+.mob-containerfill{
+    filter: brightness(0.5);
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    margin: auto;
+    margin-top: -2%;
+    margin-bottom: -3%;
+}
+
 .tab-container{
     width: 95%;
     margin: auto;
@@ -462,8 +479,15 @@ margin-top: 10px;
     margin: auto;
 }
 
+.mob-framefill{
+    width: 95%;
+    margin: auto;
+    transition: all 0.5s ease-in-out;
+    filter: brightness(0.5) !important;
+}
+
 .mobslide{
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 .yellowtabmob{

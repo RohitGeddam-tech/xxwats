@@ -4,6 +4,8 @@ import { NavHashLink } from "react-router-hash-link";
 import Svg from "../components/SvgTall";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import light from '../img/light-tall.svg'
+import logo from '../img/logo/logo-tall.svg'
 
 const DeskIntro = ({ colorText }) => {
   useEffect(() => {
@@ -42,23 +44,9 @@ const DeskIntro = ({ colorText }) => {
           data-aos-duration="1000"
         >
           {inView ? (
-            <Svg
-              textname="white"
-              gradient0="yellow"
-              heigth="100%"
-              width="90%"
-              gradient1="yellow"
-              classname="yellow"
-            />
+            <img src={light} alt='light' />
           ) : (
-            <Svg
-              textname="black"
-              gradient0="yellow"
-              heigth="100%"
-              width="90%"
-              gradient1="yellow"
-              classname="yellow"
-            />
+            <img src={logo} alt='light' />
           )}
         </div>
         <div className="content" data-aos="fade-up" data-aos-duration="2000">
@@ -108,26 +96,12 @@ const MobIntro = () => {
           data-aos-duration="1000"
         >
           {inView ? (
-            <div style={{minHeight:'120vh !important', width:'100%'}}>
-            <Svg
-              textname="white"
-              gradient0="yellow"
-              heigth="100%"
-              width="100%"
-              gradient1="yellow"
-              classname="yellow"
-            />
+            <div style={{minHeight:'100vh !important', width:'100%'}}>
+            <img src={light} alt='light' />
             </div>
           ) : (
             <div style={{minHeight:'100vh !important', width:'100%'}}>
-              <Svg
-              textname="black"
-              gradient0="yellow"
-              heigth="100%"
-              width="100%"
-              gradient1="yellow"
-              classname="yellow"
-            />
+             <img src={logo} alt='light' />
             </div>
           )}
         </div>

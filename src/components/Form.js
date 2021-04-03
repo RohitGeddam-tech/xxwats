@@ -76,14 +76,20 @@ const FormDesk = () => {
           value={values.mob}
           onChange={handleChange}
           onClick={handleClick}
-          InputProps={
-            clicked
-              ? {
+          // InputProps={
+          //   clicked
+          //     ? {
+          //         startAdornment: (
+          //           <InputAdornment position="start">+91</InputAdornment>
+          //         ),
+          //       }
+          //     : null
+          // }
+          InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">+91</InputAdornment>
                   ),
                 }
-              : null
           }
         />
         {submit ? <>{errors.mob && <h1>{errors.mob}</h1>}</> : 
@@ -185,14 +191,20 @@ const FormMob = () => {
           value={values.mob}
           onChange={handleChange}
           onClick={handleClick}
-          InputProps={
-            clicked
-              ? {
+          // InputProps={
+          //   clicked
+          //     ? {
+          //         startAdornment: (
+          //           <InputAdornment position="start">+91</InputAdornment>
+          //         ),
+          //       }
+          //     : null
+          // }
+          InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">+91</InputAdornment>
                   ),
                 }
-              : null
           }
         />
         {submit ? <>{errors.mob && <h1>{errors.mob}</h1>}</> : 

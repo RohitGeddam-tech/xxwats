@@ -16,6 +16,32 @@ const Desktop = () => {
     Aos.init({ duration: 500 });
   });
 
+  const colorRef = useRef(null);
+
+  const isInView = () => {
+    const refColor = colorRef.current;
+    const rect = window.pageYOffset;
+    return (
+      (rect >= 250 && rect <= 1000)
+    );
+  };
+
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    setInView(isInView());
+    window.addEventListener("scroll", scrollHandler);
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+
+  const scrollHandler = () => {
+    setInView(isInView());
+  };
+
+  const sliderFil = inView ? 'slider' : 'sliderfill'
+
   const imag = active ? "frame" : "imag";
 
   const ifade = active ? "ifade" : "frame";
@@ -26,7 +52,7 @@ const Desktop = () => {
 
   return (
     <>
-      <div className="aboutfirst">
+      <div ref={colorRef} className="aboutfirst">
         <div
           className="yellowtab"
           data-aos="fade-up"
@@ -78,7 +104,7 @@ const Desktop = () => {
         </div>
       </div>
       <div className="sliderbox">
-        <div className="slider" data-aos="fade-up" data-aos-duration="1000">
+        <div className={sliderFil} data-aos="fade-up" data-aos-duration="1000">
           <Slider />
         </div>
         <div
@@ -132,11 +158,13 @@ const Tab = () => {
   
   const cssColor = (inView ? 'mobaboutbtn' : 'mobaboutbtn-black') 
 
+  const sliderFil = inView ? 'slider' : 'sliderfill'
+
   const imag = active ? "frame" : "pict";
 
   const ifade = active ? "fade" : "frame";
 
-  const container = active ? "mob-frame" : "tab-container";
+  const container = active ? "mob-frame" : "mob-framefill";
 
   const url = active
     ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1"
@@ -245,7 +273,11 @@ const Mobile = () => {
 
   const ifade = active ? "fade" : "frame";
 
-  const container = active ? "mob-frame" : "mob-container";
+  const mobFrame = inView ? 'mob-frame' : 'mob-framefill'
+
+  const mobContainer = inView ? 'mob-container' : 'mob-containerfill'
+
+  const container = active ? mobFrame : mobContainer;
 
   const url = active
     ? "https://www.youtube.com/embed/dJIJTZoTj6Q?autoplay=1&controls=1"
