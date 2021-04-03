@@ -575,7 +575,7 @@ a{
     text-align: center;
     text-transform: uppercase;
     color: #202020;
-    margin-bottom: 5px !important;
+    margin-bottom: 3px !important;
     margin-top: 0;
     border: 1px solid #202020 !important;
 }
@@ -622,7 +622,7 @@ a{
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 5px !important;
+    margin-bottom: 3px !important;
     margin-top: 0;
     border: 1px solid #202020 !important;
 }
