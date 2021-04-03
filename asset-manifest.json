@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/xxwats/static/css/main.abb30fe9.chunk.css",
-    "main.js": "/xxwats/static/js/main.b8cd008a.chunk.js",
-    "main.js.map": "/xxwats/static/js/main.b8cd008a.chunk.js.map",
-    "runtime-main.js": "/xxwats/static/js/runtime-main.13a13b2a.js",
-    "runtime-main.js.map": "/xxwats/static/js/runtime-main.13a13b2a.js.map",
+    "main.css": "/xxwats/static/css/main.640a1b2d.chunk.css",
+    "main.js": "/xxwats/static/js/main.96e40140.chunk.js",
+    "main.js.map": "/xxwats/static/js/main.96e40140.chunk.js.map",
+    "runtime-main.js": "/xxwats/static/js/runtime-main.954946d6.js",
+    "runtime-main.js.map": "/xxwats/static/js/runtime-main.954946d6.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/xxwats/static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.fe23c85e.chunk.js": "/xxwats/static/js/2.fe23c85e.chunk.js",
-    "static/js/2.fe23c85e.chunk.js.map": "/xxwats/static/js/2.fe23c85e.chunk.js.map",
-    "static/css/3.79e461be.chunk.css": "/xxwats/static/css/3.79e461be.chunk.css",
-    "static/js/3.088380ff.chunk.js": "/xxwats/static/js/3.088380ff.chunk.js",
-    "static/js/3.088380ff.chunk.js.map": "/xxwats/static/js/3.088380ff.chunk.js.map",
+    "static/js/2.f7e8f265.chunk.js": "/xxwats/static/js/2.f7e8f265.chunk.js",
+    "static/js/2.f7e8f265.chunk.js.map": "/xxwats/static/js/2.f7e8f265.chunk.js.map",
+    "static/css/3.a096ddc5.chunk.css": "/xxwats/static/css/3.a096ddc5.chunk.css",
+    "static/js/3.9870907e.chunk.js": "/xxwats/static/js/3.9870907e.chunk.js",
+    "static/js/3.9870907e.chunk.js.map": "/xxwats/static/js/3.9870907e.chunk.js.map",
     "index.html": "/xxwats/index.html",
     "static/css/2.7fc9bc2b.chunk.css.map": "/xxwats/static/css/2.7fc9bc2b.chunk.css.map",
-    "static/css/3.79e461be.chunk.css.map": "/xxwats/static/css/3.79e461be.chunk.css.map",
-    "static/css/main.abb30fe9.chunk.css.map": "/xxwats/static/css/main.abb30fe9.chunk.css.map",
-    "static/js/2.fe23c85e.chunk.js.LICENSE.txt": "/xxwats/static/js/2.fe23c85e.chunk.js.LICENSE.txt",
+    "static/css/3.a096ddc5.chunk.css.map": "/xxwats/static/css/3.a096ddc5.chunk.css.map",
+    "static/css/main.640a1b2d.chunk.css.map": "/xxwats/static/css/main.640a1b2d.chunk.css.map",
+    "static/js/2.f7e8f265.chunk.js.LICENSE.txt": "/xxwats/static/js/2.f7e8f265.chunk.js.LICENSE.txt",
     "static/media/Frame2.6756bbc8.png": "/xxwats/static/media/Frame2.6756bbc8.png",
     "static/media/Framemob.5351d972.jpg": "/xxwats/static/media/Framemob.5351d972.jpg",
     "static/media/ansh.c956b55f.png": "/xxwats/static/media/ansh.c956b55f.png",
@@ -37,6 +37,7 @@
     "static/media/icon-maps.svg": "/xxwats/static/media/icon-maps.7688078c.svg",
     "static/media/icon-twitter.svg": "/xxwats/static/media/icon-twitter.f929ec65.svg",
     "static/media/icon-youtube.svg": "/xxwats/static/media/icon-youtube.4c277f29.svg",
+    "static/media/light-tall.cb029cd2.svg": "/xxwats/static/media/light-tall.cb029cd2.svg",
     "static/media/logo-tall.51bac65c.svg": "/xxwats/static/media/logo-tall.51bac65c.svg",
     "static/media/post.png": "/xxwats/static/media/post.8f05f2d3.png",
     "static/media/prod.7aa84e91.png": "/xxwats/static/media/prod.7aa84e91.png",
@@ -48,10 +49,10 @@
     "static/media/strat.4d2e4274.png": "/xxwats/static/media/strat.4d2e4274.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.13a13b2a.js",
+    "static/js/runtime-main.954946d6.js",
     "static/css/2.7fc9bc2b.chunk.css",
-    "static/js/2.fe23c85e.chunk.js",
-    "static/css/main.abb30fe9.chunk.css",
-    "static/js/main.b8cd008a.chunk.js"
+    "static/js/2.f7e8f265.chunk.js",
+    "static/css/main.640a1b2d.chunk.css",
+    "static/js/main.96e40140.chunk.js"
   ]
 }
