@@ -82,7 +82,7 @@ const HireDesk = () => {
             </div>
             <div className="careers">
               <h1>For Careers :</h1>
-              <div className="icons-msg">
+              <div className="icons-msgbot">
                 <a href="mailto:hr@xxwatts.com">
                   <img loading='lazy' alt="join" src={join} />
                 </a>

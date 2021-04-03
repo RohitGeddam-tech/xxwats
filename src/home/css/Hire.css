@@ -138,6 +138,13 @@
     margin-top: 20px;
 }
 
+.icons-msgbot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .location-title{
     width: 200px;
     margin-top: 0 !important;
@@ -495,6 +502,12 @@ color: black;
     margin-top: 20px;
 }
 
+.icons-mobmsgbot{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .second-mobbox{
     width: 100%;

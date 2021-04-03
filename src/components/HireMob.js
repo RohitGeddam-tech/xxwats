@@ -106,7 +106,7 @@ const HireMob = () => {
             </div>
             <div className="careers">
               <h1>For Careers :</h1>
-              <div style={{ marginTop: "0 !important" }} className="icons-mobmsg">
+              <div className="icons-mobmsgbot">
                 <a href="mailto: hr@xxwatts.com" className="mail-title">
                   hr@xxwatts.com
                 </a>
