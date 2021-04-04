@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from "react";
 import TextField from "@material-ui/core/TextField";
+import axios from 'axios';
 import InputAdornment from "@material-ui/core/InputAdornment";
 
-const FormDesk = () => {
+const FormDesk = ({checkboxState}) => {
   const [values, setValues] = useState({
     name: "",
     mob: "",
     email: "",
   });
+
+  callbackFunction = (childData) => {
+    this.setState({message: childData})
+},
+
+  console.log(checkboxState)
 
   const [errors, setErrors] = useState({});
   const [clicked, setClicked] = useState(false);
@@ -15,7 +22,7 @@ const FormDesk = () => {
   const validate = (values) => {
     let errors = {};
 
-    if (!values.name.trim()) {
+    if (!values.name) {
       errors.name = "This field is required";
     }
 
@@ -51,8 +58,25 @@ const FormDesk = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(values));
-    console.log("form submitted", values);
+    const data = {
+      name: capitalise(values.name),
+      phoneNo: values.mob,
+      emailID: values.email.toLowerCase(),
+      services:''
+    }
+    axios.post('https://mailserver.alokshenoy.com/form-submit/',data)
+    .then(res=> {console.log(res)
+      setValues(values)
+      console.log("form submitted", data);
+      alert('post created successfully')
+    })
+    .catch(err=>{console.log(err)
+    });
   };
+
+  const capitalise=(str)=>{
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
 
   return (
     <>
@@ -164,8 +188,27 @@ const FormMob = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(values));
-    console.log("form submitted", values);
+
+    const data = {
+      name: capitalise(values.name),
+      phoneNo: values.mob,
+      emailID: values.email.toLowerCase(),
+      services:''
+    }
+    axios.post('https://mailserver.alokshenoy.com/form-submit/',data)
+    .then(res=> {console.log(res)
+      setValues(values)
+      console.log("form submitted", data);
+      alert('post created successfully')
+    })
+    .catch(err=>{console.log(err)
+    });
+    console.log("form submitted", data);
   };
+
+  const capitalise=(str)=>{
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
 
   const [submit, setSubmit] = useState(false)
 
@@ -231,7 +274,7 @@ const FormMob = () => {
   );
 };
 
-const Form = () => {
+const Form = (props) => {
   const [isMobile, setMobile] = useState(
     window.matchMedia("(max-width:760px)").matches
   );
@@ -241,7 +284,7 @@ const Form = () => {
     });
   });
 
-  return <>{isMobile ? <FormMob /> : <FormDesk />}</>;
+  return <>{isMobile ? <FormMob /> : <FormDesk checkboxState={props.checkboxState}/>}</>;
 };
 
 export default Form;
