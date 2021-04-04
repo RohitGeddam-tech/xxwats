@@ -173,11 +173,11 @@ button{
 }
 
 .mobileimage img{
-    min-width: 100% !important;
+    width: 100% !important;
 }
 
 .mobileimage{
-    min-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
