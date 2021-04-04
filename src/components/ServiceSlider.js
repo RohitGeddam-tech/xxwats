@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Checkbox from "@material-ui/core/Checkbox";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 export class ServiceSlider extends Component {
   state = {
@@ -9,8 +11,8 @@ export class ServiceSlider extends Component {
     video: false,
     ground: false,
     post: false,
-  };
-
+  }
+  
   render() {
     const settings = {
       dots: false,
@@ -55,6 +57,7 @@ export class ServiceSlider extends Component {
         },
       ],
     };
+
     return (
       <div className="slideservice">
         <Slider {...settings}>
@@ -64,7 +67,7 @@ export class ServiceSlider extends Component {
                 className="serviceslider-afterbtn"
                 onClick={() => {
                   this.setState({ check: false });
-                  console.log("creative strategy", this.state.check);
+                  console.log("creative strategy", !this.state.check);
                 }}
               >
                 creative strategy
@@ -74,15 +77,15 @@ export class ServiceSlider extends Component {
                 className="serviceslider-btn"
                 onClick={() => {
                   this.setState({ check: true });
-                  console.log("creative strategy", this.state.check);
+                  console.log("creative strategy", !this.state.check);
                 }}
               >
                 creative strategy
               </label>
             )}
-            <input
-              type="checkbox"
-              defaultChecked={this.state.check}
+            <FormControlLabel
+              control={<Checkbox checked={this.state.check} onChange={(e)=>{this.setState({check: e.target.value})}} />}
+              label="Check me"
               style={{ display: "none" }}
             />
           </div>
@@ -92,7 +95,7 @@ export class ServiceSlider extends Component {
                 className="serviceslider-afterbtn"
                 onClick={() => {
                   this.setState({ brand: false });
-                  console.log("brand", this.state.brand);
+                  console.log("brand", !this.state.brand);
                 }}
               >
                 Brand Campaigns
@@ -102,15 +105,15 @@ export class ServiceSlider extends Component {
                 className="serviceslider-btn"
                 onClick={() => {
                   this.setState({ brand: true });
-                  console.log("brand", this.state.brand);
+                  console.log("brand", !this.state.brand);
                 }}
               >
                 Brand Campaigns
               </label>
             )}
-            <input
-              type="checkbox"
-              defaultChecked={this.state.brand}
+            <FormControlLabel
+              control={<Checkbox checked={this.state.brand} onChange={(e)=>{this.setState({brand: e.target.value})}} />}
+              label="Check me"
               style={{ display: "none" }}
             />
           </div>
@@ -120,7 +123,7 @@ export class ServiceSlider extends Component {
                 className="serviceslider-afterbtn"
                 onClick={() => {
                   this.setState({ social: false });
-                  console.log("social", this.state.social);
+                  console.log("social", !this.state.social);
                 }}
               >
                 Social media Campaigns
@@ -130,15 +133,15 @@ export class ServiceSlider extends Component {
                 className="serviceslider-btn"
                 onClick={() => {
                   this.setState({ social: true });
-                  console.log("social", this.state.social);
+                  console.log("social", !this.state.social);
                 }}
               >
                 Social media Campaigns
               </label>
             )}
-            <input
-              type="checkbox"
-              defaultChecked={this.state.social}
+            <FormControlLabel
+              control={<Checkbox checked={this.state.social} onChange={(e)=>{this.setState({social: e.target.value})}} />}
+              label="Check me"
               style={{ display: "none" }}
             />
           </div>
@@ -148,7 +151,7 @@ export class ServiceSlider extends Component {
                 className="serviceslider-afterbtn"
                 onClick={() => {
                   this.setState({ video: false });
-                  console.log("video", this.state.video);
+                  console.log("video", !this.state.video);
                 }}
               >
                 video campaigns
@@ -158,15 +161,15 @@ export class ServiceSlider extends Component {
                 className="serviceslider-btn"
                 onClick={() => {
                   this.setState({ video: true });
-                  console.log("video", this.state.video);
+                  console.log("video", !this.state.video);
                 }}
               >
                 video campaigns
               </label>
             )}
-            <input
-              type="checkbox"
-              defaultChecked={this.state.video}
+            <FormControlLabel
+              control={<Checkbox checked={this.state.video} onChange={(e)=>{this.setState({video: e.target.value})}} />}
+              label="Check me"
               style={{ display: "none" }}
             />
           </div>
@@ -176,7 +179,7 @@ export class ServiceSlider extends Component {
                 className="serviceslider-afterbtn"
                 onClick={() => {
                   this.setState({ ground: false });
-                  console.log("ground", this.state.ground);
+                  console.log("ground", !this.state.ground);
                 }}
               >
                 on-ground engagements
@@ -186,15 +189,15 @@ export class ServiceSlider extends Component {
                 className="serviceslider-btn"
                 onClick={() => {
                   this.setState({ ground: true });
-                  console.log("ground", this.state.ground);
+                  console.log("ground", !this.state.ground);
                 }}
               >
                 on-ground engagements
               </label>
             )}
-            <input
-              type="checkbox"
-              defaultChecked={this.state.ground}
+            <FormControlLabel
+              control={<Checkbox checked={this.state.ground} onChange={(e)=>{this.setState({ground: e.target.value})}} />}
+              label="Check me"
               style={{ display: "none" }}
             />
           </div>
@@ -204,7 +207,7 @@ export class ServiceSlider extends Component {
                 className="serviceslider-afterbtn"
                 onClick={() => {
                   this.setState({ post: false });
-                  console.log("post", this.state.post);
+                  console.log("post", !this.state.post);
                 }}
               >
                 Post-production
@@ -214,15 +217,15 @@ export class ServiceSlider extends Component {
                 className="serviceslider-btn"
                 onClick={() => {
                   this.setState({ post: true });
-                  console.log("post", this.state.post);
+                  console.log("post", !this.state.post);
                 }}
               >
                 Post-production
               </label>
             )}
-            <input
-              type="checkbox"
-              defaultChecked={this.state.post}
+            <FormControlLabel
+              control={<Checkbox checked={this.state.post} onChange={(e)=>{this.setState({post: e.target.value})}} />}
+              label="Check me"
               style={{ display: "none" }}
             />
           </div>

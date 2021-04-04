@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
-import { NavHashLink } from "react-router-hash-link";
-import left from '../img/left.png'
-import right from '../img/right.png'
+import Form from './Form'
+import Checkbox from "@material-ui/core/Checkbox";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 const SliderService = () => {
   const [check, setCheck] = useState(false);
@@ -11,13 +11,41 @@ const SliderService = () => {
   const [ground, setGround] = useState(false);
   const [post, setPost] = useState(false);
 
+  const checkedboxes = {
+    creative: {checked: check, value:"Creative Strategy"},
+    brand: {checked: brand, value:"Branding Camapign"},
+    social: {checked: social, value:"Social Media Camapign"},
+    video: {checked: video, value:"Video Camapign"},
+    ground: {checked: ground, value:"On-ground Engagements"},
+    post: {checked: post, value:"Post Production"}
+  }
+  
+  // const handleCheckboxes = (e) => {
+  //   console.log("logging setSubmit", e)
+  //   if(check === true){
+  //     console.log('creative strategy')
+  //   } else if(brand === true){
+  //     console.log('Brand Campaigns')
+  //   } else if(social === true){
+  //     console.log('Social Media Campaigns')
+  //   } else if(video === true){
+  //     console.log('Video Campaings')
+  //   } else if(ground === true){
+  //     console.log('On-ground Engagements')
+  //   } else if(post === true){
+  //     console.log('Post Production')
+  //   }
+  // }
+
+
   const ref = useRef(null)
 
   console.log(check);
+  //onSubmit={setSubmit}
 
   return (
     <>
-      <div className="inputslider">
+      <form className="inputslider" >
         <div className="inputslide">
           <div className="insideslide">
               {check ? (
@@ -41,11 +69,11 @@ const SliderService = () => {
                   creative strategy
                 </label>
               )}
-              <input
-                type="checkbox"
-                defaultChecked={check}
-                style={{ display: "none" }}
-              />
+              <FormControlLabel
+              control={<Checkbox checked={check} onChange={(e)=>{setCheck(e.target.value)}} />}
+              label="Check me"
+              style={{ display: "none" }}
+            />
           </div>
           <div className="insideslide">
               {brand ? (
@@ -69,10 +97,10 @@ const SliderService = () => {
                   Brand Campaigns
                 </label>
               )}
-              <input
-                type="checkbox"
-                defaultChecked={brand}
-                style={{ display: "none" }}
+              <FormControlLabel
+              control={<Checkbox checked={brand} onChange={(e)=>{setBrand(e.target.value)}} />}
+              label="Check me"
+              style={{ display: "none" }} 
               />
           </div>
           <div className="insideslide">
@@ -97,10 +125,10 @@ const SliderService = () => {
                   Social media Campaigns
                 </label>
               )}
-              <input
-                type="checkbox"
-                defaultChecked={social}
-                style={{ display: "none" }}
+              <FormControlLabel
+              control={<Checkbox checked={social} onChange={(e)=>{setSocial(e.target.value)}} />}
+              label="Check me"
+              style={{ display: "none" }} 
               />
           </div>
           <div className="insideslide">
@@ -125,10 +153,10 @@ const SliderService = () => {
                   video campaigns
                 </label>
               )}
-              <input
-                type="checkbox"
-                defaultChecked={video}
-                style={{ display: "none" }}
+              <FormControlLabel
+              control={<Checkbox checked={video} onChange={(e)=>{setVideo(e.target.value)}} />}
+              label="Check me"
+              style={{ display: "none" }} 
               />
           </div>
           <div className="insideslide">
@@ -153,10 +181,10 @@ const SliderService = () => {
                   on-ground engagements
                 </label>
               )}
-              <input
-                type="checkbox"
-                defaultChecked={ground}
-                style={{ display: "none" }}
+              <FormControlLabel
+              control={<Checkbox checked={ground} onChange={(e)=>{setGround(e.target.value)}} />}
+              label="Check me"
+              style={{ display: "none" }} 
               />
           </div>
           <div className="insideslide">
@@ -181,14 +209,15 @@ const SliderService = () => {
                   Post-production
                 </label>
               )}
-              <input
-                type="checkbox"
-                defaultChecked={post}
-                style={{ display: "none" }}
+              <FormControlLabel
+              control={<Checkbox checked={post} onChange={(e)=>{setPost(e.target.value)}} />}
+              label="Check me"
+              style={{ display: "none" }} 
               />
           </div>
         </div>
-      </div>
+        <div style={{display:'none'}}><Form checkboxState = {checkedboxes} /></div>
+      </form>
     </>
   );
 };
