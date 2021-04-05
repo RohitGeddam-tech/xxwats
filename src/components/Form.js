@@ -149,6 +149,7 @@ const FormMob = () => {
     mob: "",
     email: "",
   });
+  const [isChecked, setChecked] = useState([]);
 
   const [errors, setErrors] = useState({});
   const [clicked, setClicked] = useState(false);
@@ -190,6 +191,7 @@ const FormMob = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setErrors(validate(values));
+    console.log(isChecked);
 
     const data = {
       name: values.name,
@@ -214,7 +216,7 @@ const FormMob = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className="formAlign">
-        <SliderService />
+        <SliderService initialChecked={isChecked} passChecked={setChecked} />
         <TextField className="textfieldmob" label="Name" name="name" type="text" value={values.name} onClick={handleClick} onChange={handleChange} />
         {submit ? <>{errors.name && <h1>{errors.name}</h1>}</> : <>{clicked ? <>{!values.name ? <h1>This Field is required</h1> : null}</> : null}</>}
         <TextField
