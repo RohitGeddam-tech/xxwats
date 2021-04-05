@@ -52,7 +52,6 @@ const TestDesk = () => {
           </div>
         </div>
         <div className={fade}>
-          {/* <div className='fadein'> */}
           <NavHashLink to="/#top" className="navdeskfade">
             <Fade in={isActive} delay="500">
               Home
@@ -68,7 +67,6 @@ const TestDesk = () => {
               Contact Us
             </Fade>
           </NavHashLink>
-          {/* </div> */}
         </div>
       </div>
     </>

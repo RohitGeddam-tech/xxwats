@@ -7,7 +7,7 @@ const SliderService = ({ initialChecked, passChecked }) => {
     social: { checked: false, value: "Social Media Camapign" },
     video: { checked: false, value: "Video Camapign" },
     ground: { checked: false, value: "On-ground Engagements" },
-    post: { checked: false, false: "Post Production" },
+    post: { checked: false, value: "Post Production" },
   };
 
   const [isChecked, setChecked] = useState(initialChecked);
@@ -25,9 +25,9 @@ const SliderService = ({ initialChecked, passChecked }) => {
     e.target.checked ? initialChecked.push(val) : removeItemOnce(initialChecked, val);
     setChecked(initialChecked);
   };
+
   useEffect(() => {
     passChecked(isChecked);
-    console.log(isChecked);
   }, [isChecked, passChecked]);
 
   return (
