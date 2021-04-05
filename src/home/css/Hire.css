@@ -1,250 +1,258 @@
-.hire{
-    width: 100%;
-    background-color: #EEEA64;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    transition: all 0.5s ease-in-out;
+.hire {
+  width: 100%;
+  background-color: #eeea64;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
 }
 
-.hireColor{
-    width: 100%;
-    background-color:transparent;
-    transition: all 0.5s ease-in-out;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.hireColor {
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
-.largehire{
-    width: 100%;
-    transition: all 0.5s ease-in-out;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: auto;
+.largehire {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: auto;
 }
 
-.large-hireColor{
-    width: 100%;
-    background-color:transparent;
-    transition: all 0.5s ease-in-out;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.large-hireColor {
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
-.largehireabout{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: auto;
+.largehireabout {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: auto;
 }
 
-.hireabout{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.hireabout {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
-.title-container{
-    width: 95%;
-    display: flex;
-    margin-right: 0 !important;
-    justify-content: flex-start;
+.title-container {
+  width: 95%;
+  display: flex;
+  margin-right: 0 !important;
+  justify-content: flex-start;
 }
 
-.desktitle-container{
-    width: 80%;
-    display: flex;
-    margin: auto;
-    justify-content: flex-start;
+.desktitle-container {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: flex-start;
 }
 
-.MuiFormLabel-root{
-    font-family: 'Cabin',sans-serif !important;
-    text-transform: uppercase;
+.MuiFormLabel-root {
+  font-family: "Cabin", sans-serif !important;
+  text-transform: uppercase;
 }
 
-.firstdesk-title{
-    text-align: start;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #202020;
-    padding-top: 20px;
-    width: 100%;
+.firstdesk-title {
+  text-align: start;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #202020;
+  padding-top: 20px;
+  width: 100%;
 }
 
-.hire-container{
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: auto;
+.hire-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
 }
 
-.first-box{
-    width: 50%;
-    display: flex;
-    flex-flow: column;
+.first-box {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
 }
 
-.first-box-container{
-    width: 95%;
-    display: flex;
-    flex-flow: column;
+.first-box-container {
+  width: 95%;
+  display: flex;
+  flex-flow: column;
 }
 
-.first-title{
-    text-align: start;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #202020;
-    padding-top: 20px;
+.first-title {
+  text-align: start;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #202020;
+  padding-top: 20px;
 }
 
-.first-quote{
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #202020;
-    margin-top: 15px !important;
+.first-quote {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #202020;
+  margin-top: 15px !important;
 }
 
-.icons{
-    width: fit-content;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
+input[type="text"] {
+  text-transform: capitalize;
 }
 
-.icons-msg{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 20px;
+input[type="email"] {
+  text-transform: lowercase;
 }
 
-.icons-msgbot{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+.icons {
+  width: fit-content;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.location-title{
-    width: 200px;
-    margin-top: 0 !important;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    color: #202020;
+.icons-msg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
 }
 
-.call-title{
-    margin-top: 0 !important;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #202020;
+.icons-msgbot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.mail-title{
-    margin-top: 0 !important;
-    word-break: break-all;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #202020;
+.location-title {
+  width: 200px;
+  margin-top: 0 !important;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #202020;
 }
 
-.follow{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    margin-top: 20px;
+.call-title {
+  margin-top: 0 !important;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #202020;
 }
 
-.social{
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    align-items: center;
+.mail-title {
+  margin-top: 0 !important;
+  word-break: break-all;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #202020;
 }
 
-.second-box{
-    width: 50%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding-left: 40px;
+.follow {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
 }
 
-.second-box-container{
-    width: 98%;
-    display: flex;
-    flex-flow: column;
+.social {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
 }
 
-.second-title{
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 33px;
-    text-transform: none;
-    color: #202020;
-    padding-top: 10px;
+.second-box {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-left: 40px;
 }
 
-.second-quote{
-    font-family: 'Work Sans',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #202020;
-    text-transform: capitalize;
-    margin-top: 0 !important;
+.second-box-container {
+  width: 98%;
+  display: flex;
+  flex-flow: column;
 }
 
-.service-title{
-    font-family: 'Work Sans',sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    color: #202020;
-    text-transform: capitalize;
-    padding-top: 10px;
-    margin-bottom: 0 !important;
-    padding-bottom: 10px;
+.second-title {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-transform: none;
+  color: #202020;
+  padding-top: 10px;
 }
 
-.slick-slider{
-    width: 99%;
-    display: flex;
-    margin: auto;
+.second-quote {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #202020;
+  text-transform: capitalize;
+  margin-top: 0 !important;
+}
+
+.service-title {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #202020;
+  text-transform: capitalize;
+  padding-top: 10px;
+  margin-bottom: 0 !important;
+  padding-bottom: 10px;
+}
+
+.slick-slider {
+  width: 99%;
+  display: flex;
+  margin: auto;
 }
 
 /* .slick-track{
@@ -253,444 +261,448 @@
     align-items: center;
 } */
 
-.slick-list{
-    width: 100%;
+.slick-list {
+  width: 100%;
 }
 
-button.slick-next:before{
-    color: black;
-    padding-right: 0;
+button.slick-next:before {
+  color: black;
+  padding-right: 0;
 }
 
-button.slick-prev:before{
-    color: black;
+button.slick-prev:before {
+  color: black;
 }
 
-.slideservice{
-    padding-top: 10px;
-    width: 93%;
-    display: flex;
-    margin: auto;
+.slideservice {
+  padding-top: 10px;
+  width: 93%;
+  display: flex;
+  margin: auto;
 }
 
-.careers{
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    margin-top: 20px;
+.careers {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-top: 20px;
 }
 
-.careers h1{
-    text-align: start;
-    white-space: nowrap;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #202020;
-    margin-bottom: 15px !important;
+.careers h1 {
+  text-align: start;
+  white-space: nowrap;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #202020;
+  margin-bottom: 15px !important;
 }
 
-.careers a:hover{
-    color:#4183c4;
+.careers a:hover {
+  color: #4183c4;
 }
 
-.careers a{
-    white-space: wrap;
-    text-align: start;
-    word-break: break-all;
-    font-family: 'Work Sans', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: none;
-    color: #202020;
-    word-break: break-all;
-    display: flex;
-    align-items: center;
+.careers a {
+  white-space: wrap;
+  text-align: start;
+  word-break: break-all;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: none;
+  color: #202020;
+  word-break: break-all;
+  display: flex;
+  align-items: center;
 }
 
-.careers a img{
-    margin-right: 0;
+.careers a img {
+  margin-right: 0;
 }
 
 /* .slick-slide{
     padding-top: 15px;
 } */
 
-.serviceslide{
-    display: inline-flex !important;
-    justify-content: center;
+.serviceslide {
+  display: inline-flex !important;
+  justify-content: center;
 }
 
-.slick-list{
-    margin: auto;
+.slick-list {
+  margin: auto;
 }
 
-.slick-arrow{
-    color: black;
+.slick-arrow {
+  color: black;
 }
 
 /*Form starts*/
 
-.service-form{
-    width: 95%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: auto;
+.service-form {
+  width: 95%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: auto;
 }
 
-form{
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
-    width: 100%;
-    padding-bottom: 20px;
+form {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: 20px;
 }
 
-.MuiInput-underline:before{
-    border-bottom: 1px solid black !important;
+.MuiInput-underline:before {
+  border-bottom: 1px solid black !important;
 }
 
-.textfield{
-    width: 75% !important;
-    margin-top: 15px !important;
-    padding-bottom: 15px !important;
+.textfield {
+  width: 75% !important;
+  margin-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 
-.textfieldmob{
-    width: 100% !important;
-    margin-top: 15px !important;
-    padding-bottom: 15px !important;
+.textfieldmob {
+  width: 100% !important;
+  margin-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 
-.formbtn{
-    background-color: black !important;
-    border: 1px solid black !important;
-    padding-left: 25.6px;
-    padding-right: 25.6px;
-    padding-top: 12.8px;
-    padding-bottom: 12.8px;
-    border-radius: 50px;
-    width: fit-content;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 0;
+.formbtn {
+  background-color: black !important;
+  border: 1px solid black !important;
+  padding-left: 25.6px;
+  padding-right: 25.6px;
+  padding-top: 12.8px;
+  padding-bottom: 12.8px;
+  border-radius: 50px;
+  width: fit-content;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
-.formbtn:hover{
-    background-color: transparent !important;
-    border: 1px solid black !important;
-    padding-left: 25.6px;
-    padding-right: 25.6px;
-    padding-top: 12.8px;
-    padding-bottom: 12.8px;
-    border-radius: 50px;
-    width: fit-content;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: black;
-    margin-top: 20px;
-    margin-bottom: 0;
+.formbtn:hover {
+  background-color: transparent !important;
+  border: 1px solid black !important;
+  padding-left: 25.6px;
+  padding-right: 25.6px;
+  padding-top: 12.8px;
+  padding-bottom: 12.8px;
+  border-radius: 50px;
+  width: fit-content;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
-input{
-    font-family: 'Cabin',sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 19px;
-text-transform: none;
-color: #000;
+input,
+.MuiInputBase-input {
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: none;
+  color: #000 !important;
 }
 
-h1{
-    font-family: 'Cabin',sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 16px;
-line-height: 19px;
-text-transform: uppercase !important;
-color: red;
-margin-top: 0 !important;
-margin-bottom: 0 !important;
+.MuiFormLabel-root,
+.MuiTypography-colorTextSecondary {
+  color: #000 !important;
 }
 
-label + .MuiInput-formControl{
-    font-family: 'Cabin',sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 19px;
-text-transform: uppercase;
-color: black;
+h1 {
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase !important;
+  color: red;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
-.footimg img{
-    width: 70%;
+label + .MuiInput-formControl {
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.footimg img {
+  width: 70%;
 }
 
 /*Form ends*/
 
 /*MObile starts*/
 
-.hire-mobcontainer{
-    width: 95%;
-    display: flex;
-    justify-content: flex-start;
-    margin: auto;
-    flex-flow: column nowrap;
+.hire-mobcontainer {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  flex-flow: column nowrap;
 }
 
-.first-mobbox{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
+.first-mobbox {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
 }
 
-.formAlign{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+.formAlign {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.first-box-mobcontainer{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    margin: auto;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
+.first-box-mobcontainer {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
-.mobicons{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
+.mobicons {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.icons-mobmsg{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
+.icons-mobmsg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.icons-mobmsgbot{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.icons-mobmsgbot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.second-mobbox{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: flex-end;
+.second-mobbox {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
 }
 
-.second-mobbox-container{
-    width: 100%;
-    display: flex;
-    flex-flow: column;
+.second-mobbox-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
 }
 
-/*MObile ends*/
+/*Mobile ends*/
 
 /**/
 
-.inputslider{
-    display: flex;
-    width: 100%;
-    align-items: end;
+.inputslider {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
 }
 
-.inputslide{
-    width: 100%;
-    overflow-x: scroll;
-    display: flex;
-    padding: 3px;
-    white-space: nowrap;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+.inputslide {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  padding: 3px;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.inputslide::-webkit-scrollbar{
-    display: none;
+.inputslide::-webkit-scrollbar {
+  display: none;
 }
 
-.insideslide{
-    display: flex !important;
-    justify-content: center !important;
-    width: 100%;
-    outline: none !important;
+.insideslide {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100%;
+  outline: none !important;
 }
 
-a{
-    text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
 
-.mobimage{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.mobimage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.mobimage img{
-    width: 70%;
+.mobimage img {
+  width: 70%;
 }
 
 /**/
-
 
 /* slider btns*/
 
-.serviceslider-btn{
-    background-color: transparent !important;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 95%;
-    border-radius: 50px;
-    white-space: nowrap;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #202020;
-    margin-bottom: 3px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
+.serviceslider-btn {
+  background-color: transparent !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 95%;
+  border-radius: 50px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #202020;
+  margin-bottom: 3px !important;
+  margin-top: 0;
+  border: 1px solid #202020 !important;
 }
 
-.serviceslide-btn{
-    background-color: transparent !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
-    padding: 10px;
-    margin: 10px;
-    outline: none !important;
-    border-radius: 50px;
-    white-space: nowrap;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #202020;
-    text-transform: uppercase;
-    margin-bottom: 3px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
-    margin-left: 0 !important;
+.serviceslide-btn {
+  background-color: transparent !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding: 10px;
+  margin: 10px;
+  outline: none !important;
+  border-radius: 50px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #202020;
+  text-transform: uppercase;
+  margin-bottom: 3px !important;
+  margin-top: 0;
+  border: 1px solid #202020 !important;
+  margin-left: 0 !important;
 }
 
-.serviceslide-afterbtn{
-    margin-left: 0 !important;
-    background-color: black !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 50px;
-    white-space: nowrap;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 3px !important;
-    margin-top: 0;
-    border: 1px solid #202020 !important;
+.serviceslide-afterbtn {
+  margin-left: 0 !important;
+  background-color: black !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3px !important;
+  margin-top: 0;
+  border: 1px solid #202020 !important;
 }
 
-.serviceslider-afterbtn{
-    background-color: black !important;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 95%;
-    border-radius: 50px;
-    white-space: nowrap;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 3px !important;
-    margin-top: 0;
-    outline: none !important;
-    border: 1px solid #202020 !important;
+.serviceslider-afterbtn {
+  background-color: black !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 95%;
+  border-radius: 50px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 3px !important;
+  margin-top: 0;
+  outline: none !important;
+  border: 1px solid #202020 !important;
 }
 
-.inputslider img:last-child{
-    margin-left: 10px;
+.inputslider img:last-child {
+  margin-left: 10px;
 }
 
-.inputslider{
-    overflow-x: hidden;
+.inputslider {
+  overflow-x: hidden;
 }
 
-.slick-prev, .slick-next{
-    height: 30px !important;
-    width: 30px !important;
+.slick-prev,
+.slick-next {
+  height: 30px !important;
+  width: 30px !important;
 }
 
-.deskfoot{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
+.deskfoot {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
-.footimg{
-    display: flex;
-    justify-content: center;
+.footimg {
+  display: flex;
+  justify-content: center;
 }
 
-.footimg img{
-    width: 60%;
+.footimg img {
+  width: 60%;
 }
-
-
 
 /*slider btn ends*/
