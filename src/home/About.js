@@ -71,7 +71,7 @@ const Desktop = () => {
             }}
           />
           <Fade className={ifade} in={active} delay="500">
-            <iframe allowFullScreen frameBorder="0" width="100%" height="100%" src={url} title="vid" className="vid" />
+            {active ? <iframe allowFullScreen frameBorder="0" width="100%" height="100%" src={url} title="vid" className="vid" /> : <></>}
           </Fade>
         </div>
       </div>
@@ -158,7 +158,7 @@ const Tab = () => {
           }}
         />
         <Fade className={ifade} in={active} delay="500">
-          <iframe allowFullScreen frameBorder="0" width="100%" height="300px" src={url} title="vid" className="vid" />
+          {active ? <iframe allowFullScreen frameBorder="0" width="100%" height="300px" src={url} title="vid" className="vid" /> : <></>}
         </Fade>
         <div className={container} data-aos="fade-up" data-aos-duration="1000">
           <MobSlider />
@@ -244,7 +244,7 @@ const Mobile = () => {
           }}
         />
         <Fade className={ifade} in={active} delay="500">
-          <iframe allowFullScreen frameBorder="0" width="100%" height="300px" src={url} title="vid" className="vid" />
+          {active ? <iframe allowFullScreen frameBorder="0" width="100%" height="300px" src={url} title="vid" className="vid" /> : <></>}
         </Fade>
         <div className={container} data-aos="fade-up" data-aos-duration="1000">
           <MobSlider />
