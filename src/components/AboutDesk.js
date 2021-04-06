@@ -9,7 +9,7 @@ import twitter from "../img/icons/icon-twitter.svg";
 import logotall from "../img/logo/logo-tall.svg";
 import join from "../img/icons/icon-join.svg";
 
-import Form from "../components/Form";
+import Form from "./Form";
 import Aos from "aos";
 import "aos/dist/aos.css";
 // import ServiceSlider from "./ServiceSlider";

@@ -8,8 +8,8 @@ import facebook from "../img/icons/icon-facebook.svg";
 import twitter from "../img/icons/icon-twitter.svg";
 import join from "../img/icons/icon-join.svg";
 
-import Form from "../components/Form";
-import SvgTall from "../components/SvgTall";
+import Form from "./Form";
+import SvgTall from "./SvgTall";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./css/Nav.css";
 import { Fade } from "react-animation-components";
 import { NavHashLink } from "react-router-hash-link";
-import Svg from "../components/Svg";
+import Svg from "./Svg";
 import Ham from "./Hamburger";
 import XHam from "./Xham";
 

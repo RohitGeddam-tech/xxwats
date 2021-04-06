@@ -16,6 +16,11 @@
   align-items: center;
 }
 
+.slick-slide div{
+  width: fit-content;
+  margin: auto;
+}
+
 .largehire {
   width: 100%;
   transition: all 0.5s ease-in-out;
@@ -587,9 +592,8 @@ a {
 
 .serviceslider-btn {
   background-color: transparent !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 95%;
+  padding: 5px;
+  width: fit-content;
   border-radius: 50px;
   white-space: nowrap;
   cursor: pointer;
@@ -653,11 +657,10 @@ a {
   border: 1px solid #202020 !important;
 }
 
-.serviceslider-afterbtn {
+.serviceslider-btn.after {
   background-color: black !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: 95%;
+  padding: 5px;
+  width: fit-content;
   border-radius: 50px;
   white-space: nowrap;
   cursor: pointer;

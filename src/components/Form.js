@@ -3,6 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import axios from "axios";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import SliderService from "./SliderService";
+import Serv from './ServiceSlider'
 
 const FormDesk = () => {
   const [isChecked, setChecked] = useState([]);
@@ -70,18 +71,29 @@ const FormDesk = () => {
           console.log(err);
         });
     }
+    console.log(form)
   }, [form, validity]);
 
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <SliderService initialChecked={isChecked} passChecked={setChecked} />
-        <TextField className="textfield" label="Name" name="name" value={name} inputProps={{ pattern: "^([A-Za-z ,.'`-]{2,30})$" }} type="text" onChange={handleChange} required />
+        <Serv initialChecked={isChecked} passChecked={setChecked} />
+        <TextField
+          className="textfield"
+          label="Name"
+          name="name"
+          value={name}
+          inputProps={{ pattern: "^([A-Za-z ,.'`-]{2,30})$" }}
+          type="text"
+          onChange={handleChange}
+          required
+        />
         {nameInvalid ? <h1>Pl. provide a valid name</h1> : ""}
         <TextField
           className="textfield"
           label="Phone Number"
           name="phoneNo"
+          value={phoneNo}
           onChange={handleChange}
           type="tel"
           required
@@ -89,7 +101,9 @@ const FormDesk = () => {
             pattern: "^[0-9]{10}$",
           }}
           InputProps={{
-            startAdornment: <InputAdornment position="start">+91</InputAdornment>,
+            startAdornment: (
+              <InputAdornment position="start">+91</InputAdornment>
+            ),
           }}
         />
         {phoneNoInvalid ? <h1>Pl. provide a valid phone no.</h1> : ""}
@@ -98,6 +112,7 @@ const FormDesk = () => {
           className="textfield"
           label="Email-Address"
           name="emailID"
+          value={emailID}
           type="email"
           inputProps={{
             pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$",
@@ -111,8 +126,18 @@ const FormDesk = () => {
         <button type="submit" className="formbtn" onClick={handleSubmit}>
           get a call back
         </button>
-        {formEmpty ? <h1 style={{ paddingTop: "1em" }}>Pl. fill the form</h1> : ""}
-        {success ? <h1 style={{ paddingTop: "1em", color: "forestgreen" }}>Someone will be in touch shortly</h1> : ""}
+        {formEmpty ? (
+          <h1 style={{ paddingTop: "1em" }}>Pl. fill the form</h1>
+        ) : (
+          ""
+        )}
+        {success ? (
+          <h1 style={{ paddingTop: "1em", color: "forestgreen" }}>
+            Someone will be in touch shortly
+          </h1>
+        ) : (
+          ""
+        )}
       </form>
     </>
   );
@@ -190,12 +215,22 @@ const FormMob = () => {
     <>
       <form onSubmit={handleSubmit} className="formAlign">
         <SliderService initialChecked={isChecked} passChecked={setChecked} />
-        <TextField className="textfieldmob" label="Name" name="name" value={name} inputProps={{ pattern: "^([A-Za-z ,.'`-]{2,30})$" }} type="text" onChange={handleChange} required />
+        <TextField
+          className="textfieldmob"
+          label="Name"
+          name="name"
+          value={name}
+          inputProps={{ pattern: "^([A-Za-z ,.'`-]{2,30})$" }}
+          type="text"
+          onChange={handleChange}
+          required
+        />
         {nameInvalid ? <h1>Pl. provide a valid name</h1> : ""}
         <TextField
           className="textfieldmob"
           label="Phone Number"
           name="phoneNo"
+          value={phoneNo}
           onChange={handleChange}
           type="tel"
           required
@@ -203,7 +238,9 @@ const FormMob = () => {
             pattern: "^[0-9]{10}$",
           }}
           InputProps={{
-            startAdornment: <InputAdornment position="start">+91</InputAdornment>,
+            startAdornment: (
+              <InputAdornment position="start">+91</InputAdornment>
+            ),
           }}
         />
         {phoneNoInvalid ? <h1>Pl. provide a valid phone no.</h1> : ""}
@@ -213,6 +250,7 @@ const FormMob = () => {
           label="Email-Address"
           name="emailID"
           type="email"
+          value={emailID}
           inputProps={{
             pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$",
           }}
@@ -225,15 +263,27 @@ const FormMob = () => {
         <button type="submit" className="formbtn" onClick={handleSubmit}>
           get a call back
         </button>
-        {formEmpty ? <h1 style={{ paddingTop: "1em" }}>Pl. fill the form</h1> : ""}
-        {success ? <h1 style={{ paddingTop: "1em", color: "forestgreen" }}>Someone will be in touch shortly</h1> : ""}
+        {formEmpty ? (
+          <h1 style={{ paddingTop: "1em" }}>Pl. fill the form</h1>
+        ) : (
+          ""
+        )}
+        {success ? (
+          <h1 style={{ paddingTop: "1em", color: "forestgreen" }}>
+            Someone will be in touch shortly
+          </h1>
+        ) : (
+          ""
+        )}
       </form>
     </>
   );
 };
 
 const Form = () => {
-  const [isMobile, setMobile] = useState(window.matchMedia("(max-width:760px)").matches);
+  const [isMobile, setMobile] = useState(
+    window.matchMedia("(max-width:760px)").matches
+  );
   useEffect(() => {
     window.addEventListener("resize", () => {
       setMobile(window.matchMedia("(max-width:760px)").matches);
