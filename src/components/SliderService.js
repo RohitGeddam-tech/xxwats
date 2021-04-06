@@ -1,223 +1,66 @@
-import React, { useState, useRef } from "react";
-import Form from './Form'
-import Checkbox from "@material-ui/core/Checkbox";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
+import React, { useEffect, useState } from "react";
 
-const SliderService = () => {
-  const [check, setCheck] = useState(false);
-  const [brand, setBrand] = useState(false);
-  const [social, setSocial] = useState(false);
-  const [video, setVideo] = useState(false);
-  const [ground, setGround] = useState(false);
-  const [post, setPost] = useState(false);
+const SliderService = ({ initialChecked, passChecked }) => {
+  let checkedboxes = {
+    creative: { checked: false, value: "Creative Strategy" },
+    brand: { checked: false, value: "Branding Camapign" },
+    social: { checked: false, value: "Social Media Camapign" },
+    video: { checked: false, value: "Video Camapign" },
+    ground: { checked: false, value: "On-ground Engagements" },
+    post: { checked: false, value: "Post Production" },
+  };
 
-  const checkedboxes = {
-    creative: {checked: check, value:"Creative Strategy"},
-    brand: {checked: brand, value:"Branding Camapign"},
-    social: {checked: social, value:"Social Media Camapign"},
-    video: {checked: video, value:"Video Camapign"},
-    ground: {checked: ground, value:"On-ground Engagements"},
-    post: {checked: post, value:"Post Production"}
-  }
-  
-  // const handleCheckboxes = (e) => {
-  //   console.log("logging setSubmit", e)
-  //   if(check === true){
-  //     console.log('creative strategy')
-  //   } else if(brand === true){
-  //     console.log('Brand Campaigns')
-  //   } else if(social === true){
-  //     console.log('Social Media Campaigns')
-  //   } else if(video === true){
-  //     console.log('Video Campaings')
-  //   } else if(ground === true){
-  //     console.log('On-ground Engagements')
-  //   } else if(post === true){
-  //     console.log('Post Production')
-  //   }
-  // }
+  const [isChecked, setChecked] = useState(initialChecked);
 
+  const removeItemOnce = (arr, value) => {
+    var index = arr.indexOf(value);
+    if (index > -1) {
+      arr.splice(index, 1);
+    }
+    return arr;
+  };
 
-  const ref = useRef(null)
+  const handleClick = (e, each) => {
+    const val = checkedboxes[each].value;
+    e.target.checked ? initialChecked.push(val) : removeItemOnce(initialChecked, val);
+    setChecked(initialChecked);
+  };
 
-  console.log(check);
-  //onSubmit={setSubmit}
+  useEffect(() => {
+    passChecked(isChecked);
+  }, [isChecked, passChecked]);
 
   return (
     <>
-      <form className="inputslider" >
+      <div className="inputslider">
         <div className="inputslide">
-          <div className="insideslide">
-              {check ? (
+          {Object.keys(checkedboxes).map((each, index) => {
+            return (
+              <div className="insideslide" key={index}>
                 <label
-                  className="serviceslide-afterbtn"
-                  onClick={() => {
-                    setCheck(false);
-                    console.log("creative strategy", check);
-                  }}
-                >
-                  creative strategy
-                </label>
-              ) : (
-                <label
+                  htmlFor={each}
                   className="serviceslide-btn"
-                  onClick={() => {
-                    setCheck(true);
-                    console.log("creative strategy", check);
+                  onClick={(e) => {
+                    e.target.classList.toggle("after");
                   }}
                 >
-                  creative strategy
+                  {checkedboxes[each].value}
                 </label>
-              )}
-              <FormControlLabel
-              control={<Checkbox checked={check} onChange={(e)=>{setCheck(e.target.value)}} />}
-              label="Check me"
-              style={{ display: "none" }}
-            />
-          </div>
-          <div className="insideslide">
-              {brand ? (
-                <label
-                  className="serviceslide-afterbtn"
-                  onClick={() => {
-                    setBrand(false);
-                    console.log("brand", brand);
+
+                <input
+                  id={each}
+                  type="checkbox"
+                  data-name={each}
+                  onChange={(e) => {
+                    handleClick(e, each);
                   }}
-                >
-                  Brand Campaigns
-                </label>
-              ) : (
-                <label
-                  className="serviceslide-btn"
-                  onClick={() => {
-                    setBrand(true);
-                    console.log("brand", brand);
-                  }}
-                >
-                  Brand Campaigns
-                </label>
-              )}
-              <FormControlLabel
-              control={<Checkbox checked={brand} onChange={(e)=>{setBrand(e.target.value)}} />}
-              label="Check me"
-              style={{ display: "none" }} 
-              />
-          </div>
-          <div className="insideslide">
-              {social ? (
-                <label
-                  className="serviceslide-afterbtn"
-                  onClick={() => {
-                    setSocial(false);
-                    console.log("social", social);
-                  }}
-                >
-                  Social media Campaigns
-                </label>
-              ) : (
-                <label
-                  className="serviceslide-btn"
-                  onClick={() => {
-                    setSocial(true);
-                    console.log("social", social);
-                  }}
-                >
-                  Social media Campaigns
-                </label>
-              )}
-              <FormControlLabel
-              control={<Checkbox checked={social} onChange={(e)=>{setSocial(e.target.value)}} />}
-              label="Check me"
-              style={{ display: "none" }} 
-              />
-          </div>
-          <div className="insideslide">
-              {video ? (
-                <label
-                  className="serviceslide-afterbtn"
-                  onClick={() => {
-                    setVideo(false);
-                    console.log("video", video);
-                  }}
-                >
-                  video campaigns
-                </label>
-              ) : (
-                <label
-                  className="serviceslide-btn"
-                  onClick={() => {
-                    setVideo(true);
-                    console.log("video", video);
-                  }}
-                >
-                  video campaigns
-                </label>
-              )}
-              <FormControlLabel
-              control={<Checkbox checked={video} onChange={(e)=>{setVideo(e.target.value)}} />}
-              label="Check me"
-              style={{ display: "none" }} 
-              />
-          </div>
-          <div className="insideslide">
-              {ground ? (
-                <label
-                  className="serviceslide-afterbtn"
-                  onClick={() => {
-                    setGround(false);
-                    console.log("ground", ground);
-                  }}
-                >
-                  on-ground engagements
-                </label>
-              ) : (
-                <label
-                  className="serviceslide-btn"
-                  onClick={() => {
-                    setGround(true);
-                    console.log("ground", ground);
-                  }}
-                >
-                  on-ground engagements
-                </label>
-              )}
-              <FormControlLabel
-              control={<Checkbox checked={ground} onChange={(e)=>{setGround(e.target.value)}} />}
-              label="Check me"
-              style={{ display: "none" }} 
-              />
-          </div>
-          <div className="insideslide">
-              {post ? (
-                <label
-                  className="serviceslide-afterbtn"
-                  onClick={() => {
-                    setPost(false);
-                    console.log("post", post);
-                  }}
-                >
-                  Post-production
-                </label>
-              ) : (
-                <label
-                  className="serviceslide-btn"
-                  onClick={() => {
-                    setPost(true);
-                    console.log("post", post);
-                  }}
-                >
-                  Post-production
-                </label>
-              )}
-              <FormControlLabel
-              control={<Checkbox checked={post} onChange={(e)=>{setPost(e.target.value)}} />}
-              label="Check me"
-              style={{ display: "none" }} 
-              />
-          </div>
+                  style={{ display: "none" }}
+                />
+              </div>
+            );
+          })}
         </div>
-        <div style={{display:'none'}}><Form checkboxState = {checkedboxes} /></div>
-      </form>
+      </div>
     </>
   );
 };

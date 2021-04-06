@@ -1,280 +1,286 @@
 import React, { useState, useEffect } from "react";
 import TextField from "@material-ui/core/TextField";
-import axios from 'axios';
+import axios from "axios";
 import InputAdornment from "@material-ui/core/InputAdornment";
+import SliderService from "./SliderService";
+import Serv from './ServiceSlider'
 
-const FormDesk = ({checkboxState}) => {
-  const [values, setValues] = useState({
-    name: "",
-    mob: "",
-    email: "",
-  });
-
-  callbackFunction = (childData) => {
-    this.setState({message: childData})
-},
-
-  console.log(checkboxState)
-
-  const [errors, setErrors] = useState({});
-  const [clicked, setClicked] = useState(false);
-
-  const validate = (values) => {
-    let errors = {};
-
-    if (!values.name) {
-      errors.name = "This field is required";
-    }
-
-    if (!values.email.trim()) {
-      errors.email = "This field is required";
-    } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-      errors.email = "The Email entered is Invalid";
-    }
-
-    if (!values.mob.trim()) {
-      errors.mob = "This field is required";
-    } else if (!/[0-9]{10}/.test(values.mob)) {
-      errors.mob = "The Mobile no. entered is Invalid";
-    }
-
-    return errors;
-  };
+const FormDesk = () => {
+  const [isChecked, setChecked] = useState([]);
+  const [validity, setValidity] = useState(false);
+  const [form, setForm] = useState({});
+  const [formEmpty, setFormEmpty] = useState(false);
+  const [name, setName] = useState("");
+  const [phoneNo, setPhoneNo] = useState("");
+  const [emailID, setEmailID] = useState("");
+  const [nameInvalid, setNameInvalid] = useState(false);
+  const [phoneNoInvalid, setPhoneNoInvalid] = useState(false);
+  const [emailIdInvalid, setEmailIdIInvalid] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
-    setValues({
-      ...values,
-      [e.target.name]: e.target.value,
-    });
+    switch (e.target.name) {
+      case "name":
+        setName(e.target.value);
+        setNameInvalid(!e.target.validity.valid);
+        break;
+      case "phoneNo":
+        setPhoneNo(e.target.value);
+        setPhoneNoInvalid(!e.target.validity.valid);
+        break;
+      case "emailID":
+        setEmailID(e.target.value);
+        setEmailIdIInvalid(!e.target.validity.valid);
+        break;
+      default:
+        break;
+    }
   };
-
-  const handleClick = () => {
-    setClicked(true);
-    console.log("clicked", clicked);
-  };
-
-  const [submit, setSubmit] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setErrors(validate(values));
-    const data = {
-      name: capitalise(values.name),
-      phoneNo: values.mob,
-      emailID: values.email.toLowerCase(),
-      services:''
+    if (Object.values(form).every((each) => each === "")) {
+      setFormEmpty(true);
+      setValidity(false);
+    } else {
+      setFormEmpty(false);
     }
-    axios.post('https://mailserver.alokshenoy.com/form-submit/',data)
-    .then(res=> {console.log(res)
-      setValues(values)
-      console.log("form submitted", data);
-      alert('post created successfully')
-    })
-    .catch(err=>{console.log(err)
-    });
+
+    if (!(nameInvalid || phoneNoInvalid || emailIdInvalid)) {
+      setValidity(true);
+      setForm({
+        name: name.charAt(0).toUpperCase() + name.slice(1),
+        phoneNo: phoneNo,
+        emailID: emailID,
+        services: isChecked.join(", "),
+      });
+    } else {
+      setValidity(false);
+    }
   };
 
-  const capitalise=(str)=>{
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  }
+  useEffect(() => {
+    if (validity) {
+      axios
+        .post("https://mailserver.alokshenoy.com/form-submit/", form)
+        .then((res) => {
+          setFormEmpty(false);
+          setSuccess(true);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+    console.log(form)
+  }, [form, validity]);
 
   return (
     <>
       <form onSubmit={handleSubmit}>
+        <Serv initialChecked={isChecked} passChecked={setChecked} />
         <TextField
           className="textfield"
-          id="standard-basic"
           label="Name"
           name="name"
-          value={values.name}
-          onClick={handleClick}
+          value={name}
+          inputProps={{ pattern: "^([A-Za-z ,.'`-]{2,30})$" }}
+          type="text"
           onChange={handleChange}
+          required
         />
-        {submit ? <>{errors.name && <h1>{errors.name}</h1>}</> : 
-        <>{clicked ?  <>{!values.name ? <h1>This Field is required</h1> : null}</> : null}</>}
+        {nameInvalid ? <h1>Pl. provide a valid name</h1> : ""}
         <TextField
           className="textfield"
-          id="standard-basic"
           label="Phone Number"
-          name="mob"
-          value={values.mob}
+          name="phoneNo"
+          value={phoneNo}
           onChange={handleChange}
-          onClick={handleClick}
-          // InputProps={
-          //   clicked
-          //     ? {
-          //         startAdornment: (
-          //           <InputAdornment position="start">+91</InputAdornment>
-          //         ),
-          //       }
-          //     : null
-          // }
+          type="tel"
+          required
+          inputProps={{
+            pattern: "^[0-9]{10}$",
+          }}
           InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">+91</InputAdornment>
-                  ),
-                }
-          }
+            startAdornment: (
+              <InputAdornment position="start">+91</InputAdornment>
+            ),
+          }}
         />
-        {submit ? <>{errors.mob && <h1>{errors.mob}</h1>}</> : 
-        <>{clicked ? <>{values.mob ? <>{!values.mob ? <h1>This Field is required</h1> : null}
-          {(!/[0-9]{10}/.test(values.mob)) ? <h1>The Mobile no. entered is Invalid</h1> : null}
-        </> : null}</>: null}</> }
+        {phoneNoInvalid ? <h1>Pl. provide a valid phone no.</h1> : ""}
+
         <TextField
           className="textfield"
-          id="standard-basic"
           label="Email-Address"
-          name="email"
-          value={values.email}
-          onClick={handleClick}
+          name="emailID"
+          value={emailID}
+          type="email"
+          inputProps={{
+            pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$",
+          }}
           onChange={handleChange}
+          required
         />
-        {submit ? <>{errors.email && <h1>{errors.email}</h1>}</> : 
-        <>{clicked ? <>{values.email ? <>{!values.email ? <h1>This Field is required</h1> : null}
-          {(!/\S+@\S+\.\S+/.test(values.email)) ? <h1>The Email entered is Invalid</h1> : null}
-        </> : null}</>: null}</>}
-        <button type="submit" className="formbtn" onClick={()=>{setSubmit(true)}}>
+
+        {emailIdInvalid ? <h1>Pl. provide a valid emailID</h1> : ""}
+
+        <button type="submit" className="formbtn" onClick={handleSubmit}>
           get a call back
         </button>
+        {formEmpty ? (
+          <h1 style={{ paddingTop: "1em" }}>Pl. fill the form</h1>
+        ) : (
+          ""
+        )}
+        {success ? (
+          <h1 style={{ paddingTop: "1em", color: "forestgreen" }}>
+            Someone will be in touch shortly
+          </h1>
+        ) : (
+          ""
+        )}
       </form>
     </>
   );
 };
 
 const FormMob = () => {
-  const [values, setValues] = useState({
-    name: "",
-    mob: "",
-    email: "",
-  });
-
-  const [errors, setErrors] = useState({});
-  const [clicked, setClicked] = useState(false);
-
-  const validate = (values) => {
-    let errors = {};
-
-    if (!values.name.trim()) {
-      errors.name = "This field is required";
-    }
-
-    if (!values.email.trim()) {
-      errors.email = "This field is required";
-    } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-      errors.email = "The Email entered is Invalid";
-    }
-
-    if (!values.mob.trim()) {
-      errors.mob = "This field is required";
-    } else if (!/[0-9]{10}/.test(values.mob)) {
-      errors.mob = "The Mobile no. entered is Invalid";
-    }
-
-    return errors;
-  };
+  const [isChecked, setChecked] = useState([]);
+  const [validity, setValidity] = useState(false);
+  const [form, setForm] = useState({});
+  const [formEmpty, setFormEmpty] = useState(false);
+  const [name, setName] = useState("");
+  const [phoneNo, setPhoneNo] = useState("");
+  const [emailID, setEmailID] = useState("");
+  const [nameInvalid, setNameInvalid] = useState(false);
+  const [phoneNoInvalid, setPhoneNoInvalid] = useState(false);
+  const [emailIdInvalid, setEmailIdIInvalid] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
-    setValues({
-      ...values,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleClick = () => {
-    setClicked(true);
-    console.log("clicked", clicked);
+    switch (e.target.name) {
+      case "name":
+        setName(e.target.value);
+        setNameInvalid(!e.target.validity.valid);
+        break;
+      case "phoneNo":
+        setPhoneNo(e.target.value);
+        setPhoneNoInvalid(!e.target.validity.valid);
+        break;
+      case "emailID":
+        setEmailID(e.target.value);
+        setEmailIdIInvalid(!e.target.validity.valid);
+        break;
+      default:
+        break;
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setErrors(validate(values));
-
-    const data = {
-      name: capitalise(values.name),
-      phoneNo: values.mob,
-      emailID: values.email.toLowerCase(),
-      services:''
+    if (Object.values(form).every((each) => each === "")) {
+      setFormEmpty(true);
+      setValidity(false);
+    } else {
+      setFormEmpty(false);
     }
-    axios.post('https://mailserver.alokshenoy.com/form-submit/',data)
-    .then(res=> {console.log(res)
-      setValues(values)
-      console.log("form submitted", data);
-      alert('post created successfully')
-    })
-    .catch(err=>{console.log(err)
-    });
-    console.log("form submitted", data);
+
+    if (!(nameInvalid || phoneNoInvalid || emailIdInvalid)) {
+      setValidity(true);
+      setForm({
+        name: name.charAt(0).toUpperCase() + name.slice(1),
+        phoneNo: phoneNo,
+        emailID: emailID,
+        services: isChecked.join(", "),
+      });
+    } else {
+      setValidity(false);
+    }
   };
 
-  const capitalise=(str)=>{
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  }
-
-  const [submit, setSubmit] = useState(false)
+  useEffect(() => {
+    if (validity) {
+      axios
+        .post("https://mailserver.alokshenoy.com/form-submit/", form)
+        .then((res) => {
+          setFormEmpty(false);
+          setSuccess(true);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }, [form, validity]);
 
   return (
     <>
-      <form onSubmit={handleSubmit} className='formAlign'>
+      <form onSubmit={handleSubmit} className="formAlign">
+        <SliderService initialChecked={isChecked} passChecked={setChecked} />
         <TextField
           className="textfieldmob"
-          id="standard-basic"
           label="Name"
           name="name"
-          value={values.name}
-          onClick={handleClick}
+          value={name}
+          inputProps={{ pattern: "^([A-Za-z ,.'`-]{2,30})$" }}
+          type="text"
           onChange={handleChange}
+          required
         />
-        {submit ? <>{errors.name && <h1>{errors.name}</h1>}</> : 
-        <>{clicked ?  <>{!values.name ? <h1>This Field is required</h1> : null}</> : null}</>}
+        {nameInvalid ? <h1>Pl. provide a valid name</h1> : ""}
         <TextField
           className="textfieldmob"
-          id="standard-basic"
           label="Phone Number"
-          name="mob"
-          value={values.mob}
+          name="phoneNo"
+          value={phoneNo}
           onChange={handleChange}
-          onClick={handleClick}
-          // InputProps={
-          //   clicked
-          //     ? {
-          //         startAdornment: (
-          //           <InputAdornment position="start">+91</InputAdornment>
-          //         ),
-          //       }
-          //     : null
-          // }
+          type="tel"
+          required
+          inputProps={{
+            pattern: "^[0-9]{10}$",
+          }}
           InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">+91</InputAdornment>
-                  ),
-                }
-          }
+            startAdornment: (
+              <InputAdornment position="start">+91</InputAdornment>
+            ),
+          }}
         />
-        {submit ? <>{errors.mob && <h1>{errors.mob}</h1>}</> : 
-        <>{clicked ? <>{values.mob ? <>{!values.mob ? <h1>This Field is required</h1> : null}
-          {(!/[0-9]{10}/.test(values.mob)) ? <h1>The Mobile no. entered is Invalid</h1> : null}
-        </> : null}</>: null}</> }
+        {phoneNoInvalid ? <h1>Pl. provide a valid phone no.</h1> : ""}
+
         <TextField
           className="textfieldmob"
-          id="standard-basic"
           label="Email-Address"
-          name="email"
-          value={values.email}
+          name="emailID"
+          type="email"
+          value={emailID}
+          inputProps={{
+            pattern: "[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$",
+          }}
           onChange={handleChange}
+          required
         />
-        {submit ? <>{errors.email && <h1>{errors.email}</h1>}</> : 
-        <>{clicked ? <>{values.email ? <>{!values.email ? <h1>This Field is required</h1> : null}
-          {(!/\S+@\S+\.\S+/.test(values.email)) ? <h1>The Email entered is Invalid</h1> : null}
-        </> : null}</>: null}</>}
-        <button type="submit" className="formbtn" onClick={()=>{setSubmit(true)}}>
+
+        {emailIdInvalid ? <h1>Pl. provide a valid emailID</h1> : ""}
+
+        <button type="submit" className="formbtn" onClick={handleSubmit}>
           get a call back
         </button>
+        {formEmpty ? (
+          <h1 style={{ paddingTop: "1em" }}>Pl. fill the form</h1>
+        ) : (
+          ""
+        )}
+        {success ? (
+          <h1 style={{ paddingTop: "1em", color: "forestgreen" }}>
+            Someone will be in touch shortly
+          </h1>
+        ) : (
+          ""
+        )}
       </form>
     </>
   );
 };
 
-const Form = (props) => {
+const Form = () => {
   const [isMobile, setMobile] = useState(
     window.matchMedia("(max-width:760px)").matches
   );
@@ -284,7 +290,7 @@ const Form = (props) => {
     });
   });
 
-  return <>{isMobile ? <FormMob /> : <FormDesk checkboxState={props.checkboxState}/>}</>;
+  return <>{isMobile ? <FormMob /> : <FormDesk />}</>;
 };
 
 export default Form;

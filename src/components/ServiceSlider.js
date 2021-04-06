@@ -1,238 +1,111 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
-import Checkbox from "@material-ui/core/Checkbox";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
 
-export class ServiceSlider extends Component {
-  state = {
-    check: false,
-    brand: false,
-    social: false,
-    video: false,
-    ground: false,
-    post: false,
-  }
-  
-  render() {
-    const settings = {
-      dots: false,
-      arrows: true,
-      infinite: false,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      speed: 500,
-      responsive: [
-        {
-          breakpoint: 1270,
-          settings: {
-            dots: false,
-            arrows: true,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            speed: 500,
-          },
+const ServiceSlider = ({ initialChecked, passChecked }) => {
+  const settings = {
+    dots: false,
+    arrows: true,
+    infinite: false,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    speed: 500,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          dots: false,
+          arrows: true,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500,
         },
-        {
-          breakpoint: 750,
-          settings: {
-            dots: false,
-            arrows: true,
-            infinite: false,
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            speed: 500,
-          },
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          dots: false,
+          arrows: true,
+          infinite: false,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          speed: 500,
         },
-        {
-          breakpoint: 550,
-          settings: {
-            dots: false,
-            arrows: true,
-            infinite: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            speed: 500,
-          },
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          dots: false,
+          arrows: true,
+          infinite: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 500,
         },
-      ],
-    };
+      },
+    ],
+  };
 
-    return (
-      <div className="slideservice">
-        <Slider {...settings}>
-          <div className="insideslide">
-            {this.state.check ? (
-              <label
-                className="serviceslider-afterbtn"
-                onClick={() => {
-                  this.setState({ check: false });
-                  console.log("creative strategy", !this.state.check);
-                }}
-              >
-                creative strategy
-              </label>
-            ) : (
-              <label
-                className="serviceslider-btn"
-                onClick={() => {
-                  this.setState({ check: true });
-                  console.log("creative strategy", !this.state.check);
-                }}
-              >
-                creative strategy
-              </label>
-            )}
-            <FormControlLabel
-              control={<Checkbox checked={this.state.check} onChange={(e)=>{this.setState({check: e.target.value})}} />}
-              label="Check me"
+  let checkedboxes = {
+    creative: { checked: false, value: "Creative Strategy" },
+    brand: { checked: false, value: "Branding Camapign" },
+    social: { checked: false, value: "Social Media Camapign" },
+    video: { checked: false, value: "Video Camapign" },
+    ground: { checked: false, value: "On-ground Engagements" },
+    post: { checked: false, value: "Post Production" },
+  };
+
+  const [isChecked, setChecked] = useState(initialChecked);
+
+  const removeItemOnce = (arr, value) => {
+    var index = arr.indexOf(value);
+    if (index > -1) {
+      arr.splice(index, 1);
+    }
+    return arr;
+  };
+
+  const handleClick = (e, each) => {
+    const val = checkedboxes[each].value;
+    e.target.checked ? initialChecked.push(val) : removeItemOnce(initialChecked, val);
+    setChecked(initialChecked);
+  };
+
+  useEffect(() => {
+    passChecked(isChecked);
+  }, [isChecked, passChecked]);
+
+  return (
+    <div className="slideservice">
+      <Slider {...settings}>
+      {Object.keys(checkedboxes).map((each, index) => {
+        return (
+          <div className="insideslide" key={index}>
+            <label
+              htmlFor={each}
+              className="serviceslider-btn"
+              onClick={(e) => {
+                e.target.classList.toggle("after");
+              }}
+            >
+              {checkedboxes[each].value}
+            </label>
+            <input
+              id={each}
+              type="checkbox"
+              data-name={each}
+              onChange={(e) => {
+                handleClick(e, each);
+              }}
               style={{ display: "none" }}
             />
           </div>
-          <div className="insideslide">
-            {this.state.brand ? (
-              <label
-                className="serviceslider-afterbtn"
-                onClick={() => {
-                  this.setState({ brand: false });
-                  console.log("brand", !this.state.brand);
-                }}
-              >
-                Brand Campaigns
-              </label>
-            ) : (
-              <label
-                className="serviceslider-btn"
-                onClick={() => {
-                  this.setState({ brand: true });
-                  console.log("brand", !this.state.brand);
-                }}
-              >
-                Brand Campaigns
-              </label>
-            )}
-            <FormControlLabel
-              control={<Checkbox checked={this.state.brand} onChange={(e)=>{this.setState({brand: e.target.value})}} />}
-              label="Check me"
-              style={{ display: "none" }}
-            />
-          </div>
-          <div className="insideslide">
-            {this.state.social ? (
-              <label
-                className="serviceslider-afterbtn"
-                onClick={() => {
-                  this.setState({ social: false });
-                  console.log("social", !this.state.social);
-                }}
-              >
-                Social media Campaigns
-              </label>
-            ) : (
-              <label
-                className="serviceslider-btn"
-                onClick={() => {
-                  this.setState({ social: true });
-                  console.log("social", !this.state.social);
-                }}
-              >
-                Social media Campaigns
-              </label>
-            )}
-            <FormControlLabel
-              control={<Checkbox checked={this.state.social} onChange={(e)=>{this.setState({social: e.target.value})}} />}
-              label="Check me"
-              style={{ display: "none" }}
-            />
-          </div>
-          <div className="insideslide">
-            {this.state.video ? (
-              <label
-                className="serviceslider-afterbtn"
-                onClick={() => {
-                  this.setState({ video: false });
-                  console.log("video", !this.state.video);
-                }}
-              >
-                video campaigns
-              </label>
-            ) : (
-              <label
-                className="serviceslider-btn"
-                onClick={() => {
-                  this.setState({ video: true });
-                  console.log("video", !this.state.video);
-                }}
-              >
-                video campaigns
-              </label>
-            )}
-            <FormControlLabel
-              control={<Checkbox checked={this.state.video} onChange={(e)=>{this.setState({video: e.target.value})}} />}
-              label="Check me"
-              style={{ display: "none" }}
-            />
-          </div>
-          <div className="insideslide">
-            {this.state.ground ? (
-              <label
-                className="serviceslider-afterbtn"
-                onClick={() => {
-                  this.setState({ ground: false });
-                  console.log("ground", !this.state.ground);
-                }}
-              >
-                on-ground engagements
-              </label>
-            ) : (
-              <label
-                className="serviceslider-btn"
-                onClick={() => {
-                  this.setState({ ground: true });
-                  console.log("ground", !this.state.ground);
-                }}
-              >
-                on-ground engagements
-              </label>
-            )}
-            <FormControlLabel
-              control={<Checkbox checked={this.state.ground} onChange={(e)=>{this.setState({ground: e.target.value})}} />}
-              label="Check me"
-              style={{ display: "none" }}
-            />
-          </div>
-          <div className="insideslide">
-            {this.state.post ? (
-              <label
-                className="serviceslider-afterbtn"
-                onClick={() => {
-                  this.setState({ post: false });
-                  console.log("post", !this.state.post);
-                }}
-              >
-                Post-production
-              </label>
-            ) : (
-              <label
-                className="serviceslider-btn"
-                onClick={() => {
-                  this.setState({ post: true });
-                  console.log("post", !this.state.post);
-                }}
-              >
-                Post-production
-              </label>
-            )}
-            <FormControlLabel
-              control={<Checkbox checked={this.state.post} onChange={(e)=>{this.setState({post: e.target.value})}} />}
-              label="Check me"
-              style={{ display: "none" }}
-            />
-          </div>
-        </Slider>
-      </div>
-    );
-  }
+        );
+      })}
+      </Slider>
+    </div>
+  );
 }
 
-export default ServiceSlider;
+
+export default ServiceSlider

@@ -1,303 +1,303 @@
-.Intro{
+.Intro {
   width: 100%;
   height: fit-content !important;
   padding-top: 56px !important;
 }
 
-.largeIntro{
-    width: 100%;
-    height: fit-content !important;
-    margin: auto;
-    padding-top: 56px !important;
+.largeIntro {
+  width: 100%;
+  height: fit-content !important;
+  margin: auto;
+  padding-top: 56px !important;
 }
 
 .home {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 5%;
-    padding-bottom: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.image{
-    width: 50%;
-    display: flex;
-    justify-content: center; 
+.image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
-.image img{
-    width: 80%;
+.image img {
+  width: 80%;
 }
 
-.firstimage{
-    width: 45%;
-    display: flex;
-    justify-content: flex-end;
+.firstimage {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.firstimage img{
-    height: auto !important;
-    width: auto;
+.firstimage img {
+  height: auto !important;
+  width: auto;
 }
 
-.content{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding-bottom: 20px;
-    flex-flow: column nowrap;
+.content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 20px;
+  flex-flow: column nowrap;
 }
 
-.para{
-    color: rgb(135, 135, 135);
-    font-size: 3em;
-    text-align: start;
-    text-transform: uppercase;
-    font-family: 'Cabin', sans-serif;
-    font-weight: 700;
-    width: 80%;
+.para {
+  color: rgb(135, 135, 135);
+  font-size: 3em;
+  text-align: start;
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  width: 80%;
 }
 
-button{
-    outline: none !important;
+button {
+  outline: none !important;
 }
 
-.btn{
-    background-color: transparent !important;
-    border: 1px solid rgb(247, 0, 140) !important;
-    padding-left: 25.6px;
-    padding-right: 25.6px;
-    padding-top: 12.8px;
-    padding-bottom: 12.8px;
-    border-radius: 50px;
-    width: fit-content;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #F7008C;
+.btn {
+  background-color: transparent !important;
+  border: 1px solid rgb(247, 0, 140) !important;
+  padding-left: 25.6px;
+  padding-right: 25.6px;
+  padding-top: 12.8px;
+  padding-bottom: 12.8px;
+  border-radius: 50px;
+  width: fit-content;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7008c;
 }
 
-.btn:hover{
-    background-color: #F7008C !important;
-    border: 1px solid rgb(247, 0, 140) !important;
-    padding-left: 25.6px;
-    padding-right: 25.6px;
-    padding-top: 12.8px;
-    padding-bottom: 12.8px;
-    border-radius: 50px;
-    width: fit-content;
-    cursor: pointer;
-    font-family: 'Cabin', sans-serif;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
+.btn:hover {
+  background-color: #f7008c !important;
+  border: 1px solid rgb(247, 0, 140) !important;
+  padding-left: 25.6px;
+  padding-right: 25.6px;
+  padding-top: 12.8px;
+  padding-bottom: 12.8px;
+  border-radius: 50px;
+  width: fit-content;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 /*Mobile starts*/
 
-.mobhome{
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15%;
-    margin-bottom: 10%;
+.mobhome {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  margin-bottom: 10%;
 }
 
-.mobcontent{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.mobcontent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.mobpara{
-    font-size: 24px;
-    text-transform: uppercase;
-    font-family: 'Cabin', sans-serif;
-    font-weight: 700;
-    text-align: center;
-    width: 95%;
-    margin: auto;
-    color: rgb(247, 0, 140);
-    padding-bottom: 20px;
-    padding-top: 10px;
+.mobpara {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  color: rgb(247, 0, 140);
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
-.mobbtn{
-    background-color: transparent !important;
-    border: 1px solid rgb(135, 135, 135) !important;
-    padding-left: 25.6px;   
-    padding-right: 25.6px;
-    padding-top: 12.8px;
-    padding-bottom: 12.8px;
-    border-radius: 50px;
-    font-weight: bold;
-    width: fit-content;
-    cursor: pointer;
-    font-family: 'Work Sans', sans-serif;
-    text-transform: uppercase;
-    color: rgb(135, 135, 135);
-    margin-bottom: 5px;
+.mobbtn {
+  background-color: transparent !important;
+  border: 1px solid rgb(135, 135, 135) !important;
+  padding-left: 25.6px;
+  padding-right: 25.6px;
+  padding-top: 12.8px;
+  padding-bottom: 12.8px;
+  border-radius: 50px;
+  font-weight: bold;
+  width: fit-content;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  color: rgb(135, 135, 135);
+  margin-bottom: 5px;
 }
 
-.mobbtn:hover{
-    background-color: rgb(135, 135, 135) !important;
-    border: 1px solid rgb(135, 135, 135) !important;
-    padding-left: 25.6px;   
-    padding-right: 25.6px;
-    padding-top: 12.8px;
-    padding-bottom: 12.8px;
-    border-radius: 50px;
-    font-weight: bold;
-    width: fit-content;
-    cursor: pointer;
-    font-family: 'Work Sans', sans-serif;
-    text-transform: uppercase;
-    color: white;
-    margin-bottom: 5px;
+.mobbtn:hover {
+  background-color: rgb(135, 135, 135) !important;
+  border: 1px solid rgb(135, 135, 135) !important;
+  padding-left: 25.6px;
+  padding-right: 25.6px;
+  padding-top: 12.8px;
+  padding-bottom: 12.8px;
+  border-radius: 50px;
+  font-weight: bold;
+  width: fit-content;
+  cursor: pointer;
+  font-family: "Work Sans", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 5px;
 }
 
-.mobileimage img{
-    width: 100% !important;
+.mobileimage img {
+  width: 100% !important;
 }
 
-.mobileimage{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.mobileimage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*Mobile ends*/
 
 /*first-about page starts*/
 
-.fahome{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 6.5% !important;
-    padding-bottom: 8.5%;
+.fahome {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 6.5% !important;
+  padding-bottom: 8.5%;
 }
 
-.facontent{
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: flex-start;
-    padding-bottom: 20px;
-    flex-flow: column nowrap;
+.facontent {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  flex-flow: column nowrap;
 }
 
-.fafirst-title{
-    text-align: start;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #4D6CFA;
-    padding-top: 20px;
+.fafirst-title {
+  text-align: start;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #4d6cfa;
+  padding-top: 20px;
 }
 
-.faquote{
-    font-family: 'Work Sans', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 28px;
-line-height: 33px;
-width: 55% !important;
-color: #4D6CFA;
-text-align: start;
-text-transform: none;
+.faquote {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  width: 55% !important;
+  color: #4d6cfa;
+  text-align: start;
+  text-transform: none;
 }
 
-.fapara{
-    font-family: 'Work Sans', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-color: #202020;
-width: 82%;
+.fapara {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #202020;
+  width: 82%;
 }
 
 /*Mobile */
-.famobcontent{
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.famobcontent {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.fafirst-mobtitle{
-    width: 95%;
-    text-align: start;
-    font-family: 'Cabin', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #4D6CFA;
-    padding-top: 20px;
+.fafirst-mobtitle {
+  width: 95%;
+  text-align: start;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #4d6cfa;
+  padding-top: 20px;
 }
 
-.famobquote{
-    width: 95%;
-    font-family: 'Work Sans', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 28px;
-line-height: 33px;
-color: #4D6CFA;
-text-align: start;
-text-transform: uppercase;
+.famobquote {
+  width: 95%;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  color: #4d6cfa;
+  text-align: start;
+  text-transform: uppercase;
 }
 
-.famobpara{
-    width: 95%;
-    font-family: 'Work Sans', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 22px;
-color: #202020;
+.famobpara {
+  width: 95%;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #202020;
 }
 
-.firstfaimage{
-    width: 45%;
-    display: flex;
-    justify-content: flex-end;
+.firstfaimage {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.bunny{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bunny {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bunny img{
-    width: 75%;
-    margin-left: 10%;
+.bunny img {
+  width: 75%;
+  margin-left: 10%;
 }
 
 /*first-about page ends*/
