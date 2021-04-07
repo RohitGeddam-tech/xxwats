@@ -1,13 +1,10 @@
-import React, { useEffect, useRef, useState, Suspense, useCallback } from "react";
+import React, { useEffect, useRef, useState, useCallback } from "react";
 import "./App.css";
 import Nav from "./components/TestNav";
 import Intro from "./home/Intro";
-
-const About = React.lazy(() => import("./home/About"));
-
-const Services = React.lazy(() => import("./home/Services"));
-
-const Hire = React.lazy(() => import("./home/Hire"));
+import About from "./home/About";
+import Services from "./home/Services";
+import Hire from "./home/Hire";
 
 const View = () => {
   const colorRef = useRef(null);
@@ -37,15 +34,13 @@ const View = () => {
 
   return (
     <div className={cssColor}>
-      <Suspense>
-        <Nav />
-        <Intro textColor={textColor} />
-        <div ref={colorRef} className="about">
-          <About />
-        </div>
-        <Services />
-        <Hire />
-      </Suspense>
+      <Nav />
+      <Intro textColor={textColor} />
+      <div ref={colorRef} className="about">
+        <About />
+      </div>
+      <Services />
+      <Hire />
     </div>
   );
 };
@@ -78,28 +73,30 @@ const ViewMob = () => {
 
   return (
     <div className={cssColor}>
-      <Suspense>
-        <Nav />
-        <Intro textColor={textColor} />
-        <div ref={colorRef} className="about">
-          <About />
-        </div>
-        <Services />
-        <Hire />
-      </Suspense>
+      <Nav />
+      <Intro textColor={textColor} />
+      <div ref={colorRef} className="about">
+        <About />
+      </div>
+      <Services />
+      <Hire />
     </div>
   );
 };
 
 const App = () => {
-  const [isMobile, setMobile] = useState(window.matchMedia("(max-width:800px)").matches);
+  const [isMobile, setMobile] = useState(
+    window.matchMedia("(max-width:800px)").matches
+  );
   useEffect(() => {
     window.addEventListener("resize", () => {
       setMobile(window.matchMedia("(max-width:800px)").matches);
     });
   });
 
-  const [isDesktop, setDesktop] = useState(window.matchMedia("(max-width:1400px)").matches);
+  const [isDesktop, setDesktop] = useState(
+    window.matchMedia("(max-width:1400px)").matches
+  );
   useEffect(() => {
     window.addEventListener("resize", () => {
       setDesktop(window.matchMedia("(max-width:1400px)").matches);
@@ -107,20 +104,13 @@ const App = () => {
   });
 
   return (
-    <Suspense
-      fallback={
-        <div className="load-center">
-          <div className="ui segment">
-            <div className="ui active inverted dimmer">
-              <div className="ui text loader">Loading</div>
-            </div>
-            <p></p>
-          </div>
-        </div>
-      }
-    >
-      {isDesktop ? <>{isMobile ? <ViewMob /> : <View />}</> : <>{isMobile ? <ViewMob /> : <View />}</>}
-    </Suspense>
+    <>
+      {isDesktop ? (
+        <>{isMobile ? <ViewMob /> : <View />}</>
+      ) : (
+        <>{isMobile ? <ViewMob /> : <View />}</>
+      )}
+    </>
   );
 };
 

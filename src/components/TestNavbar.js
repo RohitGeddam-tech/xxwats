@@ -19,7 +19,7 @@ const TestDesk = () => {
           {isActive ? (
             <nav className="container-fullnav">
               <div className="nav-image">
-                <NavHashLink to="/#top">
+                <NavHashLink to="/xxwats#top">
                   <Svg className={"white"} imagegradient0={"yellow-gradient-0"} imagegradient1={"yellow-gradient-1"} imagename={"yellow"} title={"white"} />
                 </NavHashLink>
               </div>
@@ -27,7 +27,7 @@ const TestDesk = () => {
           ) : (
             <nav className="container-nav">
               <div className="nav-image">
-                <NavHashLink to="/#top">
+                <NavHashLink to="/xxwats#top">
                   <Svg className={"pink"} imagegradient0={"black-gradient-0"} imagegradient1={"black-gradient-1"} imagename={"black"} title={"black"} />
                 </NavHashLink>
               </div>
@@ -52,17 +52,17 @@ const TestDesk = () => {
           </div>
         </div>
         <div className={fade}>
-          <NavHashLink to="/#top" className="navdeskfade">
+          <NavHashLink to="/xxwats#top" className="navdeskfade">
             <Fade in={isActive} delay="500">
               Home
             </Fade>
           </NavHashLink>
-          <NavHashLink to="/about#top" className="navdeskfade">
+          <NavHashLink to="/xxwats/about#top" className="navdeskfade">
             <Fade in={isActive} delay="700">
               About us
             </Fade>
           </NavHashLink>
-          <NavHashLink to="/contact#top" className="navdeskfade">
+          <NavHashLink to="/xxwats/contact#top" className="navdeskfade">
             <Fade in={isActive} delay="900">
               Contact Us
             </Fade>
@@ -87,7 +87,7 @@ const TestMob = () => {
           {isActive ? (
             <nav className="container-fullnav">
               <div className="nav-image">
-                <NavHashLink to="/#top">
+                <NavHashLink to="/xxwats#top">
                   <Svg className={"white"} imagegradient0={"yellow-gradient-0"} imagegradient1={"yellow-gradient-1"} imagename={"yellow"} title={"white"} />
                 </NavHashLink>
               </div>
@@ -95,7 +95,7 @@ const TestMob = () => {
           ) : (
             <nav className="container-nav">
               <div className="nav-image">
-                <NavHashLink to="/#top">
+                <NavHashLink to="/xxwats#top">
                   <Svg className={"pink"} imagegradient0={"black-gradient-0"} imagegradient1={"black-gradient-1"} imagename={"black"} title={"black"} />
                 </NavHashLink>
               </div>
@@ -121,17 +121,17 @@ const TestMob = () => {
         </div>
         <div className={fade}>
           {/* <div className='fadein'> */}
-          <NavHashLink to="/#top" className="navfade">
+          <NavHashLink to="/xxwats#top" className="navfade">
             <Fade in={isActive} delay="500">
               Home
             </Fade>
           </NavHashLink>
-          <NavHashLink to="/about#top" className="navfade">
+          <NavHashLink to="/xxwats/about#top" className="navfade">
             <Fade in={isActive} delay="700">
               About us
             </Fade>
           </NavHashLink>
-          <NavHashLink to="/contact#top" className="navfade">
+          <NavHashLink to="/xxwats/contact#top" className="navfade">
             <Fade in={isActive} delay="900">
               Contact Us
             </Fade>
