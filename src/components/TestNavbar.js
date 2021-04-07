@@ -12,6 +12,13 @@ const TestDesk = () => {
   let colored = isActive ? "collapse-navbar" : "navbar";
   let header = isActive ? "headerfull" : "header";
   let fade = isActive ? "fade" : "dnone";
+
+  useEffect(()=>{
+    if(isActive === true){
+      setActive(colored, header, fade)
+    }
+  }, [isActive])
+  
   return (
     <>
       <div className={colored}>
@@ -79,7 +86,13 @@ const TestMob = () => {
   let colored = isActive ? "collapse-navbar" : "navbar";
   let header = isActive ? "headerfull" : "header";
   let fade = isActive ? "fade" : "dnone";
-  // let hamcolor = isActive ? "#fff" : "#202020";
+
+  useEffect(()=>{
+    if(isActive === true){
+      setActive(colored, header, fade)
+    }
+  }, [isActive])
+  
   return (
     <>
       <div className={colored}>
