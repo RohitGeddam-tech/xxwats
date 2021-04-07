@@ -75,7 +75,7 @@ const TestDesk = () => {
             </div>
           </NavHashLink>
           <NavHashLink to="/xxwats/contact#top" className="navdeskfade">
-            <div className="animate__animated animate__fadeIn animate__delay-6s">
+            <div className="animate__animated animate__fadeIn animate__delay-3s">
               Contact Us
             </div>
           </NavHashLink>
@@ -155,7 +155,7 @@ const TestMob = () => {
             </div>
           </NavHashLink>
           <NavHashLink to="/xxwats/contact#top" className="navfade">
-            <div className="animate__animated animate__fadeIn animate__delay-6s">
+            <div className="animate__animated animate__fadeIn animate__delay-3s">
               Contact Us
             </div>
           </NavHashLink>
