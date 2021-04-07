@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./css/Nav.css";
-import { Fade } from "react-animation-components";
 import { NavHashLink } from "react-router-hash-link";
 import Svg from "./Svg";
 import Ham from "./Hamburger";
@@ -12,12 +11,6 @@ const TestDesk = () => {
   let colored = isActive ? "collapse-nav" : "nav";
   let header = isActive ? "headerfull" : "header";
   let fade = isActive ? "fade" : "dnone";
-
-  useEffect(() => {
-    if (isActive === true) {
-      setActive(colored, header, fade);
-    }
-  }, [isActive]);
 
   return (
     <>
@@ -72,17 +65,17 @@ const TestDesk = () => {
         </div>
         <div className={fade}>
           <NavHashLink to="/xxwats#top" className="navdeskfade">
-            <div className="animate__animated animate__fadeIn animate__delay-1s">
+            <div className="animate__animated ani1 animate__fadeIn animate__delay-1s">
               Home
             </div>
           </NavHashLink>
           <NavHashLink to="/xxwats/about#top" className="navdeskfade">
-            <div className="animate__animated animate__fadeIn animate__delay-2s">
+            <div className="animate__animated ani2 animate__fadeIn animate__delay-1s">
               About Us
             </div>
           </NavHashLink>
           <NavHashLink to="/xxwats/contact#top" className="navdeskfade">
-            <div className="animate__animated animate__fadeIn animate__delay-3s">
+            <div className="animate__animated ani3 animate__fadeIn animate__delay-1s">
               Contact Us
             </div>
           </NavHashLink>
@@ -99,11 +92,6 @@ const TestMob = () => {
   let header = isActive ? "headerfull" : "header";
   let fade = isActive ? "fade" : "dnone";
 
-  useEffect(() => {
-    if (isActive === true) {
-      setActive(colored, header, fade);
-    }
-  }, [isActive]);
 
   return (
     <>
@@ -157,21 +145,21 @@ const TestMob = () => {
           </div>
         </div>
         <div className={fade}>
-          <NavHashLink to="/xxwats#top" className="navfade">
-            <div className="animate__animated animate__fadeIn animate__delay-1s">
-              Home
-            </div>
-          </NavHashLink>
-          <NavHashLink to="/xxwats/about#top" className="navfade">
-            <div className="animate__animated animate__fadeIn animate__delay-2s">
-              About Us
-            </div>
-          </NavHashLink>
-          <NavHashLink to="/xxwats/contact#top" className="navfade">
-            <div className="animate__animated animate__fadeIn animate__delay-3s">
-              Contact Us
-            </div>
-          </NavHashLink>
+        <NavHashLink to="/xxwats#top" className="navfade">
+        <div className="animate__animated ani1 animate__fadeIn animate__delay-1s">
+          Home
+        </div>
+      </NavHashLink>
+      <NavHashLink to="/xxwats/about#top" className="navfade">
+        <div className="animate__animated ani2 animate__fadeIn animate__delay-1s">
+          About Us
+        </div>
+      </NavHashLink>
+      <NavHashLink to="/xxwats/contact#top" className="navfade">
+        <div className="animate__animated ani3 animate__fadeIn animate__delay-1s">
+          Contact Us
+        </div>
+      </NavHashLink>
         </div>
       </div>
     </>
