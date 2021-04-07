@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./css/Nav.css";
-import { Fade } from "react-animation-components";
 import { NavHashLink } from "react-router-hash-link";
 import Svg from "./Svg";
 import Ham from "./Hamburger";
@@ -12,6 +11,7 @@ const TestDesk = () => {
   let colored = isActive ? "collapse-nav" : "nav";
   let header = isActive ? "headerfull" : "header";
   let fade = isActive ? "fade" : "dnone";
+
   return (
     <>
       <div className={colored}>
@@ -19,16 +19,28 @@ const TestDesk = () => {
           {isActive ? (
             <nav className="container-fullnav">
               <div className="nav-image">
-                <NavHashLink to="/#top">
-                  <Svg className={"white"} imagegradient0={"yellow-gradient-0"} imagegradient1={"yellow-gradient-1"} imagename={"yellow"} title={"white"} />
+                <NavHashLink to="/xxwats#top">
+                  <Svg
+                    className={"white"}
+                    imagegradient0={"yellow-gradient-0"}
+                    imagegradient1={"yellow-gradient-1"}
+                    imagename={"yellow"}
+                    title={"white"}
+                  />
                 </NavHashLink>
               </div>
             </nav>
           ) : (
             <nav className="container-nav">
               <div className="nav-image">
-                <NavHashLink to="/#top">
-                  <Svg className={"pink"} imagegradient0={"yellow-gradient-0"} imagegradient1={"yellow-gradient-1"} imagename={"yellow"} title={"black"} />
+                <NavHashLink to="/xxwats#top">
+                  <Svg
+                    className={"pink"}
+                    imagegradient0={"yellow-gradient-0"}
+                    imagegradient1={"yellow-gradient-1"}
+                    imagename={"yellow"}
+                    title={"black"}
+                  />
                 </NavHashLink>
               </div>
             </nav>
@@ -52,20 +64,20 @@ const TestDesk = () => {
           </div>
         </div>
         <div className={fade}>
-          <NavHashLink to="/#top" className="navdeskfade">
-            <Fade in={isActive} delay="500">
+          <NavHashLink to="/xxwats#top" className="navdeskfade">
+            <div className="animate__animated ani1 animate__fadeIn animate__delay-1s">
               Home
-            </Fade>
+            </div>
           </NavHashLink>
-          <NavHashLink to="/about#top" className="navdeskfade">
-            <Fade in={isActive} delay="700">
-              About us
-            </Fade>
+          <NavHashLink to="/xxwats/about#top" className="navdeskfade">
+            <div className="animate__animated ani2 animate__fadeIn animate__delay-1s">
+              About Us
+            </div>
           </NavHashLink>
-          <NavHashLink to="/contact#top" className="navdeskfade">
-            <Fade in={isActive} delay="900">
+          <NavHashLink to="/xxwats/contact#top" className="navdeskfade">
+            <div className="animate__animated ani3 animate__fadeIn animate__delay-1s">
               Contact Us
-            </Fade>
+            </div>
           </NavHashLink>
         </div>
       </div>
@@ -79,6 +91,7 @@ const TestMob = () => {
   let colored = isActive ? "collapse-nav" : "nav";
   let header = isActive ? "headerfull" : "header";
   let fade = isActive ? "fade" : "dnone";
+
   return (
     <>
       <div className={colored}>
@@ -86,16 +99,28 @@ const TestMob = () => {
           {isActive ? (
             <nav className="container-fullnav">
               <div className="nav-image">
-                <NavHashLink to="/#top">
-                  <Svg className={"white"} imagegradient0={"yellow-gradient-0"} imagegradient1={"yellow-gradient-1"} imagename={"yellow"} title={"white"} />
+                <NavHashLink to="/xxwats#top">
+                  <Svg
+                    className={"white"}
+                    imagegradient0={"yellow-gradient-0"}
+                    imagegradient1={"yellow-gradient-1"}
+                    imagename={"yellow"}
+                    title={"white"}
+                  />
                 </NavHashLink>
               </div>
             </nav>
           ) : (
             <nav className="container-nav">
               <div className="nav-image">
-                <NavHashLink to="/#top">
-                  <Svg className={"pink"} imagegradient0={"yellow-gradient-0"} imagegradient1={"yellow-gradient-1"} imagename={"yellow"} title={"black"} />
+                <NavHashLink to="/xxwats#top">
+                  <Svg
+                    className={"pink"}
+                    imagegradient0={"yellow-gradient-0"}
+                    imagegradient1={"yellow-gradient-1"}
+                    imagename={"yellow"}
+                    title={"black"}
+                  />
                 </NavHashLink>
               </div>
             </nav>
@@ -119,21 +144,21 @@ const TestMob = () => {
           </div>
         </div>
         <div className={fade}>
-          <NavHashLink to="/#top" className="navfade">
-            <Fade in={isActive} delay="500">
-              Home
-            </Fade>
-          </NavHashLink>
-          <NavHashLink to="/about#top" className="navfade">
-            <Fade in={isActive} delay="700">
-              About us
-            </Fade>
-          </NavHashLink>
-          <NavHashLink to="/contact#top" className="navfade">
-            <Fade in={isActive} delay="900">
-              Contact Us
-            </Fade>
-          </NavHashLink>
+        <NavHashLink to="/xxwats#top" className="navfade">
+        <div className="animate__animated ani1 animate__fadeIn animate__delay-1s">
+          Home
+        </div>
+      </NavHashLink>
+      <NavHashLink to="/xxwats/about#top" className="navfade">
+        <div className="animate__animated ani2 animate__fadeIn animate__delay-1s">
+          About Us
+        </div>
+      </NavHashLink>
+      <NavHashLink to="/xxwats/contact#top" className="navfade">
+        <div className="animate__animated ani3 animate__fadeIn animate__delay-1s">
+          Contact Us
+        </div>
+      </NavHashLink>
         </div>
       </div>
     </>
@@ -141,7 +166,9 @@ const TestMob = () => {
 };
 
 const TestNav = () => {
-  const [isMobile, setMobile] = useState(window.matchMedia("(max-width:850px)").matches);
+  const [isMobile, setMobile] = useState(
+    window.matchMedia("(max-width:850px)").matches
+  );
   useEffect(() => {
     window.addEventListener("resize", () => {
       setMobile(window.matchMedia("(max-width:850px)").matches);
