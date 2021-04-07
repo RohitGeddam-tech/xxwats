@@ -27,6 +27,17 @@ const ServiceSlider = ({ initialChecked, passChecked }) => {
           dots: false,
           arrows: true,
           infinite: false,
+          slidesToShow: 1.3,
+          slidesToScroll: 1,
+          speed: 500,
+        },
+      },
+      {
+        breakpoint: 950,
+        settings: {
+          dots: false,
+          arrows: true,
+          infinite: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           speed: 500,
