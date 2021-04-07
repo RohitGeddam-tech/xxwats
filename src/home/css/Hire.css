@@ -57,7 +57,7 @@
 }
 
 .desktitle-container {
-  width: 90%;
+  width: 82%;
   display: flex;
   margin: auto;
   justify-content: flex-start;
@@ -82,7 +82,7 @@
 }
 
 .hire-container {
-  width: 90%;
+  width: 82%;
   display: flex;
   justify-content: space-evenly;
   margin: auto;
