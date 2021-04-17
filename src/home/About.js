@@ -54,7 +54,7 @@ const Desktop = () => {
             <div>
               <h4 className="abouth1">We are champions at ordering food.</h4>
               <p className="aboutpara">But when we are not doing that, we are striving for excellence in our work process. We are specialists, not generalists, that work toward building experiences that elevate and empower organisations. Working with you every step of the way to build comprehensive, creative and purpose-driven brands and experiences.</p>
-              <NavHashLink to="/xxwats/about#top">
+              <NavHashLink to="/about#top">
                 <button className="aboutbtn">More About Us</button>
               </NavHashLink>
             </div>
@@ -83,7 +83,7 @@ const Desktop = () => {
           <div className="slidecontainer">
             <h4 className="sliderheading">work</h4>
             <h4 className="sliderh1">We do stuff.</h4>
-            <NavHashLink to="/xxwats/about#mid">
+            <NavHashLink to="/about#mid">
               <button className="sliderbtn">Meet our team</button>
             </NavHashLink>
           </div>
@@ -140,7 +140,7 @@ const Tab = () => {
             <h4 className="abouth1">We are champions at ordering food.</h4>
             <p className="aboutpara">But when we are not doing that, we are striving for excellence in our work process. We are specialists, not generalists, that work toward building experiences that elevate and empower organisations. Working with you every step of the way to build comprehensive, creative and purpose-driven brands and experiences.</p>
             <div className="alignbtn">
-              <NavHashLink to="/xxwats/about#top">
+              <NavHashLink to="/about#top">
                 <button className="aboutbtn">More About Us</button>
               </NavHashLink>
             </div>
@@ -164,7 +164,7 @@ const Tab = () => {
           <MobSlider />
         </div>
         <div className="alignbtn">
-          <NavHashLink to="/xxwats/about#mid">
+          <NavHashLink to="/about#mid">
             <button data-aos="fade-up" data-aos-duration="1000" className={cssColor}>
               Meet our team
             </button>
@@ -226,7 +226,7 @@ const Mobile = () => {
             <h4 className="abouth1">We are champions at ordering food.</h4>
             <p className="aboutpara">But when we are not doing that, we are striving for excellence in our work process. We are specialists, not generalists, that work toward building experiences that elevate and empower organisations. Working with you every step of the way to build comprehensive, creative and purpose-driven brands and experiences.</p>
             <div className="alignbtn">
-              <NavHashLink to="/xxwats/about#top">
+              <NavHashLink to="/about#top">
                 <button className="aboutbtn">More About Us</button>
               </NavHashLink>
             </div>
@@ -250,7 +250,7 @@ const Mobile = () => {
           <MobSlider />
         </div>
         <div className="alignbtn">
-          <NavHashLink to="/xxwats/about#mid">
+          <NavHashLink to="/about#mid">
             <button data-aos="fade-up" data-aos-duration="1000" id="services" className={cssColor}>
               Meet our team
             </button>

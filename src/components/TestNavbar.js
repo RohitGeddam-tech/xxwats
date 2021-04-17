@@ -63,17 +63,17 @@ const TestDesk = () => {
           </div>
         </div>
         <div className={fade}>
-          <NavHashLink to="/xxwats#top" className="navdeskfade">
+          <NavHashLink to="/#top" className="navdeskfade">
             <div className="animate__animated ani1 animate__fadeIn animate__delay-1s">
               Home
             </div>
           </NavHashLink>
-          <NavHashLink to="/xxwats/about#top" className="navdeskfade">
+          <NavHashLink to="/about#top" className="navdeskfade">
             <div className="animate__animated ani2 animate__fadeIn animate__delay-1s">
               About Us
             </div>
           </NavHashLink>
-          <NavHashLink to="/xxwats/contact#top" className="navdeskfade">
+          <NavHashLink to="/contact#top" className="navdeskfade">
             <div className="animate__animated ani3 animate__fadeIn animate__delay-1s">
               Contact Us
             </div>
@@ -98,7 +98,7 @@ const TestMob = () => {
           {isActive ? (
             <nav className="container-fullnav">
               <div className="nav-image">
-                <NavHashLink to="/xxwats#top">
+                <NavHashLink to="/#top">
                   <Svg
                     className={"white"}
                     imagegradient0={"yellow-gradient-0"}
@@ -112,7 +112,7 @@ const TestMob = () => {
           ) : (
             <nav className="container-nav">
               <div className="nav-image">
-                <NavHashLink to="/xxwats#top">
+                <NavHashLink to="/#top">
                   <Svg
                     className={"pink"}
                     imagegradient0={"black-gradient-0"}
@@ -143,17 +143,17 @@ const TestMob = () => {
           </div>
         </div>
         <div className={fade}>
-          <NavHashLink to="/xxwats#top" className="navfade">
+          <NavHashLink to="/#top" className="navfade">
             <div className="animate__animated ani1 animate__fadeIn animate__delay-1s">
               Home
             </div>
           </NavHashLink>
-          <NavHashLink to="/xxwats/about#top" className="navfade">
+          <NavHashLink to="/about#top" className="navfade">
             <div className="animate__animated ani2 animate__fadeIn animate__delay-1s">
               About Us
             </div>
           </NavHashLink>
-          <NavHashLink to="/xxwats/contact#top" className="navfade">
+          <NavHashLink to="/contact#top" className="navfade">
             <div className="animate__animated ani3 animate__fadeIn animate__delay-1s">
               Contact Us
             </div>
