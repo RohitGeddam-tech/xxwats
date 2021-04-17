@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../home/css/Intro.css";
-// import {NavHashLink} from 'react-router-hash-link'
 import home from "../img/bunnies.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
