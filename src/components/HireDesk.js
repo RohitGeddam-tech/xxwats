@@ -29,11 +29,15 @@ const HireDesk = () => {
             <h4 className="first-quote">Drop by for a cup of kadak chai</h4>
             <div className="icons">
               <div className="icons-msg">
-                <a href="https://goo.gl/maps/G9r5WEvrA2cfQ9Z18">
+                <a href="https://goo.gl/maps/c8GL4atzL95z5YP79">
                   <img loading="lazy" alt="call" src={map} />
                 </a>
-                <a href="https://goo.gl/maps/G9r5WEvrA2cfQ9Z18" className="location-title">
-                  37/B, Perry Cross Rd, Bandra West, Mumbai, Maharashtra, India, 400050
+                <a
+                  href="https://goo.gl/maps/c8GL4atzL95z5YP79"
+                  className="location-title"
+                >
+                  May Flower, 2nd & 3rd floor, New Kantwadi ,Off Perry Cross
+                  Road, Bandra West, Mumbai 400 050
                 </a>
               </div>
               <div className="icons-msg">
@@ -56,16 +60,36 @@ const HireDesk = () => {
             <div className="follow">
               <h4 className="first-title">follow us</h4>
               <div className="social">
-                <a href="https://www.instagram.com/xxwatts/" target="_blank" rel="noreferrer" style={{ marginLeft: "10px" }}>
+                <a
+                  href="https://www.instagram.com/xxwatts/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginLeft: "10px" }}
+                >
                   <img loading="lazy" src={insta} alt="instagram" />
                 </a>
-                <a href="https://www.youtube.com/channel/UCQJvgX3x3djvQ327y3LUmmA" target="_blank" rel="noreferrer" style={{ marginLeft: "10%" }}>
+                <a
+                  href="https://www.youtube.com/channel/UCQJvgX3x3djvQ327y3LUmmA"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginLeft: "10%" }}
+                >
                   <img loading="lazy" src={youtube} alt="youtube" />
                 </a>
-                <a href="https://www.facebook.com/xxwatts/" target="_blank" rel="noreferrer" style={{ marginLeft: "10%" }}>
+                <a
+                  href="https://www.facebook.com/xxwatts/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginLeft: "10%" }}
+                >
                   <img loading="lazy" src={facebook} alt="facebook" />
                 </a>
-                <a href="https://twitter.com/20xxwatts" target="_blank" rel="noreferrer" style={{ marginLeft: "10%" }}>
+                <a
+                  href="https://twitter.com/20xxwatts"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginLeft: "10%" }}
+                >
                   <img loading="lazy" src={twitter} alt="twitter" />
                 </a>
               </div>
@@ -100,7 +124,14 @@ const HireDesk = () => {
       </div>
       <div className="deskfoot">
         <div className="footimg">
-          <SvgTall classname={"black"} gradient1={"black-gradient-1"} gradient0={"black-gradient-0"} height="190px" width="214px" textname="black" />
+          <SvgTall
+            classname={"black"}
+            gradient1={"black-gradient-1"}
+            gradient0={"black-gradient-0"}
+            height="190px"
+            width="214px"
+            textname="black"
+          />
         </div>
       </div>
     </>
