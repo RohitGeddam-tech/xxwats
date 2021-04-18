@@ -24,7 +24,11 @@ const HireMob = () => {
         <h4 className="first-title">hire us</h4>
       </div>
       <div className="hire-mobcontainer">
-        <div className="second-mobbox" data-aos="fade-up" data-aos-duration="1000">
+        <div
+          className="second-mobbox"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="second-mobbox-container">
             <h4 className="second-title">A project with 20 Watts?</h4>
             <h4 className="second-quote">We'd love to hear about it! </h4>
@@ -36,22 +40,35 @@ const HireMob = () => {
             </div>
           </div>
         </div>
-        <div className="first-mobbox" data-aos="fade-up" data-aos-duration="1000">
+        <div
+          className="first-mobbox"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="first-box-mobcontainer">
             <h4 style={{ paddingTop: "30px" }} className="first-quote">
               Drop by for a cup of kadak chai
             </h4>
             <div className="mobicons">
               <div className="icons-mobmsg">
-                <a href="https://goo.gl/maps/G9r5WEvrA2cfQ9Z18" style={{ width: "50%" }} className="location-title">
-                  37/B, Perry Cross Rd, Bandra West, Mumbai, Maharashtra, India, 400050
+                <a
+                  href="https://goo.gl/maps/c8GL4atzL95z5YP79"
+                  style={{ width: "70%" }}
+                  className="location-title"
+                >
+                  May Flower, 2nd & 3rd floor, New Kantwadi ,Off Perry Cross
+                  Road, Bandra West, Mumbai 400 050
                 </a>
-                <a href="https://goo.gl/maps/G9r5WEvrA2cfQ9Z18">
+                <a href="https://goo.gl/maps/c8GL4atzL95z5YP79">
                   <img loading="lazy" alt="call" src={map} />
                 </a>
               </div>
               <div className="icons-mobmsg">
-                <a style={{ marginTop: "10px" }} href="tel:+919820353013" className="call-title">
+                <a
+                  style={{ marginTop: "10px" }}
+                  href="tel:+919820353013"
+                  className="call-title"
+                >
                   +919820353013
                 </a>
                 <a href="tel:+919820353013">
@@ -70,16 +87,36 @@ const HireMob = () => {
             <div className="follow">
               <h4 className="first-title">follow us</h4>
               <div className="social">
-                <a href="https://www.instagram.com/xxwatts/" target="_blank" rel="noreferrer" style={{ marginLeft: "10px" }}>
+                <a
+                  href="https://www.instagram.com/xxwatts/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginLeft: "10px" }}
+                >
                   <img loading="lazy" src={insta} alt="instagram" />
                 </a>
-                <a href="https://www.youtube.com/channel/UCQJvgX3x3djvQ327y3LUmmA" target="_blank" rel="noreferrer" style={{ marginLeft: "10%" }}>
+                <a
+                  href="https://www.youtube.com/channel/UCQJvgX3x3djvQ327y3LUmmA"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginLeft: "10%" }}
+                >
                   <img loading="lazy" src={youtube} alt="youtube" />
                 </a>
-                <a href="https://www.facebook.com/xxwatts/" target="_blank" rel="noreferrer" style={{ marginLeft: "10%" }}>
+                <a
+                  href="https://www.facebook.com/xxwatts/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginLeft: "10%" }}
+                >
                   <img loading="lazy" src={facebook} alt="facebook" />
                 </a>
-                <a href="https://twitter.com/20xxwatts" target="_blank" rel="noreferrer" style={{ marginLeft: "10%" }}>
+                <a
+                  href="https://twitter.com/20xxwatts"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginLeft: "10%" }}
+                >
                   <img loading="lazy" src={twitter} alt="twitter" />
                 </a>
               </div>
