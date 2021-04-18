@@ -6,6 +6,7 @@ import Middle from "./Middle";
 import "../App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import HeadTag from "../HeadTag";
 
 const View = () => {
   useEffect(() => {
@@ -96,21 +97,37 @@ const ViewMob = () => {
 };
 
 const AboutPage = () => {
-  const [isMobile, setMobile] = useState(window.matchMedia("(max-width:800px)").matches);
+  const [isMobile, setMobile] = useState(
+    window.matchMedia("(max-width:800px)").matches
+  );
   useEffect(() => {
     window.addEventListener("resize", () => {
       setMobile(window.matchMedia("(max-width:800px)").matches);
     });
   });
 
-  const [isDesktop, setDesktop] = useState(window.matchMedia("(max-width:1400px)").matches);
+  const [isDesktop, setDesktop] = useState(
+    window.matchMedia("(max-width:1400px)").matches
+  );
   useEffect(() => {
     window.addEventListener("resize", () => {
       setDesktop(window.matchMedia("(max-width:1400px)").matches);
     });
   });
 
-  return <>{isDesktop ? <>{isMobile ? <ViewMob /> : <View />}</> : <>{isMobile ? <ViewMob /> : <View />}</>}</>;
+  return (
+    <>
+      <HeadTag
+        title="About Us- 20 Watts | Creative Solutions Agency"
+        desc="With our expertise in Advertising and Production, we deliver 360° creative and markerting services and solutions."
+      />
+      {isDesktop ? (
+        <>{isMobile ? <ViewMob /> : <View />}</>
+      ) : (
+        <>{isMobile ? <ViewMob /> : <View />}</>
+      )}
+    </>
+  );
 };
 
 export default AboutPage;
