@@ -32,7 +32,7 @@ const TestDesk = () => {
           ) : (
             <nav className="container-nav">
               <div className="nav-image">
-                <NavHashLink to="/xxwats#top">
+                <NavHashLink to="/#top">
                   <Svg
                     className={"pink"}
                     imagegradient0={"black-gradient-0"}

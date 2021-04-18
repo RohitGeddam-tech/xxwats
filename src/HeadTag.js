@@ -15,7 +15,7 @@ const HeadTag = ({title, desc}) => {
           content= {desc}
         />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>${title}</title>
+        <title>{title}</title>
 
         <meta
           name="description"
@@ -26,7 +26,7 @@ const HeadTag = ({title, desc}) => {
           content="XX Watts, ${comma separated services-titles}"
         />
         <meta name="robots" content="index/follow" />
-        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.svg" />
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
 
         <meta
           itemprop="name"
