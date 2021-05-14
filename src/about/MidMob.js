@@ -7,10 +7,15 @@ import "aos/dist/aos.css";
 // import icona from '../img/icons/icon-expand--after.svg'
 import cyril from "../img/team/cyril.png";
 import savio from "../img/team/savio.png";
-import arathi from "../img/team/arathi.png";
+// import arathi from "../img/team/arathi.png";
 import ansh from "../img/team/ansh.png";
 import anushree from "../img/team/anushree.png";
 import saloni from "../img/team/saloni.png";
+import reebu from "../img/team/Reebu.png";
+import vaze from "../img/team/Vaze.png";
+import anny from "../img/team/Anny.png";
+import chris from "../img/team/Christopher.png";
+import post from "../img/post.png";
 
 const MidMob = () => {
   useEffect(() => {
@@ -24,11 +29,13 @@ const MidMob = () => {
           <h4 className="first-title">Meet the team</h4>
         </div>
         <div className="mobmid-container">
-          <h4 data-aos='fade-up' data-aos-duration="1000">Founders</h4>
+          <h4 data-aos="fade-up" data-aos-duration="1000">
+            Founders
+          </h4>
           <div className="mobfirst">
             <img
               src={cyril}
-              loading='lazy'
+              loading="lazy"
               alt="cyril"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -52,7 +59,7 @@ const MidMob = () => {
           <div className="mobfirst">
             <img
               src={savio}
-              loading='lazy'
+              loading="lazy"
               alt="cyril"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -73,25 +80,29 @@ const MidMob = () => {
           </div>
         </div>
         <div className="mobmid-container">
-          <h4 data-aos='fade-up' data-aos-duration="1000">Creative Team</h4>
+          <h4 data-aos="fade-up" data-aos-duration="1000">
+            Creative Team
+          </h4>
           <div className="mobfirst">
             <img
-              src={arathi}
-              alt="cyril"
-              loading='lazy'
+              src={reebu}
+              alt="reebu"
+              loading="lazy"
               data-aos="fade-up"
               data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
-              <h4>Arathi</h4>
+              <h4>Reebu</h4>
               <p>
-                She Started with Channel [v], attended New York Film Academy to
-                study Producing for Film & TV and then pulled a ‘Swades’ on
-                everybody. She returned to her motherland to create cool content
-                for digital mediums. If there was an award for ‘Shining
-                Personalities’, Arathi would surely be the runner up. But if we
-                are really being honest about her, she is a creative powerhouse
-                and nothing short of a goofy rockstar!
+                Reebu is a content writer who writes scripts, copy, long text
+                messages and subreddits about memes. She admits that the reason
+                this paragraph came in two days late is because she was helping
+                her friends make better movie choices. Another social cause she
+                deeply cares about is bombarding her friends with random world
+                news and world history facts. She'll happily answer all your
+                questions as long as you don't ask her about her Google Search
+                History, no one wants to find out if Pfizer was inspired by the
+                word Pfaff or no.
               </p>
             </div>
           </div>
@@ -100,9 +111,9 @@ const MidMob = () => {
           <div className="mobfirst">
             <img
               src={ansh}
-              alt="cyril"
+              alt="ansh"
               data-aos="fade-up"
-              loading='lazy'
+              loading="lazy"
               data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
@@ -112,11 +123,85 @@ const MidMob = () => {
           </div>
         </div>
         <div className="mobmid-container">
-          <h4 data-aos='fade-up' data-aos-duration="1000">Business Team</h4>
+          <div className="mobfirst">
+            <img
+              src={vaze}
+              alt="vaze"
+              data-aos="fade-up"
+              loading="lazy"
+              data-aos-duration="1000"
+            />
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <h4>Vaze</h4>
+              <p>
+                Growing up, V wanted to be an intergalactic charades champion.
+                But once he found out that Intergalactic council doesn’t take
+                vernacular guys in the championship, he gave up on the dream and
+                started telling everyone that careers are a 21st century
+                invention. Now he is a part time shutter-bug, part time
+                paint-thumb and a full time story-teller. (Yes he will tell you
+                one even if you aren’t interested). He hates the word Creative
+                in any designation so they make sure to keep adding it next to
+                his name. If you ever want to have a long, meaningless chats
+                about meaning of life, do ping him. Just not on weekdays please,
+                he will probably have those chats instead of working and WE ARE
+                NOT OK WITH IT!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mobmid-container">
+          <div className="mobfirst">
+            <img
+              src={anny}
+              alt="cyril"
+              data-aos="fade-up"
+              loading="lazy"
+              data-aos-duration="1000"
+            />
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <h4>Anny</h4>
+              <p>
+                From writing in people's slam books in school, to
+                conceptualising and executing brand campaigns, Anny has come a
+                long way. After working with multiple agencies, she knows how to
+                write for brands, content creators, influencers and even dating
+                app bios, if required! Out of all her relationships, content
+                writing has been the longest and most fulfilling one. P.S. When
+                she's not panicking about work, she spends time trying
+                observational comedy on stage.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mobmid-container">
+          <div className="mobfirst">
+            <img
+              src={chris}
+              alt="cyril"
+              data-aos="fade-up"
+              loading="lazy"
+              data-aos-duration="1000"
+            />
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <h4>Christopher</h4>
+              <p>
+                Christopher Baretto is a stand-up comedian and an author from
+                Mumbai. He runs a satirical blog, a dedicated YouTube channel
+                for stand-up sets and sketches and has authored two children's
+                books.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mobmid-container">
+          <h4 data-aos="fade-up" data-aos-duration="1000">
+            Business Team
+          </h4>
           <div className="mobfirst">
             <img
               src={anushree}
-              loading='lazy'
+              loading="lazy"
               alt="cyril"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -142,7 +227,7 @@ const MidMob = () => {
               src={saloni}
               alt="cyril"
               data-aos="fade-up"
-              loading='lazy'
+              loading="lazy"
               data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
@@ -159,26 +244,29 @@ const MidMob = () => {
             </div>
           </div>
         </div>
-        <div
-          className="mobmid-container"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <h4>Production team</h4>
-          <div
-            className="mobfirst"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-          >
-            <p>
-              This is the real deal. The team that makes the dream a reality. A
-              passionate group of highly skilled and driven people who
-              constantly talk about giving their 110 percent but we remind them
-              that their 100 percent would suffice. We have a team of 20+ in the
-              production department and an equally large team in the post
-              production studio. All brilliant and all good at making what’s on
-              paper, a reality.
-            </p>
+        <div className="mobmid-container">
+          <h4 data-aos="fade-up" data-aos-duration="1000">
+            Production team
+          </h4>
+          <div className="mobnewfirst">
+            <img
+              src={post}
+              loading="lazy"
+              alt="cyril"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            />
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <p>
+                This is the real deal. The team that makes the dream a reality.
+                A passionate group of highly skilled and driven people who
+                constantly talk about giving their 110 percent but we remind
+                them that their 100 percent would suffice. We have a team of 20+
+                in the production department and an equally large team in the
+                post production studio. All brilliant and all good at making
+                what’s on paper, a reality.
+              </p>
+            </div>
           </div>
         </div>
       </div>

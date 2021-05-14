@@ -11,7 +11,7 @@ const View = () => {
 
   const isInView = () => {
     const rect = window.pageYOffset;
-    return rect >= 250 && rect <= 1000;
+    return rect >= 410 && rect <= 1200;
   };
 
   const [inView, setInView] = useState(false);

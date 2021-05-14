@@ -20,7 +20,7 @@ const Desktop = () => {
 
   const isInView = () => {
     const rect = window.pageYOffset;
-    return rect >= 250 && rect <= 1000;
+    return rect >= 400 && rect <= 1200;
   };
 
   const [inView, setInView] = useState(false);
@@ -84,7 +84,7 @@ const Desktop = () => {
             <h4 className="sliderheading">work</h4>
             <h4 className="sliderh1">We do stuff.</h4>
             <NavHashLink to="/about#mid">
-              <button className="sliderbtn">Meet our team</button>
+              <button className="sliderbtn">Check out our portfolio</button>
             </NavHashLink>
           </div>
         </div>
@@ -166,7 +166,8 @@ const Tab = () => {
         <div className="alignbtn">
           <NavHashLink to="/about#mid">
             <button data-aos="fade-up" data-aos-duration="1000" className={cssColor}>
-              Meet our team
+              {/* Meet our team */}
+              Check out our portfolio
             </button>
           </NavHashLink>
         </div>
@@ -252,7 +253,8 @@ const Mobile = () => {
         <div className="alignbtn">
           <NavHashLink to="/about#mid">
             <button data-aos="fade-up" data-aos-duration="1000" id="services" className={cssColor}>
-              Meet our team
+              {/* Meet our team */}
+              Check out our portfolio
             </button>
           </NavHashLink>
         </div>

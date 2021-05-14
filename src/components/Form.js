@@ -88,7 +88,7 @@ const FormDesk = () => {
           onChange={handleChange}
           required
         />
-        {nameInvalid ? <h1>Pl. provide a valid name</h1> : ""}
+        {nameInvalid ? <h1>Please provide a valid name</h1> : ""}
         <TextField
           className="textfield"
           label="Phone Number"
@@ -106,7 +106,7 @@ const FormDesk = () => {
             ),
           }}
         />
-        {phoneNoInvalid ? <h1>Pl. provide a valid phone no.</h1> : ""}
+        {phoneNoInvalid ? <h1>Please provide a valid phone no.</h1> : ""}
 
         <TextField
           className="textfield"
@@ -121,13 +121,13 @@ const FormDesk = () => {
           required
         />
 
-        {emailIdInvalid ? <h1>Pl. provide a valid emailID</h1> : ""}
+        {emailIdInvalid ? <h1>Please provide a valid emailID</h1> : ""}
 
         <button type="submit" className="formbtn" onClick={handleSubmit}>
           get a call back
         </button>
         {formEmpty ? (
-          <h1 style={{ paddingTop: "1em" }}>Pl. fill the form</h1>
+          <h1 style={{ paddingTop: "1em" }}>Please fill in the form</h1>
         ) : (
           ""
         )}
@@ -225,7 +225,7 @@ const FormMob = () => {
           onChange={handleChange}
           required
         />
-        {nameInvalid ? <h1>Pl. provide a valid name</h1> : ""}
+        {nameInvalid ? <h1>Please provide a valid name</h1> : ""}
         <TextField
           className="textfieldmob"
           label="Phone Number"
@@ -243,7 +243,7 @@ const FormMob = () => {
             ),
           }}
         />
-        {phoneNoInvalid ? <h1>Pl. provide a valid phone no.</h1> : ""}
+        {phoneNoInvalid ? <h1>Please provide a valid phone no.</h1> : ""}
 
         <TextField
           className="textfieldmob"
@@ -258,13 +258,13 @@ const FormMob = () => {
           required
         />
 
-        {emailIdInvalid ? <h1>Pl. provide a valid emailID</h1> : ""}
+        {emailIdInvalid ? <h1>Please provide a valid emailID</h1> : ""}
 
         <button type="submit" className="formbtn" onClick={handleSubmit}>
           get a call back
         </button>
         {formEmpty ? (
-          <h1 style={{ paddingTop: "1em" }}>Pl. fill the form</h1>
+          <h1 style={{ paddingTop: "1em" }}>Please fill in the form</h1>
         ) : (
           ""
         )}

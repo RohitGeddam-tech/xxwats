@@ -8,7 +8,11 @@ import icon from "../img/icons/icon-expand--before.svg";
 import icona from "../img/icons/icon-expand--after.svg";
 import cyril from "../img/team/cyril.png";
 import savio from "../img/team/savio.png";
-import arathi from "../img/team/arathi.png";
+import reebu from "../img/team/Reebu.png";
+import vaze from "../img/team/Vaze.png";
+import anny from "../img/team/Anny.png";
+import chris from "../img/team/Christopher.png";
+// import arathi from "../img/team/arathi.png";
 import ansh from "../img/team/ansh.png";
 import anushree from "../img/team/anushree.png";
 import saloni from "../img/team/saloni.png";
@@ -25,6 +29,9 @@ const MidDesktop = () => {
   const [Arathi, setArathi] = useState(false);
   const [Savio, setSavio] = useState(false);
   const [Cyril, setCyril] = useState(false);
+  const [Vaze, setVaze] = useState(false);
+  const [Anny, setAnny] = useState(false);
+  const [Chris, setChris] = useState(false);
 
   // const [afterActive, setAfterActive] = useState(true)
 
@@ -35,6 +42,9 @@ const MidDesktop = () => {
     setActive(false);
     setAnsh(false);
     setArathi(false);
+    setVaze(false);
+    setChris(false);
+    setAnny(false);
   };
 
   const onSavioClick = () => {
@@ -44,6 +54,9 @@ const MidDesktop = () => {
     setActive(false);
     setAnsh(false);
     setArathi(false);
+    setVaze(false);
+    setChris(false);
+    setAnny(false);
   };
 
   const onSaloniClick = () => {
@@ -53,6 +66,9 @@ const MidDesktop = () => {
     setActive(false);
     setAnsh(false);
     setArathi(false);
+    setVaze(false);
+    setChris(false);
+    setAnny(false);
   };
 
   const onActiveClick = () => {
@@ -62,6 +78,9 @@ const MidDesktop = () => {
     setActive(true);
     setAnsh(false);
     setArathi(false);
+    setVaze(false);
+    setChris(false);
+    setAnny(false);
   };
 
   const onAnshClick = () => {
@@ -71,6 +90,9 @@ const MidDesktop = () => {
     setActive(false);
     setAnsh(true);
     setArathi(false);
+    setVaze(false);
+    setChris(false);
+    setAnny(false);
   };
 
   const onArathiClick = () => {
@@ -80,6 +102,45 @@ const MidDesktop = () => {
     setActive(false);
     setAnsh(false);
     setArathi(true);
+    setVaze(false);
+    setChris(false);
+    setAnny(false);
+  };
+
+  const onVazeClick = () => {
+    setCyril(false);
+    setSaloni(false);
+    setSavio(false);
+    setActive(false);
+    setAnsh(false);
+    setArathi(false);
+    setVaze(true);
+    setChris(false);
+    setAnny(false);
+  };
+
+  const onChrisClick = () => {
+    setCyril(false);
+    setSaloni(false);
+    setSavio(false);
+    setActive(false);
+    setAnsh(false);
+    setArathi(false);
+    setVaze(false);
+    setChris(true);
+    setAnny(false);
+  };
+
+  const onAnnyClick = () => {
+    setCyril(false);
+    setSaloni(false);
+    setSavio(false);
+    setActive(false);
+    setAnsh(false);
+    setArathi(false);
+    setVaze(false);
+    setChris(false);
+    setAnny(true);
   };
 
   const cls = active ? "cls" : "innerdiv";
@@ -100,6 +161,15 @@ const MidDesktop = () => {
   const saviobox = Savio ? "rightbox" : "cls";
   const innersavio = Savio ? "cls" : "innerdiv";
 
+  const vazebox = Vaze ? "cls" : "innerdiv";
+  const innervaze = Vaze ? "box" : "cls";
+
+  const chrisbox = Chris ? "rightbox" : "cls";
+  const innerchrisbox = Chris ? "cls" : "innerdiv";
+
+  const inneranny = Anny ? "cls" : "innerdiv";
+  const annyBox = Anny ? "box" : "cls";
+
   return (
     <>
       <div className="Mid-container">
@@ -107,7 +177,11 @@ const MidDesktop = () => {
           <h4 className="first-title">Meet the team</h4>
         </div>
         <div className="first-flexbox">
-          <div className="mid-title" data-aos='fade-up' data-aos-duration="1000">
+          <div
+            className="mid-title"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h4 className="flex-title">Founders</h4>
           </div>
           <div className="first-flex">
@@ -117,9 +191,9 @@ const MidDesktop = () => {
               data-aos-duration="1000"
             >
               <div className={innercyril} onMouseEnter={onCyrilClick}>
-                <img loading='lazy' src={cyril} alt="logo" />
+                <img loading="lazy" src={cyril} alt="logo" />
                 <h4 className="flexbox-title">
-                  cyril <img loading='lazy' src={icon} alt="logo" />
+                  cyril <img loading="lazy" src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={cyrilbox} in={Cyril} delay="100" duration="1000">
@@ -141,7 +215,7 @@ const MidDesktop = () => {
                     watts.
                   </p>
                   <h4 className="flexinbox-title">
-                    Cyril <img loading='lazy' src={icona} alt="logo" />
+                    Cyril <img loading="lazy" src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -152,9 +226,9 @@ const MidDesktop = () => {
               data-aos-duration="1000"
             >
               <div className={innersavio} onMouseEnter={onSavioClick}>
-                <img loading='lazy' src={savio} alt="logo" />
+                <img loading="lazy" src={savio} alt="logo" />
                 <h4 className="flexbox-title" onMouseEnter={onSavioClick}>
-                  savio <img loading='lazy' src={icon} alt="logo" />
+                  savio <img loading="lazy" src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={saviobox} in={Savio} delay="500" duration="1000">
@@ -175,7 +249,7 @@ const MidDesktop = () => {
                     major television networks and digital platforms.
                   </p>
                   <h4 className="flexinbox-title">
-                    Savio <img loading='lazy' src={icona} alt="logo" />
+                    Savio <img loading="lazy" src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -183,7 +257,11 @@ const MidDesktop = () => {
           </div>
         </div>
         <div className="first-flexbox">
-          <div className="mid-title" data-aos='fade-up' data-aos-duration="1000">
+          <div
+            className="mid-title"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h4 className="flex-title">Creative team</h4>
           </div>
           <div className="first-flex">
@@ -193,9 +271,9 @@ const MidDesktop = () => {
               data-aos-duration="1500"
             >
               <div className={innerara} onMouseEnter={onArathiClick}>
-                <img loading='lazy' src={arathi} alt="logo" />
+                <img loading="lazy" src={reebu} alt="logo" />
                 <h4 className="flexbox-title">
-                  arathi <img loading='lazy' src={icon} alt="logo" />
+                  Reebu <img loading="lazy" src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={araBox} in={Arathi} delay="500" duration="2000">
@@ -206,16 +284,18 @@ const MidDesktop = () => {
                   }}
                 >
                   <p>
-                    She Started with Channel [v], attended New York Film Academy
-                    to study Producing for Film & TV and then pulled a ‘Swades’
-                    on everybody. She returned to her motherland to create cool
-                    content for digital mediums. If there was an award for
-                    ‘Shining Personalities’, Arathi would surely be the runner
-                    up. But if we are really being honest about her, she is a
-                    creative powerhouse and nothing short of a goofy rockstar!
+                    Reebu is a content writer who writes scripts, copy, long
+                    text messages and subreddits about memes. She admits that
+                    the reason this paragraph came in two days late is because
+                    she was helping her friends make better movie choices.
+                    Another social cause she deeply cares about is bombarding
+                    her friends with random world news and world history facts.
+                    She'll happily answer all your questions as long as you
+                    don't ask her about her Google Search History, no one wants
+                    to find out if Pfizer was inspired by the word Pfaff or no.
                   </p>
                   <h4 className="flexinbox-title">
-                    Arathi <img loading='lazy' src={icona} alt="logo" />
+                    Reebu <img loading="lazy" src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -226,9 +306,9 @@ const MidDesktop = () => {
               data-aos-duration="1000"
             >
               <div className={inneransh} onMouseEnter={onAnshClick}>
-                <img loading='lazy' src={ansh} alt="logo" />
+                <img loading="lazy" src={ansh} alt="logo" />
                 <h4 className="flexbox-title">
-                  Ansh <img loading='lazy' src={icon} alt="logo" />
+                  Ansh <img loading="lazy" src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={anshBox} in={Ansh} delay="500" duration="1000">
@@ -240,15 +320,130 @@ const MidDesktop = () => {
                 >
                   <p>We give him work. He does it. Great chap.</p>
                   <h4 className="flexinbox-title">
-                    Ansh <img loading='lazy' src={icona} alt="logo" />
+                    Ansh <img loading="lazy" src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
             </div>
           </div>
+          <div className="first-flex">
+            <div
+              className="inflex1"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <div className={inneranny} onMouseEnter={onAnnyClick}>
+                <img loading="lazy" src={anny} alt="logo" />
+                <h4 className="flexbox-title">
+                  Anny <img loading="lazy" src={icon} alt="logo" />
+                </h4>
+              </div>
+              <Fade className={annyBox} in={Anny} delay="500" duration="2000">
+                <div
+                  className="fadebox"
+                  onMouseLeave={() => {
+                    setAnny(false);
+                  }}
+                >
+                  <p>
+                    From writing in people's slam books in school, to
+                    conceptualising and executing brand campaigns, Anny has come
+                    a long way. After working with multiple agencies, she knows
+                    how to write for brands, content creators, influencers and
+                    even dating app bios, if required! Out of all her
+                    relationships, content writing has been the longest and most
+                    fulfilling one. P.S. When she's not panicking about work,
+                    she spends time trying observational comedy on stage.
+                  </p>
+                  <h4 className="flexinbox-title">
+                    Anny <img loading="lazy" src={icona} alt="logo" />
+                  </h4>
+                </div>
+              </Fade>
+            </div>
+            <div
+              className="inflex2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div className={vazebox} onMouseEnter={onVazeClick}>
+                <img loading="lazy" src={vaze} alt="logo" />
+                <h4 className="flexbox-title">
+                  Aditya <img loading="lazy" src={icon} alt="logo" />
+                </h4>
+              </div>
+              <Fade className={innervaze} in={vaze} delay="500" duration="1000">
+                <div
+                  className="fadenewbox"
+                  onMouseLeave={() => {
+                    setVaze(false);
+                  }}
+                >
+                  <p>
+                    Growing up, V wanted to be an intergalactic charades
+                    champion. But once he found out that Intergalactic council
+                    doesn’t take vernacular guys in the championship, he gave up
+                    on the dream and started telling everyone that careers are a
+                    21st century invention. Now he is a part time shutter-bug,
+                    part time paint-thumb and a full time story-teller. (Yes he
+                    will tell you one even if you aren’t interested). He hates
+                    the word Creative in any designation so they make sure to
+                    keep adding it next to his name. If you ever want to have a
+                    long, meaningless chats about meaning of life, do ping him.
+                    Just not on weekdays please, he will probably have those
+                    chats instead of working and WE ARE NOT OK WITH IT!
+                  </p>
+                  <h4 className="flexinbox-title">
+                    Aditya <img loading="lazy" src={icona} alt="logo" />
+                  </h4>
+                </div>
+              </Fade>
+            </div>
+          </div>
+          <div className="first-flex">
+            <div
+              className="inflex1"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <div className={innerchrisbox} onMouseEnter={onChrisClick}>
+                <img loading="lazy" src={chris} alt="logo" />
+                <h4 className="flexbox-title">
+                  Christopher <img loading="lazy" src={icon} alt="logo" />
+                </h4>
+              </div>
+              <Fade className={chrisbox} in={Chris} delay="500" duration="2000">
+                <div
+                  className="fadebox"
+                  onMouseLeave={() => {
+                    setChris(false);
+                  }}
+                >
+                  <p>
+                    Christopher Baretto is a stand-up comedian and an author
+                    from Mumbai. He runs a satirical blog, a dedicated YouTube
+                    channel for stand-up sets and sketches and has authored two
+                    children's books.
+                  </p>
+                  <h4 className="flexinbox-title">
+                    Christopher <img loading="lazy" src={icona} alt="logo" />
+                  </h4>
+                </div>
+              </Fade>
+            </div>
+            <div
+              className="inflex2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            ></div>
+          </div>
         </div>
         <div className="first-flexbox">
-          <div className="mid-title" data-aos='fade-up' data-aos-duration="1000">
+          <div
+            className="mid-title"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h4 className="flex-title">Business team</h4>
           </div>
           <div className="first-flex">
@@ -258,9 +453,9 @@ const MidDesktop = () => {
               data-aos-duration="1000"
             >
               <div className={cls} onMouseEnter={onActiveClick}>
-                <img loading='lazy' src={anushree} alt="logo" />
+                <img loading="lazy" src={anushree} alt="logo" />
                 <h4 className="flexbox-title">
-                  Anushree <img loading='lazy' src={icon} alt="logo" />
+                  Anushree <img loading="lazy" src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={box} in={active} delay="500" duration="1000">
@@ -282,7 +477,7 @@ const MidDesktop = () => {
                     and loves to travel every chance she gets.
                   </p>
                   <h4 className="flexinbox-title">
-                    Anushree <img loading='lazy' src={icona} alt="logo" />
+                    Anushree <img loading="lazy" src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -293,9 +488,9 @@ const MidDesktop = () => {
               data-aos-duration="1000"
             >
               <div className={innersal} onMouseEnter={onSaloniClick}>
-                <img loading='lazy' src={saloni} alt="logo" />
+                <img loading="lazy" src={saloni} alt="logo" />
                 <h4 className="flexbox-title">
-                  saloni <img loading='lazy' src={icon} alt="logo" />
+                  saloni <img loading="lazy" src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade
@@ -321,7 +516,7 @@ const MidDesktop = () => {
                     thepla recipe.
                   </p>
                   <h4 className="flexinbox-title">
-                    Saloni <img loading='lazy' src={icona} alt="logo" />
+                    Saloni <img loading="lazy" src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -351,11 +546,11 @@ const MidDesktop = () => {
               </p>
             </div>
             <div
-              className="picture"
+              className="picturenew"
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <img loading='lazy' src={post} alt="post" />
+              <img loading="lazy" src={post} alt="post" />
             </div>
           </div>
           {/* <p className="flexpara" data-aos="flip-up" data-aos-duration="3000">
