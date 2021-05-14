@@ -11,7 +11,7 @@ const DeskIntro = ({ colorText }) => {
   const colorRef = useRef(null);
 
   const isInView = () => {
-    return window.pageYOffset >= 250;
+    return window.pageYOffset >= 410;
   };
 
   const [inView, setInView] = useState(true);

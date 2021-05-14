@@ -27,7 +27,8 @@ export default class Responsive extends Component {
       slidesToScroll: 1,
       autoplay: true,
       speed: 3000,
-      autoplaySpeed: 0,
+      autoplaySpeed: 1,
+      pauseOnHover:false,
       cssEase: "linear",
       responsive: [
         {
@@ -40,6 +41,7 @@ export default class Responsive extends Component {
             autoplay: true,
             speed: 3000,
             autoplaySpeed: 0,
+            pauseOnHover:false,
             cssEase: "linear",
           },
         },
@@ -53,6 +55,7 @@ export default class Responsive extends Component {
             autoplay: true,
             speed: 3000,
             autoplaySpeed: 0,
+            pauseOnHover:false,
             cssEase: "linear",
             initialSlide: 2,
           },
@@ -67,6 +70,7 @@ export default class Responsive extends Component {
             autoplay: true,
             speed: 3000,
             autoplaySpeed: 0,
+            pauseOnHover:false,
             cssEase: "linear",
           },
         },

@@ -20,9 +20,9 @@ const HireDesk = () => {
 
   return (
     <>
-      <div className="desktitle-container">
+      {/* <div className="desktitle-container">
         <h4 className="firstdesk-title">hire us</h4>
-      </div>
+      </div> */}
       <div className="hire-container">
         <div className="first-box" data-aos="fade-up" data-aos-duration="1000">
           <div className="first-box-container">
@@ -56,6 +56,19 @@ const HireDesk = () => {
                   shoutout@xxwatts.com
                 </a>
               </div>
+            </div>
+            <div className="careers">
+              <h1>For Careers :</h1>
+              <div className="icons-msgbot">
+                <a href="mailto:hr@xxwatts.com">
+                  <img loading="lazy" alt="join" src={join} />
+                </a>
+                <a href="mailto:hr@xxwatts.com" className="mail-title">
+                  hr@xxwatts.com
+                </a>
+              </div>
+              {/* <a href="mailto:hr@xxwatts.com">
+                <img loading='lazy' src={join} alt='join' />  hr@xxwatts.com</a> */}
             </div>
             <div className="follow">
               <h4 className="first-title">follow us</h4>
@@ -94,24 +107,11 @@ const HireDesk = () => {
                 </a>
               </div>
             </div>
-            <div className="careers">
-              <h1>For Careers :</h1>
-              <div className="icons-msgbot">
-                <a href="mailto:hr@xxwatts.com">
-                  <img loading="lazy" alt="join" src={join} />
-                </a>
-                <a href="mailto:hr@xxwatts.com" className="mail-title">
-                  hr@xxwatts.com
-                </a>
-              </div>
-              {/* <a href="mailto:hr@xxwatts.com">
-                <img loading='lazy' src={join} alt='join' />  hr@xxwatts.com</a> */}
-            </div>
           </div>
         </div>
         <div className="second-box" data-aos="fade-up" data-aos-duration="1000">
           <div className="second-box-container">
-            <h4 className="second-title">A project with 20 Watts?</h4>
+            <h4 className="first-quote">Someone said work? Tell us Watt’s up?</h4>
             <h4 className="second-quote">We'd love to hear about it! </h4>
             <div className="service-slider">
               <h4 className="service-title">Services</h4>
@@ -129,7 +129,7 @@ const HireDesk = () => {
             gradient1={"black-gradient-1"}
             gradient0={"black-gradient-0"}
             height="190px"
-            width="214px"
+            width="160px"
             textname="black"
           />
         </div>

@@ -81,11 +81,12 @@ const ServiceSlider = ({ initialChecked, passChecked }) => {
 
   let checkedboxes = {
     creative: { checked: false, value: "Creative Strategy" },
-    brand: { checked: false, value: "Branding Camapign" },
-    social: { checked: false, value: "Social Media Camapign" },
-    video: { checked: false, value: "Video Camapign" },
+    brand: { checked: false, value: "Branding Campaign" },
+    social: { checked: false, value: "Social Media Campaign" },
+    video: { checked: false, value: "Video Campaign" },
     ground: { checked: false, value: "On-ground Engagements" },
     post: { checked: false, value: "Post Production" },
+    production: { checked: false, value: "Production" },
   };
 
   const [isChecked, setChecked] = useState(initialChecked);

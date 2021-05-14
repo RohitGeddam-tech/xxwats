@@ -20,9 +20,9 @@ const HireMob = () => {
 
   return (
     <>
-      <div className="title-container" style={{ width: "95% !important" }}>
+      {/* <div className="title-container" style={{ width: "95% !important" }}>
         <h4 className="first-title">hire us</h4>
-      </div>
+      </div> */}
       <div className="hire-mobcontainer">
         <div
           className="second-mobbox"
@@ -30,7 +30,7 @@ const HireMob = () => {
           data-aos-duration="1000"
         >
           <div className="second-mobbox-container">
-            <h4 className="second-title">A project with 20 Watts?</h4>
+            <h4 className="second-title">Someone said work? Tell us Watt’s up?</h4>
             <h4 className="second-quote">We'd love to hear about it! </h4>
             <div className="service-slider">
               <h4 className="service-title">Services</h4>
@@ -84,6 +84,12 @@ const HireMob = () => {
                 </a>
               </div>
             </div>
+            <div className="careers">
+              <h1>For Careers :</h1>
+              <a href="mailto:hr@xxwatts.com">
+                <img loading="lazy" src={join} alt="join" /> hr@xxwatts.com
+              </a>
+            </div>
             <div className="follow">
               <h4 className="first-title">follow us</h4>
               <div className="social">
@@ -120,12 +126,6 @@ const HireMob = () => {
                   <img loading="lazy" src={twitter} alt="twitter" />
                 </a>
               </div>
-            </div>
-            <div className="careers">
-              <h1>For Careers :</h1>
-              <a href="mailto:hr@xxwatts.com">
-                <img loading="lazy" src={join} alt="join" /> hr@xxwatts.com
-              </a>
             </div>
           </div>
         </div>

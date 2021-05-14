@@ -462,7 +462,7 @@ label + .MuiInput-formControl {
 }
 
 .footimg img {
-  width: 70%;
+  width: 160px !important;
 }
 
 /*Form ends*/
@@ -578,7 +578,7 @@ a {
 }
 
 .mobimage img {
-  width: 70%;
+  width: 160px;
 }
 
 /**/

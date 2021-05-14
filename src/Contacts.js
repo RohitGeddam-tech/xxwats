@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Hire from "./home/Hire";
 import Nav from "./components/TestNavbar";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import HeadTag from "./HeadTag";
 
 const View = () => {

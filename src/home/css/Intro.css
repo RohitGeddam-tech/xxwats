@@ -211,7 +211,7 @@ button {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #4d6cfa;
+  color: #f7008c;
   padding-top: 20px;
 }
 
@@ -222,7 +222,7 @@ button {
   font-size: 28px;
   line-height: 33px;
   width: 55% !important;
-  color: #4d6cfa;
+  color: #f7008c;
   text-align: start;
   text-transform: none;
 }
@@ -256,7 +256,7 @@ button {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #4d6cfa;
+  color: #f7008c;
   padding-top: 20px;
 }
 
@@ -267,7 +267,7 @@ button {
   font-weight: bold;
   font-size: 28px;
   line-height: 33px;
-  color: #4d6cfa;
+  color: #f7008c;
   text-align: start;
   text-transform: uppercase;
 }
