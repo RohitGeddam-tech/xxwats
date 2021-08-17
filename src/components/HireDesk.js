@@ -6,6 +6,8 @@ import insta from "../img/icons/icon-instagram.svg";
 import youtube from "../img/icons/icon-youtube.svg";
 import facebook from "../img/icons/icon-facebook.svg";
 import twitter from "../img/icons/icon-twitter.svg";
+// import linked from "../img/icons/linkedin.png";
+import linked from "../img/icons/linkedin.webp";
 import join from "../img/icons/icon-join.svg";
 
 import Form from "./Form";
@@ -36,7 +38,7 @@ const HireDesk = () => {
                   href="https://goo.gl/maps/c8GL4atzL95z5YP79"
                   className="location-title"
                 >
-                  May Flower, 2nd & 3rd floor, New Kantwadi ,Off Perry Cross
+                  May Flower, 2nd & 3rd floor, New Kantwadi, Off Perry Cross
                   Road, Bandra West, Mumbai 400 050
                 </a>
               </div>
@@ -85,7 +87,7 @@ const HireDesk = () => {
                   href="https://www.youtube.com/channel/UCQJvgX3x3djvQ327y3LUmmA"
                   target="_blank"
                   rel="noreferrer"
-                  style={{ marginLeft: "10%" }}
+                  style={{ marginLeft: "25px" }}
                 >
                   <img loading="lazy" src={youtube} alt="youtube" />
                 </a>
@@ -93,7 +95,7 @@ const HireDesk = () => {
                   href="https://www.facebook.com/xxwatts/"
                   target="_blank"
                   rel="noreferrer"
-                  style={{ marginLeft: "10%" }}
+                  style={{ marginLeft: "25px" }}
                 >
                   <img loading="lazy" src={facebook} alt="facebook" />
                 </a>
@@ -101,9 +103,17 @@ const HireDesk = () => {
                   href="https://twitter.com/20xxwatts"
                   target="_blank"
                   rel="noreferrer"
-                  style={{ marginLeft: "10%" }}
+                  style={{ marginLeft: "25px" }}
                 >
                   <img loading="lazy" src={twitter} alt="twitter" />
+                </a>
+                <a
+                  href="https://in.linkedin.com/company/xxwatts"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginLeft: "25px", opacity:"0.85" }}
+                >
+                  <img loading="lazy" src={linked} alt="linkedin" />
                 </a>
               </div>
             </div>

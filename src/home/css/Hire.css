@@ -276,7 +276,7 @@ button.slick-prev:before {
 
 .slideservice {
   padding-top: 10px;
-  width: 93%;
+  width: 97%;
   display: flex;
   margin: auto;
 }
@@ -382,10 +382,7 @@ form {
 .formbtn {
   background-color: black !important;
   border: 1px solid black !important;
-  padding-left: 25.6px;
-  padding-right: 25.6px;
-  padding-top: 12.8px;
-  padding-bottom: 12.8px;
+  padding: 12.8px 25.6px;
   border-radius: 50px;
   width: fit-content;
   cursor: pointer;
@@ -397,7 +394,7 @@ form {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -446,7 +443,7 @@ h1 {
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase !important;
-  color: red;
+  color: #f7008c;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
@@ -542,28 +539,218 @@ label + .MuiInput-formControl {
 
 .inputslider {
   display: flex;
-  width: 100%;
-  align-items: flex-end;
+  width: 75%;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-top: 15px;
+  cursor: pointer;
 }
+
+@media (max-width: 760px) {
+  .inputslider {
+    width: 100%;
+  }
+}
+
+.inputslider p{
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.3px;
+  line-height: 13px;
+  margin-bottom: 5px !important;
+  text-transform: uppercase;
+}
+
+.inputslider h1 {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  padding-bottom: 2px;
+  line-height: 19px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+.inputslider h1 span{
+  padding-right: 5px;
+}
+
+.inputslider img:last-child {
+  margin-left: 10px;
+}
+/* 
+.inputslider {
+  overflow-x: hidden;
+} */
+
+/* .inputslide label{
+  width: 250px;
+} */
 
 .inputslide {
   width: 100%;
-  overflow-x: scroll;
-  display: flex;
+  display: block;
   padding: 3px;
+  /* margin: 5px 0 !important; */
+  text-align: start;
+  border-bottom: 1px solid #fff;
   white-space: nowrap;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  display: flex;
+  align-items: center;
 }
 
-.inputslide::-webkit-scrollbar {
+.inputslide input:checked:after{
+  background-color: initial !important;
+  color: initial !important;
+}
+
+input[type='checkbox']{
+  appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+input[type='checkbox']:after{
+  font-family: "Font Awesome 5 free";
+  content: "\f00c";
+  font-size: 12px;
+  color: white !important;
+  font-weight: bold;
   display: none;
 }
 
+input[type='checkbox']:hover{
+  background-color: transparent;
+}
+
+input[type='checkbox']:checked{
+  background-color: white;
+  color: black;
+  /* border: 1px solid black !important; */
+}
+
+input[type='checkbox']:checked:after{
+  display: block;
+  font-family: "Font Awesome 5 free";
+  content: "\f00c";
+  font-size: 12px;
+  color: black !important;
+  font-weight: bold;
+}
+
+.inputslide:first-child {
+  margin-top: -1px !important;
+}
+
+.inputslide.after {
+  background-color: #202020;
+}
+
+.inputslide:last-child {
+  margin-bottom: -1px !important;
+}
+
+.borderslide {
+  width: 65%;
+  display: block;
+  margin-top: 20px;
+  background-color: #202020;
+  z-index: 200;
+  margin-bottom: 20px;
+  position: absolute;
+  border: 1px solid #202020;
+  height: 200px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+
+
+.borderslide.open{
+  display: block;
+}
+
+.borderslide label{
+  width: 100%;
+}
+
+.borderslideTop{
+  width: 65%;
+  display: block;
+  margin-top: 40px;
+  background-color: #202020;
+  z-index: 200;
+  margin-bottom: 20px;
+  position: absolute;
+  border: 1px solid #202020;
+  height: 200px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+.borderslideTop.open{
+  display: none;
+}
+
+.borderslideTop label{
+  width: 100%;
+}
+
+@media(max-width:780px){
+  .borderslide{
+    width: 71.5%;
+  }
+  .borderslideTop{
+    width: 71.5%;
+  }
+}
+
+@media (max-width: 760px) {
+  .borderslide {
+    width: 95%;
+  }
+  .borderslideTop{
+    width: 95%;
+  }
+}
+
+.noneslide {
+  display: none;
+  padding: 0 !important;
+}
+
+.inputslide.after {
+  background-color: #202020 !important;
+  color: white;
+}
+
+/* 
+.inputslide::-webkit-scrollbar {
+  display: none;
+} */
+
 .insideslide {
-  display: flex !important;
+  display: block !important;
   justify-content: center !important;
   width: 100%;
+  margin: 25px 0;
   outline: none !important;
 }
 
@@ -584,7 +771,7 @@ a {
 /**/
 
 /* slider btns*/
-
+/* 
 .serviceslider-btn {
   background-color: transparent !important;
   padding-top: 5px !important;
@@ -604,16 +791,12 @@ a {
   margin-bottom: 3px !important;
   margin-top: 0;
   border: 1px solid #202020 !important;
-}
+} */
 
 .serviceslide-btn {
   background-color: transparent !important;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
-  padding: 10px;
-  margin: 10px;
-  outline: none !important;
-  border-radius: 50px;
   white-space: nowrap;
   cursor: pointer;
   font-family: "Cabin", sans-serif;
@@ -621,38 +804,23 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
-  color: #202020;
-  text-transform: uppercase;
-  margin-bottom: 3px !important;
-  margin-top: 0;
-  border: 1px solid #202020 !important;
-  margin-left: 0 !important;
-}
-
-.serviceslide-btn.after {
-  margin-left: 0 !important;
-  background-color: black !important;
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 50px;
-  white-space: nowrap;
-  cursor: pointer;
-  font-family: "Cabin", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 3px !important;
-  margin-top: 0;
-  border: 1px solid #20202025 !important;
 }
 
+/* .serviceslide-btn.after {
+  background-color: transparent !important;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: green;
+  text-transform: uppercase;
+} */
+/* 
 .serviceslider-btn.after {
   background-color: black !important;
   padding-top: 5px !important;
@@ -673,15 +841,7 @@ a {
   margin-top: 0;
   outline: none !important;
   border: 1px solid #202020 !important;
-}
-
-.inputslider img:last-child {
-  margin-left: 10px;
-}
-
-.inputslider {
-  overflow-x: hidden;
-}
+} */
 
 .slick-prev,
 .slick-next {

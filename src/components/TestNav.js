@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./css/Nav.css";
 import { NavHashLink } from "react-router-hash-link";
-import Svg from "./Svg";
+import Svg from "./NewSvg";
+import Title from "./Title";
 import Ham from "./Hamburger";
 import XHam from "./Xham";
 
@@ -25,8 +26,8 @@ const TestDesk = () => {
                     imagegradient0={"yellow-gradient-0"}
                     imagegradient1={"yellow-gradient-1"}
                     imagename={"yellow"}
-                    title={"white"}
                   />
+                  <Title title={"white"} />
                 </NavHashLink>
               </div>
             </nav>
@@ -39,8 +40,8 @@ const TestDesk = () => {
                     imagegradient0={"yellow-gradient-0"}
                     imagegradient1={"yellow-gradient-1"}
                     imagename={"yellow"}
-                    title={"black"}
                   />
+                  <Title title={"black"} />
                 </NavHashLink>
               </div>
             </nav>
@@ -105,8 +106,8 @@ const TestMob = () => {
                     imagegradient0={"yellow-gradient-0"}
                     imagegradient1={"yellow-gradient-1"}
                     imagename={"yellow"}
-                    title={"white"}
                   />
+                  <Title title={"white"} />
                 </NavHashLink>
               </div>
             </nav>
@@ -119,8 +120,8 @@ const TestMob = () => {
                     imagegradient0={"yellow-gradient-0"}
                     imagegradient1={"yellow-gradient-1"}
                     imagename={"yellow"}
-                    title={"black"}
                   />
+                  <Title title={"black"} />
                 </NavHashLink>
               </div>
             </nav>
@@ -144,21 +145,21 @@ const TestMob = () => {
           </div>
         </div>
         <div className={fade}>
-        <NavHashLink to="/#top" className="navfade">
-        <div className="animate__animated ani1 animate__fadeIn animate__delay-1s">
-          Home
-        </div>
-      </NavHashLink>
-      <NavHashLink to="/about#top" className="navfade">
-        <div className="animate__animated ani2 animate__fadeIn animate__delay-1s">
-          About Us
-        </div>
-      </NavHashLink>
-      <NavHashLink to="/contact#top" className="navfade">
-        <div className="animate__animated ani3 animate__fadeIn animate__delay-1s">
-          Contact Us
-        </div>
-      </NavHashLink>
+          <NavHashLink to="/#top" className="navfade">
+            <div className="animate__animated ani1 animate__fadeIn animate__delay-1s">
+              Home
+            </div>
+          </NavHashLink>
+          <NavHashLink to="/about#top" className="navfade">
+            <div className="animate__animated ani2 animate__fadeIn animate__delay-1s">
+              About Us
+            </div>
+          </NavHashLink>
+          <NavHashLink to="/contact#top" className="navfade">
+            <div className="animate__animated ani3 animate__fadeIn animate__delay-1s">
+              Contact Us
+            </div>
+          </NavHashLink>
         </div>
       </div>
     </>

@@ -219,6 +219,7 @@
   color: #f7008c;
   text-align: start;
   text-transform: capitalize;
+  margin-bottom: 0;
 }
 
 .flexpara {
@@ -295,14 +296,59 @@
 }
 
 .mobfirst img {
-  height: auto;
+  /* height: auto; */
   width: auto;
 }
 
 .mobnewfirst img{
-  height: 250px;
+  /* height: 250px; */
   width: 100%;
   object-fit: cover;
+}
+
+@media(max-width:850px){
+  .mobnewfirst img{
+    object-fit: fill;
+  }
+  .mobfirst{
+    align-items: center;
+  }
+  .mobfirst .aos-init.aos-animate{
+    width: 100%;
+  }
+  .mobfirst img.aos-init.aos-animate{
+    width: 70% !important;
+  }
+  .mobnewfirst{
+    align-items: center;
+  }
+  .mobnewfirst .aos-init.aos-animate{
+    width: 100%;
+  }
+  .mobnewfirst img.aos-init.aos-animate{
+    width: 70% !important;
+  }
+}
+
+@media(max-width:520px){
+  .mobfirst{
+    align-items: flex-start;
+  }
+  .mobfirst .aos-init.aos-animate{
+    width: 100%;
+  }
+  .mobfirst img.aos-init.aos-animate{
+    width: 100% !important;
+  }
+  .mobnewfirst{
+    align-items: flex-start;
+  }
+  .mobnewfirst .aos-init.aos-animate{
+    width: 100%;
+  }
+  .mobnewfirst img.aos-init.aos-animate{
+    width: 100% !important;
+  }
 }
 
 .mobfirst h4 {
@@ -352,6 +398,19 @@
   font-size: 28px;
   line-height: 32px;
   color: #f7008c;
+}
+
+.mobmid-container h3 {
+  width: 93%;
+  margin: auto;
+  margin-top: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  color: #f7008c;
+  padding-bottom: 0;
 }
 
 /*Mobile Ends*/

@@ -7,6 +7,7 @@ import youtube from "../img/icons/icon-youtube.svg";
 import facebook from "../img/icons/icon-facebook.svg";
 import twitter from "../img/icons/icon-twitter.svg";
 import logotall from "../img/logo/logo-tall.svg";
+import linked from "../img/icons/linkedin.webp";
 import join from "../img/icons/icon-join.svg";
 
 import Form from "./Form";
@@ -30,7 +31,9 @@ const HireMob = () => {
           data-aos-duration="1000"
         >
           <div className="second-mobbox-container">
-            <h4 className="second-title">Someone said work? Tell us Watt’s up?</h4>
+            <h4 className="second-title">
+              Someone said work? Tell us Watt’s up?
+            </h4>
             <h4 className="second-quote">We'd love to hear about it! </h4>
             <div className="service-slider">
               <h4 className="service-title">Services</h4>
@@ -56,7 +59,7 @@ const HireMob = () => {
                   style={{ width: "70%" }}
                   className="location-title"
                 >
-                  May Flower, 2nd & 3rd floor, New Kantwadi ,Off Perry Cross
+                  May Flower, 2nd & 3rd floor, New Kantwadi, Off Perry Cross
                   Road, Bandra West, Mumbai 400 050
                 </a>
                 <a href="https://goo.gl/maps/c8GL4atzL95z5YP79">
@@ -124,6 +127,14 @@ const HireMob = () => {
                   style={{ marginLeft: "10%" }}
                 >
                   <img loading="lazy" src={twitter} alt="twitter" />
+                </a>
+                <a
+                  href="https://in.linkedin.com/company/xxwatts"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ marginLeft: "10%", opacity: "0.85" }}
+                >
+                  <img loading="lazy" src={linked} alt="linkedin" />
                 </a>
               </div>
             </div>

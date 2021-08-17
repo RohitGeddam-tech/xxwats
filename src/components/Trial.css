@@ -1,0 +1,38 @@
+.trialSlider{
+    /* height: 250px; */
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin-top: 10px !important;
+}
+
+.sliderTrack{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 20s linear infinite;
+}
+
+.trialSlide{
+    height: auto;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.trialSlide img{
+    width: 100%;
+    /* filter: invert() brightness(3); */
+}
+
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}

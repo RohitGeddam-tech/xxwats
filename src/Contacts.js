@@ -13,7 +13,7 @@ const View = () => {
         desc="We are a Creative Solutions Agency backed by an in-house production and post-production team in Mumbai. Contact us to build custom experiences for your brand"
       />
       <Nav />
-      <section style={{ paddingTop: "65px", background: "#EEEA64" }}>
+      <section style={{ paddingTop: "65px" }}>
         <Hire />
       </section>
     </>
@@ -22,7 +22,7 @@ const View = () => {
 
 const AboutPage = () => {
   return (
-    <div className="App">
+    <div className="ContactPage">
       <View />
     </div>
   );

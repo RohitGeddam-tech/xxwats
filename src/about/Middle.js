@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import "./Middle.css";
-import Middesk from "./MidDesktop";
-import MidMob from "./MidMob";
+// import Middesk from "./MidDesktop";
+const Middesk = lazy(()=>import('./MidDesktop'))
+// import MidMob from "./MidMob";
+const MidMob = lazy(()=>import('./MidMob'))
 
 const Middle = () => {
   const [isMobile, setMobile] = useState(
@@ -23,7 +25,8 @@ const Middle = () => {
   });
 
   return (
-    <div className="middle" id="mid">
+    <Suspense fallback={<div></div>}>
+      <div className="middle" id="mid">
       {isDesktop ? (
         <>{isMobile ? <MidMob /> : <Middesk />}</>
       ) : (
@@ -34,6 +37,7 @@ const Middle = () => {
         </div>
       )}
     </div>
+    </Suspense>
   );
 };
 

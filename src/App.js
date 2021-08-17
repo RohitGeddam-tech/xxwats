@@ -1,10 +1,19 @@
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  useCallback,
+  lazy,
+  Suspense,
+} from "react";
 import "./App.css";
 import Nav from "./components/TestNav";
 import Intro from "./home/Intro";
-import About from "./home/About";
-import Services from "./home/Services";
 import Hire from "./home/Hire";
+// import About from "./home/About";
+const About = lazy(() => import("./home/About"));
+// import Services from "./home/Services";
+const Services = lazy(() => import("./home/Services"));
 
 const View = () => {
   const colorRef = useRef(null);
@@ -36,10 +45,12 @@ const View = () => {
     <div className={cssColor}>
       <Nav />
       <Intro textColor={textColor} />
-      <div ref={colorRef} className="about">
-        <About />
-      </div>
-      <Services />
+      <Suspense fallback={<></>}>
+        <div ref={colorRef} className="about">
+          <About />
+        </div>
+        <Services />
+      </Suspense>
       <Hire />
     </div>
   );
@@ -75,10 +86,12 @@ const ViewMob = () => {
     <div className={cssColor}>
       <Nav />
       <Intro textColor={textColor} />
-      <div ref={colorRef} className="about">
-        <About />
-      </div>
-      <Services />
+      <Suspense fallback={<></>}>
+        <div ref={colorRef} className="about">
+          <About />
+        </div>
+        <Services />
+      </Suspense>
       <Hire />
     </div>
   );

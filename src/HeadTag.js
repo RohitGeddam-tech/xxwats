@@ -23,7 +23,7 @@ const HeadTag = ({title, desc}) => {
         />
         <meta
           name="keywords"
-          content="XX Watts, ${comma separated services-titles}"
+          content="XX Watts"
         />
         <meta name="robots" content="index/follow" />
         <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -36,13 +36,13 @@ const HeadTag = ({title, desc}) => {
           itemprop="description"
           content={desc}
         />
-        <meta itemprop="image" content="${%PUBLIC_URL%/og.jpg}" />
+        <meta itemprop="image" content="%PUBLIC_URL%/og.jpg" />
 
         <meta
           property="og:title"
           content= {title}
         />
-        <meta property="og:image" content="${%PUBLIC_URL%/og.jpg}" />
+        <meta property="og:image" content="%PUBLIC_URL%/og.jpg" />
         <meta
           property="og:description"
           content={desc}

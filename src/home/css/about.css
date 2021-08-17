@@ -278,6 +278,10 @@ img.sliderimg {
   height: 100%;
 }
 
+.slick-list{
+  overflow: hidden;
+}
+
 /* .slick-slide img{
     display: flex !important;
     align-items: center;

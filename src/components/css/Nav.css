@@ -86,6 +86,10 @@ header{
     width: 250px;
 }
 
+.nav-image a{
+    display: flex;
+}
+
 .fade{
     width: 95% !important;
     height: 90%;

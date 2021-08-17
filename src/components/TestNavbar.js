@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./css/Nav.css";
 import { NavHashLink } from "react-router-hash-link";
-import Svg from "./Svg";
+import Svg from "./NewSvg";
+import Title from "./Title";
 import Ham from "./Hamburger";
 import XHam from "./Xham";
 
@@ -11,6 +12,7 @@ const TestDesk = () => {
   let colored = isActive ? "collapse-navbar" : "navbar";
   let header = isActive ? "headerfull" : "header";
   let fade = isActive ? "fade" : "dnone";
+
   return (
     <>
       <div className={colored}>
@@ -24,8 +26,8 @@ const TestDesk = () => {
                     imagegradient0={"yellow-gradient-0"}
                     imagegradient1={"yellow-gradient-1"}
                     imagename={"yellow"}
-                    title={"white"}
                   />
+                  <Title title={"white"} />
                 </NavHashLink>
               </div>
             </nav>
@@ -38,8 +40,8 @@ const TestDesk = () => {
                     imagegradient0={"black-gradient-0"}
                     imagegradient1={"black-gradient-1"}
                     imagename={"black"}
-                    title={"black"}
                   />
+                  <Title title={"black"} />
                 </NavHashLink>
               </div>
             </nav>
@@ -104,8 +106,8 @@ const TestMob = () => {
                     imagegradient0={"yellow-gradient-0"}
                     imagegradient1={"yellow-gradient-1"}
                     imagename={"yellow"}
-                    title={"white"}
                   />
+                  <Title title={"white"} />
                 </NavHashLink>
               </div>
             </nav>
@@ -118,8 +120,8 @@ const TestMob = () => {
                     imagegradient0={"black-gradient-0"}
                     imagegradient1={"black-gradient-1"}
                     imagename={"black"}
-                    title={"black"}
                   />
+                  <Title title={"black"} />
                 </NavHashLink>
               </div>
             </nav>

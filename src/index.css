@@ -29,3 +29,8 @@ code {
   display: flex;
   margin: auto;
 }
+
+.ContactPage{
+  width: 100%;
+  background-color: #eeea64;
+}

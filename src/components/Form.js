@@ -3,7 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import axios from "axios";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import SliderService from "./SliderService";
-import Serv from './ServiceSlider'
+// import Serv from "./ServiceSlider";
 
 const FormDesk = () => {
   const [isChecked, setChecked] = useState([]);
@@ -13,12 +13,15 @@ const FormDesk = () => {
   const [name, setName] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
   const [emailID, setEmailID] = useState("");
+  // const [service, setService] = useState("");
+  // const [serviceInvalid, setServiceInvalid] = useState(false);
   const [nameInvalid, setNameInvalid] = useState(false);
   const [phoneNoInvalid, setPhoneNoInvalid] = useState(false);
   const [emailIdInvalid, setEmailIdIInvalid] = useState(false);
   const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
+    // console.log(e.target.validity);
     switch (e.target.name) {
       case "name":
         setName(e.target.value);
@@ -32,6 +35,10 @@ const FormDesk = () => {
         setEmailID(e.target.value);
         setEmailIdIInvalid(!e.target.validity.valid);
         break;
+      // case "service":
+      //   setService(e.target.value);
+      //   setServiceInvalid(!e.target.validity.valid);
+      //   break;
       default:
         break;
     }
@@ -53,6 +60,7 @@ const FormDesk = () => {
         phoneNo: phoneNo,
         emailID: emailID,
         services: isChecked.join(", "),
+        // services: service,
       });
     } else {
       setValidity(false);
@@ -71,13 +79,15 @@ const FormDesk = () => {
           console.log(err);
         });
     }
-    console.log(form)
   }, [form, validity]);
 
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <Serv initialChecked={isChecked} passChecked={setChecked} />
+        <SliderService
+          initialChecked={isChecked}
+          passChecked={setChecked}
+        />
         <TextField
           className="textfield"
           label="Name"
@@ -110,7 +120,7 @@ const FormDesk = () => {
 
         <TextField
           className="textfield"
-          label="Email-Address"
+          label="E-MAIL ADDRESS"
           name="emailID"
           value={emailID}
           type="email"
@@ -121,13 +131,13 @@ const FormDesk = () => {
           required
         />
 
-        {emailIdInvalid ? <h1>Please provide a valid emailID</h1> : ""}
+        {emailIdInvalid ? <h1>Please provide a valid email-ID</h1> : ""}
 
         <button type="submit" className="formbtn" onClick={handleSubmit}>
           get a call back
         </button>
         {formEmpty ? (
-          <h1 style={{ paddingTop: "1em" }}>Please fill in the form</h1>
+          <h1 style={{ paddingTop: "1em", color:"#f7008c" }}>Please fill in the form</h1>
         ) : (
           ""
         )}
@@ -247,7 +257,7 @@ const FormMob = () => {
 
         <TextField
           className="textfieldmob"
-          label="Email-Address"
+          label="E-MAIL ADDRESS"
           name="emailID"
           type="email"
           value={emailID}
@@ -258,13 +268,13 @@ const FormMob = () => {
           required
         />
 
-        {emailIdInvalid ? <h1>Please provide a valid emailID</h1> : ""}
+        {emailIdInvalid ? <h1>PLEASE PROVIDE A VALID EMAIL-ID</h1> : ""}
 
         <button type="submit" className="formbtn" onClick={handleSubmit}>
           get a call back
         </button>
         {formEmpty ? (
-          <h1 style={{ paddingTop: "1em" }}>Please fill in the form</h1>
+          <h1 style={{ paddingTop: "1em", color:"#f7008c" }}>Please fill in the form</h1>
         ) : (
           ""
         )}

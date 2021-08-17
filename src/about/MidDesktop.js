@@ -8,13 +8,16 @@ import icon from "../img/icons/icon-expand--before.svg";
 import icona from "../img/icons/icon-expand--after.svg";
 import cyril from "../img/team/cyril.png";
 import savio from "../img/team/savio.png";
-import reebu from "../img/team/Reebu.png";
-import vaze from "../img/team/Vaze.png";
-import anny from "../img/team/Anny.png";
-import chris from "../img/team/Christopher.png";
+import reebu from "../img/team/Reebu.webp";
+import vaze from "../img/team/Vaze.webp";
+import anny from "../img/team/Anny.webp";
+import chris from "../img/team/Christopher.webp";
+import shruti from "../img/team/Shruti.webp";
+import Shuchi from "../img/team/Shuchi.webp";
+import Vishal from "../img/team/Vishal.webp";
 // import arathi from "../img/team/arathi.png";
 import ansh from "../img/team/ansh.png";
-import anushree from "../img/team/anushree.png";
+// import anushree from "../img/team/anushree.png";
 import saloni from "../img/team/saloni.png";
 import post from "../img/post.png";
 
@@ -32,6 +35,8 @@ const MidDesktop = () => {
   const [Vaze, setVaze] = useState(false);
   const [Anny, setAnny] = useState(false);
   const [Chris, setChris] = useState(false);
+  const [shuchi, setShuchi] = useState(false);
+  const [vishal, setVishal] = useState(false);
 
   // const [afterActive, setAfterActive] = useState(true)
 
@@ -45,6 +50,8 @@ const MidDesktop = () => {
     setVaze(false);
     setChris(false);
     setAnny(false);
+    setShuchi(false);
+    setVishal(false);
   };
 
   const onSavioClick = () => {
@@ -56,6 +63,8 @@ const MidDesktop = () => {
     setArathi(false);
     setVaze(false);
     setChris(false);
+    setShuchi(false);
+    setVishal(false);
     setAnny(false);
   };
 
@@ -63,6 +72,8 @@ const MidDesktop = () => {
     setCyril(false);
     setSaloni(true);
     setSavio(false);
+    setShuchi(false);
+    setVishal(false);
     setActive(false);
     setAnsh(false);
     setArathi(false);
@@ -74,6 +85,8 @@ const MidDesktop = () => {
   const onActiveClick = () => {
     setCyril(false);
     setSaloni(false);
+    setShuchi(false);
+    setVishal(false);
     setSavio(false);
     setActive(true);
     setAnsh(false);
@@ -89,6 +102,8 @@ const MidDesktop = () => {
     setSavio(false);
     setActive(false);
     setAnsh(true);
+    setShuchi(false);
+    setVishal(false);
     setArathi(false);
     setVaze(false);
     setChris(false);
@@ -100,6 +115,8 @@ const MidDesktop = () => {
     setSaloni(false);
     setSavio(false);
     setActive(false);
+    setShuchi(false);
+    setVishal(false);
     setAnsh(false);
     setArathi(true);
     setVaze(false);
@@ -112,6 +129,8 @@ const MidDesktop = () => {
     setSaloni(false);
     setSavio(false);
     setActive(false);
+    setShuchi(false);
+    setVishal(false);
     setAnsh(false);
     setArathi(false);
     setVaze(true);
@@ -123,6 +142,8 @@ const MidDesktop = () => {
     setCyril(false);
     setSaloni(false);
     setSavio(false);
+    setShuchi(false);
+    setVishal(false);
     setActive(false);
     setAnsh(false);
     setArathi(false);
@@ -136,11 +157,41 @@ const MidDesktop = () => {
     setSaloni(false);
     setSavio(false);
     setActive(false);
+    setShuchi(false);
+    setVishal(false);
     setAnsh(false);
     setArathi(false);
     setVaze(false);
     setChris(false);
     setAnny(true);
+  };
+
+  const onVishalClick = () => {
+    setCyril(false);
+    setSaloni(false);
+    setSavio(false);
+    setActive(false);
+    setAnsh(false);
+    setArathi(false);
+    setShuchi(false);
+    setVishal(true);
+    setVaze(false);
+    setChris(false);
+    setAnny(false);
+  };
+
+  const onShuchiClick = () => {
+    setCyril(false);
+    setSaloni(false);
+    setSavio(false);
+    setShuchi(true);
+    setVishal(false);
+    setActive(false);
+    setAnsh(false);
+    setArathi(false);
+    setVaze(false);
+    setChris(false);
+    setAnny(false);
   };
 
   const cls = active ? "cls" : "innerdiv";
@@ -160,6 +211,12 @@ const MidDesktop = () => {
 
   const saviobox = Savio ? "rightbox" : "cls";
   const innersavio = Savio ? "cls" : "innerdiv";
+
+  const vishalBox = vishal ? "rightbox" : "cls";
+  const innervishal = vishal ? "cls" : "innerdiv";
+
+  const innershuchi = shuchi ? "cls" : "innerdiv";
+  const shuchiBox = shuchi ? "box" : "cls";
 
   const vazebox = Vaze ? "cls" : "innerdiv";
   const innervaze = Vaze ? "box" : "cls";
@@ -239,10 +296,10 @@ const MidDesktop = () => {
                   }}
                 >
                   <p>
-                    Savio, an expert at his craft but a tech geek at heart with
+                    Savio, an expert at his craft but a tech geek at heart, has
                     over 20 years of experience in the media industry on the
-                    technical as well as editorial front, starting with IN
-                    Mumbai News Channel in 2001. He has worked with reputed
+                    technical as well as the editorial front. Starting with IN
+                    Mumbai News Channel in 2001, he has worked with reputed
                     organisations like Sahara Networks and Network 18. With his
                     ventures Beanstalk Productions and Mad Hatter Media Pvt.
                     Ltd., he has consistently delivered quality services to all
@@ -263,6 +320,80 @@ const MidDesktop = () => {
             data-aos-duration="1000"
           >
             <h4 className="flex-title">Creative team</h4>
+          </div>
+          <div className="first-flex">
+            <div
+              className="inflex1"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <div className={inneranny} onMouseEnter={onAnnyClick}>
+                <img loading="lazy" src={anny} alt="logo" />
+                <h4 className="flexbox-title">
+                  Anny <img loading="lazy" src={icon} alt="logo" />
+                </h4>
+              </div>
+              <Fade className={annyBox} in={Anny} delay="500" duration="2000">
+                <div
+                  className="fadebox"
+                  onMouseLeave={() => {
+                    setAnny(false);
+                  }}
+                >
+                  <p>
+                    From writing in people's slam books in school, to
+                    conceptualising and executing brand campaigns, Anny has come
+                    a long way. After working with multiple agencies, she knows
+                    how to write for brands, content creators, influencers and
+                    even dating app bios, if required! Out of all her
+                    relationships, content writing has been the longest and most
+                    fulfilling one. P.S. When she's not panicking about work,
+                    she spends time trying observational comedy on stage.
+                  </p>
+                  <h4 className="flexinbox-title">
+                    Anny <img loading="lazy" src={icona} alt="logo" />
+                  </h4>
+                </div>
+              </Fade>
+            </div>
+            <div
+              className="inflex2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div className={vazebox} onMouseEnter={onVazeClick}>
+                <img loading="lazy" src={vaze} alt="logo" />
+                <h4 className="flexbox-title">
+                  Aaditya <img loading="lazy" src={icon} alt="logo" />
+                </h4>
+              </div>
+              <Fade className={innervaze} in={vaze} delay="500" duration="1000">
+                <div
+                  className="fadenewbox"
+                  onMouseLeave={() => {
+                    setVaze(false);
+                  }}
+                >
+                  <p>
+                    Growing up, V wanted to be an intergalactic charades
+                    champion. But once he found out that Intergalactic council
+                    doesn’t take vernacular guys in the championship, he gave up
+                    on the dream and started telling everyone that careers are a
+                    21st century invention. Now he is a part time shutter-bug,
+                    part time paint-thumb and a full time story-teller. (Yes, he
+                    will tell you one even if you aren’t interested). He hates
+                    the word Creative in any designation, so they make sure to
+                    keep adding it next to his name. If you ever want to have
+                    long, meaningless chats about the meaning of life, do ping
+                    him. Just not on weekdays please, he will probably have
+                    those chats instead of working and WE ARE NOT OK WITH IT!
+                  </p>
+                  <h4 className="flexinbox-title">
+                    Aaditya <img loading="lazy" src={icona} alt="logo" />
+                  </h4>
+                </div>
+              </Fade>
+            </div>
           </div>
           <div className="first-flex">
             <div
@@ -332,31 +463,37 @@ const MidDesktop = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <div className={inneranny} onMouseEnter={onAnnyClick}>
-                <img loading="lazy" src={anny} alt="logo" />
+              <div className={innershuchi} onMouseEnter={onShuchiClick}>
+                <img loading="lazy" src={Shuchi} alt="logo" />
                 <h4 className="flexbox-title">
-                  Anny <img loading="lazy" src={icon} alt="logo" />
+                  Shuchi <img loading="lazy" src={icon} alt="logo" />
                 </h4>
               </div>
-              <Fade className={annyBox} in={Anny} delay="500" duration="2000">
+              <Fade
+                className={shuchiBox}
+                in={shuchi}
+                delay="500"
+                duration="2000"
+              >
                 <div
                   className="fadebox"
                   onMouseLeave={() => {
-                    setAnny(false);
+                    setShuchi(false);
                   }}
                 >
                   <p>
-                    From writing in people's slam books in school, to
-                    conceptualising and executing brand campaigns, Anny has come
-                    a long way. After working with multiple agencies, she knows
-                    how to write for brands, content creators, influencers and
-                    even dating app bios, if required! Out of all her
-                    relationships, content writing has been the longest and most
-                    fulfilling one. P.S. When she's not panicking about work,
-                    she spends time trying observational comedy on stage.
+                    Shuchi is a digital marketing professional turned into a
+                    full-time copy and scriptwriter. In her free time, you will
+                    find her head buried in a book, planning her next solo trip,
+                    or sifting through online sales and adding items to her
+                    Amazon cart. <br /> <br />
+                    More about her: <br />
+                    - She is the best-sellingauthor of final.docx, finalfinal.docx, fullandfinal.docx <br />
+                    - A part-time stationery hoarder <br />
+                    - Prefers bullet points over paragraphs
                   </p>
                   <h4 className="flexinbox-title">
-                    Anny <img loading="lazy" src={icona} alt="logo" />
+                    Shuchi <img loading="lazy" src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -366,35 +503,36 @@ const MidDesktop = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <div className={vazebox} onMouseEnter={onVazeClick}>
-                <img loading="lazy" src={vaze} alt="logo" />
+              <div className={innervishal} onMouseEnter={onVishalClick}>
+                <img loading="lazy" src={Vishal} alt="logo" />
                 <h4 className="flexbox-title">
-                  Aditya <img loading="lazy" src={icon} alt="logo" />
+                  Vishal <img loading="lazy" src={icon} alt="logo" />
                 </h4>
               </div>
-              <Fade className={innervaze} in={vaze} delay="500" duration="1000">
+              <Fade
+                className={vishalBox}
+                in={vishal}
+                delay="500"
+                duration="1000"
+              >
                 <div
-                  className="fadenewbox"
+                  className="fadebox"
                   onMouseLeave={() => {
-                    setVaze(false);
+                    setVishal(false);
                   }}
                 >
                   <p>
-                    Growing up, V wanted to be an intergalactic charades
-                    champion. But once he found out that Intergalactic council
-                    doesn’t take vernacular guys in the championship, he gave up
-                    on the dream and started telling everyone that careers are a
-                    21st century invention. Now he is a part time shutter-bug,
-                    part time paint-thumb and a full time story-teller. (Yes he
-                    will tell you one even if you aren’t interested). He hates
-                    the word Creative in any designation so they make sure to
-                    keep adding it next to his name. If you ever want to have a
-                    long, meaningless chats about meaning of life, do ping him.
-                    Just not on weekdays please, he will probably have those
-                    chats instead of working and WE ARE NOT OK WITH IT!
+                    Vishal is our graphic designer who works with branding,
+                    advertising and illustration. In general, he likes to create
+                    stuff. Stuff like comics, posters, vines, beats and also
+                    memes. While Vishal likes to think that's how he spends his
+                    time, he's usually up all night watching that Indian man
+                    build swimming pools with no tools. Vishal was also asked to
+                    write this paragraph about himself, a process that put him
+                    into an existential crisis. He is taking a break now.
                   </p>
                   <h4 className="flexinbox-title">
-                    Aditya <img loading="lazy" src={icona} alt="logo" />
+                    Vishal <img loading="lazy" src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -435,7 +573,35 @@ const MidDesktop = () => {
               className="inflex2"
               data-aos="fade-up"
               data-aos-duration="1000"
-            ></div>
+            >
+              <div className={cls} onMouseEnter={onActiveClick}>
+                <img loading="lazy" src={shruti} alt="logo" />
+                <h4 className="flexbox-title">
+                  Shruti <img loading="lazy" src={icon} alt="logo" />
+                </h4>
+              </div>
+              <Fade className={box} in={active} delay="500" duration="1000">
+                <div
+                  className="fadebox"
+                  onMouseLeave={() => {
+                    setActive(false);
+                  }}
+                >
+                  <p>
+                    Meet Shruti, a fan of art in every form that it flows. After
+                    a couple of pretty interesting years as a law student, she
+                    set off to build a career out of passion. She’s our graphic
+                    designer who loves to tell a story throughout her visuals.
+                    When she’s not working on her craft, you’ll find her at
+                    de_inferno. She enjoys a good first-person shooter or if
+                    truth be told, just about any game.
+                  </p>
+                  <h4 className="flexinbox-title">
+                    Shruti <img loading="lazy" src={icona} alt="logo" />
+                  </h4>
+                </div>
+              </Fade>
+            </div>
           </div>
         </div>
         <div className="first-flexbox">
@@ -447,7 +613,7 @@ const MidDesktop = () => {
             <h4 className="flex-title">Business team</h4>
           </div>
           <div className="first-flex">
-            <div
+            {/* <div
               className="inflex1"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -481,7 +647,7 @@ const MidDesktop = () => {
                   </h4>
                 </div>
               </Fade>
-            </div>
+            </div> */}
             <div
               className="inflex2"
               data-aos="fade-up"
@@ -507,13 +673,12 @@ const MidDesktop = () => {
                 >
                   <p>
                     A veteran at 20 watts, Saloni Shah is a client's dream.
-                    Every request is a yes and every 2am call answered, that's
-                    how she paves her way into a client's heart. Her sweetness
-                    is her strength and her weakness, and we don't say this
-                    because she's a Gujrati. She can be found in the nearest
-                    Starbucks conquering the world in her 6inch heels. Also, if
-                    you know her, you've definitely asked her for the bomb
-                    thepla recipe.
+                    Every request is a yes and every 2 AM and 6 AM call
+                    answered, that's how she paves her way into a client's
+                    heart. Her sweetness is her strength and her weakness, and
+                    we don't say this because she's a Gujrati. She can be found
+                    in the nearest Starbucks conquering the world in her 6inch
+                    heels.
                   </p>
                   <h4 className="flexinbox-title">
                     Saloni <img loading="lazy" src={icona} alt="logo" />
@@ -540,8 +705,8 @@ const MidDesktop = () => {
                 A passionate group of highly skilled and driven people who
                 constantly talk about giving their 110 percent but we remind
                 them that their 100 percent would suffice. We have a team of 20+
-                in the production department and an equally large team in the
-                post production studio. All brilliant and all good at making
+                people in the production department and an equally large team in
+                the post production studio. All brilliant and all good at making
                 what’s on paper, a reality.
               </p>
             </div>

@@ -9,12 +9,15 @@ import cyril from "../img/team/cyril.png";
 import savio from "../img/team/savio.png";
 // import arathi from "../img/team/arathi.png";
 import ansh from "../img/team/ansh.png";
-import anushree from "../img/team/anushree.png";
+// import anushree from "../img/team/anushree.png";
+import shruti from "../img/team/Shruti.png";
+import Shuchi from "../img/team/Shuchi.png";
+import Vishal from "../img/team/Vishal.PNG";
 import saloni from "../img/team/saloni.png";
-import reebu from "../img/team/Reebu.png";
-import vaze from "../img/team/Vaze.png";
-import anny from "../img/team/Anny.png";
-import chris from "../img/team/Christopher.png";
+import reebu from "../img/team/Reebu.webp";
+import vaze from "../img/team/Vaze.webp";
+import anny from "../img/team/Anny.webp";
+import chris from "../img/team/Christopher.webp";
 import post from "../img/post.png";
 
 const MidMob = () => {
@@ -67,14 +70,14 @@ const MidMob = () => {
             <div data-aos="fade-up" data-aos-duration="2000">
               <h4>Savio</h4>
               <p>
-                Savio, an expert at his craft but a tech geek at heart with over
+                Savio, an expert at his craft but a tech geek at heart, has over
                 20 years of experience in the media industry on the technical as
-                well as editorial front, starting with IN Mumbai News Channel in
-                2001. He has worked with reputed organisations like Sahara
-                Networks and Network 18. With his ventures Beanstalk Productions
-                and Mad Hatter Media Pvt. Ltd., he has consistently delivered
-                quality services to all major television networks and digital
-                platforms.
+                well as the editorial front. Starting with IN Mumbai News
+                Channel in 2001, he has worked with reputed organisations like
+                Sahara Networks and Network 18. With his ventures Beanstalk
+                Productions and Mad Hatter Media Pvt. Ltd., he has consistently
+                delivered quality services to all major television networks and
+                digital platforms.
               </p>
             </div>
           </div>
@@ -83,6 +86,58 @@ const MidMob = () => {
           <h4 data-aos="fade-up" data-aos-duration="1000">
             Creative Team
           </h4>
+          <div className="mobfirst">
+            <img
+              src={anny}
+              alt="cyril"
+              data-aos="fade-up"
+              loading="lazy"
+              data-aos-duration="1000"
+            />
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <h4>Anny</h4>
+              <p>
+                From writing in people's slam books in school, to
+                conceptualising and executing brand campaigns, Anny has come a
+                long way. After working with multiple agencies, she knows how to
+                write for brands, content creators, influencers and even dating
+                app bios, if required! Out of all her relationships, content
+                writing has been the longest and most fulfilling one. P.S. When
+                she's not panicking about work, she spends time trying
+                observational comedy on stage.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mobmid-container">
+          <div className="mobfirst">
+            <img
+              src={vaze}
+              alt="Aaditya"
+              data-aos="fade-up"
+              loading="lazy"
+              data-aos-duration="1000"
+            />
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <h4>Aaditya</h4>
+              <p>
+                Growing up, V wanted to be an intergalactic charades champion.
+                But once he found out that Intergalactic council doesn’t take
+                vernacular guys in the championship, he gave up on the dream and
+                started telling everyone that careers are a 21st century
+                invention. Now he is a part time shutter-bug, part time
+                paint-thumb and a full time story-teller. (Yes, he will tell you
+                one even if you aren’t interested). He hates the word Creative
+                in any designation, so they make sure to keep adding it next to
+                his name. If you ever want to have long, meaningless chats about
+                the meaning of life, do ping him. Just not on weekdays please,
+                he will probably have those chats instead of working and WE ARE
+                NOT OK WITH IT!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mobmid-container">
           <div className="mobfirst">
             <img
               src={reebu}
@@ -125,27 +180,22 @@ const MidMob = () => {
         <div className="mobmid-container">
           <div className="mobfirst">
             <img
-              src={vaze}
-              alt="vaze"
+              src={shruti}
+              alt="Shruti"
               data-aos="fade-up"
               loading="lazy"
               data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
-              <h4>Vaze</h4>
+              <h4>Shruti</h4>
               <p>
-                Growing up, V wanted to be an intergalactic charades champion.
-                But once he found out that Intergalactic council doesn’t take
-                vernacular guys in the championship, he gave up on the dream and
-                started telling everyone that careers are a 21st century
-                invention. Now he is a part time shutter-bug, part time
-                paint-thumb and a full time story-teller. (Yes he will tell you
-                one even if you aren’t interested). He hates the word Creative
-                in any designation so they make sure to keep adding it next to
-                his name. If you ever want to have a long, meaningless chats
-                about meaning of life, do ping him. Just not on weekdays please,
-                he will probably have those chats instead of working and WE ARE
-                NOT OK WITH IT!
+                Meet Shruti, a fan of art in every form that it flows. After a
+                couple of pretty interesting years as a law student, she set off
+                to build a career out of passion. She’s our graphic designer who
+                loves to tell a story throughout her visuals. When she’s not
+                working on her craft, you’ll find her at de_inferno. She enjoys
+                a good first-person shooter or if truth be told, just about any
+                game.
               </p>
             </div>
           </div>
@@ -153,23 +203,49 @@ const MidMob = () => {
         <div className="mobmid-container">
           <div className="mobfirst">
             <img
-              src={anny}
-              alt="cyril"
+              src={Shuchi}
+              alt="Shuchi"
               data-aos="fade-up"
               loading="lazy"
               data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
-              <h4>Anny</h4>
+              <h4>Shuchi</h4>
               <p>
-                From writing in people's slam books in school, to
-                conceptualising and executing brand campaigns, Anny has come a
-                long way. After working with multiple agencies, she knows how to
-                write for brands, content creators, influencers and even dating
-                app bios, if required! Out of all her relationships, content
-                writing has been the longest and most fulfilling one. P.S. When
-                she's not panicking about work, she spends time trying
-                observational comedy on stage.
+                Shuchi is a digital marketing professional turned into a
+                full-time copy and scriptwriter. In her free time, you will find
+                her head buried in a book, planning her next solo trip, or
+                sifting through online sales and adding items to her Amazon
+                cart. <br />
+                More about her: <br />
+                - She is the best-sellingauthor of final.docx, finalfinal.docx,
+                fullandfinal.docx <br />
+                - A part-time stationery hoarder <br />- Prefers bullet points
+                over paragraphs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mobmid-container">
+          <div className="mobfirst">
+            <img
+              src={Vishal}
+              alt="Vishal"
+              data-aos="fade-up"
+              loading="lazy"
+              data-aos-duration="1000"
+            />
+            <div data-aos="fade-up" data-aos-duration="2000">
+              <h4>Vishal</h4>
+              <p>
+                Vishal is our graphic designer who works with branding,
+                advertising and illustration. In general, he likes to create
+                stuff. Stuff like comics, posters, vines, beats and also memes.
+                While Vishal likes to think that's how he spends his time, he's
+                usually up all night watching that Indian man build swimming
+                pools with no tools. Vishal was also asked to write this
+                paragraph about himself, a process that put him into an
+                existential crisis. He is taking a break now.
               </p>
             </div>
           </div>
@@ -200,30 +276,6 @@ const MidMob = () => {
           </h4>
           <div className="mobfirst">
             <img
-              src={anushree}
-              loading="lazy"
-              alt="cyril"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            />
-            <div data-aos="fade-up" data-aos-duration="2000">
-              <h4>Anushree</h4>
-              <p>
-                Latest addition to the 20 watts family, she handles recruitments
-                and business management and expansions. She comes with 12+ years
-                of experience in advertising and production since she started
-                working when she was 17 and claims she hasn’t taken a sick day
-                ever since. She has worked with agencies like Ogilvy, Contract,
-                Alok Nanda and Company, Havas Creative, TBWA and more. She also
-                experiments with curly hair products, has the loudest laugh in
-                the room and loves to travel every chance she gets.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="mobmid-container">
-          <div className="mobfirst">
-            <img
               src={saloni}
               alt="cyril"
               data-aos="fade-up"
@@ -234,20 +286,19 @@ const MidMob = () => {
               <h4>Saloni</h4>
               <p>
                 A veteran at 20 watts, Saloni Shah is a client's dream. Every
-                request is a yes and every 2am call answered, that's how she
-                paves her way into a client's heart. Her sweetness is her
-                strength and her weakness, and we don't say this because she's a
-                Gujrati. She can be found in the nearest Starbucks conquering
-                the world in her 6inch heels. Also, if you know her, you've
-                definitely asked her for the bomb thepla recipe.
+                request is a yes and every 2 AM and 6 AM call answered, that's
+                how she paves her way into a client's heart. Her sweetness is
+                her strength and her weakness, and we don't say this because
+                she's a Gujrati. She can be found in the nearest Starbucks
+                conquering the world in her 6inch heels.
               </p>
             </div>
           </div>
         </div>
         <div className="mobmid-container">
-          <h4 data-aos="fade-up" data-aos-duration="1000">
+          <h3 data-aos="fade-up" data-aos-duration="1000">
             Production team
-          </h4>
+          </h3>
           <div className="mobnewfirst">
             <img
               src={post}
@@ -262,8 +313,8 @@ const MidMob = () => {
                 A passionate group of highly skilled and driven people who
                 constantly talk about giving their 110 percent but we remind
                 them that their 100 percent would suffice. We have a team of 20+
-                in the production department and an equally large team in the
-                post production studio. All brilliant and all good at making
+                people in the production department and an equally large team in
+                the post production studio. All brilliant and all good at making
                 what’s on paper, a reality.
               </p>
             </div>
